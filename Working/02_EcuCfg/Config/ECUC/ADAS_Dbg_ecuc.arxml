@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="34b1efd7-5ff7-4371-bd12-d789c9b48c74">
+          <SHORT-NAME>Dbg</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/MICROSAR/Dbg</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/Dbg_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="910ed0de-6239-4d17-b2f1-778f36bf9987">
+              <SHORT-NAME>DbgGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgGeneral/DbgDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgGeneral/DbgVersionInfoApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Dbg/DbgGeneral/DbgSamplingFunctionPeriod</DEFINITION-REF>
+                  <VALUE>0.01</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgGeneral/DbgHeaderFileInclusion</DEFINITION-REF>
+                  <VALUE>Os.h</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgGeneral/DbgSafeBswChecks</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="49bc1e37-e5d0-4fdb-b6cd-733d67bfe4ec">
+              <SHORT-NAME>DbgMultipleConfigurationContainer</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="c179b46c-baba-447e-a45c-c9f17220795b">
+                  <SHORT-NAME>IdleTask_OsCore0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>IdleTask_OsCore0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="0c468ef7-cad3-40bf-948b-1b631138cd96">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="8cbf4888-18f3-41dc-abdc-b19312fd9730">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(IdleTask_OsCore0)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="781bcdd1-4010-45a6-b9ad-e3d462e68f75">
+                  <SHORT-NAME>Default_Appl_Init_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>Default_Appl_Init_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="c1ecb0ee-e270-421e-9a28-368f6124b805">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="8bde25db-9204-4210-9cd4-54efa7b67ce3">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(Default_Appl_Init_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="2908217d-3275-4bab-a303-4e85597b3f95">
+                  <SHORT-NAME>Default_BSW_Sync_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>Default_BSW_Sync_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="00c54281-0eb1-4a34-be8b-ea31b46276e9">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="813ef91b-b2c5-440d-9910-836b6d4dea10">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(Default_BSW_Sync_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="0fcea06b-2dc6-438f-b73c-c21a88d0cbf3">
+                  <SHORT-NAME>Default_Init_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>Default_Init_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="f99fd12a-c85b-4cf5-bf30-66821cfc04bc">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="c5a01f42-7189-4fa0-a22a-743add602cb1">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(Default_Init_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a0c8896c-3b36-46d2-8098-8863629e2e05">
+                  <SHORT-NAME>Default_Appl_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>Default_Appl_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="a310fd4e-446d-41fe-876b-bc2c31bd7046">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="2c876363-4c60-49a1-ae83-2a37afbbe9fd">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(Default_Appl_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="bcd3d882-bfd3-42e3-92db-9ed9e2e2cb6b">
+                  <SHORT-NAME>Default_BSW_Async_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>Default_BSW_Async_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="5f9e1ad6-2d33-4bc3-9367-bb575fc2ea88">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="3a7bfbf3-8a89-4afa-b4d3-512250a08c3e">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(Default_BSW_Async_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="fe1a3aac-aeca-4c0d-98ef-c29b26beb32d">
+                  <SHORT-NAME>Default_RTE_Mode_switch_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>Default_RTE_Mode_switch_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="e15f0b42-0877-45ed-be28-5e6162dc833b">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="bba67f72-cd1e-4e09-9be6-9c148ff8da89">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(Default_RTE_Mode_switch_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="f75503b2-7669-4eea-b904-23d0d0f307e3">
+                  <SHORT-NAME>CounterIsr_SystemTimer</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE/>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="9adb20b5-5e40-4c8e-b616-72e8e79bfa0e">
+                      <SHORT-NAME>DbgStaticDIDData</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="0ad10ba3-8c7b-49b6-8c41-0e284be0a169">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetISRStackUsage(CounterIsr_SystemTimer_Core0)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="baa1333b-89fe-4dab-a4ed-9c6d46fe11b7">
+                  <SHORT-NAME>StartApplication_Appl_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>StartApplication_Appl_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="e136fb4b-a55a-428a-b5f2-915fd5366e1a">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="b5148b31-e195-4969-94cc-cb2d307d573b">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(StartApplication_Appl_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="f3c96fef-4849-418d-a3cd-c318da3aaa2b">
+                  <SHORT-NAME>StartApplication_Appl_Init_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>StartApplication_Appl_Init_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="9c25f368-77c0-43ec-8b54-1ca74815b97f">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="f9548878-a739-43c3-9512-ac8c93b7f304">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(StartApplication_Appl_Init_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3bd7675b-2ada-42b1-a39f-f5d9cf3d4e28">
+                  <SHORT-NAME>StartApplication_NoSwc_Appl_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>StartApplication_NoSwc_Appl_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="1a5627ed-ba3a-42ae-98da-c4a21d2c2c53">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="5dfc3106-ec36-4b96-8931-29a426ea6905">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(StartApplication_NoSwc_Appl_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c0c0b138-5586-4560-ae5c-ec95739ac4e3">
+                  <SHORT-NAME>StartApplication_NoSwc_Init_Task</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>StartApplication_NoSwc_Init_Task</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="15c21e8b-2de6-4fbb-8457-6088fca19ebd">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="abf2301a-bb7b-45a3-8112-b559447a0103">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(StartApplication_NoSwc_Init_Task)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="03944a3b-c40d-4da8-9ae6-5fadfc8f049e">
+                  <SHORT-NAME>BswBackgroundTask</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgAutomaticCollectionFrequency</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDBuffering</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDNameRef</DEFINITION-REF>
+                      <VALUE>BswBackgroundTask</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticTimeStampActivation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="415c9216-fb49-4ed9-b24a-dbc0dd3fd3c0">
+                      <SHORT-NAME>osGetStackUsage</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="cab467b5-54af-4a89-84f9-a733564a768e">
+                          <SHORT-NAME>DbgLocalDebugData</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgFunctionCall</DEFINITION-REF>
+                              <VALUE>Os_GetTaskStackUsage(BswBackgroundTask)</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Dbg/DbgMultipleConfigurationContainer/DbgStaticDID/DbgStaticDIDData/DbgLocalDebugData/DbgLocalDebugDataRef</DEFINITION-REF>
+                              <VALUE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="65c554ee-b56c-4c3d-aa86-57a8294c01f9">
+          <SHORT-NAME>CddNpmGen2_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="e590b39e-6618-456c-ade5-8fc729b2a779">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="834fb602-02c7-495f-b81f-2dd810747c82">
+                  <SHORT-NAME>CddNpmGen2</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/CddNpmGen2_ib_bswmd/BswModuleDescriptions/CddNpmGen2_MainFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="4a78230b-f617-45e5-b1bf-d5624ed2f5e6">
+                      <SHORT-NAME>CddNpmGen2Behavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="3dd75150-0f86-4677-9e41-adf7e70a22bc">
+                          <SHORT-NAME>CDDNPMGEN2_EXCLUSIVE_AREA_0</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Ensures data consistency between the main function and the Bus KnockOut, ECU Knock Out and NvM writing algorithms. It is used in the functions CddNpmGen2_ECU_Knock_Out(), CddNpmGen2_Bus_Knock_Out(), CddNpmGen2_CheckNvMResult(), CddNpmGen2_SetVetoState(), CddNpmGen2_MainFunction(), CddNpmGen2_Read_Ident_KnockoutCounter(), CddNpmGen2_Write_Ident_KnockoutCounter(), CddNpmGen2_Write_Ident_KnockoutTimer(), CddNpmGen2_Write_Ident_KnockoutTestMode(), CddNpmGen2_EcuShutdownIndication() and CddNpmGen2_EcuRestartIndication(). It must be configured in a way that these functions cannot interrupt each other.</L-2>
+                          </DESC>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="589536ff-a62c-464f-b75e-e0a415869889">
+                          <SHORT-NAME>CddNpmGen2_MainFunction</SHORT-NAME>
+                          <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/CddNpmGen2_ib_bswmd/BswModuleDescriptions/CddNpmGen2/CddNpmGen2Behavior/CDDNPMGEN2_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                          </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/CddNpmGen2_ib_bswmd/BswModuleDescriptions/CddNpmGen2_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="bbe3ddb1-b098-4bbe-bbc8-dafc1b411a7c">
+                          <SHORT-NAME>CddNpmGen2_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/CddNpmGen2_ib_bswmd/BswModuleDescriptions/CddNpmGen2/CddNpmGen2Behavior/CddNpmGen2_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.1</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="a4a1dafd-9731-4cad-aa27-90f957d0ca78">
+                  <SHORT-NAME>CddNpmGen2_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

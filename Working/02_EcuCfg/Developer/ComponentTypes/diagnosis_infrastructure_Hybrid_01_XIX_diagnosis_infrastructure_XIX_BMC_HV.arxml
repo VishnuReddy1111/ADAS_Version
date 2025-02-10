@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-000000d6ae6f">
+          <SHORT-NAME>diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_diagnosis_infrastructure</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_4110680</SDX-REF>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-9a30-1efc-000000e2bf9d">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_ConfDTCChanged_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_ConfDTCChanged/DE_DS_Hybrid_01_ConfDTCChanged</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_ConfDTCChanged</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-b097-1efc-000000e2bfb2">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_DiagAdr_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_DiagAdr/DE_DS_Hybrid_01_DiagAdr</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_DiagAdr</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-e976-1efc-000000e2bfc1">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_IdentValid_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_IdentValid/DE_DS_Hybrid_01_IdentValid</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_IdentValid</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-a263-1efc-000000e2bf11">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_MemSel10Changed_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_MemSel10Changed/DE_DS_Hybrid_01_MemSel10Changed</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_MemSel10Changed</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-4561-1efc-000000e2bfc2">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_MemSelChanged_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_MemSelChanged/DE_DS_Hybrid_01_MemSelChanged</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_MemSelChanged</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-82a9-1efc-000000e2bf68">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_StMemChanged_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_StMemChanged/DE_DS_Hybrid_01_StMemChanged</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_StMemChanged</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-8687-1efc-000000e2c069">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_TestFailedChanged_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_TestFailedChanged/DE_DS_Hybrid_01_TestFailedChanged</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_TestFailedChanged</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-af4a-1efc-000000e2c025">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_WIRChanged_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_WIRChanged/DE_DS_Hybrid_01_WIRChanged</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_WIRChanged</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ed2d-1efc-000001746cde">
+              <SHORT-NAME>SP_IF_Hybrid_01_Indc_StChk_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_Hybrid_01_Indc_StChk/DE_Hybrid_01_Indc_StChk</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_Hybrid_01_Indc_StChk</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-bc6c-1efc-000001746c6e">
+              <SHORT-NAME>SP_IF_Hybrid_01_Indc_StFail_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_Hybrid_01_Indc_StFail/DE_Hybrid_01_Indc_StFail</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_Hybrid_01_Indc_StFail</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-61e6-1efc-000000fd384b">
+              <SHORT-NAME>SP_IF_Hybrid_01_KD_Fehler_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_Hybrid_01_KD_Fehler/DE_Hybrid_01_KD_Fehler</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_Hybrid_01_KD_Fehler</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-db5d-1efc-000000fc7c39">
+              <SHORT-NAME>SP_IF_Hybrid_01_OBD_Lampe_Anf_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_Hybrid_01_OBD_Lampe_Anf/DE_Hybrid_01_OBD_Lampe_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_Hybrid_01_OBD_Lampe_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-9c67-1efc-000000ed923f">
+              <SHORT-NAME>SP_IF_Hybrid_01_SNI_10_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_Hybrid_01_SNI_10/DE_Hybrid_01_SNI_10</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_Hybrid_01_SNI_10</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-7eae-1efc-00000116f8be">
+              <SHORT-NAME>SP_IF_KN_Hybrid_01_DiagPfad_V12_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_KN_Hybrid_01_DiagPfad_V12/DE_KN_Hybrid_01_DiagPfad_V12</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_KN_Hybrid_01_DiagPfad_V12</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-45f1-1efc-00000174a94e">
+              <SHORT-NAME>SP_IF_OBDProtocol_Hybrid_01_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBDProtocol_Hybrid_01/DE_OBDProtocol_Hybrid_01</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBDProtocol_Hybrid_01</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-afd5-1efc-0000004f44fd">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_01_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_01/DE_BJB_CALID_Index_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1f72-1efc-0000004f4512">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_02_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_02/DE_BJB_CALID_Index_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c937-1efc-0000004f4515">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_03_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_03/DE_BJB_CALID_Index_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-108c-1efc-0000004f4518">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_04_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_04/DE_BJB_CALID_Index_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c141-1efc-0000004f451b">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_05_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_05/DE_BJB_CALID_Index_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7584-1efc-0000004f4500">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_06_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_06/DE_BJB_CALID_Index_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d47b-1efc-0000004f451e">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_07_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_07/DE_BJB_CALID_Index_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1dc6-1efc-0000004f4521">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_08_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_08/DE_BJB_CALID_Index_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bb6e-1efc-0000004f4503">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_09_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_09/DE_BJB_CALID_Index_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-669a-1efc-0000004f4506">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_10_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_10/DE_BJB_CALID_Index_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6983-1efc-0000004f4509">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_11_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_11/DE_BJB_CALID_Index_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5b31-1efc-0000004f450c">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_12_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_12/DE_BJB_CALID_Index_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-75ec-1efc-0000004f49aa">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_13_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_13/DE_BJB_CALID_Index_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-64e9-1efc-0000004f49ad">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_14_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_14/DE_BJB_CALID_Index_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-395b-1efc-0000004f49b0">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_15_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_15/DE_BJB_CALID_Index_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-03a8-1efc-0000004f49b3">
+              <SHORT-NAME>RP_IF_BJB_CALID_Index_16_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CALID_Index_16/DE_BJB_CALID_Index_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CALID_Index_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c032-1efc-000001226806">
+              <SHORT-NAME>RP_IF_BJB_CVN_Byte_1_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CVN_Byte_1/DE_BJB_CVN_Byte_1</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CVN_Byte_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-279c-1efc-000001226809">
+              <SHORT-NAME>RP_IF_BJB_CVN_Byte_2_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CVN_Byte_2/DE_BJB_CVN_Byte_2</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CVN_Byte_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8120-1efc-000001226803">
+              <SHORT-NAME>RP_IF_BJB_CVN_Byte_3_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CVN_Byte_3/DE_BJB_CVN_Byte_3</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CVN_Byte_3</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5577-1efc-000001226800">
+              <SHORT-NAME>RP_IF_BJB_CVN_Byte_4_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CVN_Byte_4/DE_BJB_CVN_Byte_4</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CVN_Byte_4</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-990d-1efc-0000004f49b6">
+              <SHORT-NAME>RP_IF_BJB_CVN_VLD_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_CVN_VLD/DE_BJB_CVN_VLD</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_CVN_VLD</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-45d1-1efc-0000013267e1">
+              <SHORT-NAME>RP_IF_BJB_ErrMem_State_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BJB_ErrMem_State/DE_BJB_ErrMem_State</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BJB_ErrMem_State</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-78f7-1efc-0000013ff401">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_01_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_01/DE_DCDC_NV_CALID_Index_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-424c-1efc-0000013ff404">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_02_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_02/DE_DCDC_NV_CALID_Index_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8b86-1efc-0000013ff407">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_03_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_03/DE_DCDC_NV_CALID_Index_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4753-1efc-0000013ff40a">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_04_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_04/DE_DCDC_NV_CALID_Index_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ee19-1efc-0000013ff40d">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_05_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_05/DE_DCDC_NV_CALID_Index_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a37d-1efc-0000013ff416">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_06_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_06/DE_DCDC_NV_CALID_Index_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bc7d-1efc-0000013ff423">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_07_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_07/DE_DCDC_NV_CALID_Index_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7baa-1efc-0000013ff413">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_08_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_08/DE_DCDC_NV_CALID_Index_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4720-1efc-0000013ff410">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_09_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_09/DE_DCDC_NV_CALID_Index_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ee88-1efc-0000013ff3fe">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_10_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_10/DE_DCDC_NV_CALID_Index_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1d8d-1efc-0000013ff3fb">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_11_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_11/DE_DCDC_NV_CALID_Index_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c6b2-1efc-0000013ff3dc">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_12_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_12/DE_DCDC_NV_CALID_Index_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d246-1efc-0000013ff3f8">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_13_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_13/DE_DCDC_NV_CALID_Index_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b9ae-1efc-0000013ff3f5">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_14_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_14/DE_DCDC_NV_CALID_Index_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-610d-1efc-0000013ff3f2">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_15_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_15/DE_DCDC_NV_CALID_Index_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4c71-1efc-0000013ff3ef">
+              <SHORT-NAME>RP_IF_DCDC_NV_CALID_Index_16_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CALID_Index_16/DE_DCDC_NV_CALID_Index_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CALID_Index_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f8ae-1efc-0000013ff3e3">
+              <SHORT-NAME>RP_IF_DCDC_NV_CVN_Byte_1_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CVN_Byte_1/DE_DCDC_NV_CVN_Byte_1</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CVN_Byte_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a992-1efc-0000013ff3e9">
+              <SHORT-NAME>RP_IF_DCDC_NV_CVN_Byte_2_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CVN_Byte_2/DE_DCDC_NV_CVN_Byte_2</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CVN_Byte_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ea9a-1efc-0000013ff3e6">
+              <SHORT-NAME>RP_IF_DCDC_NV_CVN_Byte_3_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CVN_Byte_3/DE_DCDC_NV_CVN_Byte_3</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CVN_Byte_3</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-660b-1efc-0000013ff3ec">
+              <SHORT-NAME>RP_IF_DCDC_NV_CVN_Byte_4_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CVN_Byte_4/DE_DCDC_NV_CVN_Byte_4</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CVN_Byte_4</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f7c0-1efc-0000013ff3df">
+              <SHORT-NAME>RP_IF_DCDC_NV_CVN_VLD_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_CVN_VLD/DE_DCDC_NV_CVN_VLD</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_CVN_VLD</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4bcc-1efc-000000dd39ec">
+              <SHORT-NAME>RP_IF_DW_Kilometerstand_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DW_Kilometerstand/DE_DW_Kilometerstand</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DW_Kilometerstand</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b503-1efc-00000002cd34">
+              <SHORT-NAME>RP_IF_ISO_ALL_01_Req_Data_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ISO_ALL_01_Req_Data/DE_ISO_ALL_01_Req_Data</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_ISO_ALL_01_Req_Data</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-20f0-1efc-000000f483f7">
+              <SHORT-NAME>RP_IF_MM_PropulsionSystemActive_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_MM_PropulsionSystemActive/DE_MM_PropulsionSystemActive</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_MM_PropulsionSystemActive</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c660-1efc-000000023a54">
+              <SHORT-NAME>RP_IF_OBD_Abs_Pedal_Pos_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Abs_Pedal_Pos/DE_OBD_Abs_Pedal_Pos</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Abs_Pedal_Pos</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b661-1efc-0000005906ac">
+              <SHORT-NAME>RP_IF_OBD_Aussen_Temp_gef_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Aussen_Temp_gef/DE_OBD_Aussen_Temp_gef</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Aussen_Temp_gef</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5b89-1efc-000001429350">
+              <SHORT-NAME>RP_IF_OBD_Barometric_Pressure_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Barometric_Pressure/DE_OBD_Barometric_Pressure</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Barometric_Pressure</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c717-1efc-00000001ae16">
+              <SHORT-NAME>RP_IF_OBD_Calc_Load_Val_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Calc_Load_Val/DE_OBD_Calc_Load_Val</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Calc_Load_Val</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7789-1efc-0000007dd662">
+              <SHORT-NAME>RP_IF_OBD_ClearMem_Inhibit_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_ClearMem_Inhibit/DE_OBD_ClearMem_Inhibit</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_ClearMem_Inhibit</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2624-1efc-0000000175c3">
+              <SHORT-NAME>RP_IF_OBD_Driving_Cycle_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Driving_Cycle/DE_OBD_Driving_Cycle</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Driving_Cycle</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7149-1efc-00000001ae1a">
+              <SHORT-NAME>RP_IF_OBD_Eng_Cool_Temp_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Eng_Cool_Temp/DE_OBD_Eng_Cool_Temp</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Eng_Cool_Temp</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4c04-1efc-00000140bdd8">
+              <SHORT-NAME>RP_IF_OBD_Engine_RPM_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Engine_RPM/DE_OBD_Engine_RPM</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Engine_RPM</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-87a9-1efc-0000000748da">
+              <SHORT-NAME>RP_IF_OBD_Kaltstart_Denominator_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Kaltstart_Denominator/DE_OBD_Kaltstart_Denominator</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Kaltstart_Denominator</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-04e7-1efc-00000006ab0a">
+              <SHORT-NAME>RP_IF_OBD_Minimum_Trip_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Minimum_Trip/DE_OBD_Minimum_Trip</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Minimum_Trip</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-deec-1efc-0000000190e0">
+              <SHORT-NAME>RP_IF_OBD_Normed_Trip_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Normed_Trip/DE_OBD_Normed_Trip</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Normed_Trip</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3ec2-1efc-00000131b51b">
+              <SHORT-NAME>RP_IF_OBD_NumDcyMilOnReq_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_NumDcyMilOnReq/DE_OBD_NumDcyMilOnReq</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_NumDcyMilOnReq</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c9e6-1efc-000001142791">
+              <SHORT-NAME>RP_IF_OBD_QBit_Aussen_Temp_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_QBit_Aussen_Temp/DE_OBD_QBit_Aussen_Temp</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_QBit_Aussen_Temp</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d1d5-1efc-0000000c312e">
+              <SHORT-NAME>RP_IF_OBD_Sperrung_IUMPR_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Sperrung_IUMPR/DE_OBD_Sperrung_IUMPR</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Sperrung_IUMPR</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2bdc-1efc-0000007dd2b2">
+              <SHORT-NAME>RP_IF_OBD_Sperrung_Kaltstart_Denom_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Sperrung_Kaltstart_Denom/DE_OBD_Sperrung_Kaltstart_Denom</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Sperrung_Kaltstart_Denom</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2ed0-1efc-0000011a68c2">
+              <SHORT-NAME>RP_IF_OBD_Typ_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Typ/DE_OBD_Typ</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Typ</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ed2e-1efc-0000000175c4">
+              <SHORT-NAME>RP_IF_OBD_Warm_Up_Cycle_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBD_Warm_Up_Cycle/DE_OBD_Warm_Up_Cycle</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Warm_Up_Cycle</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a386-1efc-000001745062">
+              <SHORT-NAME>RP_IF_OBDProtocol_req_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OBDProtocol_req/DE_OBDProtocol_req</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBDProtocol_req</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-22bf-1efc-000000843f5f">
+              <SHORT-NAME>RP_IF_SI_P_Mode_gueltig_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SI_P_Mode_gueltig/DE_SI_P_Mode_gueltig</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SI_P_Mode_gueltig</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2f57-1efc-000000843f63">
+              <SHORT-NAME>RP_IF_SI_P_Mode_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SI_P_Mode/DE_SI_P_Mode</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SI_P_Mode</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-36ed-1efc-0000000206c4">
+              <SHORT-NAME>RP_IF_UH_Jahr_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Jahr/DE_UH_Jahr</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Jahr</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-701b-1efc-0000000206c5">
+              <SHORT-NAME>RP_IF_UH_Minute_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Minute/DE_UH_Minute</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Minute</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-08ad-1efc-0000000206c6">
+              <SHORT-NAME>RP_IF_UH_Monat_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Monat/DE_UH_Monat</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Monat</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a842-1efc-0000000206c7">
+              <SHORT-NAME>RP_IF_UH_Sekunde_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Sekunde/DE_UH_Sekunde</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Sekunde</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0e87-1efc-0000000206c8">
+              <SHORT-NAME>RP_IF_UH_Stunde_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Stunde/DE_UH_Stunde</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Stunde</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e5b8-1efc-0000000206c9">
+              <SHORT-NAME>RP_IF_UH_Tag_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Tag/DE_UH_Tag</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Tag</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9041-1efc-00000122380c">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_01_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_01/DE_UI2Sens01_CALID_Index_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1266-1efc-0000012237a8">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_02_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_02/DE_UI2Sens01_CALID_Index_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e24d-1efc-00000122363e">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_03_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_03/DE_UI2Sens01_CALID_Index_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6f94-1efc-0000012237c5">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_04_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_04/DE_UI2Sens01_CALID_Index_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d293-1efc-0000012237c2">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_05_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_05/DE_UI2Sens01_CALID_Index_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d80c-1efc-0000012237e2">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_06_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_06/DE_UI2Sens01_CALID_Index_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f605-1efc-000001223826">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_07_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_07/DE_UI2Sens01_CALID_Index_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6182-1efc-0000012237a5">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_08_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_08/DE_UI2Sens01_CALID_Index_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-13a9-1efc-0000012237a2">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_09_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_09/DE_UI2Sens01_CALID_Index_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1065-1efc-00000117e750">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_10_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_10/DE_UI2Sens01_CALID_Index_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6bff-1efc-00000117e726">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_11_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_11/DE_UI2Sens01_CALID_Index_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b6da-1efc-00000117e747">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_12_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_12/DE_UI2Sens01_CALID_Index_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c7bf-1efc-00000117e723">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_13_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_13/DE_UI2Sens01_CALID_Index_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-be48-1efc-00000117e6e4">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_14_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_14/DE_UI2Sens01_CALID_Index_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5d5b-1efc-00000117e6f3">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_15_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_15/DE_UI2Sens01_CALID_Index_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b1ad-1efc-00000117e6ff">
+              <SHORT-NAME>RP_IF_UI2Sens01_CALID_Index_16_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CALID_Index_16/DE_UI2Sens01_CALID_Index_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CALID_Index_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b40b-1efc-00000117e714">
+              <SHORT-NAME>RP_IF_UI2Sens01_CVN_Byte_1_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CVN_Byte_1/DE_UI2Sens01_CVN_Byte_1</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CVN_Byte_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1e04-1efc-00000117e70b">
+              <SHORT-NAME>RP_IF_UI2Sens01_CVN_Byte_2_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CVN_Byte_2/DE_UI2Sens01_CVN_Byte_2</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CVN_Byte_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a1a6-1efc-00000117e720">
+              <SHORT-NAME>RP_IF_UI2Sens01_CVN_Byte_3_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CVN_Byte_3/DE_UI2Sens01_CVN_Byte_3</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CVN_Byte_3</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-dbb1-1efc-00000117e71a">
+              <SHORT-NAME>RP_IF_UI2Sens01_CVN_Byte_4_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CVN_Byte_4/DE_UI2Sens01_CVN_Byte_4</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CVN_Byte_4</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2212-1efc-000000fc7829">
+              <SHORT-NAME>RP_IF_UI2Sens01_CVN_VLD_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_CVN_VLD/DE_UI2Sens01_CVN_VLD</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_CVN_VLD</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5090-1efc-0000011b1bbe">
+              <SHORT-NAME>RP_IF_UI2Sens01_ErrMem_State_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens01_ErrMem_State/DE_UI2Sens01_ErrMem_State</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens01_ErrMem_State</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d4fe-1efc-0000012237c8">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_01_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_01/DE_UI2Sens02_CALID_Index_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6754-1efc-000001223641">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_02_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_02/DE_UI2Sens02_CALID_Index_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-311f-1efc-0000012237e5">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_03_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_03/DE_UI2Sens02_CALID_Index_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c663-1efc-000001223809">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_04_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_04/DE_UI2Sens02_CALID_Index_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-165f-1efc-000001223829">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_05_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_05/DE_UI2Sens02_CALID_Index_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-293c-1efc-0000012237ab">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_06_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_06/DE_UI2Sens02_CALID_Index_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e0b8-1efc-0000012237df">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_07_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_07/DE_UI2Sens02_CALID_Index_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ecd8-1efc-000001223806">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_08_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_08/DE_UI2Sens02_CALID_Index_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-533a-1efc-00000122380f">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_09_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_09/DE_UI2Sens02_CALID_Index_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-fd31-1efc-00000117e744">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_10_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_10/DE_UI2Sens02_CALID_Index_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bf89-1efc-00000117e702">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_11_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_11/DE_UI2Sens02_CALID_Index_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bd03-1efc-00000117e6f9">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_12_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_12/DE_UI2Sens02_CALID_Index_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-faaf-1efc-00000117e6f6">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_13_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_13/DE_UI2Sens02_CALID_Index_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bac9-1efc-00000117e6f0">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_14_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_14/DE_UI2Sens02_CALID_Index_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-cada-1efc-00000117e708">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_15_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_15/DE_UI2Sens02_CALID_Index_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-71c9-1efc-00000117e6e7">
+              <SHORT-NAME>RP_IF_UI2Sens02_CALID_Index_16_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CALID_Index_16/DE_UI2Sens02_CALID_Index_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CALID_Index_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4368-1efc-00000117e717">
+              <SHORT-NAME>RP_IF_UI2Sens02_CVN_Byte_1_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CVN_Byte_1/DE_UI2Sens02_CVN_Byte_1</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CVN_Byte_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7372-1efc-00000117e71d">
+              <SHORT-NAME>RP_IF_UI2Sens02_CVN_Byte_2_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CVN_Byte_2/DE_UI2Sens02_CVN_Byte_2</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CVN_Byte_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-995c-1efc-00000117e70e">
+              <SHORT-NAME>RP_IF_UI2Sens02_CVN_Byte_3_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CVN_Byte_3/DE_UI2Sens02_CVN_Byte_3</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CVN_Byte_3</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0406-1efc-00000117e711">
+              <SHORT-NAME>RP_IF_UI2Sens02_CVN_Byte_4_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CVN_Byte_4/DE_UI2Sens02_CVN_Byte_4</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CVN_Byte_4</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e573-1efc-000000fc782d">
+              <SHORT-NAME>RP_IF_UI2Sens02_CVN_VLD_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_CVN_VLD/DE_UI2Sens02_CVN_VLD</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_CVN_VLD</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f106-1efc-0000011b1bc3">
+              <SHORT-NAME>RP_IF_UI2Sens02_ErrMem_State_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2Sens02_ErrMem_State/DE_UI2Sens02_ErrMem_State</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2Sens02_ErrMem_State</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-eefd-1efc-0000009ff1db">
+              <SHORT-NAME>RP_IF_VDSO_Vx3d_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_VDSO_Vx3d/DE_VDSO_Vx3d</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_VDSO_Vx3d</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-8dc0-1efc-00000002cd34">
+              <SHORT-NAME>SP_IF_ISO_ALL_01_Req_Data_XIX_diagnosis_infrastructure_Hybrid_01_XIX_diagnosis_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ISO_ALL_01_Req_Data/DE_ISO_ALL_01_Req_Data</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_ISO_ALL_01_Req_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

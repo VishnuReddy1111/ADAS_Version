@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-00000171d1a5">
+          <SHORT-NAME>BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_SoC</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_1577987</SDX-REF>
+              </SDG>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-7a95-0253-00000171dc3c">
+              <SHORT-NAME>SP_IF_BMC_Datenuebernahme_Anf_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Datenuebernahme_Anf/DE_BMC_Datenuebernahme_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Datenuebernahme_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-bc0f-0253-000001720de3">
+              <SHORT-NAME>SP_IF_BMC_HV_10_BZ_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_10_BZ/DE_BMC_HV_10_BZ</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_10_BZ</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-55de-0253-000001720de1">
+              <SHORT-NAME>SP_IF_BMC_HV_10_CRC_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_10_CRC/DE_BMC_HV_10_CRC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_10_CRC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-4446-0253-000001727db8">
+              <SHORT-NAME>SP_IF_BMC_HV_11_BZ_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_11_BZ/DE_BMC_HV_11_BZ</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_11_BZ</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-c8d4-0253-000001727dbe">
+              <SHORT-NAME>SP_IF_BMC_HV_11_CRC_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_11_CRC/DE_BMC_HV_11_CRC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_11_CRC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-8d43-0253-000001727dba">
+              <SHORT-NAME>SP_IF_BMC_HV_12_BZ_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_12_BZ/DE_BMC_HV_12_BZ</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_12_BZ</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2485-0253-000001727f8c">
+              <SHORT-NAME>SP_IF_BMC_HV_12_CRC_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_12_CRC/DE_BMC_HV_12_CRC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_12_CRC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-09e7-0253-000001727dbc">
+              <SHORT-NAME>SP_IF_BMC_HV_13_BZ_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_13_BZ/DE_BMC_HV_13_BZ</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_13_BZ</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-cf51-0253-000001727f8e">
+              <SHORT-NAME>SP_IF_BMC_HV_13_CRC_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_13_CRC/DE_BMC_HV_13_CRC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_13_CRC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-6965-0253-00000171dc40">
+              <SHORT-NAME>SP_IF_BMC_Lebensdauer_Trennelemente_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Lebensdauer_Trennelemente/DE_BMC_Lebensdauer_Trennelemente</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Lebensdauer_Trennelemente</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-7140-0253-00000171dc57">
+              <SHORT-NAME>SP_IF_BMC_Sperrung_Ueberspannung_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Sperrung_Ueberspannung/DE_BMC_Sperrung_Ueberspannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Sperrung_Ueberspannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-bd29-0253-00000171dc37">
+              <SHORT-NAME>SP_IF_BMC_Sperrung_Uebertemperatur_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Sperrung_Uebertemperatur/DE_BMC_Sperrung_Uebertemperatur</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Sperrung_Uebertemperatur</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-799b-0253-00000171dc78">
+              <SHORT-NAME>SP_IF_BMC_Sperrung_Unterspannung_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Sperrung_Unterspannung/DE_BMC_Sperrung_Unterspannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Sperrung_Unterspannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-f817-0253-00000171dc85">
+              <SHORT-NAME>SP_IF_BMC_Status_HV_Spannungssensorik_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Status_HV_Spannungssensorik/DE_BMC_Status_HV_Spannungssensorik</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Status_HV_Spannungssensorik</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-0570-0253-00000171dc50">
+              <SHORT-NAME>SP_IF_BMC_Status_Trennelemente_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Status_Trennelemente/DE_BMC_Status_Trennelemente</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Status_Trennelemente</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-28ff-0253-00000171dc5c">
+              <SHORT-NAME>SP_IF_BMC_Ueberspannungszaehler_CMC01_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC01/DE_BMC_Ueberspannungszaehler_CMC01</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC01</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-110e-0253-00000171dc4c">
+              <SHORT-NAME>SP_IF_BMC_Ueberspannungszaehler_CMC02_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC02/DE_BMC_Ueberspannungszaehler_CMC02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-5b20-0253-00000171dc48">
+              <SHORT-NAME>SP_IF_BMC_Ueberspannungszaehler_CMC03_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC03/DE_BMC_Ueberspannungszaehler_CMC03</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC03</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-4e3e-0253-00000171dc44">
+              <SHORT-NAME>SP_IF_BMC_Ueberspannungszaehler_CMC04_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC04/DE_BMC_Ueberspannungszaehler_CMC04</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Ueberspannungszaehler_CMC04</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-626f-0253-00000171dc70">
+              <SHORT-NAME>SP_IF_BMC_Uebertemperaturzaehler_CMC01_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC01/DE_BMC_Uebertemperaturzaehler_CMC01</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC01</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-61df-0253-00000171dc74">
+              <SHORT-NAME>SP_IF_BMC_Uebertemperaturzaehler_CMC02_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC02/DE_BMC_Uebertemperaturzaehler_CMC02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-49bb-0253-00000171dc7d">
+              <SHORT-NAME>SP_IF_BMC_Uebertemperaturzaehler_CMC03_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC03/DE_BMC_Uebertemperaturzaehler_CMC03</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC03</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-6b4b-0253-00000171dc81">
+              <SHORT-NAME>SP_IF_BMC_Uebertemperaturzaehler_CMC04_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC04/DE_BMC_Uebertemperaturzaehler_CMC04</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Uebertemperaturzaehler_CMC04</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-661e-0253-00000171dc60">
+              <SHORT-NAME>SP_IF_BMC_Unterspannungszaehler_CMC01_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC01/DE_BMC_Unterspannungszaehler_CMC01</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC01</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-f089-0253-00000171dc64">
+              <SHORT-NAME>SP_IF_BMC_Unterspannungszaehler_CMC02_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC02/DE_BMC_Unterspannungszaehler_CMC02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-351a-0253-00000171dc68">
+              <SHORT-NAME>SP_IF_BMC_Unterspannungszaehler_CMC03_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC03/DE_BMC_Unterspannungszaehler_CMC03</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC03</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ff8e-0253-00000171dc6c">
+              <SHORT-NAME>SP_IF_BMC_Unterspannungszaehler_CMC04_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC04/DE_BMC_Unterspannungszaehler_CMC04</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Unterspannungszaehler_CMC04</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="13C3A4AE-59E1-4A6E-A156-1BAC88745EF0">
+              <SHORT-NAME>RP_IF_SG_BJB_10_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_BJB_10/DE_SG_BJB_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_BJB_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="8F2B742A-FAC4-41A1-AED1-B71BAA7DA555">
+              <SHORT-NAME>RP_IF_SG_BJB_11_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_BJB_11/DE_SG_BJB_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_BJB_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="95D286CD-B8B3-4C1C-9188-88EF9717BE84">
+              <SHORT-NAME>RP_IF_SG_BJB_12_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_BJB_12/DE_SG_BJB_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_BJB_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="B772E8D6-F810-4EEF-9D34-CC0F06850DE3">
+              <SHORT-NAME>RP_IF_SG_BJB_13_XIX_BMC_SafetyDataStorage_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_BJB_13/DE_SG_BJB_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_BJB_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
