@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="95521659-bb03-4fed-96da-6446e16171f4">
+          <SHORT-NAME>vMemAccM</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/MICROSAR/vMemAccM</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/vMemAccM_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="d490cbd0-2481-4297-b6c8-74c3d9d2cd18">
+              <SHORT-NAME>vMemAccMAddressArea_B</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaId</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaPriority</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMReadRequestLength</DEFINITION-REF>
+                  <VALUE>64</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="9a031b4f-3a26-4f48-bea8-6626ff2d1213">
+                  <SHORT-NAME>PF1_PF3_PS0_S0_S63</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2150629376</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2687500288</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF1_PF3_PS0_S0_S63</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="195dcc27-5c6f-4b49-861f-72d7c5d10519">
+                  <SHORT-NAME>PF1_PF3_PS1_S64_S127</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2151677952</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2688548864</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF1_PF3_PS1_S64_S127</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c50778ea-8ce7-488e-9837-c280899c9b99">
+                  <SHORT-NAME>PF1_PF3_PS2_S128_S191</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2152726528</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2689597440</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF1_PF3_PS2_S128_S191</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="a6583c83-c78a-418d-b658-f2dc8f0bcb8e">
+              <SHORT-NAME>Blocking</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaId</DEFINITION-REF>
+                  <VALUE>2</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaPriority</DEFINITION-REF>
+                  <VALUE>3</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMReadRequestLength</DEFINITION-REF>
+                  <VALUE>64</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="82aea46c-bb5d-433e-8fa7-a9f147f27037">
+                  <SHORT-NAME>PF2_PF0_PS0_S0_S63</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2150629376</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2690646016</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF2_PF0_PS0_S0_S63</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="109f7d8f-7043-4767-82ca-12c5532f3615">
+                  <SHORT-NAME>PF2_PF0_PS1_S64_S127</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2151677952</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2691694592</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF2_PF0_PS1_S64_S127</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="eb2ffe1d-5e3d-4aed-9af3-d1e0f5282578">
+                  <SHORT-NAME>PF2_PF0_PS2_S128_S191</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2152726528</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2692743168</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF2_PF0_PS2_S128_S191</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="a8517026-899b-4f4b-a804-b594c1a5cd5f">
+              <SHORT-NAME>vMemAccMGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMGeneral/vMemAccMVersionInfoApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMGeneral/vMemAccMMainFunctionPeriod</DEFINITION-REF>
+                  <VALUE>0.005</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMGeneral/vMemAccMMainFunctionTriggering</DEFINITION-REF>
+                  <VALUE>FixedCycleTime</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMGeneral/vMemAccMSafeBswChecks</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMGeneral/vMemAccMDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMGeneral/vMemAccMCompareApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="e804765b-f80f-4620-9851-c4a7450eedc1">
+              <SHORT-NAME>vMemAccMAdressAreaBackup</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaId</DEFINITION-REF>
+                  <VALUE>3</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaPriority</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMReadRequestLength</DEFINITION-REF>
+                  <VALUE>64</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="d57662b8-3f2a-4a04-a911-9ce73481a4f2">
+                  <SHORT-NAME>PF3_PF1_PS0_S0_S63</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2150629376</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2693791744</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF3_PF1_PS0_S0_S63</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a2afe69b-9024-4337-bd5c-a49fe4f38fc9">
+                  <SHORT-NAME>PF3_PF1_PS1_S64_S127</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2151677952</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2694840320</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF3_PF1_PS1_S64_S127</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="910d58db-fe66-49fa-a30e-f8ab2369d5b4">
+                  <SHORT-NAME>PF3_PF1_PS2_S128_S191</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>2152726528</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>2695888896</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Tc3xxInf01_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF3_PF1_PS2_S128_S191</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="78e277cc-2a49-430b-b760-8911acee5c06">
+              <SHORT-NAME>vMemAccMAddressArea_A</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMAddressAreaPriority</DEFINITION-REF>
+                  <VALUE>2</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMReadRequestLength</DEFINITION-REF>
+                  <VALUE>64</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="c0bd3902-78c9-4933-a75e-d2573ac44e04">
+                  <SHORT-NAME>vMemAccMSubAddressAreaConfiguration</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMNumberOfSectors</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMVirtualStartAddress</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMPhysicalStartAddress</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMvMemFuncPtrTableSymbol</DEFINITION-REF>
+                      <VALUE>vMem_30_Blocking_FunctionPointerTable</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseEraseBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMUseWriteBurst</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMemAccM/vMemAccMAddressAreaConfiguration/vMemAccMSubAddressAreaConfiguration/vMemAccMSectorRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem_30_Blocking/vMemBlocking_InstFee/vMemSectorList/vMemSector_BlockFee</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

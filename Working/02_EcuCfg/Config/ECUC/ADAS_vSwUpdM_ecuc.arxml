@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="6ccdb76f-d622-41f6-add6-9676e5681826">
+          <SHORT-NAME>vSwUpdM</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/MICROSAR/vSwUpdM</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/vSwUpdM_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="2e84876a-eba4-4a92-949f-212cf4da78d3">
+              <SHORT-NAME>vSwUpdMDataProcessing</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMMaxInputStreamSize</DEFINITION-REF>
+                  <VALUE>1024</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDefaultProcessingSegmentation</DEFINITION-REF>
+                  <VALUE>256</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMRemoteProcessingSegmentation</DEFINITION-REF>
+                  <VALUE>256</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="c579082e-5031-4dae-be12-779f4182e828">
+                  <SHORT-NAME>vSwUpdMDataProcess_CRC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessId</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessType</DEFINITION-REF>
+                      <VALUE>VERIFY_MODULE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessPipeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/CRCPipe</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessSubScope</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/SegmentListWritten</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="d108efdf-a359-4e27-831c-9099e84df3e1">
+                      <SHORT-NAME>vSwUpdMInternalDataOutput</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/OutputResult</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/CRCPipe/vStreamProcAccessPoints/vStreamProcExitPoint_Result</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="cf8f8337-2660-4f7e-9373-bb25084932ec">
+                      <SHORT-NAME>vSwUpdMInternalDataInput_Entities</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputEntities</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/CRCPipe/vStreamProcAccessPoints/vStreamProcEntryPoint_Entities</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="cc662c4c-2ecb-417f-872f-d7a1dfaf3ae5">
+                      <SHORT-NAME>vSwUpdMInternalDataInput_Range</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputRange</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/CRCPipe/vStreamProcAccessPoints/vStreamProcEntryPoint_Range</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="2347b542-9065-44f9-908c-19f1056ec84d">
+                      <SHORT-NAME>vSwUpdMExternalDataInput</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalDataInput/vSwUpdMExternalDataInputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalDataInput/vSwUpdMExternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/CRCPipe/vStreamProcAccessPoints/vStreamProcEntryPoint_CRC</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="f4a98530-2b7a-4885-9293-b07a92a8873b">
+                  <SHORT-NAME>CopyModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessType</DEFINITION-REF>
+                      <VALUE>NONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessPipeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleCopyPipe</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessSubScope</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/SegmentListSyncCopy</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="065feff5-d61a-4136-bad8-28a6226d77aa">
+                      <SHORT-NAME>CopyInputEntitiesSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputEntitiesSource</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleCopyPipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCopy_SourceEntities_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="be03a091-44c1-4e5c-8f36-e2424cebfe09">
+                      <SHORT-NAME>CopyInputEntitiesTarget</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputEntities</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleCopyPipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCopy_TargetEntities_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="a46885eb-1737-47c2-8258-d69e6ec34e47">
+                      <SHORT-NAME>CopyInputRange</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputRange</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleCopyPipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCopy_Range_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="467803ed-a89a-42b7-a16c-18e801723453">
+                      <SHORT-NAME>CopyOutputResult</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/OutputResult</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleCopyPipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCopy_Result_Exit</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="8a23f5f0-76fe-474d-8844-276e6633df3d">
+                  <SHORT-NAME>CompareModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessType</DEFINITION-REF>
+                      <VALUE>NONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessPipeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleComparePipe</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessSubScope</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/SegmentListSyncCompare</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="279569fb-3c28-4c27-b9e6-97f217814245">
+                      <SHORT-NAME>CompareInputRange</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputRange</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleComparePipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCompare_Range_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="1bb8a350-8552-48ea-bc0d-03d7bc996cdd">
+                      <SHORT-NAME>CompareInputEntitesSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputEntitiesSource</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleComparePipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCompare_SourceEntities_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="1da987b1-0dd4-4ad7-b87c-86b5920c0f1a">
+                      <SHORT-NAME>CompareInputEntitesTarget</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputEntities</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleComparePipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCompare_TargetEntities_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="59fbad12-d6e7-4b4c-9e4e-a4730a17c3a4">
+                      <SHORT-NAME>CompareOutputResult</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/OutputResult</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMSyncModuleComparePipe/vStreamProcAccessPoints/vSwUpdMSyncModuleCompare_Result_Exit</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="37066fb2-5ea1-4b33-ae07-63bb33f406e1">
+                  <SHORT-NAME>StreamData</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessType</DEFINITION-REF>
+                      <VALUE>STREAM_DATA_PROCESSING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMDataProcessPipeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="a347f467-f92b-4dfd-b5b1-d401a741a189">
+                      <SHORT-NAME>StreamDataInputData</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcAccessPoints/vSwUpdMStreamData_Data_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputData</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="fff75bb7-00fc-4c1f-9925-8d97bd527ad2">
+                      <SHORT-NAME>StreamDataInputEntities</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcAccessPoints/vSwUpdMStreamData_Entities_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputEntities</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="874c1a57-6c91-449b-9676-36baeae64222">
+                      <SHORT-NAME>StreamDataInputRange</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcAccessPoints/vSwUpdMStreamData_Range_Entry</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataInput/vSwUpdMInternalDataInputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/InputRange</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="9e2ab216-d357-4b35-bb0a-daff39449e65">
+                      <SHORT-NAME>StreamDataResultingRanges</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcAccessPoints/vSwUpdMStreamData_ResultingRanges_Exit</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/ResultingRanges</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="b429e1dd-5c1e-415c-afa2-af301734a514">
+                      <SHORT-NAME>StreamDataOutputResult</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcAccessPoints/vSwUpdMStreamData_Result_Exit</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalDataOutput/vSwUpdMInternalDataOutputType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/OutputResult</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="4a4e1318-77fd-4719-8b13-4c854bd6a7fc">
+                      <SHORT-NAME>vSwUpdMModeUnprocessed</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalMode</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalMode/vSwUpdMExternalModeId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalMode/vSwUpdMExternalModeResumeOffset</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalMode/vSwUpdMExternalModeExplicitRestartHandlingRequired</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMExternalMode/vSwUpdMExternalModeRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcStates/vSwUpdMStreamDataPipe_ProcMode_Unprocessed</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="a11c6ae0-b3cf-4cdd-bc9a-d546124d1650">
+                      <SHORT-NAME>vSwUpdMModeLocal</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode/vSwUpdMInternalModeId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode/vSwUpdMInternalModeRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcStates/vSwUpdMStreamDataPipe_ProcMode_Local</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode/vSwUpdMInternalModeType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/Local</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="cddccb3f-7008-4adf-9e95-c2c6acec832b">
+                      <SHORT-NAME>vSwUpdMModeRemote</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode/vSwUpdMInternalModeId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode/vSwUpdMInternalModeRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vSwUpdMStreamDataPipe/vStreamProcStates/vSwUpdMStreamDataPipe_ProcMode_Remote</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMDataProcessing/vSwUpdMDataProcess/vSwUpdMInternalMode/vSwUpdMInternalModeType</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/Remote</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="b9856dec-ebff-4d1d-b59b-f7250f8b5aea">
+              <SHORT-NAME>vSwUpdMBookkeeper</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="2cc62d46-c365-4657-8db6-6ad159a1915b">
+                  <SHORT-NAME>vSwUpdMPersistor</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="67b388c1-eb7d-4022-982b-4eacb6cabb49">
+                      <SHORT-NAME>vSwUpdMPersistorClient</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient</DEFINITION-REF>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMAllPersistorServerGroupRemote</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMGlobalOwnerGroup</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMAllPersistorServerGroupLocal</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="1b5b07af-a679-4b22-8946-28f6feb8b0dc">
+                          <SHORT-NAME>vSwUpdMPartition</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMPartition</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMPartition/vSwUpdMCalcResult</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="77c3c24c-cc13-46ec-b5a1-e3e79014467a">
+                              <SHORT-NAME>vSwUpdMPartitionStateGroup</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMPartition/vSwUpdMPartitionStateGroup</DEFINITION-REF>
+                              <REFERENCE-VALUES>
+                                <ECUC-REFERENCE-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMPartition/vSwUpdMPartitionStateGroup/vSwUpdMPartitionMaskGroup</DEFINITION-REF>
+                                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMaskAllStates</VALUE-REF>
+                                </ECUC-REFERENCE-VALUE>
+                                <ECUC-REFERENCE-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorClient/vSwUpdMPartition/vSwUpdMPartitionStateGroup/vSwUpdMCalcResult</DEFINITION-REF>
+                                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                                </ECUC-REFERENCE-VALUE>
+                              </REFERENCE-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="9aff28cf-1942-425d-8182-43ed1d44baa8">
+                      <SHORT-NAME>vSwUpdMPartitionStateMaskAllStates</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMask</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMask/vSwUpdMPartitionStateMaskId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMask/vSwUpdMStateMaskMember</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionStateActive</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMask/vSwUpdMStateMaskMember</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionStateInactive</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMask/vSwUpdMStateMaskMember</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionStateBackupTarget</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMask/vSwUpdMStateMaskMember</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionStateBackupSource</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMask/vSwUpdMStateMaskMember</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionStateActivationPending</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="2980a1b0-dfef-4519-8f6a-1d3fdf29f009">
+                      <SHORT-NAME>vSwUpdMPersistorServer</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorServer</DEFINITION-REF>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPersistorServer/vSwUpdMGlobalClientGroup</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d5f1a7b5-737c-4744-844b-5f5b80ef3e03">
+              <SHORT-NAME>vSwUpdMGrid</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="8d19d7c6-6e70-4e50-9537-dbbe407c2c13">
+                  <SHORT-NAME>vSwUpdMNodeLocalInstance</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode/vSwUpdMNodeActsAsMaster</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode/vSwUpdMNodeId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="e17d39b7-3523-40a8-a76e-3f4b466c1242">
+                      <SHORT-NAME>vSwUpdMNodeChannelDefinition</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode/vSwUpdMNodeChannelDefinition</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="7997025a-c4df-41da-b04a-5e5d8d4a7747">
+                          <SHORT-NAME>vSwUpdMNodeMainChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode/vSwUpdMNodeChannelDefinition/vSwUpdMNodeMainChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="0a213948-34b2-44aa-b525-0c35855b3710">
+                          <SHORT-NAME>vSwUpdMNodeSuspendChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode/vSwUpdMNodeChannelDefinition/vSwUpdMNodeSuspendChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="d5b7d93b-7788-48d6-bc50-01fdb4da764c">
+                          <SHORT-NAME>vSwUpdMNodeMaintenanceChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode/vSwUpdMNodeChannelDefinition/vSwUpdMNodeMaintenanceChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="66ba17f6-7eed-441b-939a-b647bc14f949">
+                          <SHORT-NAME>vSwUpdMNodeBookkeeperChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNode/vSwUpdMNodeChannelDefinition/vSwUpdMNodeBookkeeperChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="cb004549-a121-4b40-953d-f85c67e8bd44">
+                  <SHORT-NAME>vSwUpdMNodeGroupLocalInstance</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup/vSwUpdMNodeGroupId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup/vSwUpdMNodeGroupMember</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeLocalInstance</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="56f4fda4-9b25-48f1-9d42-9a7e7aa9e2ac">
+                      <SHORT-NAME>vSwUpdMNodeGroupChannelDefinition</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup/vSwUpdMNodeGroupChannelDefinition</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="6aff74fa-8313-4adf-8029-2ee2726d8a28">
+                          <SHORT-NAME>vSwUpdMNodeGroupMainChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup/vSwUpdMNodeGroupChannelDefinition/vSwUpdMNodeGroupMainChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="e4c6f736-d9c9-4871-b85e-38fd7d8e0119">
+                          <SHORT-NAME>vSwUpdMNodeGroupSuspendChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup/vSwUpdMNodeGroupChannelDefinition/vSwUpdMNodeGroupSuspendChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="892ee628-ee96-4fef-a2fa-93dc096c2ed7">
+                          <SHORT-NAME>vSwUpdMNodeGroupMaintenanceChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup/vSwUpdMNodeGroupChannelDefinition/vSwUpdMNodeGroupMaintenanceChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="8d5075d9-9496-41e0-9b7c-3bdfef022293">
+                          <SHORT-NAME>vSwUpdMNodeGroupBookkeeperChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroup/vSwUpdMNodeGroupChannelDefinition/vSwUpdMNodeGroupBookkeeperChannel</DEFINITION-REF>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="4be937f1-16fa-49bf-9777-8a531374a9d3">
+              <SHORT-NAME>vSwUpdMGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMDynamicNumberOfModules</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMDynamicNumberOfPartitions</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMDynamicNumberOfRegions</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMVersionInfoApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMSafeBswChecks</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMMainFunctionPeriod</DEFINITION-REF>
+                  <VALUE>0.005</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMDynamicNumberOfSegments</DEFINITION-REF>
+                  <VALUE>16</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMUpperLayer</DEFINITION-REF>
+                  <VALUE>VFOTAH</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMFillByte</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMPipelinedProgramming</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMLocalNode</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeLocalInstance</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMGeneral/vSwUpdMBroadcastGroup</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="ae3fb072-e9a7-4b80-9b84-21a4fe1f44cd">
+              <SHORT-NAME>vSwUpdMLayout</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="a48f2164-9dae-4f41-bf4a-e85b114f1786">
+                  <SHORT-NAME>Partition_B</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPartitionId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPartitionHandle</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMAddressAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMemAccM/vMemAccMAddressArea_B</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="23e533dd-7edc-4e69-876c-c36f94417a1a">
+                      <SHORT-NAME>vSwUpdMCheckpointAddress</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMCheckpointAddress</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMCheckpointAddress/vSwUpdMCheckpoint</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="0a1c31c1-efde-44cd-b45a-a7198a27f3b1">
+                      <SHORT-NAME>vSwUpdMPersistorServer</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer</DEFINITION-REF>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer/vSwUpdMCalcResult</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="0acb2311-ff0b-4791-a500-3ee89fdc4495">
+                          <SHORT-NAME>vSwUpdMPartitionStateGroup</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer/vSwUpdMPartitionStateGroup</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer/vSwUpdMPartitionStateGroup/vSwUpdMPartitionMaskGroup</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMaskAllStates</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer/vSwUpdMPartitionStateGroup/vSwUpdMCalcResult</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1d05c58e-0e50-4ded-938f-1da96cac8394">
+                  <SHORT-NAME>vSwUpdMRegion_LB0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMStartAddress</DEFINITION-REF>
+                      <VALUE>65536</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMLength</DEFINITION-REF>
+                      <VALUE>8192</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMRegionId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMModuleRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMLayout/vSwUpdMModule_LB0</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMRegionOwners</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="2dbd10a2-3a5f-4f71-afd1-7714e5ae2f8f">
+                  <SHORT-NAME>vSwUpdMRegion_LB1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMStartAddress</DEFINITION-REF>
+                      <VALUE>131072</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMLength</DEFINITION-REF>
+                      <VALUE>8192</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMRegionId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMModuleRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMLayout/vSwUpdMModule_LB1</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMRegion/vSwUpdMRegionOwners</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="243f0b69-7b89-44f6-ba7f-f58890e313ab">
+                  <SHORT-NAME>vSwUpdMModule_LB1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMMaxProgAttempts</DEFINITION-REF>
+                      <VALUE>1000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMMetaDataAddress</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMMandatory</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMModuleId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMModuleHandle</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMPartitionGroupRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMLayout/vSwUpdMPartitionGroup_Swap</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMModuleOwners</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="62160c20-356e-4561-bc3b-ea7af2dc1bee">
+                  <SHORT-NAME>vSwUpdMPartitionGroup_Swap</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartitionGroup</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartitionGroup/vSwUpdMPartitionRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMLayout/Partition_A</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartitionGroup/vSwUpdMPartitionRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMLayout/Partition_B</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="abbebc19-a5cf-4d6c-9a58-b8c9c8151061">
+                  <SHORT-NAME>vSwUpdMModule_LB0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMMaxProgAttempts</DEFINITION-REF>
+                      <VALUE>1000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMMetaDataAddress</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMMandatory</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMModuleId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMModuleHandle</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMPartitionGroupRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMLayout/vSwUpdMPartitionGroup_Swap</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMModule/vSwUpdMModuleOwners</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a232bb98-a373-4e81-9ec5-c500913cde85">
+                  <SHORT-NAME>Partition_A</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPartitionId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPartitionHandle</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMAddressAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMemAccM/vMemAccMAddressArea_A</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="629378d5-c230-4a1f-b826-f252d122b922">
+                      <SHORT-NAME>vSwUpdMCheckpointAddress</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMCheckpointAddress</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMCheckpointAddress/vSwUpdMCheckpoint</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="f5d88372-8bc4-4b2f-862d-b4f9a027602e">
+                      <SHORT-NAME>vSwUpdMPersistorServer</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="cda3e38a-a528-4fc3-9efa-1e249975b422">
+                          <SHORT-NAME>vSwUpdMPartitionStateGroup</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer/vSwUpdMPartitionStateGroup</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer/vSwUpdMPartitionStateGroup/vSwUpdMPartitionMaskGroup</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMBookkeeper/vSwUpdMPersistor/vSwUpdMPartitionStateMaskAllStates</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMLayout/vSwUpdMPartition/vSwUpdMPersistorServer/vSwUpdMPartitionStateGroup/vSwUpdMCalcResult</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSwUpdM/vSwUpdMGrid/vSwUpdMNodeGroupLocalInstance</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="6a39f815-2f50-49f8-9bf3-e3f103ca62e8">
+              <SHORT-NAME>vSwUpdMParameterization</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="7a94a0bd-1575-490f-af46-f54250be264c">
+                  <SHORT-NAME>Start</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>16</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1c23d0e8-43f0-4a24-a55b-aa407005c560">
+                  <SHORT-NAME>Shutdown</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>17</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="4f2c11e8-96c9-4430-aa8d-4ce3b4746e6c">
+                  <SHORT-NAME>Abort</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>18</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="db0a1c7f-0d48-4c6a-8192-c1968c2dc3f3">
+                  <SHORT-NAME>Suspend</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>19</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d195a9ca-ac4a-4f89-be26-553ee7abd151">
+                  <SHORT-NAME>Resume</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>20</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1da52ef7-f2a8-4944-a75d-3741b3134a1c">
+                  <SHORT-NAME>OpenPartition</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>32</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="350dc611-a049-40bd-b08a-75627027593a">
+                  <SHORT-NAME>ValidatePartition</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>33</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="12b42441-df55-457f-9345-770526caf796">
+                  <SHORT-NAME>InvalidatePartition</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>34</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="9387b379-2c13-4f28-a125-0e41d032ac11">
+                  <SHORT-NAME>SyncPartition</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>35</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e79e812f-af95-4fae-a016-22bd5d6c00cc">
+                  <SHORT-NAME>CheckPartitionConsistency</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>36</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a7ce79a5-c207-49b2-b05a-132e1bb80e34">
+                  <SHORT-NAME>SwapActivePartition</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>37</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="761ef019-e659-41bc-b86b-1fdebb382bd2">
+                  <SHORT-NAME>OpenModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>48</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="73e497b2-a558-4cde-88e1-54db10922804">
+                  <SHORT-NAME>CloseModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>49</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="be5f8842-e2f6-4921-9f38-c13b37596e34">
+                  <SHORT-NAME>EraseModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>50</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="eb98e3fd-087a-4144-a748-6cbb5074071b">
+                  <SHORT-NAME>SyncModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>51</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="7b4b23b0-9164-4a1f-86de-9e0b2676ffe9">
+                  <SHORT-NAME>ValidateModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>52</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="894e9a07-e26a-44f6-a1ea-a9748d907a4d">
+                  <SHORT-NAME>InvalidateModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>53</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="98fb467d-54ee-4a26-8390-b9686f52f296">
+                  <SHORT-NAME>FinalizeModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>61</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="fddb8435-d548-4eb3-8c97-a7eebd73bbbf">
+                  <SHORT-NAME>EraseRegion</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>80</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="923d49c8-d475-45d6-b7e6-16a4923837ac">
+                  <SHORT-NAME>OpenSegment</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>96</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="19bf0ec9-a3a1-42f8-9023-f692131f6371">
+                  <SHORT-NAME>CloseSegment</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>97</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="79fd664d-2bc9-49da-9275-a16f089d9082">
+                  <SHORT-NAME>FinalizeSegment</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>106</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a91bf074-6dde-4ee4-b57d-a47f1980187d">
+                  <SHORT-NAME>EraseRange</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>112</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="474184dd-f48f-4a06-93af-c851198b58cc">
+                  <SHORT-NAME>ReadRange</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>113</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="bebb0460-cc83-4103-9561-4c6772c42982">
+                  <SHORT-NAME>WriteRange</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>114</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="5c18b03c-888d-4703-8a63-bb14b1f22343">
+                  <SHORT-NAME>StartStream</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>128</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a70e7c7c-b2d3-44c7-ab50-88878d7de4aa">
+                  <SHORT-NAME>ProcessStreamData</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>129</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3d1befee-b65c-4fec-a27d-69f994e0d1d9">
+                  <SHORT-NAME>EndStream</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>130</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d0ada484-958a-4e10-ac5e-0d76f206d975">
+                  <SHORT-NAME>SwitchStreamContext</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>132</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="997df152-b23b-4e84-81b2-04966729606a">
+                  <SHORT-NAME>ProcessModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>65</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="bdf07b8e-2449-4534-a0cf-f4feb13301a1">
+                  <SHORT-NAME>VerifyModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceHookType</DEFINITION-REF>
+                      <VALUE>PRE_AND_POST</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMService/vSwUpdMServiceId</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e5072c8e-5d66-409c-83de-676b1d6a5d91">
+                  <SHORT-NAME>InputData</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMDataInputTypeId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/uint8</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a59d0b19-b02c-4ec3-96f3-8c0b22299e6b">
+                  <SHORT-NAME>InputEntities</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMDataInputTypeId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/vSwUpdM_EntityIdsType</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="107e2763-8f99-4546-9089-cfeaf80d8727">
+                  <SHORT-NAME>InputRange</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMDataInputTypeId</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/vSwUpdM_RangeInfoType</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="19ba0a3e-fa26-470f-b707-d0f37df56253">
+                  <SHORT-NAME>OutputResult</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType/vSwUpdMDataOutputTypeId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/Std_ReturnType</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="14383065-80da-4dc2-b7f1-1a6d8bee8ef1">
+                  <SHORT-NAME>ResultingRanges</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType/vSwUpdMDataOutputTypeId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/vSwUpdM_RangeInfoType</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="0ab6a473-d29b-4195-9ae0-ffbfecffd4c7">
+                  <SHORT-NAME>Local</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMModeType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMModeType/vSwUpdMModeTypeId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="7f3a0389-2def-4568-a5aa-4d5675d9d989">
+                  <SHORT-NAME>LocalAndRemote</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMModeType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMModeType/vSwUpdMModeTypeId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="dc0a7634-29b4-4f97-b564-d8abb4320adb">
+                  <SHORT-NAME>Remote</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMModeType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMModeType/vSwUpdMModeTypeId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="058b57fb-e6da-48a1-ab11-a54925140db8">
+                  <SHORT-NAME>InputEntitiesSource</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMDataInputTypeId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/vSwUpdM_EntityIdsType</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="01c6b699-484d-40e9-8eb4-36bf2a0d03e3">
+                  <SHORT-NAME>InputOperation</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMDataInputTypeId</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataInputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/vSwUpdM_ProcNodeOperationType</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="4feba17d-3721-469c-9e69-bf8b28acedab">
+                  <SHORT-NAME>OutputOperation</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType/vSwUpdMDataOutputTypeId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMDataOutputType/vSwUpdMStreamProcDataTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vStreamProc/vStreamProcDefinitions/vSwUpdM_ProcNodeOperationType</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="869f3149-a335-4f4a-8b54-46969fe989ae">
+                  <SHORT-NAME>SegmentListWritten</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope/vSwUpdMSubScopeId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a5012d0a-e381-4142-a620-4c4b48c00049">
+                  <SHORT-NAME>SegmentListSyncCopy</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope/vSwUpdMSubScopeId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1d9a7165-8447-44f4-af46-000f81a1e21f">
+                  <SHORT-NAME>SegmentListSyncCompare</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope/vSwUpdMSubScopeId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="f93c64f9-6f01-40ba-ba73-1c9ab2ad3127">
+                  <SHORT-NAME>SegmentListFullModule</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMSubScope/vSwUpdMSubScopeId</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b9a82f6c-582e-43ad-bfa6-402ae97d8a74">
+                  <SHORT-NAME>vSwUpdMPartitionStateActive</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMBitPosition</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMPartitionStateId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c99c9ac8-ef72-4d67-9b5f-27c8e204e948">
+                  <SHORT-NAME>vSwUpdMPartitionStateInactive</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMBitPosition</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMPartitionStateId</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3fdeae66-df35-4551-8ed2-924f50146f5e">
+                  <SHORT-NAME>vSwUpdMPartitionStateBackupTarget</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMBitPosition</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMPartitionStateId</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="40d0bb21-e84b-4c91-bd68-7aa17ffd9eee">
+                  <SHORT-NAME>vSwUpdMPartitionStateBackupSource</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMBitPosition</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMPartitionStateId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e98e9280-8f1f-4c27-8e47-0f3634f7e48f">
+                  <SHORT-NAME>vSwUpdMPartitionStateActivationPending</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMBitPosition</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vSwUpdM/vSwUpdMParameterization/vSwUpdMPartitionState/vSwUpdMPartitionStateId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

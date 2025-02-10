@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="5C9130D4-C509-417B-9001-2CFDB1BEA2BA">
+      <SHORT-NAME>VAG</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7EBEDF2C-7CA4-471C-8D7B-408BDFDDAB1D">
+          <SHORT-NAME>Services</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="E66366D3-7879-40F4-B811-FD7AB9044FDF">
+              <SHORT-NAME>BAP</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="3F676032-244B-47CE-9AB3-A23E38A90DC7">
+                  <SHORT-NAME>ctASG_LSG1</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="7E5D7167-481C-47F3-A713-427D25ECC3E7">
+                      <SHORT-NAME>BapGet_TestASG</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapGetState/State</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapGetState</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="440A1475-B2F8-42D2-8EE6-D2A6D4EA5B46">
+                      <SHORT-NAME>Bap_Enable_TestASG</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/VAG/Services/BAP/Bap_TestASG/BapEnable</DATA-ELEMENT-REF>
+                          <INIT-VALUE>
+                            <CONSTANT-REFERENCE>
+                              <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/VAG/Services/BAP/C_Bool_FALSE</CONSTANT-REF>
+                            </CONSTANT-REFERENCE>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/VAG/Services/BAP/Bap_TestASG</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="FCC0A586-A515-47D8-BD67-4E0E6ED75F94">
+                      <SHORT-NAME>BapInd_TestASG_GetAll</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndVoid/BAP_IndVoid</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndVoid/BAP_IndError</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndVoid/BAP_Ack</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapIndVoid</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="8680DEA8-F899-4A61-A598-C68609E54CDD">
+                      <SHORT-NAME>BapReqASG_TestASG_GetAll_GetAll</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqVoid</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="E970FE0B-6827-496C-B87D-09C1C9B0EEBB">
+                      <SHORT-NAME>BapInd_TestASG_BAPConfig</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs6/BAP_IndBs</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs6/BAP_IndError</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs6/BAP_Ack</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapIndBs6</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="A28158A2-7BCA-4143-A577-4370BBF500E1">
+                      <SHORT-NAME>BapReqASG_TestASG_BAPConfig_Get</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqVoid</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="A396C69E-D2D2-421C-B7C3-164A50FD4502">
+                      <SHORT-NAME>BapInd_TestASG_FunctionList</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs8/BAP_IndBs</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs8/BAP_IndError</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs8/BAP_Ack</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapIndBs8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="204DF46A-1500-4AAA-8B2F-84C90AB8E6AD">
+                      <SHORT-NAME>BapReqASG_TestASG_FunctionList_Get</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqVoid</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="5E0C8351-6E02-4B37-AABB-2E4E0FDEDC17">
+                      <SHORT-NAME>BapInd_TestASG_Heartbeat</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndU8</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndError</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_Ack</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapIndU8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="075132E9-2A91-4CBC-9800-F326F0ABC251">
+                      <SHORT-NAME>BapReqASG_TestASG_Heartbeat_Get</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqVoid</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="A77F4715-F4F4-49BB-983F-632FEF1C956E">
+                      <SHORT-NAME>BapInd_TestASG_Property</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndU8</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndError</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_Ack</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapIndU8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="DD4CAD1E-FC46-495C-A8BD-4FC0682A9FD8">
+                      <SHORT-NAME>BapReqASG_TestASG_Property_SetGet</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqU8/BAP_ReqU8</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqU8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="F11645E1-C045-491D-B4EF-1EE61CE965B1">
+                      <SHORT-NAME>BapReqASG_TestASG_Property_Ack</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqU8/BAP_ReqU8</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqU8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="4DEABE3D-9BF4-4FFF-835E-7501EAAE9239">
+                      <SHORT-NAME>BapInd_TestASG_Method</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU16/BAP_IndU16</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU16/BAP_IndError</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU16/BAP_Ack</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapIndU16</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="D0E236A0-5388-4816-93BC-E2558815AF34">
+                      <SHORT-NAME>BapReqASG_TestASG_Method_AbortResult</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoidMethodAbort/BAP_ReqVoid</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqVoidMethodAbort</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="2E1E42A1-6F9B-4832-A50B-74E9C96E1E65">
+                      <SHORT-NAME>BapReqASG_TestASG_Method_StartResult</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqU16/BAP_ReqU16</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqU16</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="4B69E131-3593-4818-A580-B5E2432A12AF">
+                      <SHORT-NAME>BapInd_TestASG_Array</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs250/BAP_IndBs</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs250/BAP_IndError</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs250/BAP_Ack</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapIndBs250</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="D32D574A-ACA8-4DDD-A2D6-B2A2C7655F86">
+                      <SHORT-NAME>BapReqASG_TestASG_Array_Get</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqBs1/BAP_ReqBs</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BapReqBs1</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="DBF3BC6F-0B9A-4F5D-A40A-F1A19E19B245">
+                      <SHORT-NAME>IB_ctASG_LSG1</SHORT-NAME>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="62748591-2B37-4601-875D-6E39AF2DD760">
+                          <SHORT-NAME>TE_RE_TestASG_BapBufferInit</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BapBufferInit</START-ON-EVENT-REF>
+                          <PERIOD>0</PERIOD>
+                        </TIMING-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="061376B1-5EBF-4DE7-9B7F-66E0373260D3">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndVoid_GetAll_BapInd_TestASG_GetAll</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndVoid_GetAll</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_GetAll</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndVoid/BAP_IndVoid</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="7E80C114-9E3B-4397-971C-046162EE0B06">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndError_GetAll_BapInd_TestASG_GetAll</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndError_GetAll</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_GetAll</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndVoid/BAP_IndError</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="0EBD3E4E-790F-421C-A95E-6767A373DA76">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPAck_GetAll_BapInd_TestASG_GetAll</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPAck_GetAll</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_GetAll</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndVoid/BAP_Ack</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="BDC6A116-F295-4930-8692-750EDB7A28CC">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndBs_BAPConfig_BapInd_TestASG_BAPConfig</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndBs_BAPConfig</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_BAPConfig</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs6/BAP_IndBs</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="AE73ADA6-1192-42C7-96F3-2434139096AC">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndError_BAPConfig_BapInd_TestASG_BAPConfig</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndError_BAPConfig</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_BAPConfig</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs6/BAP_IndError</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="79C11107-0075-4018-851B-E183C7136B00">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPAck_BAPConfig_BapInd_TestASG_BAPConfig</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPAck_BAPConfig</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_BAPConfig</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs6/BAP_Ack</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="FB1008C6-9DD0-4782-A8E5-DF1A920DAD8F">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndBs_FunctionList_BapInd_TestASG_FunctionList</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndBs_FunctionList</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_FunctionList</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs8/BAP_IndBs</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="F637D68C-12E5-4EF2-B44C-7511D410AB51">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndError_FunctionList_BapInd_TestASG_FunctionList</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndError_FunctionList</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_FunctionList</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs8/BAP_IndError</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="AD52F52F-2C06-4A99-977E-C72EC51BCBBF">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPAck_FunctionList_BapInd_TestASG_FunctionList</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPAck_FunctionList</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_FunctionList</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs8/BAP_Ack</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="487D8E96-F7F0-463D-83E6-FDFB11084BC9">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndU8_Heartbeat_BapInd_TestASG_Heartbeat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndU8_Heartbeat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Heartbeat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndU8</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="FE82AED0-FF7B-4CC1-A3A1-C74A872ADD11">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndError_Heartbeat_BapInd_TestASG_Heartbeat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndError_Heartbeat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Heartbeat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndError</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="F9084030-2062-4332-B25D-50E4F11202C1">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPAck_Heartbeat_BapInd_TestASG_Heartbeat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPAck_Heartbeat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Heartbeat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_Ack</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="04FA62F5-7C76-4CFA-8DC5-3E38BACFC1D5">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndU8_Property_BapInd_TestASG_Property</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndU8_Property</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Property</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndU8</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="BB00E7DE-A9F5-4C44-A947-F13634AC61E4">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndError_Property_BapInd_TestASG_Property</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndError_Property</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Property</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_IndError</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="EBE95028-D8F5-4AA9-953A-04968611899E">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPAck_Property_BapInd_TestASG_Property</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPAck_Property</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Property</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU8/BAP_Ack</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="AB3440CA-29CC-42B3-87C5-DA1D56CAF764">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndU16_Method_BapInd_TestASG_Method</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndU16_Method</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Method</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU16/BAP_IndU16</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="C6451AD5-0632-4176-BAE9-F1B0E3A02CDD">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndError_Method_BapInd_TestASG_Method</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndError_Method</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Method</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU16/BAP_IndError</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="9CDEBC9D-1F16-4D91-9F85-5B303AA61F16">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPAck_Method_BapInd_TestASG_Method</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPAck_Method</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Method</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndU16/BAP_Ack</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="86A5C5A0-68BB-48B4-9F63-0CADF5AE6837">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndBs_Array_BapInd_TestASG_Array</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndBs_Array</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Array</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs250/BAP_IndBs</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="6BEAF6D9-1691-4D18-88A9-EEFBBE3BE389">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPIndError_Array_BapInd_TestASG_Array</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPIndError_Array</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Array</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs250/BAP_IndError</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="6440949D-A960-446C-92C0-4649EE8A6B8F">
+                          <SHORT-NAME>OIE_RE_TestASG_BAPAck_Array_BapInd_TestASG_Array</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/ctASG_LSG1/IB_ctASG_LSG1/RE_TestASG_BAPAck_Array</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Array</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapIndBs250/BAP_Ack</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                      </EVENTS>
+                      <PORT-API-OPTIONS>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapGet_TestASG</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_GetAll_GetAll</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_BAPConfig_Get</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_FunctionList_Get</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Heartbeat_Get</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Property_SetGet</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Property_Ack</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Method_AbortResult</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Method_StartResult</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Array_Get</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/Bap_Enable_TestASG</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_GetAll</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_BAPConfig</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_FunctionList</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Heartbeat</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Property</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Method</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapInd_TestASG_Array</PORT-REF>
+                        </PORT-API-OPTION>
+                      </PORT-API-OPTIONS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="F7E681D6-F0AB-4E67-B545-76AA2AD311A2">
+                          <SHORT-NAME>RE_TestASG_BapBufferInit</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="edve:RunnableKind">
+                                <SD>InitRunnable</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="E469F329-D98E-48AE-9D06-482B669C014E">
+                              <SHORT-NAME>DSP_Bap_Enable_TestASG_BapEnable</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/Bap_Enable_TestASG</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="APPLICATION-COMPOSITE-ELEMENT-DATA-PROTOTYPE">/VAG/Services/BAP/Bap_TestASG/BapEnable</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SERVER-CALL-POINTS>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="C34C54DB-8535-43CB-8AEF-CC596A92AA97">
+                              <SHORT-NAME>SCP_BapGet_TestASG_State</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapGet_TestASG</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapGetState/State</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="39BF16B4-5C51-419A-9D36-AD9F077BF170">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_GetAll_GetAll_BAP_ReqVoid</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_GetAll_GetAll</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="4619F12F-81E9-4993-BDC2-9A0CF46C182C">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_BAPConfig_Get_BAP_ReqVoid</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_BAPConfig_Get</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="C24526D9-D2C6-4129-9212-27BBB8C9D167">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_FunctionList_Get_BAP_ReqVoid</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_FunctionList_Get</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="21FADD8F-C1B1-40C2-A701-84DC8C11FDEA">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_Heartbeat_Get_BAP_ReqVoid</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Heartbeat_Get</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoid/BAP_ReqVoid</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="BBD664B7-E989-4429-BB62-D072D89CFA64">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_Property_SetGet_BAP_ReqU8</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Property_SetGet</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqU8/BAP_ReqU8</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="D8FAA695-15FA-415A-9289-9F16DFD83E26">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_Property_Ack_BAP_ReqU8</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Property_Ack</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqU8/BAP_ReqU8</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="DD15CD67-FEBB-47E6-A0A9-68F276DD0ADA">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_Method_AbortResult_BAP_ReqVoid</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Method_AbortResult</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqVoidMethodAbort/BAP_ReqVoid</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="B5DEC70F-6DCC-48AE-B790-20808135613F">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_Method_StartResult_BAP_ReqU16</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Method_StartResult</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqU16/BAP_ReqU16</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="DF61968E-0ABF-4381-981D-855FD5996E13">
+                              <SHORT-NAME>SCP_BapReqASG_TestASG_Array_Get_BAP_ReqBs</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/ctASG_LSG1/BapReqASG_TestASG_Array_Get</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BapReqBs1/BAP_ReqBs</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                          </SERVER-CALL-POINTS>
+                          <SYMBOL>BAP_ASR_TestASG_BapBufferInit</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="238A1453-82B1-4738-8827-7EA74613C23C">
+                          <SHORT-NAME>RE_TestASG_BAPIndVoid_GetAll</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndVoid_GetAll</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="214BC3D2-451B-4C4A-83E1-93D3928287C4">
+                          <SHORT-NAME>RE_TestASG_BAPIndError_GetAll</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndError_GetAll</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="5E7B9BCE-0DC3-49A9-8EEA-CADE7E52429D">
+                          <SHORT-NAME>RE_TestASG_BAPAck_GetAll</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPAck_GetAll</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="8AE48573-0701-454E-8849-F479333234D9">
+                          <SHORT-NAME>RE_TestASG_BAPIndBs_BAPConfig</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndBs_BAPConfig</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="79A243D6-8A16-4237-B4AA-B5E162E9F706">
+                          <SHORT-NAME>RE_TestASG_BAPIndError_BAPConfig</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndError_BAPConfig</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="B73D83B6-ED90-45BD-86AB-49AA55F9CDD1">
+                          <SHORT-NAME>RE_TestASG_BAPAck_BAPConfig</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPAck_BAPConfig</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="56EA3196-DA73-4E8C-AB75-26B06A797F8A">
+                          <SHORT-NAME>RE_TestASG_BAPIndBs_FunctionList</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndBs_FunctionList</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="B98B246E-E4CD-4E7C-908B-6EA1681CDA48">
+                          <SHORT-NAME>RE_TestASG_BAPIndError_FunctionList</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndError_FunctionList</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="06FDC3A3-873E-4087-8122-1728425CAC09">
+                          <SHORT-NAME>RE_TestASG_BAPAck_FunctionList</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPAck_FunctionList</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="74B1A7D2-A188-4314-B408-D9ED6F392B7E">
+                          <SHORT-NAME>RE_TestASG_BAPIndU8_Heartbeat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndU8_Heartbeat</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="3DA67658-C049-4143-B470-9CAF7C8FEBE7">
+                          <SHORT-NAME>RE_TestASG_BAPIndError_Heartbeat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndError_Heartbeat</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="6B6BF31A-679D-483A-9DD6-E48DA16FEF53">
+                          <SHORT-NAME>RE_TestASG_BAPAck_Heartbeat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPAck_Heartbeat</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="BDBF9B5C-E09D-4D6E-A79D-4AEA2D4BAF87">
+                          <SHORT-NAME>RE_TestASG_BAPIndU8_Property</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndU8_Property</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="4C333254-E128-4CC3-9033-CC24EC743BFA">
+                          <SHORT-NAME>RE_TestASG_BAPIndError_Property</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndError_Property</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="EB23B8CF-232C-4F26-B4C3-ECB362411E70">
+                          <SHORT-NAME>RE_TestASG_BAPAck_Property</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPAck_Property</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="E6D56351-A110-4607-BC70-EE2CA38D92A5">
+                          <SHORT-NAME>RE_TestASG_BAPIndU16_Method</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndU16_Method</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="76A1B186-3914-40D2-A2F6-2BA2132F81B9">
+                          <SHORT-NAME>RE_TestASG_BAPIndError_Method</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndError_Method</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="1B07F6DE-0DDB-4301-8AEB-BA0B25BCBB13">
+                          <SHORT-NAME>RE_TestASG_BAPAck_Method</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPAck_Method</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="C1A3B792-0488-4854-94D4-CFED9D1B3E63">
+                          <SHORT-NAME>RE_TestASG_BAPIndBs_Array</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndBs_Array</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="4AD0DE31-C71C-4BE6-9CB6-21CBAA9FE87E">
+                          <SHORT-NAME>RE_TestASG_BAPIndError_Array</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPIndError_Array</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="1DFE8853-C2FD-4020-9317-A2496828E5BD">
+                          <SHORT-NAME>RE_TestASG_BAPAck_Array</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BAP_ASR_TestASG_BAPAck_Array</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

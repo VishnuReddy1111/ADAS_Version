@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="33022ff3-f082-4548-ab3c-90793765f2d3">
+      <SHORT-NAME>AURIX2G</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7e118c10-0a18-49f2-9978-33759fe5e7c2">
+          <SHORT-NAME>EcucDefs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="77789d79-9529-435d-8cca-86ba6ddae4b2">
+              <SHORT-NAME>Wdg_ib_bswmd</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="b68d6f32-254a-4c21-ab05-8a9191c7e0c4">
+                  <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-MODULE-DESCRIPTION UUID="3d8a3f72-1d79-4fb5-a24c-acd594a1308e">
+                      <SHORT-NAME>Wdg</SHORT-NAME>
+                      <PROVIDED-ENTRYS>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Wdg_ib_bswmd/BswModuleDescriptions/Wdg_17_Scu_Virtual</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      </PROVIDED-ENTRYS>
+                      <INTERNAL-BEHAVIORS>
+                        <BSW-INTERNAL-BEHAVIOR UUID="2ce6fbd3-32bf-4b07-abe7-6bf614ca6052">
+                          <SHORT-NAME>WdgBehavior</SHORT-NAME>
+                          <EXCLUSIVE-AREAS>
+                            <EXCLUSIVE-AREA UUID="ee1bed2f-4d8d-4747-8d8f-3edf88a8e548">
+                              <SHORT-NAME>TimerHandling</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="7aeb3c8e-6829-4fd4-9dde-ae17701cd348">
+                              <SHORT-NAME>ChangeMode</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="9b3e7e91-d107-402c-b70d-eda12568259d">
+                              <SHORT-NAME>Trigger</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="37b0918b-d473-4972-82c0-cf800fb1f73f">
+                              <SHORT-NAME>CpuEndInit</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                          </EXCLUSIVE-AREAS>
+                          <ENTITYS>
+                            <BSW-CALLED-ENTITY UUID="3c62535f-17f0-463c-b20d-84225405368b">
+                              <SHORT-NAME>Wdg_17_Scu_Virtual</SHORT-NAME>
+                              <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/TimerHandling</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/ChangeMode</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/Trigger</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/CpuEndInit</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                              </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                              <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Wdg_ib_bswmd/BswModuleDescriptions/Wdg_17_Scu_Virtual</IMPLEMENTED-ENTRY-REF>
+                            </BSW-CALLED-ENTITY>
+                          </ENTITYS>
+                        </BSW-INTERNAL-BEHAVIOR>
+                      </INTERNAL-BEHAVIORS>
+                    </BSW-MODULE-DESCRIPTION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

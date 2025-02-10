@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="accf96c0-4f3d-499b-8567-9ed71a9520e1">
+          <SHORT-NAME>vMem_30_Blocking</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/MICROSAR/vMem_30_Blocking/vMem</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/vMem_30_Blocking/vMem_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="d0c858b8-61a2-4812-963a-3ab4301e9ce0">
+              <SHORT-NAME>vMemBlocking_InstFee</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemInstanceId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="94dc329f-4b38-4c72-86fc-2c28ca27f1e2">
+                  <SHORT-NAME>vMemSectorList</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="8f497ff6-670e-44d9-a7ce-4c36ca93ebc0">
+                      <SHORT-NAME>vMemSector_BlockFee</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>65536</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="0f8e608b-70ac-4d89-b84e-5e2e3314ae9d">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>65536</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="fcaeddfd-d475-479c-8770-a07f28a0b111">
+              <SHORT-NAME>vMemGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemGeneral/vMemDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemGeneral/vMemVersionInfoApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Blocking/vMem/vMemGeneral/vMemSafeBswChecks</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="36318c46-24df-47ca-a0fd-e82286e4d737">
+          <SHORT-NAME>vMem</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/vMem_30_Tc3xxInf01/vMem_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="a393559c-8791-4fa9-a21f-1faf0463c6f1">
+              <SHORT-NAME>vMemInstance</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemInstanceId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="1e709331-f268-4c1e-8105-480630f469bc">
+                  <SHORT-NAME>vMemSectorList</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="b79ee676-890a-465a-ae59-809598906d59">
+                      <SHORT-NAME>PF0_PF2_PS0_S0_S63</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2684354560</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF2_PF0_PS0_S0_S63</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="3f1d3ed7-66cc-4c2d-8728-3a8b4c2d4f53">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="d4eb0b27-bf34-4e41-aa67-994881072932">
+                      <SHORT-NAME>PF0_PF2_PS1_S64_S127</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2685403136</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF2_PF0_PS1_S64_S127</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="16e3f814-4772-434a-840d-bdf250d4b406">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="5a7eaba2-74ee-4e9b-a884-e30d8e19a55b">
+                      <SHORT-NAME>PF0_PF2_PS2_S128_S191</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2686451712</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF2_PF0_PS2_S128_S191</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="69b54788-88e0-4d71-aaf9-64ef3a762b87">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="07286a3c-2a42-4c31-ba79-1e43fd6f644f">
+                      <SHORT-NAME>PF1_PF3_PS0_S0_S63</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2687500288</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF3_PF1_PS0_S0_S63</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="b604e768-1142-4845-a39b-784307b5bc2e">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="0237f1e6-69e7-43b0-8586-21f9d399bb84">
+                      <SHORT-NAME>PF1_PF3_PS1_S64_S127</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2688548864</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF3_PF1_PS1_S64_S127</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="667b1ec6-b9af-4c39-84f7-e3bfec2e9400">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="547a12ed-901c-4702-9b48-152f5b3821f8">
+                      <SHORT-NAME>PF1_PF3_PS2_S128_S191</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2689597440</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF3_PF1_PS2_S128_S191</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="ec50dfef-ec5f-48fe-be77-1d22452fb67b">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="47072115-0a58-438d-a5cf-2f7bfffc1f28">
+                      <SHORT-NAME>PF2_PF0_PS0_S0_S63</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2690646016</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF0_PF2_PS0_S0_S63</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="ad6c456d-75a3-4213-bd99-18176a506a59">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="ea46de2b-8ba8-4563-a82a-86a70d63748b">
+                      <SHORT-NAME>PF2_PF0_PS1_S64_S127</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2691694592</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF0_PF2_PS1_S64_S127</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="aacf6b46-74c6-4184-8507-914fa5c0d8eb">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="f8107f3e-ffbb-49f3-83a5-cd4cc97687fd">
+                      <SHORT-NAME>PF2_PF0_PS2_S128_S191</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2692743168</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF0_PF2_PS2_S128_S191</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="cb2a988d-32f4-4d6b-a4d6-1f256d966759">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="06b906a3-91bc-49d4-942c-92d48b32c3a4">
+                      <SHORT-NAME>PF3_PF1_PS0_S0_S63</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2693791744</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>3</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF1_PF3_PS0_S0_S63</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="bf147a77-fa41-44a3-bf60-3641272ec870">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="5b4e8155-71fd-4892-aef6-113ef83bfa70">
+                      <SHORT-NAME>PF3_PF1_PS1_S64_S127</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2694840320</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>3</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF1_PF3_PS1_S64_S127</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="4ad99b0d-8a59-4ed4-bfbb-5d8c9db7a007">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="970e70d3-ec7b-4308-a03f-9aab3fbbb16e">
+                      <SHORT-NAME>PF3_PF1_PS2_S128_S191</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2695888896</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>3</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>2</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF1_PF3_PS2_S128_S191</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="c6dbd96a-e1d8-4b94-8b6d-60f879091b04">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="dfed1c5d-5fb3-481e-8ecd-2be2918a88d8">
+                      <SHORT-NAME>PF4_PF5_PS0_S0_S63</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2696937472</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>4</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF5_PF4_PS0_S0_S63</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="96522926-7832-47da-a990-fd90463ca6f7">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="14a1aaeb-3516-477a-b7f4-9b52e413af30">
+                      <SHORT-NAME>PF5_PF4_PS0_S0_S63</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemNumberOfSectors</DEFINITION-REF>
+                          <VALUE>64</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPageSize</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemSectorSize</DEFINITION-REF>
+                          <VALUE>16384</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemStartAddress</DEFINITION-REF>
+                          <VALUE>2700083200</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemProgramFlashId</DEFINITION-REF>
+                          <VALUE>5</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemPhysicalSectorId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemAlternateMapSectorRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vMem/vMemInstance/vMemSectorList/PF4_PF5_PS0_S0_S63</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="f55c56dd-deb4-4416-b588-e7cd51cfbcde">
+                          <SHORT-NAME>vMemBurstSettings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemEraseBurstSize</DEFINITION-REF>
+                              <VALUE>524288</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemPageBurstRamAlignment</DEFINITION-REF>
+                              <VALUE>1</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemInstance/vMemSectorList/vMemSector/vMemBurstSettings/vMemWriteBurstSize</DEFINITION-REF>
+                              <VALUE>256</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d727377e-d02a-4e73-96e0-00aed7c1d32a">
+              <SHORT-NAME>vMemGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemGeneral/vMemReadOnlyMode</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemGeneral/vMemVersionInfoApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemGeneral/vMemDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemGeneral/vMemSafeBswChecks</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/vMem_30_Tc3xxInf01/vMem/vMemGeneral/vMemUsePeripheralAccessApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

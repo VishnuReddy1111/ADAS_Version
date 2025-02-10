@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="c2f7db8a-c593-432a-a48a-9e04be4d4c2d">
+          <SHORT-NAME>Crypto_30_LibCv_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="eadb6a30-4137-432c-820b-c3d5e32e41d7">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="fc66c7ce-0681-41ed-a2d8-ce9325c3d4e1">
+                  <SHORT-NAME>Crypto</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Crypto_30_LibCv_ib_bswmd/BswModuleDescriptions/Crypto_30_LibCv_MainFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="69b0c50e-7200-48ca-9485-a91edd8c4d9e">
+                      <SHORT-NAME>Crypto_30_LibCv</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="861ea0fe-a386-42a2-89c4-f59102b08a0b">
+                          <SHORT-NAME>CRYPTO_30_LIBCV_EXCLUSIVE_AREA_0</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">This critical section protects workspace locking resources. Therefore the critical section enclosed with CRYPTO_30_LIBCV_EXCLUSIVE_AREA_0 should never be interrupted by any other API. For more details, see DocTechRef.</L-2>
+                          </DESC>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="8bfcdc59-50be-4905-aa4a-73fd548f8542">
+                          <SHORT-NAME>CRYPTO_30_LIBCV_EXCLUSIVE_AREA_1</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">This critical section protects 32 Bit accesses and is only necessary in case of HW doesn't offer an atomic access. If needed, the critical section enclosed with CRYPTO_30_LIBCV_EXCLUSIVE_AREA_1 should never be interrupted by any other API. For more details, see DocTechRef.</L-2>
+                          </DESC>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="3e321dbe-fa30-4ece-a637-98932de14037">
+                          <SHORT-NAME>Crypto_30_LibCv_MainFunction</SHORT-NAME>
+                          <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Crypto_30_LibCv_ib_bswmd/BswModuleDescriptions/Crypto/Crypto_30_LibCv/CRYPTO_30_LIBCV_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Crypto_30_LibCv_ib_bswmd/BswModuleDescriptions/Crypto/Crypto_30_LibCv/CRYPTO_30_LIBCV_EXCLUSIVE_AREA_1</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                          </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Crypto_30_LibCv_ib_bswmd/BswModuleDescriptions/Crypto_30_LibCv_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="a683c0aa-3e33-4981-a005-d40d7310563b">
+                          <SHORT-NAME>Crypto_30_LibCv_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/Crypto_30_LibCv_ib_bswmd/BswModuleDescriptions/Crypto/Crypto_30_LibCv/Crypto_30_LibCv_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="fa34dbb0-41e2-45f5-94e8-69e0081ce6c0">
+                  <SHORT-NAME>Crypto_30_LibCv_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

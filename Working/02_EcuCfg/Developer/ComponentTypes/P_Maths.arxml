@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="a6d3ea9731e031668c161933c19cb8d6">
+      <SHORT-NAME>SoftwareTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="5a099a20b9943503bdbfb2d67e1094a4">
+          <SHORT-NAME>ComponentTypes</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na31609215dd026d88d5ebfbXNa31609215dd026d88d5ebdd00">
+              <SHORT-NAME>P_Maths</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV_SDG">
+                    <SD GID="DV_ReadOnly">1</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na31609215dd026d88d5ebfbxNa31609215dd026d88d6087600">
+                  <SHORT-NAME>SI_MathsInterface</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <SERVER-COM-SPEC>
+                      <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Add</OPERATION-REF>
+                      <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                    </SERVER-COM-SPEC>
+                    <SERVER-COM-SPEC>
+                      <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Divide</OPERATION-REF>
+                      <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                    </SERVER-COM-SPEC>
+                    <SERVER-COM-SPEC>
+                      <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Multiply</OPERATION-REF>
+                      <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                    </SERVER-COM-SPEC>
+                    <SERVER-COM-SPEC>
+                      <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Substract</OPERATION-REF>
+                      <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                    </SERVER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/SoftwareTypes/Interfaces/SI_MathsInterface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="Na31609215dd026d88d5ebfbxNa31609215dd026d88d6090700">
+                  <SHORT-NAME>TriangleInterface</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/SoftwareTypes/Interfaces/TriangleInterface/Triangle</DATA-ELEMENT-REF>
+                      <INIT-VALUE>
+                        <RECORD-VALUE-SPECIFICATION>
+                          <FIELDS>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </FIELDS>
+                        </RECORD-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/SoftwareTypes/Interfaces/TriangleInterface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="Na31609215dd026d88d5ebfbxNa31495315ec7cb00d41c0d700">
+                  <SHORT-NAME>P_Maths_ib</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypeMappingSets/Data_Type_Mappings</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="12057153-B28F-4804-9BBA-09C5F6D6A4EA">
+                      <SHORT-NAME>TMT_P_Maths_MainFunction</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SoftwareTypes/ComponentTypes/P_Maths/P_Maths_ib/P_Maths_MainFunction</START-ON-EVENT-REF>
+                      <PERIOD>0.05</PERIOD>
+                    </TIMING-EVENT>
+                    <OPERATION-INVOKED-EVENT UUID="C783AB32-DA7D-49FF-A3C8-A8E6FB4D36B0">
+                      <SHORT-NAME>OIT_P_Maths_SI_MathsInterface_Add_SI_MathsInterface_Add</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SoftwareTypes/ComponentTypes/P_Maths/P_Maths_ib/P_Maths_SI_MathsInterface_Add</START-ON-EVENT-REF>
+                      <OPERATION-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SoftwareTypes/ComponentTypes/P_Maths/SI_MathsInterface</CONTEXT-P-PORT-REF>
+                        <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Add</TARGET-PROVIDED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </OPERATION-INVOKED-EVENT>
+                    <OPERATION-INVOKED-EVENT UUID="A5A7B7A8-0ECD-447C-8540-C8A64AF9F569">
+                      <SHORT-NAME>OIT_P_Maths_SI_MathsInterface_Divide_SI_MathsInterface_Divide</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SoftwareTypes/ComponentTypes/P_Maths/P_Maths_ib/P_Maths_SI_MathsInterface_Divide</START-ON-EVENT-REF>
+                      <OPERATION-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SoftwareTypes/ComponentTypes/P_Maths/SI_MathsInterface</CONTEXT-P-PORT-REF>
+                        <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Divide</TARGET-PROVIDED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </OPERATION-INVOKED-EVENT>
+                    <OPERATION-INVOKED-EVENT UUID="267F48D3-CF59-4A2C-B706-3A23FB0D4F5B">
+                      <SHORT-NAME>OIT_P_Maths_SI_MathsInterface_Multiply_SI_MathsInterface_Multiply</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SoftwareTypes/ComponentTypes/P_Maths/P_Maths_ib/P_Maths_SI_MathsInterface_Multiply</START-ON-EVENT-REF>
+                      <OPERATION-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SoftwareTypes/ComponentTypes/P_Maths/SI_MathsInterface</CONTEXT-P-PORT-REF>
+                        <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Multiply</TARGET-PROVIDED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </OPERATION-INVOKED-EVENT>
+                    <OPERATION-INVOKED-EVENT UUID="CCEDD2B5-AED5-486F-A6E9-5607E0D71EAF">
+                      <SHORT-NAME>OIT_P_Maths_SI_MathsInterface_Substract_SI_MathsInterface_Substract</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SoftwareTypes/ComponentTypes/P_Maths/P_Maths_ib/P_Maths_SI_MathsInterface_Substract</START-ON-EVENT-REF>
+                      <OPERATION-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SoftwareTypes/ComponentTypes/P_Maths/SI_MathsInterface</CONTEXT-P-PORT-REF>
+                        <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/SoftwareTypes/Interfaces/SI_MathsInterface/Substract</TARGET-PROVIDED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </OPERATION-INVOKED-EVENT>
+                  </EVENTS>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="A75B2E92-A58D-4EFC-ABC2-A928E4B35D2E">
+                      <SHORT-NAME>P_Maths_MainFunction</SHORT-NAME>
+                      <DATA-SEND-POINTS>
+                        <VARIABLE-ACCESS UUID="Na31609215dd026d88d5ebfbxNa31495315ec7cb00d42a7a300">
+                          <SHORT-NAME>SEND_TriangleInterface_Triangle</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/SoftwareTypes/ComponentTypes/P_Maths/TriangleInterface</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/SoftwareTypes/Interfaces/TriangleInterface/Triangle</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-SEND-POINTS>
+                      <SYMBOL>P_Maths_MainFunction</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                    <RUNNABLE-ENTITY UUID="5AEAA01D-E5C2-49D0-A307-B37C206DCFF8">
+                      <SHORT-NAME>P_Maths_SI_MathsInterface_Add</SHORT-NAME>
+                      <SYMBOL>P_Maths_SI_MathsInterface_Add</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                    <RUNNABLE-ENTITY UUID="580E1870-9F0C-472A-B298-81FCB8FC9A14">
+                      <SHORT-NAME>P_Maths_SI_MathsInterface_Divide</SHORT-NAME>
+                      <SYMBOL>P_Maths_SI_MathsInterface_Divide</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                    <RUNNABLE-ENTITY UUID="C95C47B2-2A65-4782-BD85-89E186737F39">
+                      <SHORT-NAME>P_Maths_SI_MathsInterface_Multiply</SHORT-NAME>
+                      <SYMBOL>P_Maths_SI_MathsInterface_Multiply</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                    <RUNNABLE-ENTITY UUID="9E28CF84-7586-47EF-BE41-50F589B2D0B0">
+                      <SHORT-NAME>P_Maths_SI_MathsInterface_Substract</SHORT-NAME>
+                      <SYMBOL>P_Maths_SI_MathsInterface_Substract</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

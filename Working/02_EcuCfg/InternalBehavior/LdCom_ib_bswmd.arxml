@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="fb38aa70-5ae2-4fd0-8ecf-7d91f63bcc9c">
+          <SHORT-NAME>LdCom_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="e6187d55-4f27-450a-b682-177b2462973f">
+                <SHORT-NAME>LdCom_RxTxPduInfo</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Table containing mapping data from Input handles to PduR Tx handles/RTE callbacks.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>10</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="29b722f9-4bf1-4d59-b2eb-3b2a59d4c052">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="e4844747-d1ac-41e5-8b54-322de3d1ef54">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="1d8b0049-18b2-444c-b9fa-4bab3e8ae591">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="502284ca-491a-4614-8089-69e76dff8d86">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="972c660b-be45-424e-8b4d-e907ecd5844c">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="02d29a34-1b4e-49ec-b4c2-827b161f286b">
+                    <SHORT-NAME>Element_1</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="d9775c95-9c2c-4c26-a04c-1fb303ad43f6">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="238e4a39-26a4-447c-a553-71208c6cb189">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="8d92318e-95b7-4e00-8532-a61ad6096aed">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="9ac21121-424e-44fc-b60c-a39218239cd0">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[1]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="4312d83b-1eb2-4fa0-99ec-56168a87a14f">
+                    <SHORT-NAME>Element_2</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="7282ab07-3586-4f40-95bd-c82ebdb30b29">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="44e1bd39-23f5-414e-b232-ab61b685ff2b">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="5a423dbb-8a7d-4d22-af05-435938652f65">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="94b9f4f7-d8c4-4310-acdc-48f6dc782221">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[2]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="040f5beb-1689-4b70-a6e6-944cd480e49e">
+                    <SHORT-NAME>Element_3</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="0d2c9005-9319-46db-a484-e9f1294cc497">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="3f6a0d28-3145-4f63-8076-2c6411d32645">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="e3ccc7ed-2627-4a11-8579-7bc5bfa16501">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="143582b1-16f1-44a9-88ce-57be198d964a">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[3]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="f6eb6bac-edb4-4bc9-8ad7-de688d69a2c3">
+                    <SHORT-NAME>Element_4</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="9e826e55-ac8f-4d0a-b182-b70e9ed632db">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="0cbe55f9-a9a1-4afa-8400-590c2e8adfdf">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="0f53c9fd-d6b6-4ab2-9067-e38afaa560a4">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="8ef8559a-96c0-4a52-9f9f-b669a47cdb26">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[4]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="4e02027c-7140-48d1-b28a-5d9d054bf988">
+                    <SHORT-NAME>Element_5</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="e8417424-9b6d-4e74-9127-bc807aa8182d">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="e6538c51-c78b-4aed-aec2-fdaa3c46e9b7">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="d92b3929-59b1-4c91-8d36-c95dc399b868">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="91ec4910-b3c6-46c0-8632-07a2e4519fff">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[5]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="e04bbc3b-b7ab-4424-b21d-0e8e13667d89">
+                    <SHORT-NAME>Element_6</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="7287548d-897c-4de8-8fcc-9aa567dd3934">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="ba08a659-f49a-41af-ad05-7fbcf333e483">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="99a77d31-1aa3-40c3-9892-522ff339c759">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="cedff7fa-631c-4ca0-9163-eb594db94aca">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[6]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="84ebb9e5-34bd-4634-bac8-40007f9f7e5a">
+                    <SHORT-NAME>Element_7</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="1f17d63e-0d04-407e-9392-62c4545fdfe0">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="80fa973c-634b-4b24-8f46-5d44ded8aca3">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="2733ef7f-9312-4893-b456-818d5c5f51ef">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="810cec0e-c8ec-45a8-8e83-7dced7ef934a">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[7]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="67fb11f4-699a-4165-bf55-867605a7420e">
+                    <SHORT-NAME>Element_8</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="eec3827e-1fab-447e-9b9e-2fdd81c32441">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="ea014f92-81de-4e3e-ac0c-9a2871ab6b1b">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="8fdcb3d7-5ee9-4c07-80ff-fb78a1418b81">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="b73c97dd-b4c3-47cd-9f97-63ebdb4403be">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[8]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="7109d0fa-b317-452f-8bff-b74401e384b9">
+                    <SHORT-NAME>Element_9</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="b175a3fb-0490-45bb-add7-48454dc55877">
+                        <SHORT-NAME>IfPduOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfPduOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfPduOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfPduOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="cd3b0092-1cc4-46e6-9ac9-c8a25a6821ac">
+                        <SHORT-NAME>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfRxIndicationFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="0d7d5b4b-a5b1-420b-9c91-71956b316274">
+                        <SHORT-NAME>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="000cd30d-080b-4dcf-beff-7772c48668a4">
+                        <SHORT-NAME>PduRTxHandleIdOfRxTxPduInfo</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_PduRTxHandleIdOfRxTxPduInfoType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduRTxHandleIdOfRxTxPduInfo</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[9]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>LdCom_RxTxPduInfo</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="b6fbd282-6ba6-4bf3-b473-9677e652fefa">
+                <SHORT-NAME>LdCom_Initialized</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Initialization state of LdCom. TRUE, if initialized.</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LdCom_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LdCom_ib_bswmd/DataTypes/CompuMethods/LdCom_InitializedType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LdCom_ib_bswmd/DataTypes/DataConstrs/LdCom_InitializedType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LdCom_Initialized</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <SW-VERSION>4.00.00</SW-VERSION>
+          <USED-CODE-GENERATOR>DaVinci Configurator</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.02.02</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="72304f7a-de35-47e3-a419-645511a3727c">
+          <SHORT-NAME>LdCom_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="c02c0d40-02b6-40ad-89d1-f7b577842ba4">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="6f9fb760-7be7-428b-9d8f-2b83b3a06e34">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="3d0b36b5-05ce-4da3-be2d-737cc0a53ccf">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="9c48853c-e4c9-4a73-b0be-b58c0b79f502">
+                      <SHORT-NAME>boolean</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="78686d20-6772-41d4-991b-ba758ffc59ab">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="e994fd66-0bad-497b-ac04-0f3ce01f7ce9">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="7c3dc128-1be6-434b-8935-ec7771a6e4ee">
+                      <SHORT-NAME>LdCom_IfPduOfRxTxPduInfoType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="6665aabf-7507-4605-9331-607f9c748194">
+                      <SHORT-NAME>LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LDCOM_NO_IFRXINDICATIONFCTPTRIDXOFRXTXPDUINFO</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="f70884b4-78ce-4a8f-ad60-9f0a24014f2d">
+                      <SHORT-NAME>LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LDCOM_NO_IFTXTRIGGERTRANSMITFCTPTRIDXOFRXTXPDUINFO</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="85f5d2ab-d33c-435d-a4ec-1fff19a0f4fe">
+                      <SHORT-NAME>LdCom_InitializedType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="9347b99f-801d-4b43-9a58-c36c943013ca">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="d253079e-dc85-4e0b-9ed1-111febd35edf">
+                      <SHORT-NAME>LdCom_IfPduOfRxTxPduInfoType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="b74cd4fc-77e7-447b-93e8-1b9133a06439">
+                      <SHORT-NAME>LdCom_IfRxIndicationFctPtrIdxOfRxTxPduInfoType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="312697a0-9030-4177-b616-26e8422219c4">
+                      <SHORT-NAME>LdCom_IfTxTriggerTransmitFctPtrIdxOfRxTxPduInfoType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="3b3f5d8f-a0f0-4770-99ba-1cca64607a58">
+                      <SHORT-NAME>LdCom_InitializedType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="74af7796-df6e-454b-8791-23f8d6ef3e2b">
+                      <SHORT-NAME>LdCom_PduRTxHandleIdOfRxTxPduInfoType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

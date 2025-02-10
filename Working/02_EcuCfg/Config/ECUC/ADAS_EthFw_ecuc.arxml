@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="614739fd-71d4-4366-92f9-a41f44d41d90">
+          <SHORT-NAME>EthFw</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:CfgPostBuild">
+                <SD GID="DV:postBuildVariantSupport">false</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/MICROSAR/EthFw</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/EthFw_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="45452201-6f2e-4627-95c5-76d566e2ded1">
+              <SHORT-NAME>EthFwConfig</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRxFrameDiscardedCbk</DEFINITION-REF>
+                  <VALUE>EthFw_CB_RxFrameDiscarded</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwTxFrameDiscardedCbk</DEFINITION-REF>
+                  <VALUE>EthFw_CB_TxFrameDiscarded</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="bb286bbe-e4d7-4ccc-8b33-9b5a3cfc8237">
+                  <SHORT-NAME>EthFwRule_IPv4_NoVLAN</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/MyECU_EEI_U_ee15deea</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwFrameOwnerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/TcpIp_IPv4</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="623c3c00-47e9-46a9-bae2-c61512d439c7">
+                      <SHORT-NAME>EthFwMacAddr</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwLocalMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="87385d3f-d08d-4ddf-9388-660e385da8c0">
+                      <SHORT-NAME>EthFwMacProtocol</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="79e3e91d-99dd-4ecc-83e3-2a3daa67acf2">
+                          <SHORT-NAME>EthFwIpRule</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="4d8c3300-8daf-4cb6-ac89-cd1d86a5eb4a">
+                              <SHORT-NAME>EthFwIpProtocol</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol</DEFINITION-REF>
+                              <SUB-CONTAINERS>
+                                <ECUC-CONTAINER-VALUE UUID="28642293-1d85-41e4-856c-9c0e80d19748">
+                                  <SHORT-NAME>EthFwTcpRule</SHORT-NAME>
+                                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule</DEFINITION-REF>
+                                  <SUB-CONTAINERS>
+                                    <ECUC-CONTAINER-VALUE UUID="ab1c4f22-560e-48c7-94cf-44056c17cf2f">
+                                      <SHORT-NAME>EthFwTcpPort</SHORT-NAME>
+                                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule/EthFwTcpPort</DEFINITION-REF>
+                                      <PARAMETER-VALUES>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule/EthFwTcpPort/EthFwLocalPortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule/EthFwTcpPort/EthFwRemotePortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                      </PARAMETER-VALUES>
+                                    </ECUC-CONTAINER-VALUE>
+                                  </SUB-CONTAINERS>
+                                </ECUC-CONTAINER-VALUE>
+                                <ECUC-CONTAINER-VALUE UUID="6dcc24ef-2dc9-44ed-a39c-248d44ea02a6">
+                                  <SHORT-NAME>EthFwUdpRule</SHORT-NAME>
+                                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule</DEFINITION-REF>
+                                  <SUB-CONTAINERS>
+                                    <ECUC-CONTAINER-VALUE UUID="fd5a283e-89f0-49da-92f2-d92088d38445">
+                                      <SHORT-NAME>EthFwUdpPort</SHORT-NAME>
+                                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort</DEFINITION-REF>
+                                      <PARAMETER-VALUES>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwLocalPortAllowAll</DEFINITION-REF>
+                                          <VALUE>false</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwRemotePortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwLocalPortStart</DEFINITION-REF>
+                                          <VALUE>0</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwLocalPortEnd</DEFINITION-REF>
+                                          <VALUE>65534</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                      </PARAMETER-VALUES>
+                                    </ECUC-CONTAINER-VALUE>
+                                  </SUB-CONTAINERS>
+                                </ECUC-CONTAINER-VALUE>
+                              </SUB-CONTAINERS>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="da018fa8-93fd-43b3-bb19-5f73c79eba22">
+                              <SHORT-NAME>EthFwIpAddr_192_168_1_11_192_168_1_8</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.11</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.8</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrEnd</DEFINITION-REF>
+                                  <VALUE>192.168.1.10</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="4cae6aa4-7294-4125-9997-a52b505ca479">
+                              <SHORT-NAME>EthFwIpAddr_Multicast_Tx</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.11</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrStart</DEFINITION-REF>
+                                  <VALUE>224.0.0.0</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrEnd</DEFINITION-REF>
+                                  <VALUE>239.255.255.255</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="e6ba1639-65cc-47e3-a3e9-49389dc619a1">
+                              <SHORT-NAME>EthFwIpAddr_Broadcast_Tx</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.11</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrStart</DEFINITION-REF>
+                                  <VALUE>255.255.255.255</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="21d05fef-e050-405b-939c-11a70f283015">
+                              <SHORT-NAME>EthFwIpAddr_Multicast_Rx</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>224.0.0.0</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.1</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrEnd</DEFINITION-REF>
+                                  <VALUE>192.168.1.51</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrEnd</DEFINITION-REF>
+                                  <VALUE>239.255.255.255</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="98a1ea39-c8a5-4e2b-9e4a-567daf946d5c">
+                              <SHORT-NAME>EthFwIpAddr_192_168_1_11_192_168_1_10</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.11</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.20</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="a93a74ab-8bdb-444a-8f56-0596f2c66a54">
+                              <SHORT-NAME>EthFwIpAddr_Broadcast_Rx</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>true</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>255.255.255.255</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="17b493b5-c74d-4379-a98b-9f1abd47d040">
+                              <SHORT-NAME>EthFwIpAddr_192_168_1_11_192_168_1_12</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.11</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.12</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="5721e6bb-fd29-4e62-9511-6369b26fd461">
+                              <SHORT-NAME>EthFwIpAddr_192_168_1_11_192_168_1_2</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.11</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.2</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="8a47ac2d-21a2-4f1b-8041-9bef43a22fad">
+                              <SHORT-NAME>EthFwIpAddr_Broadcast_Rx_Subnet</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>false</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>true</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrStart</DEFINITION-REF>
+                                  <VALUE>192.168.1.255</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="94beb1ef-330f-4902-a828-a2f8636454fb">
+                  <SHORT-NAME>EthFwRule_ARP</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/MyECU_EEI_U_ee15deea</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwFrameOwnerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/TcpIp_ARP</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="89c3983f-3b89-45de-8302-301570405a75">
+                      <SHORT-NAME>EthFwMacAddr</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwLocalMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrStart</DEFINITION-REF>
+                          <VALUE>02:00:00:00:00:00</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrEnd</DEFINITION-REF>
+                          <VALUE>02:FF:FF:FF:FF:FF</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="a15aeeb0-3da2-45f3-85d3-64e8805fc4c5">
+                      <SHORT-NAME>EthFwMacProtocol</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol</DEFINITION-REF>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="9e6125fd-f3e8-4613-bf58-ff65fb84972c">
+                      <SHORT-NAME>EthFwMacAddr_001</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwLocalMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrStart</DEFINITION-REF>
+                          <VALUE>AA:00:00:00:00:00</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrEnd</DEFINITION-REF>
+                          <VALUE>FF:FF:FF:FF:FF:FF</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="8a5b6d91-8e63-401b-9088-b080fc827ac8">
+                  <SHORT-NAME>EthFwRule_IPv6_NoVLAN</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/MyECU_EEI_U_ee15deea</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwFrameOwnerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/TcpIp_IPv6</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="afd485cd-5697-437c-9cb6-44de8ddd1907">
+                      <SHORT-NAME>EthFwMacAddr</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwLocalMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="0f9f3027-970a-411b-b3bc-fbd4f12f69e1">
+                      <SHORT-NAME>EthFwMacProtocol</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="25c80fc5-127e-459f-abe9-9219c3969d26">
+                          <SHORT-NAME>EthFwIpRule</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="6b81964d-4229-44d1-8b10-134a1fa417fe">
+                              <SHORT-NAME>EthFwIpProtocol</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol</DEFINITION-REF>
+                              <SUB-CONTAINERS>
+                                <ECUC-CONTAINER-VALUE UUID="48eaebb4-cb08-4943-890f-95b55fdbd7b5">
+                                  <SHORT-NAME>EthFwTcpRule</SHORT-NAME>
+                                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule</DEFINITION-REF>
+                                  <SUB-CONTAINERS>
+                                    <ECUC-CONTAINER-VALUE UUID="57c9fe7c-a657-48df-8d46-83fdece1c9bd">
+                                      <SHORT-NAME>EthFwTcpPort</SHORT-NAME>
+                                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule/EthFwTcpPort</DEFINITION-REF>
+                                      <PARAMETER-VALUES>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule/EthFwTcpPort/EthFwLocalPortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwTcpRule/EthFwTcpPort/EthFwRemotePortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                      </PARAMETER-VALUES>
+                                    </ECUC-CONTAINER-VALUE>
+                                  </SUB-CONTAINERS>
+                                </ECUC-CONTAINER-VALUE>
+                                <ECUC-CONTAINER-VALUE UUID="bb8296ab-ccb4-4a81-9386-bb36a975614e">
+                                  <SHORT-NAME>EthFwUdpRule</SHORT-NAME>
+                                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule</DEFINITION-REF>
+                                  <SUB-CONTAINERS>
+                                    <ECUC-CONTAINER-VALUE UUID="fc9cc2b7-a374-4db4-a383-5ad15318bc5f">
+                                      <SHORT-NAME>EthFwUdpPort</SHORT-NAME>
+                                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort</DEFINITION-REF>
+                                      <PARAMETER-VALUES>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwLocalPortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwRemotePortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                      </PARAMETER-VALUES>
+                                    </ECUC-CONTAINER-VALUE>
+                                  </SUB-CONTAINERS>
+                                </ECUC-CONTAINER-VALUE>
+                                <ECUC-CONTAINER-VALUE UUID="0f3f7d71-df3b-4e2a-9c08-e00936614433">
+                                  <SHORT-NAME>EthFwRawProtocolRule</SHORT-NAME>
+                                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwRawProtocolRule</DEFINITION-REF>
+                                  <PARAMETER-VALUES>
+                                    <ECUC-NUMERICAL-PARAM-VALUE>
+                                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwRawProtocolRule/EthFwAllowAllProtocolTypes</DEFINITION-REF>
+                                      <VALUE>false</VALUE>
+                                    </ECUC-NUMERICAL-PARAM-VALUE>
+                                    <ECUC-NUMERICAL-PARAM-VALUE>
+                                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwRawProtocolRule/EthFwProtocolType</DEFINITION-REF>
+                                      <ANNOTATIONS>
+                                        <ANNOTATION>
+                                          <LABEL>
+                                            <L-4 L="FOR-ALL">ICMP</L-4>
+                                          </LABEL>
+                                          <ANNOTATION-ORIGIN>DV:User</ANNOTATION-ORIGIN>
+                                          <ANNOTATION-TEXT>
+                                            <P>
+                                              <L-1 L="FOR-ALL">PLAIN_TEXT</L-1>
+                                            </P>
+                                            <P>
+                                              <L-1 L="FOR-ALL">ICMP</L-1>
+                                            </P>
+                                          </ANNOTATION-TEXT>
+                                        </ANNOTATION>
+                                      </ANNOTATIONS>
+                                      <VALUE>58</VALUE>
+                                    </ECUC-NUMERICAL-PARAM-VALUE>
+                                  </PARAMETER-VALUES>
+                                </ECUC-CONTAINER-VALUE>
+                              </SUB-CONTAINERS>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="7d169088-9d1f-484d-a0cb-be6a6240fc98">
+                              <SHORT-NAME>EthFwIpAddr</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>true</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>true</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d13db216-eb6d-4aae-9d5b-b16e8d2dd3fd">
+                  <SHORT-NAME>EthFwRule_EthTSyn</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/MyECU_EEI_U_ee15deea</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwFrameOwnerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/EthTSyn_EthTSyn</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="a67f5def-0307-44d1-901d-d6d25e3fe4f4">
+                      <SHORT-NAME>EthFwMacAddr</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwLocalMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="aef3ef1d-7b21-438a-89f3-ea6ce123fb28">
+                      <SHORT-NAME>EthFwMacProtocol</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol</DEFINITION-REF>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c3e17846-b7f5-43d7-8b75-5fef880072fe">
+                  <SHORT-NAME>EthFwRule_IPv6_VLAN10</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/MyECU_EEI_V10_NM_53547422</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwFrameOwnerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EthIf/EthIfConfigSet/TcpIp_IPv6</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="cc7ce834-9b45-40a7-9020-5a3baca88716">
+                      <SHORT-NAME>EthFwMacAddr</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwLocalMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacAddr/EthFwRemoteMacAddrAllowAll</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="5cc78809-9608-4b73-a701-412746426910">
+                      <SHORT-NAME>EthFwMacProtocol</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="4ec0a041-8679-4a15-80e7-ade86fc8543b">
+                          <SHORT-NAME>EthFwIpRule</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="c540ffda-38ca-4bc4-96fc-f2913468468f">
+                              <SHORT-NAME>EthFwIpProtocol</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol</DEFINITION-REF>
+                              <SUB-CONTAINERS>
+                                <ECUC-CONTAINER-VALUE UUID="0fa28dee-c0b8-4e6a-82f4-c31b5acb5566">
+                                  <SHORT-NAME>EthFwUdpRule</SHORT-NAME>
+                                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule</DEFINITION-REF>
+                                  <SUB-CONTAINERS>
+                                    <ECUC-CONTAINER-VALUE UUID="0b515b38-bf8e-425e-9a45-ea0c87c3b9e1">
+                                      <SHORT-NAME>EthFwUdpPort</SHORT-NAME>
+                                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort</DEFINITION-REF>
+                                      <PARAMETER-VALUES>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwLocalPortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                        <ECUC-NUMERICAL-PARAM-VALUE>
+                                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpProtocol/EthFwUdpRule/EthFwUdpPort/EthFwRemotePortAllowAll</DEFINITION-REF>
+                                          <VALUE>true</VALUE>
+                                        </ECUC-NUMERICAL-PARAM-VALUE>
+                                      </PARAMETER-VALUES>
+                                    </ECUC-CONTAINER-VALUE>
+                                  </SUB-CONTAINERS>
+                                </ECUC-CONTAINER-VALUE>
+                              </SUB-CONTAINERS>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="41f20d0c-844e-41c9-a81d-4597c8cec95f">
+                              <SHORT-NAME>EthFwIpAddr</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwLocalIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>true</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwMacProtocol/EthFwIpRule/EthFwIpAddr/EthFwRemoteIpAddrAllowAll</DEFINITION-REF>
+                                  <VALUE>true</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="b1a4f0a3-da18-46bb-b124-191f862bdf11">
+                      <SHORT-NAME>EthFwFramePriority</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwFramePriority</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwConfig/EthFwRule/EthFwFramePriority/EthFwAllowAllFramePriorities</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="f27dd19e-21e2-4f71-afb5-cfa9849761cf">
+              <SHORT-NAME>EthFwGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwVersionInfoApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwEnabled</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwSafeBswChecks</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="354bb4a3-0e08-4663-b62a-b9b82da8a8a9">
+                  <SHORT-NAME>EthFwGeneration</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwOutOfBoundsWriteProtectionStrategy</DEFINITION-REF>
+                      <VALUE>NONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwOutOfBoundsWriteSanitizer</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwOutOfBoundsReadSanitizer</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwNumericalDataTypeMinimizationStrategy</DEFINITION-REF>
+                      <VALUE>NONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceConstantData2Define</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwBoolDataInArrayOfStructStrategy</DEFINITION-REF>
+                      <VALUE>BITMASKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwDeduplicateIndirectedData</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwDataDeduplicationStrategy</DEFINITION-REF>
+                      <VALUE>NONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceBoolDataByNegationThreshold</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceBoolDataByNumericalComparisonThreshold</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceBoolDataByNumericalRelationThreshold</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceBoolDataByNumericalOperandStrategy</DEFINITION-REF>
+                      <VALUE>NONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceNumericalDataByOffsetThreshold</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceNumericalDataByArraySubtractionThreshold</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReduceDataByStreaming</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwShortSymbols</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwInterfacesForDeactivatedData</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/EthFw/EthFwGeneral/EthFwGeneration/EthFwReferringKeysInComments</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

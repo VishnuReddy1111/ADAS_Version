@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="a0e9b114-469d-41cf-9486-861f0d36eaf1">
+          <SHORT-NAME>UdpNm_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="ed6fa0a7-f295-4e4b-bf71-18d22fee5768">
+                <SHORT-NAME>UdpNm_ChannelConfig</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="904f8ba6-5dc1-4a52-ae7e-1e21ec0ea597">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="9fb09357-69c0-4625-bf99-efeff11ca3f0">
+                        <SHORT-NAME>ComControlEnabledOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_ComControlEnabledOfChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_ComControlEnabledOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComControlEnabledOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="f63ac9df-e88b-4e1b-b457-59c42e55f579">
+                        <SHORT-NAME>NodeIdEnabledOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_NodeIdEnabledOfChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_NodeIdEnabledOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>NodeIdEnabledOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="aea2e523-1f5c-4f20-81a7-d8ec1fa74ff1">
+                        <SHORT-NAME>ChannelIdOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_ChannelIdOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ChannelIdOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="e44c49ce-dec5-4b46-b2f8-25e2a6a237c6">
+                        <SHORT-NAME>MsgCycleTimeOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgCycleTimeOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>MsgCycleTimeOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="99449a3c-a243-4ad8-a061-70f7dd1b539d">
+                        <SHORT-NAME>MsgTimeoutTimeOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgTimeoutTimeOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>MsgTimeoutTimeOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="20bc127a-8d4b-4008-b1ee-acc6e77f90cb">
+                        <SHORT-NAME>PduCbvPositionOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_PduCbvPositionOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduCbvPositionOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="ac807a8b-c308-4632-b4a3-80305033fd3d">
+                        <SHORT-NAME>PduNidPositionOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_PduNidPositionOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PduNidPositionOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="d9c44689-ce3f-46d4-a276-fd7a5e4ad443">
+                        <SHORT-NAME>RepeatMessageTimeOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RepeatMessageTimeOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RepeatMessageTimeOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="540b074d-1f21-441e-aec4-7ba6cd8f3750">
+                        <SHORT-NAME>TimeoutTimeOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TimeoutTimeOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TimeoutTimeOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="69633b5a-740f-40fa-bc67-1337d474b47e">
+                        <SHORT-NAME>WaitBusSleepTimeOfChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_WaitBusSleepTimeOfChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>WaitBusSleepTimeOfChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>UdpNm_ChannelConfig</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="42115643-611b-494b-912b-38542f41372b">
+                <SHORT-NAME>UdpNm_PbChannelConfig</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Structure for post-build channel configuration parameters</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="60c30d86-fb74-4afa-b367-063b4784d963">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="1dbcce3e-3eaf-43e7-ba4a-c2ba37ab8b21">
+                        <SHORT-NAME>MsgCycleOffsetOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgCycleOffsetOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>MsgCycleOffsetOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="759558d8-8c42-4de2-bed1-67779ccd4953">
+                        <SHORT-NAME>NodeIdOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_NodeIdOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>NodeIdOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="8149b2a8-016b-4d97-8108-c3d5b1e64b63">
+                        <SHORT-NAME>RxMessageDataEndIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_RxMessageDataEndIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageDataEndIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageDataEndIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="1db5b660-f5bf-4920-81ad-88b52fe92626">
+                        <SHORT-NAME>RxMessageDataLengthOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageDataLengthOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageDataLengthOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="947f8384-4680-472e-88b2-eb5d767c6a4d">
+                        <SHORT-NAME>RxMessageDataStartIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_RxMessageDataStartIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageDataStartIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageDataStartIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="a8e72795-9364-4503-81fc-8c3a4e85a9cd">
+                        <SHORT-NAME>RxMessageData_CBVIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_RxMessageData_CBVIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageData_CBVIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageData_CBVIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="9d48ce62-b65d-4d4d-976f-c3ab8739d340">
+                        <SHORT-NAME>RxMessageData_NIDIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_RxMessageData_NIDIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageData_NIDIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageData_NIDIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="d867115c-1e10-4855-9419-f14f819b04ec">
+                        <SHORT-NAME>RxMessageData_UserDataEndIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_RxMessageData_UserDataEndIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageData_UserDataEndIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageData_UserDataEndIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="ead4febf-9500-4f85-bee0-693c5e7c70c7">
+                        <SHORT-NAME>RxMessageData_UserDataLengthOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageData_UserDataLengthOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageData_UserDataLengthOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="8cb14639-f98b-4872-b579-a6a4f11291dc">
+                        <SHORT-NAME>RxMessageData_UserDataStartIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_RxMessageData_UserDataStartIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageData_UserDataStartIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxMessageData_UserDataStartIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="20674927-c166-46c2-9d74-db779f0041e9">
+                        <SHORT-NAME>TxMessageDataEndIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxMessageDataEndIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageDataEndIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageDataEndIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="5a3f8301-9142-4b6d-91df-3368236d0b7e">
+                        <SHORT-NAME>TxMessageDataLengthOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageDataLengthOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageDataLengthOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="59fe04b4-53a9-4327-af3c-ca1a4f94f278">
+                        <SHORT-NAME>TxMessageDataStartIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxMessageDataStartIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageDataStartIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageDataStartIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="943449b5-2ee2-41d7-b52e-f1e24682c0a8">
+                        <SHORT-NAME>TxMessageData_CBVIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxMessageData_CBVIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageData_CBVIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageData_CBVIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="4499553c-1652-4db8-b722-6601f3ef44a7">
+                        <SHORT-NAME>TxMessageData_NIDIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxMessageData_NIDIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageData_NIDIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageData_NIDIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="0bc6e057-800a-4dec-b1e7-1c11aa0f6c22">
+                        <SHORT-NAME>TxMessageData_UserDataEndIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxMessageData_UserDataEndIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageData_UserDataEndIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageData_UserDataEndIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="57a3f9d5-bceb-45ec-adf4-b7e78ccb5080">
+                        <SHORT-NAME>TxMessageData_UserDataLengthOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageData_UserDataLengthOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageData_UserDataLengthOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="daadddcc-d69a-4455-9f44-fc69fe160988">
+                        <SHORT-NAME>TxMessageData_UserDataStartIdxOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxMessageData_UserDataStartIdxOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageData_UserDataStartIdxOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxMessageData_UserDataStartIdxOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="4c304930-24f3-4069-8c90-60083e20c6a0">
+                        <SHORT-NAME>TxPduIdOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxPduIdOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxPduIdOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxPduIdOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="ab1fa9b9-b837-4f9c-b2f4-80c87b9f64f9">
+                        <SHORT-NAME>TxUserDataPduIdOfPbChannelConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_TxUserDataPduIdOfPbChannelConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxUserDataPduIdOfPbChannelConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>TxUserDataPduIdOfPbChannelConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>UdpNm_PbChannelConfig</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="9df8fdd1-fa1a-4413-8e1f-97da4f28c129">
+                <SHORT-NAME>UdpNm_SysToNmChInd</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Channel indirection: System Channel handle to NM channel handle</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>4</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_SysToNmChIndType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_SysToNmChIndType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_SysToNmChInd</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="688996d1-260e-4d7b-95f9-48a9fb1ed516">
+                <SHORT-NAME>UdpNm_CommState</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Internal state for the application's need for communication.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_CommStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_CommState.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="f189d870-8792-4ff3-8514-96484fa568f9">
+                <SHORT-NAME>UdpNm_CommState_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_CommState</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_CommStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_CommState.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="0c560a3a-872a-450a-93fa-95e117631e33">
+                <SHORT-NAME>UdpNm_CoordReadyToSleepState</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">State for Rx of Coordinator Sleep Ready Bit:</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_CoordReadyToSleepStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_CoordReadyToSleepState.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="4e30e43c-9f65-41a9-bb42-2cd11f276d6e">
+                <SHORT-NAME>UdpNm_CoordReadyToSleepState_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_CoordReadyToSleepState</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_CoordReadyToSleepStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_CoordReadyToSleepState.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="c10b45f6-c259-4dfd-8ea0-a69d6e955032">
+                <SHORT-NAME>UdpNm_MsgConfirmationFlag</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Message Confirmation Flag</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_MsgConfirmationFlagType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgConfirmationFlagType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgConfirmationFlag.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="37534174-5663-4b06-ae65-abd19d4a3ae0">
+                <SHORT-NAME>UdpNm_MsgConfirmationFlag_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_MsgConfirmationFlag</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_MsgConfirmationFlagType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgConfirmationFlagType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgConfirmationFlag.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="2010c52e-defd-4be5-ab67-92e074936845">
+                <SHORT-NAME>UdpNm_MsgIndicationFlag</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Message Indication Flag</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_MsgIndicationFlagType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgIndicationFlagType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgIndicationFlag.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="5ff50731-af55-401c-a1f3-2074a20657aa">
+                <SHORT-NAME>UdpNm_MsgIndicationFlag_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_MsgIndicationFlag</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_MsgIndicationFlagType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgIndicationFlagType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgIndicationFlag.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="3c273abf-8ead-4b56-9a9e-a9165b95d603">
+                <SHORT-NAME>UdpNm_MsgRequest</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Internal Message Request Variable</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgRequestType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgRequest.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="03568b89-ba71-44e2-8dcc-ac53b60770df">
+                <SHORT-NAME>UdpNm_MsgRequest_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_MsgRequest</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgRequestType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgRequest.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="00cba038-f790-4e7d-8025-2232b76f7620">
+                <SHORT-NAME>UdpNm_MsgTimeoutTimer</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgTimeoutTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgTimeoutTimer.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="27b9589d-8df1-4d56-905b-ce14388ef9bd">
+                <SHORT-NAME>UdpNm_MsgTimeoutTimer_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_MsgTimeoutTimer</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgTimeoutTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgTimeoutTimer.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="836198df-a10a-4358-83e2-1d795d1ed436">
+                <SHORT-NAME>UdpNm_MsgTimer</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Timer for NM message transmission.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgTimer.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="85371a21-9a5b-487d-bafe-086ad28faece">
+                <SHORT-NAME>UdpNm_MsgTimer_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_MsgTimer</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_MsgTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_MsgTimer.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="63f4592f-d3f8-44ec-b56b-d477f916ffd6">
+                <SHORT-NAME>UdpNm_NetworkRestartFlag</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_NetworkRestartFlagType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_NetworkRestartFlag.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="122d30de-a510-4325-8f63-e3d16b027d47">
+                <SHORT-NAME>UdpNm_NetworkRestartFlag_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_NetworkRestartFlag</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_NetworkRestartFlagType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_NetworkRestartFlag.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="aac744c6-7cf3-4aee-9d52-e449a7dea2cb">
+                <SHORT-NAME>UdpNm_NmState</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Current state of the state machine</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_NmStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_NmState.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="9e90505b-1fae-4727-8fbd-0c19e390b9ae">
+                <SHORT-NAME>UdpNm_NmState_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_NmState</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_NmStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_NmState.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="8efb9024-4d45-4dc3-846a-e2d70f00d8df">
+                <SHORT-NAME>UdpNm_RepeatMsgTimer</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RepeatMsgTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_RepeatMsgTimer.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="47baf702-a7f7-4fe2-801f-3cfa0ec9d3f0">
+                <SHORT-NAME>UdpNm_RepeatMsgTimer_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_RepeatMsgTimer</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RepeatMsgTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_RepeatMsgTimer.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="d00326fe-7f56-4dba-b945-259294941c0c">
+                <SHORT-NAME>UdpNm_RxMessageData</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>8</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_RxMessageDataType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_RxMessageData</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="a202d459-5611-49fa-b1a4-5686f3f78d2a">
+                <SHORT-NAME>UdpNm_TimeoutTimer</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Timer for NM Algorithm.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TimeoutTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_TimeoutTimer.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="4a10290d-9009-471f-aef2-a49b3f0a14b8">
+                <SHORT-NAME>UdpNm_TimeoutTimer_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_TimeoutTimer</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TimeoutTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_TimeoutTimer.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="08a2e804-e4d4-402a-87bd-0b0efff230dd">
+                <SHORT-NAME>UdpNm_TxControlState</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Message transmission control state.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxControlStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_TxControlState.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="e5da5101-e4d2-4abb-b96a-3e4b662ec72b">
+                <SHORT-NAME>UdpNm_TxControlState_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_TxControlState</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxControlStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_TxControlState.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="40c8cbc1-3d46-4aa7-b88f-2d5ebffb5194">
+                <SHORT-NAME>UdpNm_TxControlStateRequest</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Message transmission control state request.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxControlStateRequestType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_TxControlStateRequest.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="90b8f818-a274-4ec5-8b00-fe1d866dab4a">
+                <SHORT-NAME>UdpNm_TxControlStateRequest_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_TxControlStateRequest</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxControlStateRequestType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_TxControlStateRequest.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="ea815e8e-f16f-4b25-aa4c-77efe44a2052">
+                <SHORT-NAME>UdpNm_TxMessageData</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>8</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_TxMessageDataType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_TxMessageData</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="66b4aa3c-2134-4c2d-8c0d-c0dca3dd95c3">
+                <SHORT-NAME>UdpNm_WaitBusSleepTimer</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_WaitBusSleepTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_WaitBusSleepTimer.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="d39910c5-f946-45b8-bab2-2f8eb5c13097">
+                <SHORT-NAME>UdpNm_WaitBusSleepTimer_MyECU_EEI_V10_NM_53547422</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: MyECU_EEI_V10_NM_53547422 of UdpNm_WaitBusSleepTimer</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_WaitBusSleepTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_WaitBusSleepTimer.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="8b0efcb3-11e4-4591-bbe7-f77367cb268f">
+                <SHORT-NAME>UdpNm_ModuleInitialized</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/UdpNm_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/UdpNm_ib_bswmd/DataTypes/CompuMethods/UdpNm_ModuleInitializedType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/UdpNm_ib_bswmd/DataTypes/DataConstrs/UdpNm_ModuleInitializedType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>UdpNm_ModuleInitialized</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <SW-VERSION>6.01.01</SW-VERSION>
+          <USED-CODE-GENERATOR>DaVinci Configurator</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.01.01</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="628ee07c-b657-40b3-a216-ae750da9b5b2">
+          <SHORT-NAME>UdpNm_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="758fa012-f4e8-4383-aecc-61cabfa4c5ef">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="b0b08dac-2a60-42ed-9bb9-a0af1abec4e2">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="e31f61ed-244c-4bdd-b4e0-cbf1dfddad5d">
+                      <SHORT-NAME>boolean</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="c1a6b69a-ca3c-4dfb-a5f7-f8cecbc9ae8c">
+                      <SHORT-NAME>uint16</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="4b008791-a2f7-48b9-9d0c-f8ffaf3fd9d8">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="b144cec4-e0bb-47a0-945c-7633bec6c5a0">
+                      <SHORT-NAME>uint32</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="24a79494-d34c-429c-bf74-d8475aa44e58">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="3e101852-cbc0-44a7-b6a4-5ad628951bc8">
+                      <SHORT-NAME>UdpNm_ComControlEnabledOfChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="ee87a17c-899c-4642-9f9f-999f7e9c9e9f">
+                      <SHORT-NAME>UdpNm_ModuleInitializedType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="9f214d36-7a44-42c6-b2f6-046292ae9425">
+                      <SHORT-NAME>UdpNm_MsgConfirmationFlagType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="28b9a23e-40c3-4fe8-be72-5ae71ffdf57c">
+                      <SHORT-NAME>UdpNm_MsgIndicationFlagType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="e3f39c24-0198-4c82-a2e5-a46bb9887070">
+                      <SHORT-NAME>UdpNm_NodeIdEnabledOfChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="ef6b54f0-5724-4d07-880d-5f68f040d29f">
+                      <SHORT-NAME>UdpNm_RxMessageDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_RXMESSAGEDATAENDIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="e9c76f19-36dd-4cb1-b315-b4b59cde5d5a">
+                      <SHORT-NAME>UdpNm_RxMessageDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_RXMESSAGEDATASTARTIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="c2d8fd13-84fc-40eb-a977-c058b7f00345">
+                      <SHORT-NAME>UdpNm_RxMessageData_CBVIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_RXMESSAGEDATA_CBVIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="303130ff-b1ff-4d96-846b-4946f47b602a">
+                      <SHORT-NAME>UdpNm_RxMessageData_NIDIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_RXMESSAGEDATA_NIDIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="4a03a9ad-f805-4e5b-9a19-bc0f9bbd150d">
+                      <SHORT-NAME>UdpNm_RxMessageData_UserDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_RXMESSAGEDATA_USERDATAENDIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="f960476c-8150-4bde-8be8-4d404f41fca2">
+                      <SHORT-NAME>UdpNm_RxMessageData_UserDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_RXMESSAGEDATA_USERDATASTARTIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="39479d4f-83a8-46a8-b86a-3e82662a5301">
+                      <SHORT-NAME>UdpNm_SysToNmChIndType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_SYSTONMCHIND</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="a9e65dd3-04cf-42cd-8f61-8ef40c932035">
+                      <SHORT-NAME>UdpNm_TxMessageDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXMESSAGEDATAENDIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="1ee752b4-b494-4e4c-ab94-06c720b78704">
+                      <SHORT-NAME>UdpNm_TxMessageDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXMESSAGEDATASTARTIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="0902cca6-a02f-40c0-8d0f-79d04fab4df9">
+                      <SHORT-NAME>UdpNm_TxMessageData_CBVIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXMESSAGEDATA_CBVIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="b79b4dfd-4f25-48a6-98f9-32c3d367e156">
+                      <SHORT-NAME>UdpNm_TxMessageData_NIDIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXMESSAGEDATA_NIDIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="582a1458-6dbe-48be-98ac-4ccc09584c06">
+                      <SHORT-NAME>UdpNm_TxMessageData_UserDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXMESSAGEDATA_USERDATAENDIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="49fee4fc-e261-4c84-b6c3-0ed02ccd5910">
+                      <SHORT-NAME>UdpNm_TxMessageData_UserDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXMESSAGEDATA_USERDATASTARTIDXOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="5f5fcee6-ef0f-495b-98a9-beca7195a6d2">
+                      <SHORT-NAME>UdpNm_TxPduIdOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXPDUIDOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="58e38d9f-64a5-4ed0-b2d4-3a957940cb9f">
+                      <SHORT-NAME>UdpNm_TxUserDataPduIdOfPbChannelConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>UDPNM_NO_TXUSERDATAPDUIDOFPBCHANNELCONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="c8455662-1b8e-410d-b56c-74e1573c52dd">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="84e8bba0-87c6-45bc-8e95-b35eddf5ca07">
+                      <SHORT-NAME>UdpNm_ChannelIdOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="f33285ac-da6a-48ac-909f-3cc51d957d56">
+                      <SHORT-NAME>UdpNm_ComControlEnabledOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="4ce6124a-9c49-4e93-9cb2-250c3fd2fd8d">
+                      <SHORT-NAME>UdpNm_CommStateType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="1edc1b58-22e6-42d7-8989-830ea2955f60">
+                      <SHORT-NAME>UdpNm_CoordReadyToSleepStateType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="fc47a82e-332e-40de-a175-4ecea9a30751">
+                      <SHORT-NAME>UdpNm_ModuleInitializedType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="baea36e2-5443-4f0b-ad1a-30f8411376af">
+                      <SHORT-NAME>UdpNm_MsgConfirmationFlagType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="44f8c586-f546-4758-a839-c8c0ec5e4c6d">
+                      <SHORT-NAME>UdpNm_MsgCycleOffsetOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="629ca789-2d4b-4dce-a149-dc88a499b7db">
+                      <SHORT-NAME>UdpNm_MsgCycleTimeOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="3ac32110-3b39-4d91-bce3-c38978429f7b">
+                      <SHORT-NAME>UdpNm_MsgIndicationFlagType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="fe518317-056f-4ffc-a789-2509d97e4e03">
+                      <SHORT-NAME>UdpNm_MsgRequestType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="65635827-464e-4035-a8a5-7fb8a81d7ee3">
+                      <SHORT-NAME>UdpNm_MsgTimeoutTimeOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="414c6d67-dff0-4a1c-93f7-0aab05ff8729">
+                      <SHORT-NAME>UdpNm_MsgTimeoutTimerType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="d45917cb-3407-4415-9757-bac20107f75c">
+                      <SHORT-NAME>UdpNm_MsgTimerType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="3ea200b4-fdb4-438a-924b-83fc87d62ed7">
+                      <SHORT-NAME>UdpNm_NetworkRestartFlagType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="8b42d4ea-7a7b-44d1-88a7-682aa2b3ea30">
+                      <SHORT-NAME>UdpNm_NmStateType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="ef28207e-7fea-43a6-b81f-cc31fbe8dad7">
+                      <SHORT-NAME>UdpNm_NodeIdEnabledOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="30b3a1f1-1b6a-4f1c-af60-1c93ea50270f">
+                      <SHORT-NAME>UdpNm_NodeIdOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="c2b9b3fc-600a-4375-bc93-eb5b88bdc831">
+                      <SHORT-NAME>UdpNm_PduCbvPositionOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="3bf893b9-6f52-4d5c-a742-6022a7d2fe25">
+                      <SHORT-NAME>UdpNm_PduNidPositionOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="2866529d-e85f-491e-bfc1-566e907effe4">
+                      <SHORT-NAME>UdpNm_RepeatMessageTimeOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="49b956c0-80b9-4c74-8078-a53544a801ec">
+                      <SHORT-NAME>UdpNm_RepeatMsgTimerType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="911e27fe-3b0b-4ac5-9b4b-a04b9998de3a">
+                      <SHORT-NAME>UdpNm_RxMessageDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="40ac0a0d-da3c-4111-a88a-29d99a54b71b">
+                      <SHORT-NAME>UdpNm_RxMessageDataLengthOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="ba457c72-ab89-4709-9dd9-cfcda676f09b">
+                      <SHORT-NAME>UdpNm_RxMessageDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="680d5a97-30f0-4e30-a3bb-0912eefd36d3">
+                      <SHORT-NAME>UdpNm_RxMessageDataType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="6e803076-1b23-47bc-8572-83c65857ca9d">
+                      <SHORT-NAME>UdpNm_RxMessageData_CBVIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="59b64d2f-8fd5-4153-aa72-b0b73a0873cc">
+                      <SHORT-NAME>UdpNm_RxMessageData_NIDIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="3977ca81-39e0-4376-8e76-c4e7e871ecb2">
+                      <SHORT-NAME>UdpNm_RxMessageData_UserDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="ae25057a-8654-467c-9a41-cad0c451d030">
+                      <SHORT-NAME>UdpNm_RxMessageData_UserDataLengthOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="a76c90ac-abe2-4e28-a526-5d479b853014">
+                      <SHORT-NAME>UdpNm_RxMessageData_UserDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="fd4845b1-5f4c-44b2-bad0-47652f21ea33">
+                      <SHORT-NAME>UdpNm_SysToNmChIndType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="062b34c9-cfa5-4c2a-a92e-c476ce21fbfa">
+                      <SHORT-NAME>UdpNm_TimeoutTimeOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="b47fbef4-b9a5-48ac-82ad-c567f6b9b628">
+                      <SHORT-NAME>UdpNm_TimeoutTimerType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="3b8be2ab-68d9-45a8-a990-b78e40a22e6e">
+                      <SHORT-NAME>UdpNm_TxControlStateRequestType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="316af384-8e08-413c-a136-bcce93169af5">
+                      <SHORT-NAME>UdpNm_TxControlStateType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="dedb5eaf-c79b-4b43-a9e4-d2bc8716b39a">
+                      <SHORT-NAME>UdpNm_TxMessageDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="bb307f32-cae1-448d-8f51-1340ca059584">
+                      <SHORT-NAME>UdpNm_TxMessageDataLengthOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="944f7505-3467-4455-b1ec-b0477586a069">
+                      <SHORT-NAME>UdpNm_TxMessageDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="0e09ce3e-05dd-4f8d-b8b2-460f7649401d">
+                      <SHORT-NAME>UdpNm_TxMessageDataType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="4e7369b6-9bb5-4f43-9f7f-1bef0f207157">
+                      <SHORT-NAME>UdpNm_TxMessageData_CBVIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="99ce0436-b873-4780-945e-5f3b90df1807">
+                      <SHORT-NAME>UdpNm_TxMessageData_NIDIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="6b53260d-10b7-4b18-b66f-8fd50bec795f">
+                      <SHORT-NAME>UdpNm_TxMessageData_UserDataEndIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="710dfa4e-6d7f-40b4-9e5f-120c461d4044">
+                      <SHORT-NAME>UdpNm_TxMessageData_UserDataLengthOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="5be0ff01-defc-4404-830f-35a7c0f5bdcd">
+                      <SHORT-NAME>UdpNm_TxMessageData_UserDataStartIdxOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="10bd4728-b990-4b4e-b1b0-38aada6c0acf">
+                      <SHORT-NAME>UdpNm_TxPduIdOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="60b5ac2f-0c4d-4da0-bc3d-fd7287bf52ab">
+                      <SHORT-NAME>UdpNm_TxUserDataPduIdOfPbChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="2db48973-9f2d-4e9b-85d7-6f53a22e0e5c">
+                      <SHORT-NAME>UdpNm_WaitBusSleepTimeOfChannelConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="303a17dd-8ed7-4fab-9c5b-deea8037a89b">
+                      <SHORT-NAME>UdpNm_WaitBusSleepTimerType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="86d003af-3b37-4344-a83d-acf7957ffe89">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

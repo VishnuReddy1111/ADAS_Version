@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-0000009c84de">
+          <SHORT-NAME>Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_network_infrastructure</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_1747150</SDX-REF>
+              </SDG>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ce4d-e150-000000e749a1">
+              <SHORT-NAME>SP_IF_DEV_Hybrid_01_Resp_FF_FD_Data_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DEV_Hybrid_01_Resp_FF_FD_Data/DE_DEV_Hybrid_01_Resp_FF_FD_Data</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DEV_Hybrid_01_Resp_FF_FD_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-1b10-e150-00000124f26b">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_Lokalaktiv_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_Lokalaktiv/DE_DS_Hybrid_01_Lokalaktiv</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_Lokalaktiv</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d9db-e150-00000124eb0c">
+              <SHORT-NAME>SP_IF_DS_Hybrid_01_Subsystemaktiv_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DS_Hybrid_01_Subsystemaktiv/DE_DS_Hybrid_01_Subsystemaktiv</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DS_Hybrid_01_Subsystemaktiv</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-415d-e150-000000ed1bf6">
+              <SHORT-NAME>SP_IF_Hybrid_01_Nachlauftyp_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_Hybrid_01_Nachlauftyp/DE_Hybrid_01_Nachlauftyp</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_Hybrid_01_Nachlauftyp</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-77f0-e150-000000d52d34">
+              <SHORT-NAME>SP_IF_KN_Hybrid_01_BusKnockOut_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_KN_Hybrid_01_BusKnockOut/DE_KN_Hybrid_01_BusKnockOut</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_KN_Hybrid_01_BusKnockOut</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-b470-e150-000000d52d3a">
+              <SHORT-NAME>SP_IF_KN_Hybrid_01_BusKnockOutTimer_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_KN_Hybrid_01_BusKnockOutTimer/DE_KN_Hybrid_01_BusKnockOutTimer</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_KN_Hybrid_01_BusKnockOutTimer</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-051d-e150-000000d52d2e">
+              <SHORT-NAME>SP_IF_KN_Hybrid_01_ECUKnockOut_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_KN_Hybrid_01_ECUKnockOut/DE_KN_Hybrid_01_ECUKnockOut</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_KN_Hybrid_01_ECUKnockOut</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-a5d1-e150-000000d52d2a">
+              <SHORT-NAME>SP_IF_KN_Hybrid_01_ECUKnockOutTimer_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_KN_Hybrid_01_ECUKnockOutTimer/DE_KN_Hybrid_01_ECUKnockOutTimer</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_KN_Hybrid_01_ECUKnockOutTimer</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-4177-e150-000001174d36">
+              <SHORT-NAME>SP_IF_NM_aktiv_Konditionierungsbedarf_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_aktiv_Konditionierungsbedarf/DE_NM_aktiv_Konditionierungsbedarf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_aktiv_Konditionierungsbedarf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2bb6-e150-0000014484e1">
+              <SHORT-NAME>SP_IF_NM_aktiv_SubbusSteuerung_BMC_HV_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_aktiv_SubbusSteuerung_BMC_HV/DE_NM_aktiv_SubbusSteuerung_BMC_HV</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_aktiv_SubbusSteuerung_BMC_HV</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d290-e150-000001156435">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_CAB_V12_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_CAB_V12/DE_NM_Hybrid_01_CAB_V12</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_CAB_V12</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-9aff-e150-0000003e6a79">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_CBV_AWB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_CBV_AWB/DE_NM_Hybrid_01_CBV_AWB</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_CBV_AWB</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-9cdd-e150-0000003e6a3c">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_CBV_CRI_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_CBV_CRI/DE_NM_Hybrid_01_CBV_CRI</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_CBV_CRI</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-8059-e150-000000d52d3e">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_FCAB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_FCAB/DE_NM_Hybrid_01_FCAB</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_FCAB</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-5d55-e150-000000d52d65">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_FCIB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_FCIB/DE_NM_Hybrid_01_FCIB</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_FCIB</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2127-e150-00000120b605">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_Lokalaktiv_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_Lokalaktiv/DE_NM_Hybrid_01_Lokalaktiv</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_Lokalaktiv</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-e811-e150-000000d52d61">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_NM_aktiv_Diag_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_NM_aktiv_Diag/DE_NM_Hybrid_01_NM_aktiv_Diag</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_NM_aktiv_Diag</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ebd0-e150-00000006e4f6">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_NM_aktiv_KL15_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_NM_aktiv_KL15/DE_NM_Hybrid_01_NM_aktiv_KL15</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_NM_aktiv_KL15</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-9fee-e150-00000006e4f7">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_NM_aktiv_Tmin_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_NM_aktiv_Tmin/DE_NM_Hybrid_01_NM_aktiv_Tmin</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_NM_aktiv_Tmin</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-21f3-e150-00000006e4f4">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_NM_State_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_NM_State/DE_NM_Hybrid_01_NM_State</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_NM_State</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-62f8-e150-000000e8b673">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_SNI_10_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_SNI_10/DE_NM_Hybrid_01_SNI_10</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_SNI_10</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-489a-e150-00000120b71e">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_Subsystemaktiv_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_Subsystemaktiv/DE_NM_Hybrid_01_Subsystemaktiv</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_Subsystemaktiv</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ca29-e150-00000006e4fb">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_UDS_CC_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_UDS_CC/DE_NM_Hybrid_01_UDS_CC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_UDS_CC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-453d-e150-0000010f3bb7">
+              <SHORT-NAME>SP_IF_NM_Hybrid_01_Wakeup_V12_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Hybrid_01_Wakeup_V12/DE_NM_Hybrid_01_Wakeup_V12</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Hybrid_01_Wakeup_V12</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1b36-e150-000000e74950">
+              <SHORT-NAME>RP_IF_DEV_Hybrid_01_Req_00_FD_Data_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DEV_Hybrid_01_Req_00_FD_Data/DE_DEV_Hybrid_01_Req_00_FD_Data</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DEV_Hybrid_01_Req_00_FD_Data</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b79d-e150-000000a40b90">
+              <SHORT-NAME>RP_IF_KST_KL_15_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_KST_KL_15/DE_KST_KL_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_KST_KL_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-495c-e150-000000da345e">
+              <SHORT-NAME>RP_IF_NM_AWC_FCAB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_AWC_FCAB/DE_NM_AWC_FCAB</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_AWC_FCAB</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8008-e150-000001295390">
+              <SHORT-NAME>RP_IF_NM_Dummy01_NM_State_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Dummy01_NM_State/DE_NM_Dummy01_NM_State</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Dummy01_NM_State</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2e95-e150-000000a22e80">
+              <SHORT-NAME>RP_IF_NM_Gateway_FCAB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Gateway_FCAB/DE_NM_Gateway_FCAB</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Gateway_FCAB</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c9cb-e150-000000e8bad9">
+              <SHORT-NAME>RP_IF_NM_HVZB_FCAB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_HVZB_FCAB/DE_NM_HVZB_FCAB</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_HVZB_FCAB</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c251-e150-00000142af92">
+              <SHORT-NAME>RP_IF_NM_Ladegeraet_FCAB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_Ladegeraet_FCAB/DE_NM_Ladegeraet_FCAB</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_Ladegeraet_FCAB</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e867-e150-000000d8fb25">
+              <SHORT-NAME>RP_IF_NM_SACID_1_FCAB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_SACID_1_FCAB/DE_NM_SACID_1_FCAB</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_SACID_1_FCAB</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1252-e150-000000d8fb6b">
+              <SHORT-NAME>RP_IF_NM_SACID_2_FCAB_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NM_SACID_2_FCAB/DE_NM_SACID_2_FCAB</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NM_SACID_2_FCAB</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3e6d-e150-0000008b5e02">
+              <SHORT-NAME>RP_IF_NVEM_Abschaltstufe_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_NVEM_Abschaltstufe/DE_NVEM_Abschaltstufe</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_NVEM_Abschaltstufe</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ce73-e150-0000009c9993">
+              <SHORT-NAME>RP_IF_SI_NWDF_30_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SI_NWDF_30/DE_SI_NWDF_30</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SI_NWDF_30</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8a6c-e150-000000050912">
+              <SHORT-NAME>RP_IF_SI_NWDF_XIX_Infrastructure_Hybrid_01_XIX_network_infrastructure_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SI_NWDF/DE_SI_NWDF</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SI_NWDF</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

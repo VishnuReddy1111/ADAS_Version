@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="06f2a960-c62e-456a-80ee-db03a601390a">
+          <SHORT-NAME>LinIf_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="77a78321-6beb-40cb-861b-c0e665306427">
+                <SHORT-NAME>LinIf_InitState</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">LinIf initialization state. If it has been initialized, this value is not equal to zero.</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinIf_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinIf_ib_bswmd/DataTypes/CompuMethods/LinIf_InitStateEnum</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinIf_ib_bswmd/DataTypes/DataConstrs/LinIf_InitStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinIf_Dev_InitDetect</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="69ec1209-b218-476f-886d-ca6721fc8fd8">
+                <SHORT-NAME>LinIf_ChannelState_0</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">LinIf channel state for channel 0</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinIf_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinIf_ib_bswmd/DataTypes/CompuMethods/LinIf_ChannelStateEnum</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinIf_ib_bswmd/DataTypes/DataConstrs/LinIf_ChannelStateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinIf_ChannelData[0].LinIf_ChannelState</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="f32e5958-830d-4ff1-8365-31cbb9106195">
+                <SHORT-NAME>LinIf_InternalStateTransition_0</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">LinIf internal state transition status for channel 0</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinIf_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinIf_ib_bswmd/DataTypes/CompuMethods/LinIf_InternalStateTransitionEnum</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinIf_ib_bswmd/DataTypes/DataConstrs/LinIf_InternalStateTransitionType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinIf_ChannelData[0].LinIf_OnSleepModeFrameHandling</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="37d25960-1fb5-4e25-8c72-1479835351a4">
+                <SHORT-NAME>LinIf_CurrentScheduleTable_0</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">LinIf current schedule table on channel 0</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinIf_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinIf_ib_bswmd/DataTypes/CompuMethods/LinIf_ScheduleTableEnum</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinIf_ib_bswmd/DataTypes/DataConstrs/LinIf_ScheduleTableType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinIf_ChannelData[0].LinIf_SchedTabData.LinIf_CurrentTable</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="717d94ae-5d96-43e2-9f33-d6338a020c5a">
+                <SHORT-NAME>LinIf_CurrentScheduleTableSlot_0</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">LinIf current processed slot in active schedule table on channel 0</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinIf_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinIf_ib_bswmd/DataTypes/DataConstrs/uint8</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinIf_ChannelData[0].LinIf_SchedTabData.LinIf_CurrentSlot</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <SW-VERSION>10.00.00</SW-VERSION>
+          <USED-CODE-GENERATOR>DaVinci Configurator</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.00.03</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="3916d36e-ab95-49ab-9c65-69c0d5f0df4e">
+          <SHORT-NAME>LinIf_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="1fa116cf-54ef-4037-b367-85916a943549">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="6f5e244f-336f-4546-8913-05b9482a0a3e">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="7690f4fd-fc5e-48a5-b021-532eb5a57f32">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="203b5caa-0fa5-47f1-bf07-5bc27677d8ad">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="15bfea71-adb4-4e12-929a-a8c6e35c52e2">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="c61789b4-1ef0-41e2-b65f-b89a07f68a84">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="08257066-52fc-476a-811d-0445ce408032">
+                      <SHORT-NAME>LinIf_ChannelStateEnum</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_CHANNEL_UNINIT</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_CHANNEL_OPERATIONAL</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_CHANNEL_SLEEP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="30774e75-f48f-4bf7-817d-46c5afe0fe54">
+                      <SHORT-NAME>LinIf_InitStateEnum</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_UNINIT</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">165</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">165</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_INIT</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="37e9ca0f-6ea2-4651-b3fc-325043ac5dcb">
+                      <SHORT-NAME>LinIf_InternalStateTransitionEnum</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_IDLE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_SLEEP_REQUESTED</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_SLEEP_TRANSMISSION</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_REWAKE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">4</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_SLEEP_REQUESTED_INTERNAL</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">5</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINIF_WAKEUP_TRANSMISSION</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="f925eba4-4c68-4976-af5c-a07a34643105">
+                      <SHORT-NAME>LinIf_ScheduleTableEnum</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LinIfConf_LinIfScheduleTable_NULLSchedule</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LinIfConf_LinIfScheduleTable_Diagnose_09c374bf</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LinIfConf_LinIfScheduleTable_Normal_48a571ca</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="3ec02e6e-6be2-4144-a950-6e16675455e8">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="f1d6b2b5-17dc-4065-b8ca-5b46d9950d62">
+                      <SHORT-NAME>LinIf_ChannelStateType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="311fef57-b390-4310-b7e3-fd4f6a718168">
+                      <SHORT-NAME>LinIf_InitStateType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="a664c41d-7fad-4fbc-a2c0-8a9fc35bcc5a">
+                      <SHORT-NAME>LinIf_InternalStateTransitionType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="deecfaff-c59c-41a1-835b-f6b47304b933">
+                      <SHORT-NAME>LinIf_ScheduleTableType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="0ec00bd4-0375-4ea6-8957-ffb777e1ae8b">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

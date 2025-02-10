@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="03499098-918F-4894-84DE-39D948C68B46">
+          <SHORT-NAME>DiagA</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="DE3F2D54-8CC4-47D8-A0D6-CFAC15995F2E">
+              <SHORT-NAME>Data_0x0245_Configuration_Hash</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0245_Configuration_Hash/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0245_Configuration_Hash/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Ivd/Interfaces/DataServices_Data_0x0245_Configuration_Hash</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="7248553B-7892-4EC8-9441-96EFDEF405FE">
+              <SHORT-NAME>Data_0x0249_Programming_Hash</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0249_Programming_Hash/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0249_Programming_Hash/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Ivd/Interfaces/DataServices_Data_0x0249_Programming_Hash</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="A5E6F63C-9623-499A-BE66-EB103BD8BBDF">
+              <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/ReadDataLength</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="9E4A59EA-B3DF-4118-AE11-4DD55F4C9D11">
+              <SHORT-NAME>Data_0x0250_SFD2</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/ReadDataLength</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="BB3A260D-9893-44C2-BF4A-BBE65A457298">
+              <SHORT-NAME>Data_0xF18F_SFD2</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/ReadDataLength</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="1C53554E-995F-42B3-B736-67EFB7A620AE">
+              <SHORT-NAME>Routine_0x0253_Calculate_integrity_validation_data_Start</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/RoutineServices_Routine_0x0253_Calculate_integrity_validation_data_Start/Start</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Ivd/Interfaces/RoutineServices_Routine_0x0253_Calculate_integrity_validation_data_Start</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="175549F4-C07D-4FEA-9946-D539A6D3030F">
+              <SHORT-NAME>Routine_0x0254_Calculate_individual_hash_value_Start</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/RoutineServices_Routine_0x0254_Calculate_individual_hash_value_Start/Start</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Ivd/Interfaces/RoutineServices_Routine_0x0254_Calculate_individual_hash_value_Start</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="07794C23-8B76-4231-9462-77DCE6481262">
+              <SHORT-NAME>SlaveListProgCfgHash</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Ivd_SlaveListProgCfgHash/Data</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Ivd_SlaveListProgCfgHash/Hash</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/Ivd_SlaveListProgCfgHash</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="E63CA5CB-3AD0-4DF6-8F79-E5A50D21B611">
+              <SHORT-NAME>DiagA_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <OPERATION-INVOKED-EVENT UUID="4E491DF1-FC8E-485D-89C5-95C573DBF587">
+                  <SHORT-NAME>OIT_Data_0x0245_Configuration_Hash_ConditionCheckRead_Data_0x0245_Configuration_Hash_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0245_Configuration_Hash_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0245_Configuration_Hash</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0245_Configuration_Hash/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="12F3D403-ACA4-4878-A9F2-92A2F13EBA29">
+                  <SHORT-NAME>OIT_Data_0x0245_Configuration_Hash_ReadData_Data_0x0245_Configuration_Hash_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0245_Configuration_Hash_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0245_Configuration_Hash</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0245_Configuration_Hash/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="264EA168-3AE3-4AA8-874E-09D53169A0DF">
+                  <SHORT-NAME>OIT_Data_0x0249_Programming_Hash_ConditionCheckRead_Data_0x0249_Programming_Hash_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0249_Programming_Hash_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0249_Programming_Hash</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0249_Programming_Hash/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F87F50BE-85DA-4294-8196-8AF45DE79879">
+                  <SHORT-NAME>OIT_Data_0x0249_Programming_Hash_ReadData_Data_0x0249_Programming_Hash_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0249_Programming_Hash_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0249_Programming_Hash</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0249_Programming_Hash/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4B5E1D2C-7018-4228-AE28-90A4F0CB4959">
+                  <SHORT-NAME>OIT_Data_0x0250_Integrity_validation_data_configuration_list_ConditionCheckRead_Data_0x0250_Integrity_validation_data_coF4607225</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_Integrity_validation_data_configuration_list</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="FEDD5D49-3982-4783-88EA-5449D16A11B6">
+                  <SHORT-NAME>OIT_Data_0x0250_Integrity_validation_data_configuration_list_ReadData_Data_0x0250_Integrity_validation_data_configuratio55BBACF9</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_Integrity_validation_data_configuration_list</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F6AAAB28-8987-4215-8ACF-C40ADED37406">
+                  <SHORT-NAME>OIT_Data_0x0250_Integrity_validation_data_configuration_list_ReadDataLength_Data_0x0250_Integrity_validation_data_configA7BA6501</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_ReadDataLength</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_Integrity_validation_data_configuration_list</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/ReadDataLength</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="366B96A5-FC6A-4234-917F-73A39CD21943">
+                  <SHORT-NAME>OIT_Data_0x0250_SFD2_ConditionCheckRead_Data_0x0250_SFD2_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_SFD2_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9D97E37D-71B8-4B50-A2D2-DDBBD1A1673E">
+                  <SHORT-NAME>OIT_Data_0x0250_SFD2_ReadData_Data_0x0250_SFD2_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_SFD2_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="8A593CD1-5279-458F-BC1F-C636709BE04E">
+                  <SHORT-NAME>OIT_Data_0x0250_SFD2_ReadDataLength_Data_0x0250_SFD2_ReadDataLength</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_SFD2_ReadDataLength</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/ReadDataLength</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9C55AF3A-4B34-4003-B768-0AB0B51ADB22">
+                  <SHORT-NAME>OIT_Data_0x0250_SFD2_WriteData_Data_0x0250_SFD2_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_SFD2_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0x0250_Integrity_validation_data_configuration_list_SFD2/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="DA47F011-DD53-4D52-95DC-0538635FECE0">
+                  <SHORT-NAME>OIT_Data_0x0250_Integrity_validation_data_configuration_list_WriteData_Data_0x0250_Integrity_validation_data_configurati9AFB355F</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0x0250_Integrity_validation_data_configuration_list_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0x0250_Integrity_validation_data_configuration_list</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/DataServices_Data_0x0250_Integrity_validation_data_configuration_list/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="CF7CD2AD-4EB4-4CA7-AC13-3835704DA704">
+                  <SHORT-NAME>OIT_Data_0xF18F_SFD2_ConditionCheckRead_Data_0xF18F_SFD2_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0xF18F_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F4AC1F1D-B545-4B3E-928A-8C3E59197546">
+                  <SHORT-NAME>OIT_Data_0xF18F_SFD2_ReadData_Data_0xF18F_SFD2_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0xF18F_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2B9BF8FF-A655-4488-914A-2E575B088E20">
+                  <SHORT-NAME>OIT_Data_0xF18F_SFD2_ReadDataLength_Data_0xF18F_SFD2_ReadDataLength</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_ReadDataLength</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0xF18F_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/ReadDataLength</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="058CE4C8-4291-48CF-8790-4F1FDCD8F062">
+                  <SHORT-NAME>OIT_Data_0xF18F_SFD2_WriteData_Data_0xF18F_SFD2_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Data_0xF18F_SFD2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Data_0xF18F_Regulation_x_software_identification_numbers_SFD2/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="134D85A7-DEF7-4B6D-9BAF-0A81C6E1E4A2">
+                  <SHORT-NAME>OIT_Routine_0x0253_Calculate_integrity_validation_data_Start_Routine_0x0253_Calculate_integrity_validation_data_Start_Start</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Routine_0x0253_Calculate_integrity_validation_data_Start</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Routine_0x0253_Calculate_integrity_validation_data_Start</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/RoutineServices_Routine_0x0253_Calculate_integrity_validation_data_Start/Start</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A41999EC-71A3-4DA5-8BD9-FC7B9977AC9F">
+                  <SHORT-NAME>OIT_Routine_0x0254_Calculate_individual_hash_value_Start_Routine_0x0254_Calculate_individual_hash_value_Start_Start</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/Routine_0x0254_Calculate_individual_hash_value_Start</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/Routine_0x0254_Calculate_individual_hash_value_Start</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Ivd/Interfaces/RoutineServices_Routine_0x0254_Calculate_individual_hash_value_Start/Start</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1B3749ED-7DDC-415C-9D7D-BA0C7EC11368">
+                  <SHORT-NAME>OIT_SlaveListProgCfgHash_Data_SlaveListProgCfgHash_Data</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/SlaveListProgCfgHash_Data</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/SlaveListProgCfgHash</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Ivd_SlaveListProgCfgHash/Data</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4FB82BEE-1E7D-4E10-8BC9-128E91F9F2E4">
+                  <SHORT-NAME>OIT_SlaveListProgCfgHash_Hash_SlaveListProgCfgHash_Hash</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DiagA/DiagA_InternalBehavior/SlaveListProgCfgHash_Hash</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DiagA/SlaveListProgCfgHash</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Ivd_SlaveListProgCfgHash/Hash</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="87DCE78E-C9D2-4983-A7E7-D3584D7256FE">
+                  <SHORT-NAME>Data_0x0245_Configuration_Hash_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0245_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="ADA1DC06-4451-4131-9C16-5E61D2F17043">
+                  <SHORT-NAME>Data_0x0245_Configuration_Hash_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0245_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="87AF3E0B-6871-4467-A1AA-1C8371E07670">
+                  <SHORT-NAME>Data_0x0249_Programming_Hash_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0249_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="DECA0033-07D2-49E2-BADC-113E3AE67BB0">
+                  <SHORT-NAME>Data_0x0249_Programming_Hash_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0249_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="5493BC9C-134F-4E04-A5B9-2CCA18D7A7ED">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="AF7D41C4-4E4E-4559-946B-CD1BBB928716">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="84A92AF8-CA3A-4086-813B-FCDA78B1AF60">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_ReadDataLength</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250_ReadDataLength</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="64ED9DE0-50E5-4394-9038-7B0259735CDF">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_SFD2_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250Sfd2_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="68D9AAD1-04D1-4CE9-BC5A-FC5B99D6C894">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_SFD2_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250Sfd2_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="75CC271A-BD73-40B3-A9F0-2AAB6045A038">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_SFD2_ReadDataLength</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250Sfd2_ReadDataLength</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="FFE7D224-D380-4818-9838-24B734960D3B">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_SFD2_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250Sfd2_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="407AFE6E-0F26-4261-A76C-D524BB62A24D">
+                  <SHORT-NAME>Data_0x0250_Integrity_validation_data_configuration_list_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0x0250_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="DD4790ED-1EFB-4BF6-AD9A-E1049AFCE7C2">
+                  <SHORT-NAME>Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0xF18FSfd2_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1AE7A990-0D9D-4214-878E-2D767128EF94">
+                  <SHORT-NAME>Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0xF18FSfd2_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="994D3DFB-9F85-4B40-B7A5-5C097938757B">
+                  <SHORT-NAME>Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_ReadDataLength</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0xF18FSfd2_ReadDataLength</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4BB60760-9DA6-4E97-B051-1A96CC246A30">
+                  <SHORT-NAME>Data_0xF18F_Regulation_x_software_identification_numbers_SFD2_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Data0xF18FSfd2_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="78A2285D-4E8F-45FF-A2C1-105D090CC78A">
+                  <SHORT-NAME>Routine_0x0253_Calculate_integrity_validation_data_Start</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Routine0x0253_Start</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="D27D7E09-8A6D-422F-8B6E-150AE4018A9B">
+                  <SHORT-NAME>Routine_0x0254_Calculate_individual_hash_value_Start</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>Routine0x0254_Start</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="13A7A5AC-4E08-4A74-A69F-A89B9307626B">
+                  <SHORT-NAME>SlaveListProgCfgHash_Data</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>SlaveListProgCfgHash_Data</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="635F742F-D392-4C7E-BF3B-064DAB39D637">
+                  <SHORT-NAME>SlaveListProgCfgHash_Hash</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>SlaveListProgCfgHash_Hash</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="20E26F86-13BD-4928-87ED-0DA3ABA3CF00">
+          <SHORT-NAME>DiagA_Implementation</SHORT-NAME>
+          <CODE-DESCRIPTORS>
+            <CODE UUID="81528B7D-4120-4F05-8E7F-6ED01E493654">
+              <SHORT-NAME>Default</SHORT-NAME>
+              <ARTIFACT-DESCRIPTORS>
+                <AUTOSAR-ENGINEERING-OBJECT>
+                  <CATEGORY>SWSRC</CATEGORY>
+                </AUTOSAR-ENGINEERING-OBJECT>
+              </ARTIFACT-DESCRIPTORS>
+            </CODE>
+          </CODE-DESCRIPTORS>
+          <RESOURCE-CONSUMPTION UUID="8BC5976F-9DDB-412C-B3A1-6A5D9628332E">
+            <SHORT-NAME>ResourceConsumption</SHORT-NAME>
+            <MEMORY-SECTIONS>
+              <MEMORY-SECTION UUID="996EFA2A-0D66-4E9D-A171-A72156040481">
+                <SHORT-NAME>CODE</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/DiagAResourceConsumption/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="77C05BB6-0033-4F23-99CA-D59F6BDD246D">
+                <SHORT-NAME>CONST_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/DiagAResourceConsumption/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+            </MEMORY-SECTIONS>
+          </RESOURCE-CONSUMPTION>
+          <VENDOR-ID>75</VENDOR-ID>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/DiagA/DiagA_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

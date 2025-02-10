@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="489c368f-1652-4e5d-8e61-f065cddaadaa">
+          <SHORT-NAME>LinSM_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="566edd36-1be8-439c-a6e4-5d2ac0841b3b">
+                <SHORT-NAME>LinSM_ComMToLinSMChannel</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>2</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinSM_ib_bswmd/DataTypes/CompuMethods/LinSM_ComMToLinSMChannelType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_ComMToLinSMChannelType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_ComMToLinSMChannel</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="2c29d8a7-466d-40f2-8399-295f8b5932af">
+                <SHORT-NAME>LinSM_ConfirmationTimer</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_ConfirmationTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_ConfirmationTimer.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="967fe6f5-c18a-46bf-ad67-b4d253aed265">
+                <SHORT-NAME>LinSM_ConfirmationTimer_CHNL_45618847</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: CHNL_45618847 of LinSM_ConfirmationTimer</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_ConfirmationTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_ConfirmationTimer.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="438c6ae8-688b-48f2-8e52-c86d4edd7044">
+                <SHORT-NAME>LinSM_DesiredConfirmation</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_DesiredConfirmationType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_DesiredConfirmation.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="48b0f13a-5201-48f8-9021-27cc73986014">
+                <SHORT-NAME>LinSM_DesiredConfirmation_CHNL_45618847</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: CHNL_45618847 of LinSM_DesiredConfirmation</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_DesiredConfirmationType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_DesiredConfirmation.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="4a7d0db2-0f0f-4d8f-b449-93b823f1ef8a">
+                <SHORT-NAME>LinSM_NegativeConfirmation</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinSM_ib_bswmd/DataTypes/CompuMethods/LinSM_NegativeConfirmationType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_NegativeConfirmationType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_NegativeConfirmation.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="935e3907-93a8-4ab9-a467-30874d66c5fa">
+                <SHORT-NAME>LinSM_NegativeConfirmation_CHNL_45618847</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: CHNL_45618847 of LinSM_NegativeConfirmation</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinSM_ib_bswmd/DataTypes/CompuMethods/LinSM_NegativeConfirmationType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_NegativeConfirmationType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_NegativeConfirmation.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="32961795-3bea-484b-b519-3a5c0d989f57">
+                <SHORT-NAME>LinSM_RequestedComMode</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_RequestedComModeType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_RequestedComMode.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="354950fe-c72b-4d98-b7cc-c9d2c39ce720">
+                <SHORT-NAME>LinSM_RequestedComMode_CHNL_45618847</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: CHNL_45618847 of LinSM_RequestedComMode</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_RequestedComModeType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_RequestedComMode.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="6841ae73-b9e1-4aa4-a440-3ce057aee315">
+                <SHORT-NAME>LinSM_SilenceAfterWakeupTimer</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_SilenceAfterWakeupTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_SilenceAfterWakeupTimer.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="2519d04c-df3d-4c73-b4f5-98724245d4a7">
+                <SHORT-NAME>LinSM_SilenceAfterWakeupTimer_CHNL_45618847</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: CHNL_45618847 of LinSM_SilenceAfterWakeupTimer</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_SilenceAfterWakeupTimerType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_SilenceAfterWakeupTimer.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="7ad3ad36-2f20-441a-a377-0a5f3efdea64">
+                <SHORT-NAME>LinSM_WakeUpRetryCounter</SHORT-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_WakeUpRetryCounterType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_WakeUpRetryCounter.raw</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="08d0a524-9b2a-4478-a33b-4ebea7810e79">
+                <SHORT-NAME>LinSM_WakeUpRetryCounter_CHNL_45618847</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">The element: CHNL_45618847 of LinSM_WakeUpRetryCounter</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_WakeUpRetryCounterType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_WakeUpRetryCounter.raw[0]</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="f7dbd5db-ba5d-4187-868d-75e636a39ec3">
+                <SHORT-NAME>LinSM_Initialized</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/LinSM_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/LinSM_ib_bswmd/DataTypes/CompuMethods/LinSM_InitializedType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/LinSM_ib_bswmd/DataTypes/DataConstrs/LinSM_InitializedType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>LinSM_Initialized</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <SW-VERSION>7.00.03</SW-VERSION>
+          <USED-CODE-GENERATOR>DaVinci Configurator</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.00.03</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="3ea1df02-6a42-4c84-b6e3-316b9233e472">
+          <SHORT-NAME>LinSM_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="fa3ca358-dc49-4bf8-81c0-90d90a04b776">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="a0d35f49-47de-4398-8dab-e2c85d4793d4">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="6e9444e3-5e46-4c7a-a00b-bb2083e26f95">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="e75998d6-fa42-400b-ae36-ae9993608a5e">
+                      <SHORT-NAME>boolean</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="b0d57fee-a1eb-48e1-b9b5-758547604ace">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="ef556247-8b30-4839-8bb0-0bcc2b7bc953">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="d61da188-4ee2-4fa0-93bb-1d4f018fd8b2">
+                      <SHORT-NAME>LinSM_ComMToLinSMChannelType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LINSM_NO_COMMTOLINSMCHANNEL</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="7ca812ff-d680-4c75-8ea2-b7e3c4821dcf">
+                      <SHORT-NAME>LinSM_InitializedType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="289a7df5-6ae6-4066-895e-342693c79951">
+                      <SHORT-NAME>LinSM_NegativeConfirmationType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="deb76496-841e-42d4-bbea-af26f6b0f72c">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="d123d4dd-d558-445a-b9e9-d31fe005b39c">
+                      <SHORT-NAME>LinSM_ComMToLinSMChannelType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="b20999aa-5d22-460a-b102-6e4c9c72a659">
+                      <SHORT-NAME>LinSM_ConfirmationTimerType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="e36f9be4-3563-4b86-8120-bb6b8899abe7">
+                      <SHORT-NAME>LinSM_DesiredConfirmationType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="f064f1b1-6631-47d4-920e-e212a2c7e04b">
+                      <SHORT-NAME>LinSM_InitializedType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="3576b865-251b-4941-b7db-2c368d7e2685">
+                      <SHORT-NAME>LinSM_NegativeConfirmationType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="70e5bc92-d95b-48c7-a70c-c314f04d2a7b">
+                      <SHORT-NAME>LinSM_RequestedComModeType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="34ac41ac-a32b-4817-82b1-6d8ab2c318b3">
+                      <SHORT-NAME>LinSM_SilenceAfterWakeupTimerType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="21f9d857-030c-448d-ac15-1d2d42251181">
+                      <SHORT-NAME>LinSM_WakeUpRetryCounterType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="487e2e0d-92c2-4469-a75f-21e4b5b270a5">
+          <SHORT-NAME>EcuM_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="b76422ed-16b8-4d22-903a-fd9115e4cdda">
+                <SHORT-NAME>EcuM_ComMChannelRefs</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Referenced ComM Channel(s).</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>2</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="a52a779b-35ad-44a4-ba7b-acac2aa11744">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="7a0b9162-854d-4f06-8cd6-00aff724a41b">
+                        <SHORT-NAME>ChannelOfComMChannelRefs</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ChannelOfComMChannelRefsType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ChannelOfComMChannelRefs</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="c2262d4a-4f2a-48fd-b554-84fc1078ff73">
+                    <SHORT-NAME>Element_1</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="41553ef0-08ee-475d-a494-f5923ae43b2a">
+                        <SHORT-NAME>ChannelOfComMChannelRefs</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ChannelOfComMChannelRefsType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ChannelOfComMChannelRefs</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[1]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>EcuM_ComMChannelRefs</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="913c14c4-7be3-4f83-afb0-1fa961dcedcf">
+                <SHORT-NAME>EcuM_PartitionData</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Contains all parameters configured for initialization of partitions.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>2</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="d33209a8-c868-4ac4-afdf-9000332af230">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="7f220b63-a490-41e3-a15d-a0179213fd02">
+                        <SHORT-NAME>ApplicationOfPartitionData</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ApplicationOfPartitionDataType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ApplicationOfPartitionData</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="197f7db5-9aca-4436-aee0-712b6d8ecc04">
+                    <SHORT-NAME>Element_1</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="8f87630b-9d5c-4cb7-99eb-8f3b2851ad04">
+                        <SHORT-NAME>ApplicationOfPartitionData</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ApplicationOfPartitionDataType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ApplicationOfPartitionData</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[1]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>EcuM_PartitionData</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="c3866466-a0ce-47e4-af7a-372579bc94d2">
+                <SHORT-NAME>EcuM_WakeupSourceList</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Contains all parameters configured for Wakeup Sources</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>7</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="a398b339-a03a-4fec-9aa8-e305cbfb9a24">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="b522507e-5334-4f14-b3e6-8bce77bee926">
+                        <SHORT-NAME>ComMChannelRefsEndIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsEndIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="473a93b9-c526-4ab5-b891-a62686ecd9da">
+                        <SHORT-NAME>ComMChannelRefsStartIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsStartIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="04790a57-ee06-49c3-ab47-69bce3d2fc3d">
+                    <SHORT-NAME>Element_1</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="5ba40f44-f006-48cb-ac27-9869cdceb809">
+                        <SHORT-NAME>ComMChannelRefsEndIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsEndIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="159bd5f7-d721-490e-a252-2568fe460f8c">
+                        <SHORT-NAME>ComMChannelRefsStartIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsStartIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[1]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="40fb7508-717a-424c-980e-4238166e5d96">
+                    <SHORT-NAME>Element_2</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="9823db37-b952-4826-bd11-ee7d5fd42d1a">
+                        <SHORT-NAME>ComMChannelRefsEndIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsEndIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="cab30de5-a37b-4e2c-8f69-7c8c02880879">
+                        <SHORT-NAME>ComMChannelRefsStartIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsStartIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[2]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="085f4c32-1bbd-4b74-bf2c-cf44064db9c1">
+                    <SHORT-NAME>Element_3</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="47118da7-7950-48d5-a269-47d37cfc1d83">
+                        <SHORT-NAME>ComMChannelRefsEndIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsEndIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="c2590dff-f762-419a-a63f-aba0771f8d5d">
+                        <SHORT-NAME>ComMChannelRefsStartIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsStartIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[3]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="ebdde277-aa69-4db4-8664-b39da0cc128d">
+                    <SHORT-NAME>Element_4</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="9803c47b-e586-439c-be21-7009ed288c46">
+                        <SHORT-NAME>ComMChannelRefsEndIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsEndIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="6eb12ab9-9c89-4bc8-8e86-94558d4983db">
+                        <SHORT-NAME>ComMChannelRefsStartIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsStartIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[4]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="e4c47b2a-298b-4a06-8e2c-aac3c4031b21">
+                    <SHORT-NAME>Element_5</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="99ee1003-9d4d-40e3-8da4-8ae373dd69b4">
+                        <SHORT-NAME>ComMChannelRefsEndIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsEndIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="fb8937ce-d88e-40a6-a3ca-888ad82dc3af">
+                        <SHORT-NAME>ComMChannelRefsStartIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsStartIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[5]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="edfad55b-d80b-46de-9ebf-34872dec0663">
+                    <SHORT-NAME>Element_6</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="550b6f64-6beb-4f75-8545-dae798dd977d">
+                        <SHORT-NAME>ComMChannelRefsEndIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsEndIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="8a2cfbb9-d8c2-4afe-8479-973a63ed46d7">
+                        <SHORT-NAME>ComMChannelRefsStartIdxOfWakeupSourceList</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>ComMChannelRefsStartIdxOfWakeupSourceList</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[6]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>EcuM_WakeupSourceList</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="4f8886b7-9a6a-4082-bdd2-4a91a64123f7">
+                <SHORT-NAME>EcuM_PostRunRequestCounter</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_PostRunRequestCounterType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_PostRunRequestCounter</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="e3f59902-0062-41b4-a8fd-05272dbf29d8">
+                <SHORT-NAME>EcuM_RunRequestCounter</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_RunRequestCounterType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_RunRequestCounter</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="d82a8bfa-6d36-432b-b088-6c6704c25838">
+                <SHORT-NAME>EcuM_ModuleState</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM module state</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/CompuMethod_EcuM_ModuleState_Values</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_StateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_ModuleState</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="24f71614-079c-4267-81d2-73bd22618258">
+                <SHORT-NAME>EcuM_CurrentShutdownTarget</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM current shutdown target</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/CompuMethod_EcuM_ModuleState_Values</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_StateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_CurrentShutdownTarget</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="5fa89e93-b622-4de3-966f-baafd225c50d">
+                <SHORT-NAME>EcuM_LastShutdownTarget</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM last shutdown target</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/CompuMethod_EcuM_ModuleState_Values</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_StateType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_LastShutdownTarget</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="f0e2a9ed-e8e8-4876-abe5-44c93e1341da">
+                <SHORT-NAME>EcuM_ExpiredWakeups</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM expired wakeups</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_WakeupSourceType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_ExpiredWakeups</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="55d651a3-b990-467d-a55d-07e88693358f">
+                <SHORT-NAME>EcuM_PendingWakeups</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM pending wakeups</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_WakeupSourceType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_PendingWakeups</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="222bf0e4-d36e-4146-af08-f7a2816fc7fc">
+                <SHORT-NAME>EcuM_PendingCheckWakeups</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM pending check-wakeups</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_WakeupSourceType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_PendingCheckWakeups</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="a1dd8441-3f81-4282-8793-e0f6e499dfeb">
+                <SHORT-NAME>EcuM_ValidatedWakeups</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM validated wakeups</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_WakeupSourceType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_ValidatedWakeups</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="8da4b10e-2322-4efa-b121-cab2ff0005a3">
+                <SHORT-NAME>EcuM_LastShutdownMode</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM last shutdown mode </L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/uint8</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_LastShutdownMode</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="1acfb263-39b1-47ec-90be-a0c3293c6c11">
+                <SHORT-NAME>EcuM_CurrentShutdownMode</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM current shutdown mode </L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/uint8</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_CurrentShutdownMode</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="96ad1627-e1f5-4a6c-a0c6-90bfa0500bc2">
+                <SHORT-NAME>EcuM_ShutdownCause</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM shutdown cause </L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/uint8</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_ShutdownCause</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="41628ec7-55cd-454e-a182-7e1136d58d8c">
+                <SHORT-NAME>EcuM_CurrentBootTarget</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">EcuM current boot target</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/EcuM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_ib_bswmd/DataTypes/CompuMethods/CompuMethod_EcuM_CurrentBootTarget_Values</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/EcuM_ib_bswmd/DataTypes/DataConstrs/EcuM_BootTargetType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>EcuM_CurrentBootTarget</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <RESOURCE-CONSUMPTION UUID="5464a612-53a2-474c-aa12-70679cd37ab9">
+            <SHORT-NAME>ResourceConsumption</SHORT-NAME>
+            <MEMORY-SECTIONS>
+              <MEMORY-SECTION UUID="32da1fe5-01d5-4d83-991e-84bb1e9afc05">
+                <SHORT-NAME>PBCFG_GLOBALROOT</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/PBCFG_GLOBALROOT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="dda67123-ab92-40d9-b2fa-1891f6996db9">
+                <SHORT-NAME>VAR_NOCACHE_CLEARED_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d0036e25-10ad-4048-b31f-661276b2057f">
+                <SHORT-NAME>VAR_FAST_INIT_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="7fb5a41f-685f-4bc7-a153-67645970dacb">
+                <SHORT-NAME>VAR_FAST_CLEARED_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="17501267-1c8a-4a6f-be04-536fde4719c9">
+                <SHORT-NAME>VAR_NO_INIT_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="ac7042c6-eb35-443b-90e0-a147db58ed0f">
+                <SHORT-NAME>VAR_NOCACHE_CLEARED_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="7938c8fd-69c4-4097-8e85-13d9593c93d8">
+                <SHORT-NAME>VAR_NO_INIT_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="0e5e6fab-d7ba-47ae-9f48-a17bc737d63d">
+                <SHORT-NAME>CONST_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d05097ff-cdc0-4123-a186-141698e32320">
+                <SHORT-NAME>VAR_FAST_CLEARED_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="8b76046f-aaf5-436a-9e6c-c651add7b03d">
+                <SHORT-NAME>CODE</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d98a259e-8d2b-43d0-b65c-665aa0c7519c">
+                <SHORT-NAME>CONST_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="b2f32cef-ebaa-4302-928e-716c70e96c7e">
+                <SHORT-NAME>VAR_NOCACHE_CLEARED_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="06be2d16-5212-497e-a87e-898e17c21a1c">
+                <SHORT-NAME>VAR_CLEARED_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="001a7932-7f26-4c88-b24a-8f296d893643">
+                <SHORT-NAME>VAR_NOCACHE_CLEARED_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d984e364-9764-4132-a924-19dc60e66d4e">
+                <SHORT-NAME>VAR_FAST_NO_INIT_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="cea71eee-68a7-431b-92eb-ad00b498d68c">
+                <SHORT-NAME>VAR_NO_INIT_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="1e766078-be94-463c-b6a5-4ce97e0aad09">
+                <SHORT-NAME>VAR_NOCACHE_CLEARED_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="afe2bb48-61e9-46db-9d33-b9a65898904f">
+                <SHORT-NAME>VAR_NOCACHE_INIT_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="a13b7c28-1f9d-4aa8-9a1a-e7f102ae5ae9">
+                <SHORT-NAME>VAR_FAST_INIT_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="0aafc062-2a0b-431f-a58c-3ac33a3df925">
+                <SHORT-NAME>VAR_NO_INIT_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="cabf4a55-3330-471a-81e3-674235032447">
+                <SHORT-NAME>VAR_CLEARED_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="cb619455-9554-43ec-9675-cbef4cd54d4f">
+                <SHORT-NAME>VAR_FAST_CLEARED_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="9ea764b3-2483-494a-bffe-65144a5f97d1">
+                <SHORT-NAME>VAR_NOCACHE_INIT_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="4a3dd1c8-868f-40e6-97b3-e2a73943582e">
+                <SHORT-NAME>CONST_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="62732e86-2320-4134-adb5-922e321cefbc">
+                <SHORT-NAME>VAR_NOCACHE_NO_INIT_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="c4d824d2-4fe0-4949-a691-530b1c574d0b">
+                <SHORT-NAME>CONST_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="df8e0f6b-cfd5-4173-96ff-8eaf90c769ef">
+                <SHORT-NAME>VAR_FAST_CLEARED_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="f18398d8-2310-42a9-bd81-d3f1b1ae7abd">
+                <SHORT-NAME>VAR_INIT_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="f1879456-b6b8-4944-9699-9ccde9ff924f">
+                <SHORT-NAME>VAR_FAST_NO_INIT_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d3bc98a7-e830-4cc1-b761-a734b2570056">
+                <SHORT-NAME>VAR_INIT_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="522ecde2-c783-4021-8ae0-0a66a291dc4c">
+                <SHORT-NAME>VAR_CLEARED_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="b2468371-b83c-458a-bd44-e2b12aa3aff9">
+                <SHORT-NAME>VAR_NO_INIT_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="6dc92204-f776-4d29-a15d-c1d51af6111b">
+                <SHORT-NAME>VAR_NOCACHE_INIT_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="ead4f1c9-0953-41d6-9b27-cfcbce1d9b4c">
+                <SHORT-NAME>VAR_NOCACHE_CLEARED_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="f59194ac-6100-4339-b995-82b761064d9d">
+                <SHORT-NAME>VAR_NOCACHE_INIT_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="5af696f0-922f-40bc-b618-457fe685b7c6">
+                <SHORT-NAME>VAR_FAST_NO_INIT_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="e75f6acb-12d8-495c-b92e-8917d1e3969f">
+                <SHORT-NAME>VAR_FAST_CLEARED_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="1816e8a2-9210-4bf4-8042-ce7c491d662b">
+                <SHORT-NAME>VAR_CLEARED_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="5e7eee8e-4253-489c-b0ed-ac1a637ac600">
+                <SHORT-NAME>VAR_NO_INIT_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="1efb7c41-aa5d-4008-96ea-0da9ac364308">
+                <SHORT-NAME>VAR_NOCACHE_NO_INIT_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="003bf2dc-1e57-4dc7-81af-3561cec67702">
+                <SHORT-NAME>VAR_FAST_CLEARED_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="90a717fa-7018-4f79-9842-03130e0247ce">
+                <SHORT-NAME>VAR_NOCACHE_NO_INIT_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="0b1174b2-6019-46e5-ae3e-29a074eec23e">
+                <SHORT-NAME>VAR_INIT_64</SHORT-NAME>
+                <ALIGNMENT>64</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d5d42145-101b-4160-849e-d04f421678ba">
+                <SHORT-NAME>VAR_CLEARED_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="a7466b67-d80a-42ee-95a8-778b2700a0c8">
+                <SHORT-NAME>VAR_INIT_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="fb4a3d43-8068-469d-a599-ddcf768869ef">
+                <SHORT-NAME>CONST_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="3273b4f4-1dd3-4f50-9ac1-eb3a82eb30cb">
+                <SHORT-NAME>VAR_FAST_NO_INIT_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="fd408066-70ad-41d2-b9ea-3f6ff214344c">
+                <SHORT-NAME>VAR_CLEARED_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="ebc99e03-18b1-4319-8021-d66c5d7609ae">
+                <SHORT-NAME>VAR_NOCACHE_NO_INIT_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="26a818c5-19a0-4a7c-a4fe-f769f44fc887">
+                <SHORT-NAME>VAR_INIT_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="e0b025a5-1124-4b44-a5b1-824f2df8e740">
+                <SHORT-NAME>VAR_NOCACHE_INIT_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d456220e-b8f5-4351-ac41-e4bd048f3182">
+                <SHORT-NAME>VAR_FAST_INIT_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="74fb84f6-1dc4-4868-93cd-e5e11f552c51">
+                <SHORT-NAME>VAR_FAST_NO_INIT_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="3fca3bea-bd64-4592-9b0f-3bea7d55c224">
+                <SHORT-NAME>VAR_FAST_INIT_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="48d894af-51a8-4609-ae2e-07add97e72a1">
+                <SHORT-NAME>VAR_NOCACHE_INIT_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="170b44d5-98c7-46b1-9640-ca9bbd932150">
+                <SHORT-NAME>VAR_FAST_NO_INIT_UNSPECIFIED</SHORT-NAME>
+                <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="69b76521-192e-4be5-b1e4-2e753cd8557b">
+                <SHORT-NAME>VAR_FAST_INIT_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="7518fdff-d020-4949-9b9e-74d8e04410dc">
+                <SHORT-NAME>VAR_FAST_INIT_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="76998305-3e93-4066-afe7-7d5c669033b2">
+                <SHORT-NAME>VAR_NOCACHE_NO_INIT_8</SHORT-NAME>
+                <ALIGNMENT>8</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="4a5a69ec-056c-434f-b9da-15faec105115">
+                <SHORT-NAME>CONST_BOOLEAN</SHORT-NAME>
+                <ALIGNMENT>BOOLEAN</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="c312ce96-4455-41d5-b32d-d105c668427f">
+                <SHORT-NAME>VAR_INIT_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="a70c045d-bdeb-492f-8224-060ce2e5b6c0">
+                <SHORT-NAME>VAR_NOCACHE_NO_INIT_16</SHORT-NAME>
+                <ALIGNMENT>16</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="49b96e4f-0733-4d2d-a561-8e6c537e2aff">
+                <SHORT-NAME>VAR_PARTITION_OSAPPLICATION_SYSTEMAPPLICATION_CORE0_NOCACHE_NO_INIT_32</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/OsApplication_SystemApplication_Core0_VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="de2a7676-6b98-4d05-a630-47dd982bc41d">
+                <SHORT-NAME>VAR_PARTITION_OSAPPLICATION_SYSTEMAPPLICATION_CORE1_NOCACHE_NO_INIT_32</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/OsApplication_SystemApplication_Core1_VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+            </MEMORY-SECTIONS>
+          </RESOURCE-CONSUMPTION>
+          <SW-VERSION>13.00.00</SW-VERSION>
+          <USED-CODE-GENERATOR>DaVinci Configurator</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.00.03</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="9786007a-5842-4675-b2ea-3b5be12a8305">
+          <SHORT-NAME>EcuM_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="08a36ca9-3e1b-459f-a58d-473a6b9f9abc">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="cd7aa250-a540-4c99-a385-58a0808d0544">
+                  <SHORT-NAME>EcuM</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM_MainFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="4d1b2a8f-c854-498a-bd85-685919fc3a6d">
+                      <SHORT-NAME>EcuMBehavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="693fc687-bfb4-4723-a798-55e1fb2a669a">
+                          <SHORT-NAME>ECUM_EXCLUSIVE_AREA_0</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">This exclusive area shall disable all wake up interrupts to prevent overwriting of some global variables.</L-2>
+                          </DESC>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="ca5b0df6-3e81-497a-b977-9ab1e92c5d9e">
+                          <SHORT-NAME>ECUM_EXCLUSIVE_AREA_1</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">This exclusive area is only used in case of multi core and if the the EcuM is configured to handle also the slave cores. It must be configured as a spinlock to allow access to some variables simultaneously from multiple cores.</L-2>
+                          </DESC>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="199876e2-2d2d-40b8-b06d-eca4e67b4a99">
+                          <SHORT-NAME>ECUM_EXCLUSIVE_AREA_2</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">This exclusive area is used for accessing the clock variable. It shall disable GPT interrupts and task changes. Only necessary if 32 Bit access is not atomic and Alarm Clock is present.</L-2>
+                          </DESC>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="0a0299a5-84e6-400b-925f-77562a6d8e66">
+                          <SHORT-NAME>ECUM_EXCLUSIVE_AREA_3</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">This This exclusive area must be configured as a spin lock to protect access on global shutdown target variables.</L-2>
+                          </DESC>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="0249abad-2790-492b-b0ce-b5e56a63e1de">
+                          <SHORT-NAME>EcuM_MainFunction</SHORT-NAME>
+                          <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_1</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_2</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_3</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                          </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="20e242a7-6b68-4d56-8cb0-607de7b953c2">
+                          <SHORT-NAME>EcuM_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                        <BSW-TIMING-EVENT UUID="fae7c875-484d-4266-b919-5541f983ef53">
+                          <SHORT-NAME>EcuM_MainFunctionTimingEvent1</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="117ca0d9-9f43-4f29-97e2-f5e0d2591206">
+                  <SHORT-NAME>EcuM_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="536e09f2-fdb4-488f-bb35-49e06c6d7500">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="8a4d370e-c0a6-49b2-8a0e-9135f9fcf5d3">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="bbb0df49-fc16-492e-ac87-9fe833dddc14">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="8e86dd6b-6370-4a3d-bf47-033770dbab8b">
+                      <SHORT-NAME>uint32</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="a41d92fe-e99c-42bf-a487-b8ae981f1538">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="ef2b0ac7-31e8-4ae1-b419-0f11fabd50f3">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="4fed2083-4bab-403b-b8ab-340b32c7ae08">
+                      <SHORT-NAME>CompuMethod_EcuM_CurrentBootTarget_Values</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_BOOT_TARGET_APP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_BOOT_TARGET_OEM_BOOTLOADER</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_BOOT_TARGET_SYS_BOOTLOADER</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="2d00f7c9-c9cd-483c-9357-e05cd7a1a646">
+                      <SHORT-NAME>CompuMethod_EcuM_ModuleState_Values</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">16</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_STARTUP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">17</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">17</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_STARTUP_ONE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">18</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_STARTUP_TWO</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">32</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_WAKEUP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">33</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">33</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_WAKEUP_ONE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">34</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">34</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_WAKEUP_VALIDATION</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">35</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">35</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_WAKEUP_REACTION</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">36</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">36</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_WAKEUP_TWO</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">37</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">37</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_WAKEUP_WAKESLEEP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">38</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">38</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_WAKEUP_TTII</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">48</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">48</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_RUN</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">50</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">50</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_APP_RUN</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">51</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">51</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_APP_POST_RUN</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">64</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">64</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_SHUTDOWN</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">68</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">68</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_PREP_SHUTDOWN</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">73</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">73</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_GO_SLEEP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">77</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">77</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_GO_OFF_ONE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">78</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">78</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_GO_OFF_TWO</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">80</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">80</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_SLEEP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">128</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">128</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_OFF</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">144</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">144</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_RESET</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_STATE_ERROR</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="e3e3cb7d-bf03-464b-b7eb-1008cd4e1755">
+                      <SHORT-NAME>EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_NO_COMMCHANNELREFSENDIDXOFWAKEUPSOURCELIST</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="ea0cd8ff-9523-4470-be5d-e1ac9875037b">
+                      <SHORT-NAME>EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>ECUM_NO_COMMCHANNELREFSSTARTIDXOFWAKEUPSOURCELIST</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="306300cf-c0c8-485f-a948-da18e33064c6">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="735474cc-1569-4dc3-b3b3-c10fe134598d">
+                      <SHORT-NAME>EcuM_BootTargetType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="365e9e19-c500-4ba3-8ede-18e868125ae0">
+                      <SHORT-NAME>EcuM_StateType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="33eb57eb-d96b-41be-a0bf-54f8b0111def">
+                      <SHORT-NAME>EcuM_WakeupSourceType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="0045da13-f4bb-4954-b4e8-8d3f452a98b6">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="b29b5576-8d0b-498a-959e-a88cec476cac">
+                      <SHORT-NAME>EcuM_ChannelOfComMChannelRefsType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="24de2b90-07f7-47ba-8597-33bf1a728a46">
+                      <SHORT-NAME>EcuM_ComMChannelRefsEndIdxOfWakeupSourceListType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="dfbdba3d-3ac8-40c7-a16f-e738dbd06a55">
+                      <SHORT-NAME>EcuM_ComMChannelRefsStartIdxOfWakeupSourceListType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="f4afd9aa-a600-4bca-a51a-bde4ab0a52dc">
+                      <SHORT-NAME>EcuM_ApplicationOfPartitionDataType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="7d467555-aaba-4a7b-ba0f-76f376d86f4c">
+                      <SHORT-NAME>EcuM_PostRunRequestCounterType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="03aabf41-76d4-4ae0-83d5-4084bc84b537">
+                      <SHORT-NAME>EcuM_RunRequestCounterType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

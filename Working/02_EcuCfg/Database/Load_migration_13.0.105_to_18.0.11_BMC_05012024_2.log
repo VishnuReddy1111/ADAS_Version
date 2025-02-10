@@ -1,0 +1,946 @@
+Encoding: iso-8859-1
+Detected dtd version 13.0.105
+VCANdelaPersistorImpl::GetFileVersion: DTD version '13.0.105' detected
+Detected dtd version 13.0.105
+VCANdelaPersistorImpl::GetFileVersion: DTD version '13.0.105' detected
+Loading 'D:\SIPs\CARIAD\ADAS\02_EcuCfg\Database\BMC_05012024_2.cdd'...
+  dtd version: file 13.0.105, program 18.0.11
+Document supports the languages (de-DE,VW)
+Document contains the uptodate languages (de-DE)
+Template: Qualifier : PorscheUds, SaveNo : 1, Label : 0.10.01
+  template data loaded
+For Library 'CommoServiBatteEnergContrModulPPE', migrating Attribute-based BaseLibrary flag to property.
+  library variant 'CommoServiBatteEnergContrModulPPE' loaded
+  library variant 'ES_LIBDataUploaV12' loaded
+  library variant 'ES_LIBImmobGen6' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+Start loading event data model
+  library variant 'ES_LIBVehicKeyManagSysteV20' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBUDSBasicFunct' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBVW80124V1X' loaded
+  library variant 'ES_LIBOverTheAirV21' loaded
+  library variant 'ES_LIBCompoProteGen3V12' loaded
+  library variant 'ES_LIBKnockOutV11' loaded
+  library variant 'ES_LIBUDSShareSysteV17' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBPModeV96' loaded
+  library variant 'ES_LIBProteOfVehicDiagnV24' loaded
+  library variant 'ES_LIBSecurOnboaCommuSOKV42' loaded
+  library variant 'ES_LIBUDSDistrSysteVW80127V511' loaded
+  library variant 'ES_LIBUDSIdentVW80125V511' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBVW80124V211' loaded
+  library variant 'ES_LIBVehicNetwoStateManagV39' loaded
+  library variant 'ES_LIBUDSComplContrUnitProgrVW80126V212' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBFoDAndSWaPV68' loaded
+  library variant 'ES_LIBIPCommuV16' loaded
+  library variant 'ES_DataLibra' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+Start loading event data model
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBVW80124V212' loaded
+  library variant 'ES_LIBUDSDistrSysteVW80127V40' loaded
+  library variant 'ES_LIBUDSDistrSysteVW80127V57' loaded
+  library variant 'ES_LIBCompoProteGen3V11' loaded
+  library variant 'ES_LIBUDSComplContrUnitProgrVW80126V26' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBVW80124V28' loaded
+  library variant 'ES_LIBSecurOnboaCommuSOKV60' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBPModeV92' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+  library variant 'ES_LIBProteOfVehicDiagnV21' loaded
+  library variant 'ES_LIBUDSIdentVW80125V58' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+Start loading event data model
+Loaded Snapshot records and data
+Loaded Extended data
+  variant 'BasisVariante' loaded
+Loaded Snapshot records and data
+Loaded Extended data
+Start loading event data model
+Loaded Snapshot records and data
+Loaded Extended data
+Start loading event data model
+  variant 'EV_BECMMASTE_004' loaded
+  variant 'EV_BECM16420A1SSP6_004' loaded
+  variant 'EV_BECM21620A1SSP6_004' loaded
+Migrate DIDs: ...
+Migrate DIDs: Diagnostic Class Template(s) with DID semantics:
+Migrate DIDs:  Diag-Services: importierte DataIdentifier
+Migrate DIDs:  ECU Identification
+Migrate DIDs:  Measurement
+Migrate DIDs:  Calibration Data
+Migrate DIDs:  DataIdentifier WWHOBD
+Migrate DIDs:  DataIdentifier IUMPR
+Migrate DIDs:  Variant Coding
+Migrate DIDs:  Gateway Component Lists
+Migrate DIDs:  DataIdentifier Shared Systems
+Migrate DIDs:  DataIdentifier Immobilizer
+Migrate DIDs:  DataIdentifier Component Protection
+Migrate DIDs:  Slave Identification
+Migrate DIDs:  Datensatzdownload_Applikation
+Migrate DIDs:  Routine Status
+Migrate DIDs:  Nur MLBevo: Actuator Status
+Migrate DIDs:  Nur MLBevo: IO Control Adjustment
+Migrate DIDs:  Nur MLBevo: DataIdentifier Theft Protection
+Migrate DIDs:  Nur MLBevo: Slave Calibration
+Migrate DIDs:  Nur MLBevo: Slave FAZIT Identification String
+Migrate DIDs:  Nur MLBevo: Slave Hardware Number
+Migrate DIDs:  Nur MLBevo: Slave Hardware Version Number
+Migrate DIDs:  Nur MLBevo: Slave Serial Number
+Migrate DIDs:  Nur MLBevo: Slave Software Version Number
+Migrate DIDs:  Nur MLBevo: Slave Spare Part Number
+Migrate DIDs:  Nur MLBevo: Slave System Name
+Migrate DIDs:  Nur MLBevo: Jobs Slave-Detection
+Migrate DIDs: Created attribute "qpath://[DIAGINSTDEFATTR]DIDDataReferenceQualifier17"
+Migrate DIDs: Created attribute "qpath://[DIAGINSTDEFATTR]DIDDataReferenceName17"
+Migrate DIDs: Moved DID data of DID "Standard Umgebungsbedingungen", 0x02BD to the existing DID Diagnostic Instance "qpath://[LIBRARY]CommoServiBatteEnergContrModulPPE/Measurement/TABROW_StandAmbieCondi"
+Migrate DIDs: Moved DID data of DID "VW FAZIT Identification String", 0xF17C to the existing DID Diagnostic Instance "qpath:/BasisVariante/ECUIdent/TABROW_VWFAZITIdentStrin"
+Migrate DIDs: Moved DID data of DID "Standard Umgebungsbedingungen", 0x02BD to the existing DID Diagnostic Instance "qpath:/BasisVariante/Measurement/TABROW_StandAmbieCondi"
+Migrate DIDs: Moved DID data of DID "weitere Umgebungsdaten", 0x02BE to the existing DID Diagnostic Instance "qpath:/BasisVariante/Measurement/WeiteUmgeb"
+Migrate DIDs: Moved DID data of DID "Calculated LOAD Value", 0xF404 to the existing DID Diagnostic Instance "qpath:/BasisVariante/DataIdentifier_WWH_OBD/TABROW_CalcuLOADValue"
+Migrate DIDs: Moved DID data of DID "Engine Coolant Temperature", 0xF405 to the existing DID Diagnostic Instance "qpath:/BasisVariante/DataIdentifier_WWH_OBD/TABROW_EnginCoolaTempe"
+Migrate DIDs: Moved DID data of DID "Engine RPM", 0xF40C to the existing DID Diagnostic Instance "qpath:/BasisVariante/DataIdentifier_WWH_OBD/TABROW_EnginRPM"
+Migrate DIDs: Moved DID data of DID "Vehicle Speed Sensor", 0xF40D to the existing DID Diagnostic Instance "qpath:/BasisVariante/DataIdentifier_WWH_OBD/TABROW_VehicSpeedSenso"
+Migrate DIDs: Moved DID data of DID "Time Since Engine Start", 0xF41F to the existing DID Diagnostic Instance "qpath:/BasisVariante/DataIdentifier_WWH_OBD/TABROW_TimeSinceEnginStart"
+Migrate DIDs: Moved DID data of DID "Control module voltage", 0xF442 to the existing DID Diagnostic Instance "qpath:/BasisVariante/DataIdentifier_WWH_OBD/TABROW_ContrModulVolta"
+Migrate DIDs: Moved DID data of DID "Accelerator Pedal Position D", 0xF449 to the existing DID Diagnostic Instance "qpath:/BasisVariante/DataIdentifier_WWH_OBD/TABROW_AccelPedalPositD"
+Migrate DIDs: Moved DID data of DID "Active Diagnostic Session", 0xF186 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/ECUIdent/TABROW_ActivDiagnSessi"
+Migrate DIDs: Moved DID data of DID "Fingerprint And Programming Date Of Logical Software Blocks", 0xF15B to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/ECUIdent/TABROW_FingeAndProgrDateOfLogicSoftwBlock"
+Migrate DIDs: Moved DID data of DID "System Supplier Identifier", 0xF18A to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/ECUIdent/TABROW_SysteSupplIdent"
+Migrate DIDs: Moved DID data of DID "VW Application Software Version Number", 0xF189 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/ECUIdent/TABROW_VWAppliSoftwVersiNumbe"
+Migrate DIDs: Moved DID data of DID "VW Spare Part Number", 0xF187 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/ECUIdent/TABROW_VWSparePartNumbe"
+Migrate DIDs: Moved DID data of DID "BMC_Mode", 0x050E to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_BMCMode"
+Migrate DIDs: Moved DID data of DID "Battery_Temperature_Average", 0x1E10 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_BatteTempeAvera"
+Migrate DIDs: Moved DID data of DID "HVBHDM_1", 0x74BE to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_3"
+Migrate DIDs: Moved DID data of DID "HVBHDM_11", 0x74C8 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_11"
+Migrate DIDs: Moved DID data of DID "HVBHDM_12", 0x74C9 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_12"
+Migrate DIDs: Moved DID data of DID "HVBHDM_13", 0x74CA to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_13"
+Migrate DIDs: Moved DID data of DID "HVBHDM_14", 0x74CB to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_14"
+Migrate DIDs: Moved DID data of DID "HVBHDM_15 - EV002", 0x74CC to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_15"
+Migrate DIDs: Moved DID data of DID "HVBHDM_16", 0x74CD to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_16"
+Migrate DIDs: Moved DID data of DID "HVBHDM_17", 0x74CE to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_17"
+Migrate DIDs: Moved DID data of DID "HVBHDM_18 - EV002", 0x74CF to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_18"
+Migrate DIDs: Moved DID data of DID "HVBHDM_19", 0x74D0 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_19"
+Migrate DIDs: Moved DID data of DID "HVBHDM_2", 0x74BF to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_1"
+Migrate DIDs: Moved DID data of DID "HVBHDM_20", 0x74D1 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_20"
+Migrate DIDs: Moved DID data of DID "HVBHDM_21", 0x032C to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD21"
+Migrate DIDs: Moved DID data of DID "HVBHDM_3", 0x74C0 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_2"
+Migrate DIDs: Moved DID data of DID "HVBHDM_4", 0x74C1 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_4"
+Migrate DIDs: Moved DID data of DID "HVBHDM_5", 0x74C2 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_5"
+Migrate DIDs: Moved DID data of DID "HVBHDM_6", 0x74C3 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_6"
+Migrate DIDs: Moved DID data of DID "HVBHDM_7", 0x74C4 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_7"
+Migrate DIDs: Moved DID data of DID "HVBHDM_8 - EV002", 0x74C5 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_8"
+Migrate DIDs: Moved DID data of DID "HVBHDM_9", 0x74C6 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_9"
+Migrate DIDs: Moved DID data of DID "HV_battery_actual_current", 0x050C to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteActuaCurre"
+Migrate DIDs: Moved DID data of DID "HV_battery_back_flow_temperature", 0x0318 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteBackFlowTempe"
+Migrate DIDs: Moved DID data of DID "HV_battery_banks_actual_voltage", 0x2710 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteBanksActuaVolta"
+Migrate DIDs: Moved DID data of DID "HV_battery_capacity_negative_current_driving_cycle", 0x0586 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteCapacNegatCurreDriviCycle"
+Migrate DIDs: Moved DID data of DID "HV_battery_capacity_positive_current_driving_cycle", 0x0587 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteCapacPositCurreDriviCycle"
+Migrate DIDs: Moved DID data of DID "HV_battery_cmc_asic_temperature", 0x05C0 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteCmcAsicTempe"
+Migrate DIDs: Moved DID data of DID "HV_battery_cmc_safety_measures", 0x05C6 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteCmcSafetMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_contactors_actual_states", 0x2716 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteContaActuaState"
+Migrate DIDs: Moved DID data of DID "Battery_dc_link_voltage", 0x0595 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteDcLinkVolta"
+Migrate DIDs: Moved DID data of DID "HV_battery_energy_content_negative_current_driving_cycle", 0x0589 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteEnergConteNegatCurreDriviCycle"
+Migrate DIDs: Moved DID data of DID "HV_battery_energy_content_positive_current_driving_cycle", 0x058A to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteEnergContePositCurreDriviCycle"
+Migrate DIDs: Moved DID data of DID "HV_battery_flow_temperature", 0x2707 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteFlowTempe"
+Migrate DIDs: Moved DID data of DID "U_Cell", 0x0563 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteHistoDataOverrCritiCellVoltaLimit"
+Migrate DIDs: Moved DID data of DID "HV_battery_hv_interlock_error_state", 0x030D to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteHvInterErrorState"
+Migrate DIDs: Moved DID data of DID "HV_battery_internal_error_state", 0x0316 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteInterErrorState"
+Migrate DIDs: Moved DID data of DID "HV_battery_maximum_charging_current", 0x270C to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteMaximChargCurre"
+Migrate DIDs: Moved DID data of DID "HV_battery_maximum_discharge_current", 0x270D to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteMaximDischCurre"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_10_cell_measurements", 0x05BA to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul10CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_11_cell_measurements", 0x05BB to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul11CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_12_cell_measurements", 0x05BC to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul12CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_1_cell_measurements", 0x05B1 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul1CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_2_cell_measurements", 0x05B2 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul2CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_3_cell_measurements", 0x05B3 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul3CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_4_cell_measurements", 0x05B4 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul4CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_5_cell_measurements", 0x05B5 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul5CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_6_cell_measurements", 0x05B6 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul6CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_7_cell_measurements", 0x05B7 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul7CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_8_cell_measurements", 0x05B8 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul8CellMeasu"
+Migrate DIDs: Moved DID data of DID "HV_battery_module_9_cell_measurements", 0x05B9 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModul8CellMeasu_1"
+Migrate DIDs: Moved DID data of DID "HV_battery_modules_actual_voltage", 0x2711 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteModulActuaVolta"
+Migrate DIDs: Moved DID data of DID "Battery_technical_state_of_charge", 0x271D to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteTechnStateOfCharg"
+Migrate DIDs: Moved DID data of DID "HV_battery_total_capacity_driving_cycle", 0x0588 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteTotalCapacDriviCycle"
+Migrate DIDs: Moved DID data of DID "HV_battery_total_energy_content_driving_cycle", 0x058C to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBatteTotalEnergConteDriviCycle"
+Migrate DIDs: Moved DID data of DID "HV_coordinator_requestet_voltage_hv_battery", 0x270F to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVCoordRequeVoltaHvBatte"
+Migrate DIDs: Moved DID data of DID "High_Voltage_Battery_Maximum_Temperature", 0x1E0E to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HighVoltaBatteMaximTempe"
+Migrate DIDs: Moved DID data of DID "High_Voltage_Battery_Minimum_Temperature", 0x1E0F to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HighVoltaBatteMinimTempe"
+Migrate DIDs: Moved DID data of DID "High_voltage_battery_total_voltage", 0x1E3B to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HighVoltaBatteTotalVolta"
+Migrate DIDs: Moved DID data of DID "Hv_battery_banks_voltage_actual_value", 0x0680 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteBanksVoltaActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_10_measurement_actual_value", 0x0676 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul10MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_11_measurement_actual_value", 0x0675 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul11MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_12_measurement_actual_value", 0x066E to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul12MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_2_measurement_actual_value", 0x067E to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul2MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_3_measurement_actual_value", 0x067D to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul3MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_4_measurement_actual_value", 0x067C to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul4MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_5_measurement_actual_value", 0x067B to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul5MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_6_measurement_actual_value", 0x067A to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul6MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_7_measurement_actual_value", 0x0679 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul7MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_8_measurement_actual_value", 0x0678 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul8MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_9_measurement_actual_value", 0x0677 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModul9MeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_module_measurement_actual_value", 0x067F to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteModulMeasuActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_pyro_crash_detection_state", 0x06C3 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBattePyroCrashDetecState"
+Migrate DIDs: Moved DID data of DID "Hv_battery_pyro_overcurrent_status", 0x06C2 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBattePyroOvercActuaState"
+Migrate DIDs: Moved DID data of DID "Hv_battery_sensor_iso_temperature_actual_value", 0x06BF to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteSensoIsoTempeActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_sensor_pyro_temperature_actual_value", 0x06BE to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteSensoPyroTempeActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_sensor_pyro_voltage_actual_value", 0x0673 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteSensoPyroVoltaActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_trd_ring_buffer_actual_value", 0x06AF to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteTrdRingBuffeActuaValue"
+Migrate DIDs: Moved DID data of DID "Hv_battery_voltage_measurement_isolated_resistance_actual_value", 0x066F to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvBatteVoltaMeasuIsolaResisActuaValue"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_1", 0x05A9 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvbHdmp1"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_11", 0x059F to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_30"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_12", 0x059E to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_33"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_13", 0x059C to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_31"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_14", 0x059D to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_32"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_15", 0x0599 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_34"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_16", 0x05CB to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvbHdmp16"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_17", 0x05CC to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HvbHdmp17"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_2", 0x05A6 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_21"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_3", 0x05A8 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_22"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_7", 0x05A2 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_26"
+Migrate DIDs: Moved DID data of DID "HVB_HDMP_8", 0x05A1 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_HVBHD_27"
+Migrate DIDs: Moved DID data of DID "Isolation_Resistance_System_Minus", 0x1E19 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_IsolaResisSysteMinus"
+Migrate DIDs: Moved DID data of DID "Isolation_Resistance_System_Plus", 0x1E17 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_IsolaResisSystePlus"
+Migrate DIDs: Moved DID data of DID "Isolation_Resistance_Battery_Minus_actual_value", 0x06C0 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_IsolaResisBatteMinusActuaValue"
+Migrate DIDs: Moved DID data of DID "Isolation_Resistance_Battery_Plus_actual_value", 0x06C1 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_IsolaResisBattePlusActuaValue"
+Migrate DIDs: Moved DID data of DID "Standard Umgebungsbedingungen", 0x02BD to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_StandAmbieCondi"
+Migrate DIDs: Moved DID data of DID "Status_Service_Disconnect", 0x5164 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_StatuServiDisco"
+Migrate DIDs: Moved DID data of DID "Voltage terminal 30", 0x0286 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_VoltaTermi30"
+Migrate DIDs: Moved DID data of DID "Voltage_terminal_30C", 0x0806 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_VoltaTermi30C"
+Migrate DIDs: Moved DID data of DID "state_of_high_voltage_battery_shutoff_crash", 0x1E06 to the existing DID Diagnostic Instance "qpath:/EV_BECMMASTE_004/Measurement/TABROW_StateOfHighVoltaBatteShutoCrash"
+Migrate DIDs: Number of DID(s) moved to 116 DID Diagnostic Instance(s): 116
+Migrate DIDs: Created attribute "qpath://[DIAGINSTDEFATTR]DIDQualifier17"
+Migrate DIDs: Created attribute "qpath://[DIAGINSTDEFATTR]DIDName17"
+Migrate DIDs: ...Done
+Migration 18.0: deleting no longer needed Attribute "Is Base Library".
+Migration 17: creating missing attribute(s) for AUTOSAR Diagnostic Extract Export...
+Skipping existing "ECU" attribute "Max Number of Dyn. Defined DID References".
+Skipping existing "ECU" attribute "Periodic Rate (Slow) [ms]".
+Skipping existing "ECU" attribute "Periodic Rate (Medium) [ms]".
+Skipping existing "ECU" attribute "Periodic Rate (Fast) [ms]".
+Skipping existing "ECU" attribute "DDDID check per source ID".
+Skipping existing "ECU" attribute "DDDID configuration storage".
+Skipping existing "ECU" attribute "AUTOSAR Type".
+Skipping existing "ECU" attribute "AUTOSAR Version".
+Skipping existing "ECU" attribute "SynchronizationAttribute".
+Skipping existing "ECU" attribute "ASR ECU Instance Ref".
+Skipping existing "ECU" attribute "Default Endianess".
+Skipping existing "ECU" attribute "Respond On All Request SIDs".
+Skipping existing "ECU" attribute "Respond on Second Declined Request".
+Skipping existing "ECU" attribute "OBD Support".
+Skipping existing "ECU" attribute "Respond to ECU Reset".
+Skipping existing "ECU" attribute "Aging Requires Tested Cycle".
+Skipping existing "ECU" attribute "ClearDtc Limitation".
+Skipping existing "ECU" attribute "Reset Confirmed Bit on Overflow".
+Skipping existing "ECU" attribute "Status Bit Storage TestFailed".
+Skipping existing "ECU" attribute "Status Bit Handling TestFailed".
+Skipping existing "Interface" attribute "PR_UDSOnIP.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCAN.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIP_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_2.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIP_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_3.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIP_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_4.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIP_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_5.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIP_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_6.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "OBDonOnCAN.DiagnosticConnectionRef".
+Skipping existing "Interface" attribute "PR_UDSOnIP.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCAN.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIP_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_2.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIP_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_3.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIP_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_4.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIP_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_5.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIP_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_6.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "OBDonOnCAN.DiagnosticProtocolPriority".
+Skipping existing "Interface" attribute "PR_UDSOnIP.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCAN.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIP_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_2.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIP_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_3.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIP_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_4.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIP_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_5.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIP_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCAN_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPOBDC_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANOBDC_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDOBDC_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnIPECU_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANECU_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "PR_UDSOnCANFDECU_6.SendRespPendOnTransToBoot".
+Skipping existing "Interface" attribute "OBDonOnCAN.SendRespPendOnTransToBoot".
+Skipping existing "Diagnostic Instance" attribute "Instance Type".
+Skipping existing "Diagnostic Instance" attribute "Max Attempts to Delay".
+Skipping existing "Diagnostic Instance" attribute "Delay Time [ms]".
+Skipping existing "Diagnostic Instance" attribute "Delay Time on PowerOn [ms]".
+Skipping existing "Diagnostic Instance" attribute "RequirementsId".
+Skipping existing "Diagnostic Instance" attribute "ASR SWC ServiceDependency Ref".
+Skipping existing "Diagnostic Instance" attribute "ASR UUID".
+Skipping existing "Diagnostic Instance" attribute "Environment Data Capture".
+Skipping existing "Diagnostic Instance" attribute "Occurrence Counter Processing".
+Skipping existing "Diagnostic Instance" attribute "Event Displacement Strategy".
+Skipping existing "Diagnostic Instance" attribute "Memory Entry Storage Trigger".
+Skipping existing "Diagnostic Instance" attribute "Max Number of Event Entries".
+Skipping existing "Diagnostic Instance" attribute "ASR3 Legacy Combine DID".
+Skipping existing "Diagnostic Instance" attribute "ASR3 Legacy Combine Routine".
+Skipping existing "Data Object / Bitfield" attribute "ASR SWC DataElement Ref".
+Skipping existing "Data Object / Bitfield" attribute "ASR SWC ServiceDependency Ref".
+Skipping existing "Data Object / Bitfield" attribute "RequirementsId".
+Skipping existing "Data Object / Bitfield" attribute "ASR UUID".
+Skipping existing "DTC" attribute "ASR SWC ServiceDependency Ref".
+Skipping existing "DTC" attribute "RequirementsId".
+Skipping existing "Data Type" attribute "ASR Encoding".
+Skipping existing "Event" attribute "ASR SWC ServiceDependency Ref".
+Skipping existing "Condition" attribute "ASR SWC ServiceDependency Ref".
+Skipping existing "Operation Cycle" attribute "ASR SWC ServiceDependency Ref".
+Skipping existing "Indicator" attribute "ASR SWC ServiceDependency Ref".
+Skipping existing "Service" attribute "Service Relevant for Autosar".
+Skipping existing "State" attribute "ASR SWC ModeDeclaration Ref".
+Skipping existing "State" attribute "Jump to Boot".
+Creating "Environmental Condition Group" attribute "ASR SWC DataElement Ref".
+Creating "Environmental Condition Group" attribute "ASR SWC ServiceDependency Ref".
+Creating "Environmental Condition Group" attribute "ASR UUID".
+Creating "Environmental Mode Condition" attribute "ASR SWC ModeDeclaration Ref".
+Creating "Event Function" attribute "ASR SWC ServiceDependency Ref".
+Migration 17: ... created missing attribute(s) for AUTOSAR Diagnostic Extract Export
+Document version: 004001
+Done loading.
+  Logging turned on again
+Checking consistency of document. This may take a while, please be patient...
+Multiplexer Data Type 'MUX_SnapsDefauESLIBVeEvent' is invalid:
+  Data type contains no data objects.
+Multiplexer Data Type 'MUX_SnapsDefauESLIBUDEvent' is invalid:
+  Data type contains no data objects.
+Multiplexer Data Type 'MUX_SnapsDefauESLIBPMEvent' is invalid:
+  Data type contains no data objects.
+Multiplexer Data Type 'MUX_SnapsDefauESLIBFoEvent' is invalid:
+  Data type contains no data objects.
+Multiplexer Data Type 'MUX_SnapsDefauESLIBPMEvent_1' is invalid:
+  Data type contains no data objects.
+Multiplexer Data Type 'MUX_SnapsDefauESLIBPrEvent' is invalid:
+  Data type contains no data objects.
+Multiplexer Data Type 'MUX_SnapsDefauEVBECMM004Event' is invalid:
+  Illegal position of data object with variable length:  Variable length data objects must be located at the end of a complex or iteration data type
+There are no linked Target Groups and States.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBVehicKeyManagSysteV20/EventAndFaultMemoryManagement/[CONTENT]DTCSnapshotRecordData' shared in shared proxy component 'DTCSnapshotRecordData':
+    Minimum size of data must be 24 bits. The current (maximum) size of data is 16 bits.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBUDSBasicFunct/EventAndFaultMemoryManagement/[CONTENT]DTCSnapshotRecordData' shared in shared proxy component 'DTCSnapshotRecordData':
+    Minimum size of data must be 24 bits. The current (maximum) size of data is 16 bits.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBPModeV96/EventAndFaultMemoryManagement/[CONTENT]DTCSnapshotRecordData' shared in shared proxy component 'DTCSnapshotRecordData':
+    Minimum size of data must be 24 bits. The current (maximum) size of data is 16 bits.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBVW80124V211/Development_EventAndFaultMemory/[CONTENT]Param_DTCSnapsRecor' shared in shared proxy component 'DTC Snapshot Record':
+    Minimum size of data must be 8 bits. The current (maximum) size of data is 0 bits.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBFoDAndSWaPV68/EventAndFaultMemoryManagement/[CONTENT]DTCSnapshotRecordData' shared in shared proxy component 'DTCSnapshotRecordData':
+    Minimum size of data must be 24 bits. The current (maximum) size of data is 16 bits.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBVW80124V212/Development_EventAndFaultMemory/[CONTENT]Param_DTCSnapsRecor' shared in shared proxy component 'DTC Snapshot Record':
+    Minimum size of data must be 8 bits. The current (maximum) size of data is 0 bits.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBPModeV92/EventAndFaultMemoryManagement/[CONTENT]DTCSnapshotRecordData' shared in shared proxy component 'DTCSnapshotRecordData':
+    Minimum size of data must be 24 bits. The current (maximum) size of data is 16 bits.
+  Multiplexer component 'qpath://[LIBRARY]ES_LIBProteOfVehicDiagnV21/EventAndFaultMemoryManagement/[CONTENT]DTCSnapshotRecordData' shared in shared proxy component 'DTCSnapshotRecordData':
+    Minimum size of data must be 24 bits. The current (maximum) size of data is 16 bits.
+Content of tab page "Data Record" in "qpath://[LIBRARY]ES_LIBUDSIdentVW80125V58/ECUIdent/TABROW_AUTOSStandAppliSoftwIdent":
+    Minimum size of data must be 8 bits. Current minimum size of data is 0 bits.
+  At least one TextID is missing.
+Inconsistencies detected.
+ComParamMan: Unidentified ComParam CP_LogicalECUAddress
+ComParamMan: Unidentified ComParam CP_LogicalTesterAddress
+ComParamMan: Setting COM parameter 'BusType' to value 'DoIP' failed. Invalid value!
+ComParamMan: Unidentified ComParam CP_CyclicRespTimeout
+ComParamMan: Unidentified ComParam CP_EnablePerformanceTest
+ComParamMan: Unidentified ComParam CP_Loopback
+ComParamMan: Unidentified ComParam CP_ModifyTiming
+ComParamMan: Unidentified ComParam CP_NetworkTransmissionTime
+ComParamMan: Unidentified ComParam CP_P2Min
+ComParamMan: Unidentified ComParam CP_P2Max_Ecu
+ComParamMan: Unidentified ComParam CP_P2Star_Ecu
+ComParamMan: Unidentified ComParam CP_P6Max
+ComParamMan: Unidentified ComParam CP_P6Star
+ComParamMan: Unidentified ComParam CP_P3Func
+ComParamMan: Unidentified ComParam CP_P3Phys
+ComParamMan: Unidentified ComParam CP_RC21CompletionTimeout
+ComParamMan: Unidentified ComParam CP_RC21Handling
+ComParamMan: Unidentified ComParam CP_RC21RequestTime
+ComParamMan: Unidentified ComParam CP_RC78CompletionTimeout
+ComParamMan: Unidentified ComParam CP_RC78Handling
+ComParamMan: Unidentified ComParam CP_RCByteOffset
+ComParamMan: Unidentified ComParam CP_RepeatReqCountApp
+ComParamMan: Unidentified ComParam CP_SuspendQueueOnError
+ComParamMan: Unidentified ComParam CP_TesterPresentAddrMode
+ComParamMan: Unidentified ComParam CP_TesterPresentHandling
+ComParamMan: Unidentified ComParam CP_TesterPresentMessage
+ComParamMan: Unidentified ComParam CP_TesterPresentReqRsp
+ComParamMan: Unidentified ComParam CP_TesterPresentSendType
+ComParamMan: Unidentified ComParam CP_TesterPresentTime
+ComParamMan: Unidentified ComParam CP_TransmitIndEnable
+ComParamMan: Unidentified ComParam CP_SessionNumber
+ComParamMan: Unidentified ComParam CP_P2Max_High
+ComParamMan: Unidentified ComParam CP_P2Max_Low
+ComParamMan: Unidentified ComParam CP_P2Star_High
+ComParamMan: Unidentified ComParam CP_P2Star_Low
+ComParamMan: Unidentified ComParam CP_DoIPLogicalGatewayAddress
+ComParamMan: Unidentified ComParam CP_DoIPLogicalFunctionalAddress
+ComParamMan: Unidentified ComParam CP_DoIPDiagnosticAckTimeout
+ComParamMan: Unidentified ComParam CP_DoIPRoutingActivationType
+ComParamMan: Unidentified ComParam CP_RepeatReqCountTrans
+ComParamMan: Unidentified ComParam CP_RequestAddrMode
+ComParamMan: Unidentified ComParam CP_DoIPSecondaryLogicalECUResponseAddress
+ComParamMan: Unidentified ComParam CP_DoIPNumberOfRetries
+ComParamMan: Unidentified ComParam CP_DoIPRetryPeriod
+ComParamMan: Unidentified ComParam BaseVariant_ShortName_Multiple_Identity
+ComParamMan: Unidentified ComParam DiagnosticProtocolPriority
+ComParamMan: Unidentified ComParam DiagnosticConnectionRef
+ComParamMan: Unidentified ComParam SendRespPendOnTransToBoot
+ComParamMan: Unidentified ComParam CP_CanPhysReqId
+ComParamMan: Unidentified ComParam CP_CanRespUSDTId
+ComParamMan: Unidentified ComParam CP_CanFuncReqId
+ComParamMan: Unidentified ComParam CP_CanFuncReqFormat
+ComParamMan: Unidentified ComParam CP_Baudrate
+ComParamMan: Unidentified ComParam CP_BlockSize
+ComParamMan: Unidentified ComParam CP_StMin
+ComParamMan: Unidentified ComParam CP_StMinOverride
+ComParamMan: Unidentified ComParam CP_P2Max
+ComParamMan: Unidentified ComParam CP_P2Star
+ComParamMan: Unidentified ComParam CP_P3Func
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Func' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Phys
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Phys' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentHandling
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentHandling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentTime
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentTime' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentAddrMode
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentAddrMode' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentReqRsp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentReqRsp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentSendType
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentSendType' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentMessage
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentMessage' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentExpPosResp
+ComParamMan: Unidentified ComParam CP_TesterPresentExpNegResp
+ComParamMan: Unidentified ComParam CP_RepeatReqCountApp
+ComParamMan: Trying to insert already existent communication parameter 'CP_RepeatReqCountApp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Bs
+ComParamMan: Unidentified ComParam CP_Br
+ComParamMan: Unidentified ComParam CP_Cr
+ComParamMan: Unidentified ComParam CP_Cs
+ComParamMan: Unidentified ComParam CP_RC21Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_ModifyTiming
+ComParamMan: Trying to insert already existent communication parameter 'CP_ModifyTiming' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_SamplesPerBit
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_High
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_Low
+ComParamMan: Unidentified ComParam BaseVariant_ShortName_Multiple_Identity
+ComParamMan: Trying to insert already existent communication parameter 'BaseVariant_ShortName_Multiple_Identity' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticProtocolPriority
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticProtocolPriority' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticConnectionRef
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticConnectionRef' into ComParamCollection
+ComParamMan: Unidentified ComParam SendRespPendOnTransToBoot
+ComParamMan: Trying to insert already existent communication parameter 'SendRespPendOnTransToBoot' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_LogicalECUAddress
+ComParamMan: Trying to insert already existent communication parameter 'CP_LogicalECUAddress' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_LogicalTesterAddress
+ComParamMan: Trying to insert already existent communication parameter 'CP_LogicalTesterAddress' into ComParamCollection
+ComParamMan: Setting COM parameter 'BusType' to value 'DoIP' failed. Invalid value!
+ComParamMan: Unidentified ComParam CP_CyclicRespTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_CyclicRespTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_EnablePerformanceTest
+ComParamMan: Trying to insert already existent communication parameter 'CP_EnablePerformanceTest' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Loopback
+ComParamMan: Trying to insert already existent communication parameter 'CP_Loopback' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_ModifyTiming
+ComParamMan: Trying to insert already existent communication parameter 'CP_ModifyTiming' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_NetworkTransmissionTime
+ComParamMan: Trying to insert already existent communication parameter 'CP_NetworkTransmissionTime' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Min
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Min' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Max_Ecu
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Max_Ecu' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Star_Ecu
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Star_Ecu' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P6Max
+ComParamMan: Trying to insert already existent communication parameter 'CP_P6Max' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P6Star
+ComParamMan: Trying to insert already existent communication parameter 'CP_P6Star' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Func
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Func' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Phys
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Phys' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21RequestTime
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21RequestTime' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RCByteOffset
+ComParamMan: Trying to insert already existent communication parameter 'CP_RCByteOffset' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RepeatReqCountApp
+ComParamMan: Trying to insert already existent communication parameter 'CP_RepeatReqCountApp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_SuspendQueueOnError
+ComParamMan: Trying to insert already existent communication parameter 'CP_SuspendQueueOnError' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentAddrMode
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentAddrMode' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentHandling
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentHandling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentMessage
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentMessage' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentReqRsp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentReqRsp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentSendType
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentSendType' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentTime
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentTime' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TransmitIndEnable
+ComParamMan: Trying to insert already existent communication parameter 'CP_TransmitIndEnable' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_SessionNumber
+ComParamMan: Trying to insert already existent communication parameter 'CP_SessionNumber' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Max_High
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Max_High' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Max_Low
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Max_Low' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Star_High
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Star_High' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Star_Low
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Star_Low' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_DoIPLogicalGatewayAddress
+ComParamMan: Trying to insert already existent communication parameter 'CP_DoIPLogicalGatewayAddress' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_DoIPLogicalFunctionalAddress
+ComParamMan: Trying to insert already existent communication parameter 'CP_DoIPLogicalFunctionalAddress' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_DoIPDiagnosticAckTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_DoIPDiagnosticAckTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_DoIPRoutingActivationType
+ComParamMan: Trying to insert already existent communication parameter 'CP_DoIPRoutingActivationType' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RepeatReqCountTrans
+ComParamMan: Trying to insert already existent communication parameter 'CP_RepeatReqCountTrans' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RequestAddrMode
+ComParamMan: Trying to insert already existent communication parameter 'CP_RequestAddrMode' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_DoIPSecondaryLogicalECUResponseAddress
+ComParamMan: Trying to insert already existent communication parameter 'CP_DoIPSecondaryLogicalECUResponseAddress' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_DoIPNumberOfRetries
+ComParamMan: Trying to insert already existent communication parameter 'CP_DoIPNumberOfRetries' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_DoIPRetryPeriod
+ComParamMan: Trying to insert already existent communication parameter 'CP_DoIPRetryPeriod' into ComParamCollection
+ComParamMan: Unidentified ComParam BaseVariant_ShortName_Multiple_Identity
+ComParamMan: Trying to insert already existent communication parameter 'BaseVariant_ShortName_Multiple_Identity' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticProtocolPriority
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticProtocolPriority' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticConnectionRef
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticConnectionRef' into ComParamCollection
+ComParamMan: Unidentified ComParam SendRespPendOnTransToBoot
+ComParamMan: Trying to insert already existent communication parameter 'SendRespPendOnTransToBoot' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanRespUSDTId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanRespUSDTId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanPhysReqId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanPhysReqId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CANFDBaudrate
+ComParamMan: Unidentified ComParam CP_Baudrate
+ComParamMan: Trying to insert already existent communication parameter 'CP_Baudrate' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanFuncReqId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanFuncReqId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanFuncReqFormat
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanFuncReqFormat' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_BlockSize
+ComParamMan: Trying to insert already existent communication parameter 'CP_BlockSize' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_StMin
+ComParamMan: Trying to insert already existent communication parameter 'CP_StMin' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_StMinOverride
+ComParamMan: Trying to insert already existent communication parameter 'CP_StMinOverride' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Max
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Max' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Star
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Star' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Func
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Func' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Phys
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Phys' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentHandling
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentHandling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentTime
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentTime' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentAddrMode
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentAddrMode' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentReqRsp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentReqRsp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentSendType
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentSendType' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentMessage
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentMessage' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentExpPosResp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentExpPosResp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentExpNegResp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentExpNegResp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RepeatReqCountApp
+ComParamMan: Trying to insert already existent communication parameter 'CP_RepeatReqCountApp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Bs
+ComParamMan: Trying to insert already existent communication parameter 'CP_Bs' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Br
+ComParamMan: Trying to insert already existent communication parameter 'CP_Br' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Cr
+ComParamMan: Trying to insert already existent communication parameter 'CP_Cr' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Cs
+ComParamMan: Trying to insert already existent communication parameter 'CP_Cs' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_ModifyTiming
+ComParamMan: Trying to insert already existent communication parameter 'CP_ModifyTiming' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_SamplesPerBit
+ComParamMan: Trying to insert already existent communication parameter 'CP_SamplesPerBit' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CANFDTxMaxDataLength
+ComParamMan: Unidentified ComParam CP_CANFDSyncJumpWidth
+ComParamMan: Unidentified ComParam CP_CANFDBitSamplePoint
+ComParamMan: Unidentified ComParam BaseVariant_ShortName_Multiple_Identity
+ComParamMan: Trying to insert already existent communication parameter 'BaseVariant_ShortName_Multiple_Identity' into ComParamCollection
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_High
+ComParamMan: Trying to insert already existent communication parameter 'Vehicle_Connector_Pin_High' into ComParamCollection
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_Low
+ComParamMan: Trying to insert already existent communication parameter 'Vehicle_Connector_Pin_Low' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticProtocolPriority
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticProtocolPriority' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticConnectionRef
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticConnectionRef' into ComParamCollection
+ComParamMan: Unidentified ComParam SendRespPendOnTransToBoot
+ComParamMan: Trying to insert already existent communication parameter 'SendRespPendOnTransToBoot' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanRespUSDTId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanRespUSDTId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanPhysReqId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanPhysReqId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CANFDBaudrate
+ComParamMan: Trying to insert already existent communication parameter 'CP_CANFDBaudrate' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Baudrate
+ComParamMan: Trying to insert already existent communication parameter 'CP_Baudrate' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanFuncReqId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanFuncReqId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanFuncReqFormat
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanFuncReqFormat' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_BlockSize
+ComParamMan: Trying to insert already existent communication parameter 'CP_BlockSize' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_StMin
+ComParamMan: Trying to insert already existent communication parameter 'CP_StMin' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_StMinOverride
+ComParamMan: Trying to insert already existent communication parameter 'CP_StMinOverride' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Max
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Max' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Star
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Star' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Func
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Func' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Phys
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Phys' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentHandling
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentHandling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentTime
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentTime' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentAddrMode
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentAddrMode' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentReqRsp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentReqRsp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentSendType
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentSendType' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentMessage
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentMessage' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentExpPosResp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentExpPosResp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentExpNegResp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentExpNegResp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RepeatReqCountApp
+ComParamMan: Trying to insert already existent communication parameter 'CP_RepeatReqCountApp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Bs
+ComParamMan: Trying to insert already existent communication parameter 'CP_Bs' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Br
+ComParamMan: Trying to insert already existent communication parameter 'CP_Br' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Cr
+ComParamMan: Trying to insert already existent communication parameter 'CP_Cr' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Cs
+ComParamMan: Trying to insert already existent communication parameter 'CP_Cs' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_ModifyTiming
+ComParamMan: Trying to insert already existent communication parameter 'CP_ModifyTiming' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_SamplesPerBit
+ComParamMan: Trying to insert already existent communication parameter 'CP_SamplesPerBit' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CANFDTxMaxDataLength
+ComParamMan: Trying to insert already existent communication parameter 'CP_CANFDTxMaxDataLength' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CANFDSyncJumpWidth
+ComParamMan: Trying to insert already existent communication parameter 'CP_CANFDSyncJumpWidth' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CANFDBitSamplePoint
+ComParamMan: Trying to insert already existent communication parameter 'CP_CANFDBitSamplePoint' into ComParamCollection
+ComParamMan: Unidentified ComParam BaseVariant_ShortName_Multiple_Identity
+ComParamMan: Trying to insert already existent communication parameter 'BaseVariant_ShortName_Multiple_Identity' into ComParamCollection
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_High
+ComParamMan: Trying to insert already existent communication parameter 'Vehicle_Connector_Pin_High' into ComParamCollection
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_Low
+ComParamMan: Trying to insert already existent communication parameter 'Vehicle_Connector_Pin_Low' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticProtocolPriority
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticProtocolPriority' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticConnectionRef
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticConnectionRef' into ComParamCollection
+ComParamMan: Unidentified ComParam SendRespPendOnTransToBoot
+ComParamMan: Trying to insert already existent communication parameter 'SendRespPendOnTransToBoot' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanPhysReqId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanPhysReqId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanRespUSDTId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanRespUSDTId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanFuncReqId
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanFuncReqId' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_CanFuncReqFormat
+ComParamMan: Trying to insert already existent communication parameter 'CP_CanFuncReqFormat' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Baudrate
+ComParamMan: Trying to insert already existent communication parameter 'CP_Baudrate' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_BlockSize
+ComParamMan: Trying to insert already existent communication parameter 'CP_BlockSize' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_StMin
+ComParamMan: Trying to insert already existent communication parameter 'CP_StMin' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_StMinOverride
+ComParamMan: Trying to insert already existent communication parameter 'CP_StMinOverride' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Max
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Max' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P2Star
+ComParamMan: Trying to insert already existent communication parameter 'CP_P2Star' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Func
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Func' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_P3Phys
+ComParamMan: Trying to insert already existent communication parameter 'CP_P3Phys' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentHandling
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentHandling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentTime
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentTime' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentAddrMode
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentAddrMode' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentReqRsp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentReqRsp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentSendType
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentSendType' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentMessage
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentMessage' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentExpPosResp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentExpPosResp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_TesterPresentExpNegResp
+ComParamMan: Trying to insert already existent communication parameter 'CP_TesterPresentExpNegResp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RepeatReqCountApp
+ComParamMan: Trying to insert already existent communication parameter 'CP_RepeatReqCountApp' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Bs
+ComParamMan: Trying to insert already existent communication parameter 'CP_Bs' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Br
+ComParamMan: Trying to insert already existent communication parameter 'CP_Br' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Cr
+ComParamMan: Trying to insert already existent communication parameter 'CP_Cr' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_Cs
+ComParamMan: Trying to insert already existent communication parameter 'CP_Cs' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC21CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC21CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78Handling
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78Handling' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_RC78CompletionTimeout
+ComParamMan: Trying to insert already existent communication parameter 'CP_RC78CompletionTimeout' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_ModifyTiming
+ComParamMan: Trying to insert already existent communication parameter 'CP_ModifyTiming' into ComParamCollection
+ComParamMan: Unidentified ComParam CP_SamplesPerBit
+ComParamMan: Trying to insert already existent communication parameter 'CP_SamplesPerBit' into ComParamCollection
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_High
+ComParamMan: Trying to insert already existent communication parameter 'Vehicle_Connector_Pin_High' into ComParamCollection
+ComParamMan: Unidentified ComParam Vehicle_Connector_Pin_Low
+ComParamMan: Trying to insert already existent communication parameter 'Vehicle_Connector_Pin_Low' into ComParamCollection
+ComParamMan: Unidentified ComParam BaseVariant_ShortName_Multiple_Identity
+ComParamMan: Trying to insert already existent communication parameter 'BaseVariant_ShortName_Multiple_Identity' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticProtocolPriority
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticProtocolPriority' into ComParamCollection
+ComParamMan: Unidentified ComParam DiagnosticConnectionRef
+ComParamMan: Trying to insert already existent communication parameter 'DiagnosticConnectionRef' into ComParamCollection
+ComParamMan: Unidentified ComParam SendRespPendOnTransToBoot
+ComParamMan: Trying to insert already existent communication parameter 'SendRespPendOnTransToBoot' into ComParamCollection
+Checking service prefixes in base variant "BasisVariante" ... OK
+Checking service prefixes in extended variant "EV_BECMMASTE_004" ... OK
+Checking service prefixes in extended variant "EV_BECM16420A1SSP6_004" ... OK
+Checking service prefixes in extended variant "EV_BECM21620A1SSP6_004" ... OK
+Checking service prefixes in library variant "CommoServiBatteEnergContrModulPPE" ... OK
+Checking service prefixes in library variant "ES_LIBDataUploaV12" ... OK
+Checking service prefixes in library variant "ES_LIBImmobGen6" ... OK
+Checking service prefixes in library variant "ES_LIBVehicKeyManagSysteV20" ... OK
+Checking service prefixes in library variant "ES_LIBUDSBasicFunct" ... OK
+Checking service prefixes in library variant "ES_LIBVW80124V1X" ... OK
+Checking service prefixes in library variant "ES_LIBOverTheAirV21" ... OK
+Checking service prefixes in library variant "ES_LIBCompoProteGen3V12" ... OK
+Checking service prefixes in library variant "ES_LIBKnockOutV11" ... OK
+Checking service prefixes in library variant "ES_LIBUDSShareSysteV17" ... OK
+Checking service prefixes in library variant "ES_LIBPModeV96" ... OK
+Checking service prefixes in library variant "ES_LIBProteOfVehicDiagnV24" ... OK
+Checking service prefixes in library variant "ES_LIBSecurOnboaCommuSOKV42" ... OK
+Checking service prefixes in library variant "ES_LIBUDSDistrSysteVW80127V511" ... OK
+Checking service prefixes in library variant "ES_LIBUDSIdentVW80125V511" ... OK
+Checking service prefixes in library variant "ES_LIBVW80124V211" ... OK
+Checking service prefixes in library variant "ES_LIBVehicNetwoStateManagV39" ... OK
+Checking service prefixes in library variant "ES_LIBUDSComplContrUnitProgrVW80126V212" ... OK
+Checking service prefixes in library variant "ES_LIBFoDAndSWaPV68" ... OK
+Checking service prefixes in library variant "ES_LIBIPCommuV16" ... OK
+Checking service prefixes in library variant "ES_DataLibra" ... OK
+Checking service prefixes in library variant "ES_LIBVW80124V212" ... OK
+Checking service prefixes in library variant "ES_LIBUDSDistrSysteVW80127V40" ... OK
+Checking service prefixes in library variant "ES_LIBUDSDistrSysteVW80127V57" ... OK
+Checking service prefixes in library variant "ES_LIBCompoProteGen3V11" ... OK
+Checking service prefixes in library variant "ES_LIBUDSComplContrUnitProgrVW80126V26" ... OK
+Checking service prefixes in library variant "ES_LIBVW80124V28" ... OK
+Checking service prefixes in library variant "ES_LIBSecurOnboaCommuSOKV60" ... OK
+Checking service prefixes in library variant "ES_LIBPModeV92" ... OK
+Checking service prefixes in library variant "ES_LIBProteOfVehicDiagnV21" ... OK
+Checking service prefixes in library variant "ES_LIBUDSIdentVW80125V58" ... OK
+Non-fatal inconsistencies detected in document.

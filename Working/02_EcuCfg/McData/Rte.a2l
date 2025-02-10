@@ -1,0 +1,786 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  \verbatim
+ *
+ *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                All other rights remain with Vector Informatik GmbH.
+ *  \endverbatim
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *             File:  Rte.a2l
+ *           Config:  ADAS.dpa
+ *      ECU-Project:  ADAS
+ *
+ *        Generator:  MICROSAR RTE Generator Version 4.31.0
+ *                    RTE Core Version 4.31.0
+ *          License:  CBD2201090
+ *
+ *      Description:  MICROSAR RTE A2L file
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * MEASUREMENT
+ *********************************************************************************************************************/
+
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_ModeMachine_EcuM_currentMode_currentMode "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_Rte_ModeMachine_EcuM_currentMode_currentMode 0 0 0 144
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_StartApplication_XcpPimDownload "MICROSAR RTE"
+      UWORD NO_COMPU_METHOD 0 0 0 65535
+      ECU_ADDRESS 0
+      READ_WRITE
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_StartApplication_XcpPimUpload "MICROSAR RTE"
+      UWORD NO_COMPU_METHOD 0 0 0 65535
+      ECU_ADDRESS 0
+      READ_WRITE
+    /end MEASUREMENT
+
+
+/**********************************************************************************************************************
+ * GROUP
+ *********************************************************************************************************************/
+
+
+    /begin GROUP BswM_OsApplication_SystemApplication_Core0 "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM_OsApplication_SystemApplication_Core0.ModeProvidePorts
+        BswM_OsApplication_SystemApplication_Core0.ModeRequirePorts
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM_OsApplication_SystemApplication_Core0.ModeProvidePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM_OsApplication_SystemApplication_Core0.Switch_ESH_ModeSwitch.BswM_MDGP_ESH_Mode
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM_OsApplication_SystemApplication_Core0.ModeRequirePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM_OsApplication_SystemApplication_Core0.Notification_ESH_ModeNotification.BswM_MDGP_ESH_Mode
+        BswM_OsApplication_SystemApplication_Core0.Notification_SwcModeNotification_IF_ECU_Perform_Reset_Indication.IF_ECU_Perform_Reset_Indication
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM_OsApplication_SystemApplication_Core0.Notification_ESH_ModeNotification.BswM_MDGP_ESH_Mode "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM_OsApplication_SystemApplication_Core0.Notification_SwcModeNotification_IF_ECU_Perform_Reset_Indication.IF_ECU_Perform_Reset_Indication "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM_OsApplication_SystemApplication_Core0.Switch_ESH_ModeSwitch.BswM_MDGP_ESH_Mode "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm "MICROSAR RTE"
+      /begin SUB_GROUP
+        Dcm.ModeProvidePorts
+        Dcm.ModeRequirePorts
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.DcmEcuReset.DcmEcuReset "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.Dcm_Read_BasicSFDRole.Dcm_Read_BasicSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.Dcm_Read_E2eSFDRole.Dcm_Read_E2eSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.Dcm_Read_EptiSFDRole.Dcm_Read_EptiSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.Dcm_Read_ExtendedSFDRole.Dcm_Read_ExtendedSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.Dcm_Read_OtaSFDRole.Dcm_Read_OtaSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.Dcm_Read_ProductionSFDRole.Dcm_Read_ProductionSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.Dcm_Read_SuperUserSFDRole.Dcm_Read_SuperUserSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.ModeProvidePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        Dcm.DcmEcuReset.DcmEcuReset
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP Dcm.ModeRequirePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        Dcm.Dcm_Read_BasicSFDRole.Dcm_Read_BasicSFDRole
+        Dcm.Dcm_Read_E2eSFDRole.Dcm_Read_E2eSFDRole
+        Dcm.Dcm_Read_EptiSFDRole.Dcm_Read_EptiSFDRole
+        Dcm.Dcm_Read_ExtendedSFDRole.Dcm_Read_ExtendedSFDRole
+        Dcm.Dcm_Read_OtaSFDRole.Dcm_Read_OtaSFDRole
+        Dcm.Dcm_Read_ProductionSFDRole.Dcm_Read_ProductionSFDRole
+        Dcm.Dcm_Read_SuperUserSFDRole.Dcm_Read_SuperUserSFDRole
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP EcuM "MICROSAR RTE"
+      /begin SUB_GROUP
+        EcuM.ModeProvidePorts
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP EcuM.ModeProvidePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        EcuM.currentMode.currentMode
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP EcuM.currentMode.currentMode "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_EcuM_currentMode_currentMode
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RTE "MICROSAR RTE"
+      /begin SUB_GROUP
+        SWCs
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm "MICROSAR RTE"
+      /begin SUB_GROUP
+        RT_VehComm.ModeProvidePorts
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.ModeProvidePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        RT_VehComm.SP_BasicSFD.BasicSFDRole
+        RT_VehComm.SP_E2eSFD.E2eSFDRole
+        RT_VehComm.SP_EptiSFD.EptiSFDRole
+        RT_VehComm.SP_ExtendedSFD.ExtendedSFDRole
+        RT_VehComm.SP_OtaSFD.OtaSFDRole
+        RT_VehComm.SP_ProductionSFD.ProductionSFDRole
+        RT_VehComm.SP_SuperUserSFD.SuperUserSFDRole
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.SP_BasicSFD.BasicSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.SP_E2eSFD.E2eSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.SP_EptiSFD.EptiSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.SP_ExtendedSFD.ExtendedSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.SP_OtaSFD.OtaSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.SP_ProductionSFD.ProductionSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_VehComm.SP_SuperUserSFD.SuperUserSFDRole "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_Vishnu "MICROSAR RTE"
+      /begin SUB_GROUP
+        RT_Vishnu.ModeProvidePorts
+        RT_Vishnu.ModeRequirePorts
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_Vishnu.DcmEcuReset.DcmEcuReset "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_Vishnu.ECU_PerformReset.IF_ECU_Perform_Reset_Indication "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_Vishnu.ModeProvidePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        RT_Vishnu.ECU_PerformReset.IF_ECU_Perform_Reset_Indication
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RT_Vishnu.ModeRequirePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        RT_Vishnu.DcmEcuReset.DcmEcuReset
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP SWCs "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM_OsApplication_SystemApplication_Core0
+        Dcm
+        EcuM
+        RT_VehComm
+        RT_Vishnu
+        StartApplication
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication "MICROSAR RTE"
+      /begin SUB_GROUP
+        StartApplication.PerInstanceMemories
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication.PerInstanceMemories "MICROSAR RTE"
+      /begin SUB_GROUP
+        StartApplication.XcpPimDownload
+        StartApplication.XcpPimUpload
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication.XcpPimDownload "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_StartApplication_XcpPimDownload
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication.XcpPimUpload "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_StartApplication_XcpPimUpload
+      /end REF_MEASUREMENT
+    /end GROUP
+
+
+/**********************************************************************************************************************
+ * RECORD_LAYOUT
+ *********************************************************************************************************************/
+    /begin RECORD_LAYOUT RTE_RL_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_SBYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_SWORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_SLONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+
+/**********************************************************************************************************************
+ * COMPU_METHOD / COMPU_VTAB_RANGE
+ *********************************************************************************************************************/
+
+   /begin COMPU_METHOD RTE_CM_BOOLEAN ""
+      TAB_VERB "%3.1" ""
+      COMPU_TAB_REF RTE_CM_BOOLEAN
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_BOOLEAN "" 2
+      0 0 "false"
+      1 1 "true"
+    /end COMPU_VTAB_RANGE
+
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication "" 3
+      0 0 "RTE_MODE_Reset_NoReset"
+      1 1 "RTE_MODE_Reset_PerformHard"
+      2 2 "RTE_TRANSITION_Reset"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode "" 5
+      0 0 "STARTUP"
+      1 1 "RUN"
+      2 2 "POSTRUN"
+      3 3 "WAKEUP"
+      4 4 "SHUTDOWN"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset "" 7
+      0 0 "DCM_ENUM_NONE"
+      1 1 "DCM_ENUM_HARD"
+      2 2 "DCM_ENUM_KEYONOFF"
+      3 3 "DCM_ENUM_SOFT"
+      4 4 "DCM_ENUM_JUMPTOBOOTLOADER"
+      5 5 "DCM_ENUM_JUMPTOSYSSUPPLIERBOOTLOADER"
+      6 6 "DCM_ENUM_EXECUTE"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole "" 3
+      0 0 "RTE_MODE_BasicSFD_DISALLOW"
+      1 1 "RTE_MODE_BasicSFD_ALLOW"
+      2 2 "RTE_TRANSITION_BasicSFD"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole "" 3
+      0 0 "RTE_MODE_E2eSFD_DISALLOW"
+      1 1 "RTE_MODE_E2eSFD_ALLOW"
+      2 2 "RTE_TRANSITION_E2eSFD"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole "" 3
+      0 0 "RTE_MODE_EptiSFD_DISALLOW"
+      1 1 "RTE_MODE_EptiSFD_ALLOW"
+      2 2 "RTE_TRANSITION_EptiSFD"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole "" 3
+      0 0 "RTE_MODE_ExtendedSFD_DISALLOW"
+      1 1 "RTE_MODE_ExtendedSFD_ALLOW"
+      2 2 "RTE_TRANSITION_ExtendedSFD"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole "" 3
+      0 0 "RTE_MODE_OtaSFD_DISALLOW"
+      1 1 "RTE_MODE_OtaSFD_ALLOW"
+      2 2 "RTE_TRANSITION_OtaSFD"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole "" 3
+      0 0 "RTE_MODE_ProductionSFD_DISALLOW"
+      1 1 "RTE_MODE_ProductionSFD_ALLOW"
+      2 2 "RTE_TRANSITION_ProductionSFD"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole "" 3
+      0 0 "RTE_MODE_SuperUserSFD_DISALLOW"
+      1 1 "RTE_MODE_SuperUserSFD_ALLOW"
+      2 2 "RTE_TRANSITION_SuperUserSFD"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_ENUM_Rte_ModeMachine_EcuM_currentMode_currentMode ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_Rte_ModeMachine_EcuM_currentMode_currentMode
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_Rte_ModeMachine_EcuM_currentMode_currentMode "" 3
+      80 80 "ECUM_STATE_SLEEP"
+      128 128 "ECUM_STATE_OFF"
+      144 144 "ECUM_STATE_RESET"
+    /end COMPU_VTAB_RANGE
