@@ -1,0 +1,2704 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  \verbatim
+ *
+ *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                All other rights remain with Vector Informatik GmbH.
+ *  \endverbatim
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *             File:  Rte_Type.h
+ *           Config:  ADAS.dpa
+ *      ECU-Project:  ADAS
+ *
+ *        Generator:  MICROSAR RTE Generator Version 4.31.0
+ *                    RTE Core Version 4.31.0
+ *          License:  CBD2201090
+ *
+ *      Description:  Header file containing user defined AUTOSAR types and RTE structures
+ *********************************************************************************************************************/
+
+/* PRQA S 0777, 0779 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2 */
+
+/* double include prevention */
+#ifndef RTE_TYPE_H
+# define RTE_TYPE_H
+
+# include "Rte.h"
+# ifdef RTE_CORE
+/**********************************************************************************************************************
+ * Type definitions for mode management
+ *********************************************************************************************************************/
+typedef EventMaskType Rte_EventMaskType;
+# endif /* defined(RTE_CORE) */
+
+/* PRQA S 1039 EOF */ /* MD_Rte_1039 */
+
+/**********************************************************************************************************************
+ * Data type definitions
+ *********************************************************************************************************************/
+
+# define Rte_TypeDef_dtRef_VOID
+typedef void * dtRef_VOID;
+
+# define Rte_TypeDef_dtRef_const_VOID
+typedef const void * dtRef_const_VOID;
+
+# define Rte_TypeDef_AppData_Data128Byte
+typedef uint8 AppData_Data128Byte[128];
+
+# define Rte_TypeDef_AppData_Dsdl1InfoList_Type
+typedef uint8 AppData_Dsdl1InfoList_Type[120];
+
+# define Rte_TypeDef_Csm_DecryptDataType_CsmPrimitives_AES_DecryptElement
+typedef uint8 Csm_DecryptDataType_CsmPrimitives_AES_DecryptElement[1024];
+
+# define Rte_TypeDef_Csm_DecryptDataType_StartApplication_CsmPrimitives_AES_Decrypt
+typedef uint8 Csm_DecryptDataType_StartApplication_CsmPrimitives_AES_Decrypt[1024];
+
+# define Rte_TypeDef_Csm_DecryptResultType_CsmPrimitives_AES_DecryptElement
+typedef uint8 Csm_DecryptResultType_CsmPrimitives_AES_DecryptElement[1024];
+
+# define Rte_TypeDef_Csm_DecryptResultType_StartApplication_CsmPrimitives_AES_Decrypt
+typedef uint8 Csm_DecryptResultType_StartApplication_CsmPrimitives_AES_Decrypt[1024];
+
+# define Rte_TypeDef_Csm_EncryptDataType_CsmPrimitives_AES_EncryptElement
+typedef uint8 Csm_EncryptDataType_CsmPrimitives_AES_EncryptElement[1024];
+
+# define Rte_TypeDef_Csm_EncryptDataType_StartApplication_CsmPrimitives_AES_Encrypt
+typedef uint8 Csm_EncryptDataType_StartApplication_CsmPrimitives_AES_Encrypt[1024];
+
+# define Rte_TypeDef_Csm_EncryptResultType_CsmPrimitives_AES_EncryptElement
+typedef uint8 Csm_EncryptResultType_CsmPrimitives_AES_EncryptElement[1024];
+
+# define Rte_TypeDef_Csm_EncryptResultType_StartApplication_CsmPrimitives_AES_Encrypt
+typedef uint8 Csm_EncryptResultType_StartApplication_CsmPrimitives_AES_Encrypt[1024];
+
+# define Rte_TypeDef_Csm_KeyDataType_StartApplication_CsmKey
+typedef uint8 Csm_KeyDataType_StartApplication_CsmKey[16];
+
+# define Rte_TypeDef_Csm_KeyDataType_StartApplication_CsmKey_Dec
+typedef uint8 Csm_KeyDataType_StartApplication_CsmKey_Dec[16];
+
+# define Rte_TypeDef_Csm_KeyDataType_StartApplication_CsmKey_Enc
+typedef uint8 Csm_KeyDataType_StartApplication_CsmKey_Enc[16];
+
+# define Rte_TypeDef_Csm_KeyDataType_StartApplication_CsmKey_MAC
+typedef uint8 Csm_KeyDataType_StartApplication_CsmKey_MAC[16];
+
+# define Rte_TypeDef_Csm_MacGenerateDataType_CsmPrimitives_MAC_GenerateElement
+typedef uint8 Csm_MacGenerateDataType_CsmPrimitives_MAC_GenerateElement[1024];
+
+# define Rte_TypeDef_Csm_MacGenerateDataType_StartApplication_CsmPrimitives_MAC_Generate
+typedef uint8 Csm_MacGenerateDataType_StartApplication_CsmPrimitives_MAC_Generate[1024];
+
+# define Rte_TypeDef_Csm_MacGenerateResultType_CsmPrimitives_MAC_GenerateElement
+typedef uint8 Csm_MacGenerateResultType_CsmPrimitives_MAC_GenerateElement[8];
+
+# define Rte_TypeDef_Csm_MacGenerateResultType_StartApplication_CsmPrimitives_MAC_Generate
+typedef uint8 Csm_MacGenerateResultType_StartApplication_CsmPrimitives_MAC_Generate[8];
+
+# define Rte_TypeDef_Csm_MacVerifyCompareType_CsmPrimitives_MAC_VerifyElement
+typedef uint8 Csm_MacVerifyCompareType_CsmPrimitives_MAC_VerifyElement[1];
+
+# define Rte_TypeDef_Csm_MacVerifyCompareType_StartApplication_CsmPrimitives_MAC_Verify
+typedef uint8 Csm_MacVerifyCompareType_StartApplication_CsmPrimitives_MAC_Verify[1];
+
+# define Rte_TypeDef_Csm_MacVerifyDataType_CsmPrimitives_MAC_VerifyElement
+typedef uint8 Csm_MacVerifyDataType_CsmPrimitives_MAC_VerifyElement[1024];
+
+# define Rte_TypeDef_Csm_MacVerifyDataType_StartApplication_CsmPrimitives_MAC_Verify
+typedef uint8 Csm_MacVerifyDataType_StartApplication_CsmPrimitives_MAC_Verify[1024];
+
+# define Rte_TypeDef_Csm_PublicValueDataType_StartApplication_CsmKey
+typedef uint8 Csm_PublicValueDataType_StartApplication_CsmKey[16];
+
+# define Rte_TypeDef_Csm_PublicValueDataType_StartApplication_CsmKey_Dec
+typedef uint8 Csm_PublicValueDataType_StartApplication_CsmKey_Dec[16];
+
+# define Rte_TypeDef_Csm_PublicValueDataType_StartApplication_CsmKey_Enc
+typedef uint8 Csm_PublicValueDataType_StartApplication_CsmKey_Enc[16];
+
+# define Rte_TypeDef_Csm_PublicValueDataType_StartApplication_CsmKey_MAC
+typedef uint8 Csm_PublicValueDataType_StartApplication_CsmKey_MAC[16];
+
+# define Rte_TypeDef_Csm_SeedDataTypeStartApplication_CsmKey
+typedef uint8 Csm_SeedDataTypeStartApplication_CsmKey[16];
+
+# define Rte_TypeDef_Csm_SeedDataTypeStartApplication_CsmKey_Dec
+typedef uint8 Csm_SeedDataTypeStartApplication_CsmKey_Dec[16];
+
+# define Rte_TypeDef_Csm_SeedDataTypeStartApplication_CsmKey_Enc
+typedef uint8 Csm_SeedDataTypeStartApplication_CsmKey_Enc[16];
+
+# define Rte_TypeDef_Csm_SeedDataTypeStartApplication_CsmKey_MAC
+typedef uint8 Csm_SeedDataTypeStartApplication_CsmKey_MAC[16];
+
+# define Rte_TypeDef_DataArrayType_uint8_1
+typedef uint8 DataArrayType_uint8_1[1];
+
+# define Rte_TypeDef_DataArrayType_uint8_2
+typedef uint8 DataArrayType_uint8_2[2];
+
+# define Rte_TypeDef_DataArrayType_uint8_3
+typedef uint8 DataArrayType_uint8_3[3];
+
+# define Rte_TypeDef_DataArrayType_uint8_5
+typedef uint8 DataArrayType_uint8_5[5];
+
+# define Rte_TypeDef_DataArray_Type_2
+typedef uint8 DataArray_Type_2[2];
+
+# define Rte_TypeDef_Dcm_Data100ByteType
+typedef uint8 Dcm_Data100ByteType[100];
+
+# define Rte_TypeDef_Dcm_Data1022ByteType
+typedef uint8 Dcm_Data1022ByteType[1022];
+
+# define Rte_TypeDef_Dcm_Data10ByteType
+typedef uint8 Dcm_Data10ByteType[10];
+
+# define Rte_TypeDef_Dcm_Data110ByteType
+typedef uint8 Dcm_Data110ByteType[110];
+
+# define Rte_TypeDef_Dcm_Data11ByteType
+typedef uint8 Dcm_Data11ByteType[11];
+
+# define Rte_TypeDef_Dcm_Data12ByteType
+typedef uint8 Dcm_Data12ByteType[12];
+
+# define Rte_TypeDef_Dcm_Data13ByteType
+typedef uint8 Dcm_Data13ByteType[13];
+
+# define Rte_TypeDef_Dcm_Data14ByteType
+typedef uint8 Dcm_Data14ByteType[14];
+
+# define Rte_TypeDef_Dcm_Data150ByteType
+typedef uint8 Dcm_Data150ByteType[150];
+
+# define Rte_TypeDef_Dcm_Data152ByteType
+typedef uint8 Dcm_Data152ByteType[152];
+
+# define Rte_TypeDef_Dcm_Data16ByteType
+typedef uint8 Dcm_Data16ByteType[16];
+
+# define Rte_TypeDef_Dcm_Data17ByteType
+typedef uint8 Dcm_Data17ByteType[17];
+
+# define Rte_TypeDef_Dcm_Data18ByteType
+typedef uint8 Dcm_Data18ByteType[18];
+
+# define Rte_TypeDef_Dcm_Data1ByteType
+typedef uint8 Dcm_Data1ByteType[1];
+
+# define Rte_TypeDef_Dcm_Data20ByteType
+typedef uint8 Dcm_Data20ByteType[20];
+
+# define Rte_TypeDef_Dcm_Data22ByteType
+typedef uint8 Dcm_Data22ByteType[22];
+
+# define Rte_TypeDef_Dcm_Data23ByteType
+typedef uint8 Dcm_Data23ByteType[23];
+
+# define Rte_TypeDef_Dcm_Data240ByteType
+typedef uint8 Dcm_Data240ByteType[240];
+
+# define Rte_TypeDef_Dcm_Data24ByteType
+typedef uint8 Dcm_Data24ByteType[24];
+
+# define Rte_TypeDef_Dcm_Data256ByteType
+typedef uint8 Dcm_Data256ByteType[256];
+
+# define Rte_TypeDef_Dcm_Data25ByteType
+typedef uint8 Dcm_Data25ByteType[25];
+
+# define Rte_TypeDef_Dcm_Data26ByteType
+typedef uint8 Dcm_Data26ByteType[26];
+
+# define Rte_TypeDef_Dcm_Data27ByteType
+typedef uint8 Dcm_Data27ByteType[27];
+
+# define Rte_TypeDef_Dcm_Data2ByteType
+typedef uint8 Dcm_Data2ByteType[2];
+
+# define Rte_TypeDef_Dcm_Data32ByteType
+typedef uint8 Dcm_Data32ByteType[32];
+
+# define Rte_TypeDef_Dcm_Data3572ByteType
+typedef uint8 Dcm_Data3572ByteType[3572];
+
+# define Rte_TypeDef_Dcm_Data386ByteType
+typedef uint8 Dcm_Data386ByteType[386];
+
+# define Rte_TypeDef_Dcm_Data3ByteType
+typedef uint8 Dcm_Data3ByteType[3];
+
+# define Rte_TypeDef_Dcm_Data4096ByteType
+typedef uint8 Dcm_Data4096ByteType[4096];
+
+# define Rte_TypeDef_Dcm_Data48ByteType
+typedef uint8 Dcm_Data48ByteType[48];
+
+# define Rte_TypeDef_Dcm_Data4ByteType
+typedef uint8 Dcm_Data4ByteType[4];
+
+# define Rte_TypeDef_Dcm_Data502ByteType
+typedef uint8 Dcm_Data502ByteType[502];
+
+# define Rte_TypeDef_Dcm_Data50ByteType
+typedef uint8 Dcm_Data50ByteType[50];
+
+# define Rte_TypeDef_Dcm_Data512ByteType
+typedef uint8 Dcm_Data512ByteType[512];
+
+# define Rte_TypeDef_Dcm_Data517ByteType
+typedef uint8 Dcm_Data517ByteType[517];
+
+# define Rte_TypeDef_Dcm_Data5ByteType
+typedef uint8 Dcm_Data5ByteType[5];
+
+# define Rte_TypeDef_Dcm_Data64ByteType
+typedef uint8 Dcm_Data64ByteType[64];
+
+# define Rte_TypeDef_Dcm_Data6ByteType
+typedef uint8 Dcm_Data6ByteType[6];
+
+# define Rte_TypeDef_Dcm_Data7ByteType
+typedef uint8 Dcm_Data7ByteType[7];
+
+# define Rte_TypeDef_Dcm_Data8192ByteType
+typedef uint8 Dcm_Data8192ByteType[8192];
+
+# define Rte_TypeDef_Dcm_Data8ByteType
+typedef uint8 Dcm_Data8ByteType[8];
+
+# define Rte_TypeDef_Dcm_Data9ByteType
+typedef uint8 Dcm_Data9ByteType[9];
+
+# define Rte_TypeDef_Dcm_RequestFlexibleOutArrayData_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataType
+typedef uint8 Dcm_RequestFlexibleOutArrayData_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataType[290];
+
+# define Rte_TypeDef_Dcm_RequestFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataType
+typedef uint8 Dcm_RequestFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataType[37];
+
+# define Rte_TypeDef_Dcm_RequestFlexibleOutArrayData_Routine_Get_Energy_from_SOC_Start_Routine_ResDataType
+typedef uint8 Dcm_RequestFlexibleOutArrayData_Routine_Get_Energy_from_SOC_Start_Routine_ResDataType[9];
+
+# define Rte_TypeDef_Dcm_RequestFlexibleOutArrayData_Routine_TABROW_VkmsDebug_Start_Routine_ResDataType
+typedef uint8 Dcm_RequestFlexibleOutArrayData_Routine_TABROW_VkmsDebug_Start_Routine_ResDataType[51];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ReqDataType[242];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_BeginOfWritiOfSecurDataOfProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_BeginOfWritiOfSecurDataOfProteOfVehicDiagn_Start_Routine_ReqDataType[1024];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_CalcuConfiStateFingeOfProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_CalcuConfiStateFingeOfProteOfVehicDiagn_Start_Routine_ReqDataType[515];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_ResetProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_ResetProteOfVehicDiagn_Start_Routine_ReqDataType[467];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_UnlocProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_DiagnServi_TABROW_UnlocProteOfVehicDiagn_Start_Routine_ReqDataType[470];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_DiagnServi_Verify_partial_software_checksum_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_DiagnServi_Verify_partial_software_checksum_Start_Routine_ReqDataType[4113];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_Get_Energy_from_SOC_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_Get_Energy_from_SOC_Start_Routine_ReqDataType[18];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_TABROW_VkmsDebug_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_TABROW_VkmsDebug_Start_Routine_ReqDataType[513];
+
+# define Rte_TypeDef_Dcm_StartFlexibleInArrayData_Routine_TABROW_VkmsHandlDownl_Start_Routine_ReqDataType
+typedef uint8 Dcm_StartFlexibleInArrayData_Routine_TABROW_VkmsHandlDownl_Start_Routine_ReqDataType[513];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_RoutiContrCheckProgrPreco_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_RoutiContrCheckProgrPreco_ResDataType[255];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuConfiStateFingeOfProteOfVehicDiagn_Start_Routine_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuConfiStateFingeOfProteOfVehicDiagn_Start_Routine_ResDataType[34];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_ResDataType[325];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_ResDataType[34];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_RequeConfiOfProteOfVehicDiagn_Start_Routine_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_RequeConfiOfProteOfVehicDiagn_Start_Routine_ResDataType[964];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_RequeDataOfProteOfVehicDiagn_Start_Routine_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_RequeDataOfProteOfVehicDiagn_Start_Routine_ResDataType[443];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_RequeLoggiDataOfProteOfVehicDiagn_Start_Routine_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_DiagnServi_TABROW_RequeLoggiDataOfProteOfVehicDiagn_Start_Routine_ResDataType[98];
+
+# define Rte_TypeDef_Dcm_StartFlexibleOutArrayData_Routine_TABROW_CheckCalibPreCondi_Start_Routine_ResDataType
+typedef uint8 Dcm_StartFlexibleOutArrayData_Routine_TABROW_CheckCalibPreCondi_Start_Routine_ResDataType[259];
+
+# define Rte_TypeDef_Dem_MaxDataValueType
+typedef uint8 Dem_MaxDataValueType[10];
+
+# define Rte_TypeDef_IdtUint8Array_508
+typedef uint8 IdtUint8Array_508[508];
+
+# define Rte_TypeDef_Ivd_32ByteHash
+typedef uint8 Ivd_32ByteHash[32];
+
+# define Rte_TypeDef_Ivd_Data128Byte
+typedef uint8 Ivd_Data128Byte[128];
+
+# define Rte_TypeDef_KS_Hybrid_01_ChK
+typedef uint8 KS_Hybrid_01_ChK[8];
+
+# define Rte_TypeDef_KS_Hybrid_01_ReK
+typedef uint8 KS_Hybrid_01_ReK[8];
+
+# define Rte_TypeDef_freshnessValueType
+typedef uint8 freshnessValueType[8];
+
+# define Rte_TypeDef_DtInterCoreSlaveDataElementType
+typedef struct
+{
+  uint8 CoreID;
+  uint8 DataValue;
+} DtInterCoreSlaveDataElementType;
+
+# define Rte_TypeDef_Vishnu_Imp_DT
+typedef struct
+{
+  uint8 Vishnu_ID;
+  uint8 Vishnu_Sal;
+} Vishnu_Imp_DT;
+
+# define Rte_TypeDef_Boolean
+typedef boolean Boolean;
+
+# define Rte_TypeDef_ComM_InhibitionStatusType
+typedef uint8 ComM_InhibitionStatusType;
+
+# define Rte_TypeDef_ComM_UserHandleType
+typedef uint16 ComM_UserHandleType;
+
+# define Rte_TypeDef_Csm_ConfigIdType
+typedef uint16 Csm_ConfigIdType;
+
+# define Rte_TypeDef_DataPrimitiveType_uint8
+typedef uint8 DataPrimitiveType_uint8;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_TABROW_VkmsHandlDownl_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_RequestDataOut_Routine_TABROW_VkmsHandlDownl_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Individual_hash_value_idArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Individual_hash_value_idArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hashPrimitiveType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hashPrimitiveType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hashType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hashPrimitiveType Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hashType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hash_valuePrimitiveType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hash_valuePrimitiveType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hash_valueType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hash_valuePrimitiveType Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Type_of_hash_valueType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_calculationPrimitiveType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_calculationPrimitiveType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_calculationType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_calculationPrimitiveType Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_calculationType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_hash_valuePrimitiveType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_hash_valuePrimitiveType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_hash_valueType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_hash_valuePrimitiveType Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIntegValidData_Start_Routine_Type_of_hash_valueType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeConfiOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeConfiOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeLoggiDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeLoggiDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_TABROW_CheckCalibPreCondi_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_TABROW_CheckCalibPreCondi_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ReqDataArrayType
+typedef uint8 Dcm_StartDataIn_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ReqDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_RoutiContrCheckProgrDepen_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_RoutiContrCheckProgrDepen_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_BeginOfWritiOfSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_BeginOfWritiOfSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetProteOfVehicDiagn_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetProteOfVehicDiagn_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_UnlocProteOfVehicDiagn_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_TABROW_UnlocProteOfVehicDiagn_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_Verify_partial_software_checksum_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_DiagnServi_Verify_partial_software_checksum_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_TABROW_LockProteOfVehicDiagn_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_TABROW_LockProteOfVehicDiagn_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StartDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataArrayType;
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType
+typedef uint8 Dcm_StopDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType;
+
+# define Rte_TypeDef_Dem_DTCGroupType
+typedef uint32 Dem_DTCGroupType;
+
+# define Rte_TypeDef_Dem_DTCStatusMaskType
+typedef uint8 Dem_DTCStatusMaskType;
+
+# define Rte_TypeDef_Dem_EventIdType
+typedef uint16 Dem_EventIdType;
+
+# define Rte_TypeDef_Dem_RatioIdType
+typedef uint16 Dem_RatioIdType;
+
+# define Rte_TypeDef_Door_Status_Imp
+typedef boolean Door_Status_Imp;
+
+# define Rte_TypeDef_EcuM_TimeType
+typedef uint32 EcuM_TimeType;
+
+# define Rte_TypeDef_EcuM_UserType
+typedef uint8 EcuM_UserType;
+
+# define Rte_TypeDef_NvM_BlockIdType
+typedef uint16 NvM_BlockIdType;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_2
+typedef boolean Rte_DT_SG_BMC_HV_02_2;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_3
+typedef boolean Rte_DT_SG_BMC_HV_02_3;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_38
+typedef boolean Rte_DT_SG_BMC_HV_02_38;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_4
+typedef boolean Rte_DT_SG_BMC_HV_02_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_8
+typedef boolean Rte_DT_SG_BMC_HV_02_8;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_04_0
+typedef boolean Rte_DT_SG_BMC_HV_04_0;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_04_1
+typedef boolean Rte_DT_SG_BMC_HV_04_1;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_04_5
+typedef boolean Rte_DT_SG_BMC_HV_04_5;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_04_6
+typedef boolean Rte_DT_SG_BMC_HV_04_6;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_04_7
+typedef boolean Rte_DT_SG_BMC_HV_04_7;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_04_8
+typedef boolean Rte_DT_SG_BMC_HV_04_8;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_10_0
+typedef boolean Rte_DT_SG_BMC_HV_10_0;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_10_5
+typedef boolean Rte_DT_SG_BMC_HV_10_5;
+
+# define Rte_TypeDef_Rte_DT_SG_KS_Hybrid_01_ReqFrame_1
+typedef boolean Rte_DT_SG_KS_Hybrid_01_ReqFrame_1;
+
+# define Rte_TypeDef_Rte_DT_SG_KS_Hybrid_01_ReqFrame_2
+typedef boolean Rte_DT_SG_KS_Hybrid_01_ReqFrame_2;
+
+# define Rte_TypeDef_Rte_DT_SG_KS_Hybrid_01_ReqFrame_7
+typedef boolean Rte_DT_SG_KS_Hybrid_01_ReqFrame_7;
+
+# define Rte_TypeDef_SG_BJB_10_BJB_10_BZ_type
+typedef uint8 SG_BJB_10_BJB_10_BZ_type;
+
+# define Rte_TypeDef_SG_BJB_10_BJB_10_CRC_type
+typedef uint8 SG_BJB_10_BJB_10_CRC_type;
+
+# define Rte_TypeDef_SG_BJB_10_BJB_Lebensdauer_Trennelemente_type
+typedef uint32 SG_BJB_10_BJB_Lebensdauer_Trennelemente_type;
+
+# define Rte_TypeDef_SG_BJB_10_BJB_Sperrung_Unterspannung_type
+typedef uint8 SG_BJB_10_BJB_Sperrung_Unterspannung_type;
+
+# define Rte_TypeDef_SG_BJB_10_BJB_Status_HV_Spannungssensorik_type
+typedef boolean SG_BJB_10_BJB_Status_HV_Spannungssensorik_type;
+
+# define Rte_TypeDef_SG_BJB_10_BJB_Status_Trennelemente_type
+typedef uint8 SG_BJB_10_BJB_Status_Trennelemente_type;
+
+# define Rte_TypeDef_SG_BJB_11_BJB_11_BZ_type
+typedef uint8 SG_BJB_11_BJB_11_BZ_type;
+
+# define Rte_TypeDef_SG_BJB_11_BJB_11_CRC_type
+typedef uint8 SG_BJB_11_BJB_11_CRC_type;
+
+# define Rte_TypeDef_SG_BJB_11_BJB_Sperrung_Ueberspannung_type
+typedef uint8 SG_BJB_11_BJB_Sperrung_Ueberspannung_type;
+
+# define Rte_TypeDef_SG_BJB_11_BJB_Ueberspannungszaehler_CMC01_type
+typedef uint16 SG_BJB_11_BJB_Ueberspannungszaehler_CMC01_type;
+
+# define Rte_TypeDef_SG_BJB_11_BJB_Ueberspannungszaehler_CMC02_type
+typedef uint16 SG_BJB_11_BJB_Ueberspannungszaehler_CMC02_type;
+
+# define Rte_TypeDef_SG_BJB_11_BJB_Uebertemperaturzaehler_CMC01_type
+typedef uint16 SG_BJB_11_BJB_Uebertemperaturzaehler_CMC01_type;
+
+# define Rte_TypeDef_SG_BJB_11_BJB_Uebertemperaturzaehler_CMC02_type
+typedef uint16 SG_BJB_11_BJB_Uebertemperaturzaehler_CMC02_type;
+
+# define Rte_TypeDef_SG_BJB_12_BJB_12_BZ_type
+typedef uint8 SG_BJB_12_BJB_12_BZ_type;
+
+# define Rte_TypeDef_SG_BJB_12_BJB_12_CRC_type
+typedef uint8 SG_BJB_12_BJB_12_CRC_type;
+
+# define Rte_TypeDef_SG_BJB_12_BJB_Sperrung_Uebertemperatur_type
+typedef uint8 SG_BJB_12_BJB_Sperrung_Uebertemperatur_type;
+
+# define Rte_TypeDef_SG_BJB_12_BJB_Ueberspannungszaehler_CMC03_type
+typedef uint16 SG_BJB_12_BJB_Ueberspannungszaehler_CMC03_type;
+
+# define Rte_TypeDef_SG_BJB_12_BJB_Ueberspannungszaehler_CMC04_type
+typedef uint16 SG_BJB_12_BJB_Ueberspannungszaehler_CMC04_type;
+
+# define Rte_TypeDef_SG_BJB_12_BJB_Uebertemperaturzaehler_CMC03_type
+typedef uint16 SG_BJB_12_BJB_Uebertemperaturzaehler_CMC03_type;
+
+# define Rte_TypeDef_SG_BJB_12_BJB_Uebertemperaturzaehler_CMC04_type
+typedef uint16 SG_BJB_12_BJB_Uebertemperaturzaehler_CMC04_type;
+
+# define Rte_TypeDef_SG_BJB_13_BJB_13_BZ_type
+typedef uint8 SG_BJB_13_BJB_13_BZ_type;
+
+# define Rte_TypeDef_SG_BJB_13_BJB_13_CRC_type
+typedef uint8 SG_BJB_13_BJB_13_CRC_type;
+
+# define Rte_TypeDef_SG_BJB_13_BJB_Unterspannungszaehler_CMC01_type
+typedef uint16 SG_BJB_13_BJB_Unterspannungszaehler_CMC01_type;
+
+# define Rte_TypeDef_SG_BJB_13_BJB_Unterspannungszaehler_CMC02_type
+typedef uint16 SG_BJB_13_BJB_Unterspannungszaehler_CMC02_type;
+
+# define Rte_TypeDef_SG_BJB_13_BJB_Unterspannungszaehler_CMC03_type
+typedef uint16 SG_BJB_13_BJB_Unterspannungszaehler_CMC03_type;
+
+# define Rte_TypeDef_SG_BJB_13_BJB_Unterspannungszaehler_CMC04_type
+typedef uint16 SG_BJB_13_BJB_Unterspannungszaehler_CMC04_type;
+
+# define Rte_TypeDef_SG_HVK_03_HVK_03_BZ_type
+typedef uint8 SG_HVK_03_HVK_03_BZ_type;
+
+# define Rte_TypeDef_SG_HVK_03_HVK_03_CRC_type
+typedef uint8 SG_HVK_03_HVK_03_CRC_type;
+
+# define Rte_TypeDef_SG_HVK_03_HVK_BMC_Sollmodus_type
+typedef uint8 SG_HVK_03_HVK_BMC_Sollmodus_type;
+
+# define Rte_TypeDef_SG_HVK_03_HVK_BMC_Spannung_Anf_type
+typedef uint8 SG_HVK_03_HVK_BMC_Spannung_Anf_type;
+
+# define Rte_TypeDef_SG_HVK_03_HVK_Iso_Messung_Start_type
+typedef uint8 SG_HVK_03_HVK_Iso_Messung_Start_type;
+
+# define Rte_TypeDef_SG_HVK_03_HVK_Istmodus_Anf_type
+typedef boolean SG_HVK_03_HVK_Istmodus_Anf_type;
+
+# define Rte_TypeDef_SG_HVLM_14_HVLM_14_BZ_type
+typedef uint8 SG_HVLM_14_HVLM_14_BZ_type;
+
+# define Rte_TypeDef_SG_HVLM_14_HVLM_14_CRC_type
+typedef uint8 SG_HVLM_14_HVLM_14_CRC_type;
+
+# define Rte_TypeDef_SG_HVLM_14_HVLM_DC_Aufstartmodus_type
+typedef uint8 SG_HVLM_14_HVLM_DC_Aufstartmodus_type;
+
+# define Rte_TypeDef_SG_HVLM_14_HVLM_Start_Pulserkennung_type
+typedef boolean SG_HVLM_14_HVLM_Start_Pulserkennung_type;
+
+# define Rte_TypeDef_SG_HVLM_14_HVLM_Steckerstatus_type
+typedef uint8 SG_HVLM_14_HVLM_Steckerstatus_type;
+
+# define Rte_TypeDef_SG_HVLM_14_HVLM_ZustandLadeablauf_type
+typedef uint8 SG_HVLM_14_HVLM_ZustandLadeablauf_type;
+
+# define Rte_TypeDef_SG_ORU_Control_A_01_ORU_Control_A_01_BZ_type
+typedef uint8 SG_ORU_Control_A_01_ORU_Control_A_01_BZ_type;
+
+# define Rte_TypeDef_SG_ORU_Control_A_01_ORU_Control_A_01_CRC_type
+typedef uint8 SG_ORU_Control_A_01_ORU_Control_A_01_CRC_type;
+
+# define Rte_TypeDef_SG_ORU_Control_A_01_OnlineRemoteUpdateControlA_type
+typedef uint8 SG_ORU_Control_A_01_OnlineRemoteUpdateControlA_type;
+
+# define Rte_TypeDef_SG_ORU_Control_A_01_OnlineRemoteUpdateControlOldA_type
+typedef uint8 SG_ORU_Control_A_01_OnlineRemoteUpdateControlOldA_type;
+
+# define Rte_TypeDef_SG_ORU_Control_A_01_OruControlReleaseA_type
+typedef uint16 SG_ORU_Control_A_01_OruControlReleaseA_type;
+
+# define Rte_TypeDef_SG_ORU_Control_D_01_ORU_Control_D_01_BZ_type
+typedef uint8 SG_ORU_Control_D_01_ORU_Control_D_01_BZ_type;
+
+# define Rte_TypeDef_SG_ORU_Control_D_01_ORU_Control_D_01_CRC_type
+typedef uint8 SG_ORU_Control_D_01_ORU_Control_D_01_CRC_type;
+
+# define Rte_TypeDef_SG_ORU_Control_D_01_OnlineRemoteUpdateControlD_type
+typedef uint8 SG_ORU_Control_D_01_OnlineRemoteUpdateControlD_type;
+
+# define Rte_TypeDef_SG_ORU_Control_D_01_OnlineRemoteUpdateControlOldD_type
+typedef uint8 SG_ORU_Control_D_01_OnlineRemoteUpdateControlOldD_type;
+
+# define Rte_TypeDef_SG_ORU_Control_D_01_OruControlReleaseD_type
+typedef uint16 SG_ORU_Control_D_01_OruControlReleaseD_type;
+
+# define Rte_TypeDef_SG_OTAMC_D_01_OTAMC_D_01_BZ_type
+typedef uint8 SG_OTAMC_D_01_OTAMC_D_01_BZ_type;
+
+# define Rte_TypeDef_SG_OTAMC_D_01_OTAMC_D_01_CRC_type
+typedef uint8 SG_OTAMC_D_01_OTAMC_D_01_CRC_type;
+
+# define Rte_TypeDef_SG_OTAMC_D_01_VehicleProtectedEnvironment_D_type
+typedef uint8 SG_OTAMC_D_01_VehicleProtectedEnvironment_D_type;
+
+# define Rte_TypeDef_SG_UI1_01_UI1_KL30_Spannung_type
+typedef uint8 SG_UI1_01_UI1_KL30_Spannung_type;
+
+# define Rte_TypeDef_SG_UI1_01_UI1_Strom_type
+typedef uint32 SG_UI1_01_UI1_Strom_type;
+
+# define Rte_TypeDef_SG_UI1_01_UISensorIso_01_BZ_type
+typedef uint8 SG_UI1_01_UISensorIso_01_BZ_type;
+
+# define Rte_TypeDef_SG_UI1_01_UISensorIso_01_CRC_type
+typedef uint8 SG_UI1_01_UISensorIso_01_CRC_type;
+
+# define Rte_TypeDef_SG_UI1_02_UI1_Spannung1_Schalt_Status_type
+typedef uint8 SG_UI1_02_UI1_Spannung1_Schalt_Status_type;
+
+# define Rte_TypeDef_SG_UI1_02_UI1_Spannung1_type
+typedef uint16 SG_UI1_02_UI1_Spannung1_type;
+
+# define Rte_TypeDef_SG_UI1_02_UI1_Spannung2_Schalt_Status_type
+typedef uint8 SG_UI1_02_UI1_Spannung2_Schalt_Status_type;
+
+# define Rte_TypeDef_SG_UI1_02_UI1_Spannung2_type
+typedef uint16 SG_UI1_02_UI1_Spannung2_type;
+
+# define Rte_TypeDef_SG_UI1_02_UI1_Spannung3_type
+typedef uint16 SG_UI1_02_UI1_Spannung3_type;
+
+# define Rte_TypeDef_SG_UI1_02_UISensorIso_02_BZ_type
+typedef uint8 SG_UI1_02_UISensorIso_02_BZ_type;
+
+# define Rte_TypeDef_SG_UI1_02_UISensorIso_02_CRC_type
+typedef uint8 SG_UI1_02_UISensorIso_02_CRC_type;
+
+# define Rte_TypeDef_SG_UI2_01_UI2_KL30_Spannung_type
+typedef uint8 SG_UI2_01_UI2_KL30_Spannung_type;
+
+# define Rte_TypeDef_SG_UI2_01_UI2_Strom_type
+typedef uint32 SG_UI2_01_UI2_Strom_type;
+
+# define Rte_TypeDef_SG_UI2_01_UISensorPyro_01_BZ_type
+typedef uint8 SG_UI2_01_UISensorPyro_01_BZ_type;
+
+# define Rte_TypeDef_SG_UI2_01_UISensorPyro_01_CRC_type
+typedef uint8 SG_UI2_01_UISensorPyro_01_CRC_type;
+
+# define Rte_TypeDef_SG_UI2_02_UI2_Spannung1_Schalt_Status_type
+typedef uint8 SG_UI2_02_UI2_Spannung1_Schalt_Status_type;
+
+# define Rte_TypeDef_SG_UI2_02_UI2_Spannung1_type
+typedef uint16 SG_UI2_02_UI2_Spannung1_type;
+
+# define Rte_TypeDef_SG_UI2_02_UI2_Spannung2_Schalt_Status_type
+typedef uint8 SG_UI2_02_UI2_Spannung2_Schalt_Status_type;
+
+# define Rte_TypeDef_SG_UI2_02_UI2_Spannung2_type
+typedef uint16 SG_UI2_02_UI2_Spannung2_type;
+
+# define Rte_TypeDef_SG_UI2_02_UI2_Spannung3_type
+typedef uint16 SG_UI2_02_UI2_Spannung3_type;
+
+# define Rte_TypeDef_SG_UI2_02_UISensorPyro_02_BZ_type
+typedef uint8 SG_UI2_02_UISensorPyro_02_BZ_type;
+
+# define Rte_TypeDef_SG_UI2_02_UISensorPyro_02_CRC_type
+typedef uint8 SG_UI2_02_UISensorPyro_02_CRC_type;
+
+# define Rte_TypeDef_SG_UI2_03_UI2_HW_Crashleitung_Status_type
+typedef uint8 SG_UI2_03_UI2_HW_Crashleitung_Status_type;
+
+# define Rte_TypeDef_SG_UI2_03_UI2_Pyro_Status_type
+typedef uint8 SG_UI2_03_UI2_Pyro_Status_type;
+
+# define Rte_TypeDef_SG_UI2_03_UI2_Spannung4_type
+typedef uint16 SG_UI2_03_UI2_Spannung4_type;
+
+# define Rte_TypeDef_SG_UI2_03_UI2_Spannung5_type
+typedef uint16 SG_UI2_03_UI2_Spannung5_type;
+
+# define Rte_TypeDef_SG_UI2_03_UI2_Spannung6_type
+typedef uint16 SG_UI2_03_UI2_Spannung6_type;
+
+# define Rte_TypeDef_SG_UI2_03_UISensorPyro_03_BZ_type
+typedef uint8 SG_UI2_03_UISensorPyro_03_BZ_type;
+
+# define Rte_TypeDef_SG_UI2_03_UISensorPyro_03_CRC_type
+typedef uint8 SG_UI2_03_UISensorPyro_03_CRC_type;
+
+# define Rte_TypeDef_TimeInMicrosecondsType
+typedef uint32 TimeInMicrosecondsType;
+
+# define Rte_TypeDef_UInt16
+typedef uint16 UInt16;
+
+# define Rte_TypeDef_UInt32
+typedef uint32 UInt32;
+
+# define Rte_TypeDef_UInt8
+typedef uint8 UInt8;
+
+# define Rte_TypeDef_WdgM_CheckpointIdType
+typedef uint16 WdgM_CheckpointIdType;
+
+# define Rte_TypeDef_WdgM_ModeType
+typedef uint8 WdgM_ModeType;
+
+# define Rte_TypeDef_WdgM_SupervisedEntityIdType
+typedef uint16 WdgM_SupervisedEntityIdType;
+
+# define Rte_TypeDef_bs1_t
+typedef UInt8 * bs1_t;
+
+# define Rte_TypeDef_bs250_t
+typedef UInt8 * bs250_t;
+
+# define Rte_TypeDef_bs6_t
+typedef UInt8 * bs6_t;
+
+# define Rte_TypeDef_bs8_t
+typedef UInt8 * bs8_t;
+
+# define Rte_TypeDef_fctId_t
+typedef UInt8 fctId_t;
+
+# define Rte_TypeDef_freshnessValueLengthType
+typedef uint32 freshnessValueLengthType;
+
+# define Rte_TypeDef_lsgId_t
+typedef UInt8 lsgId_t;
+
+# define Rte_TypeDef_BJB_ErrMem_State
+typedef uint8 BJB_ErrMem_State;
+
+# define Rte_TypeDef_BapAck_et
+typedef UInt8 BapAck_et;
+
+# define Rte_TypeDef_BapError_et
+typedef UInt8 BapError_et;
+
+# define Rte_TypeDef_BapInd_et
+typedef UInt8 BapInd_et;
+
+# define Rte_TypeDef_BapReq_et
+typedef UInt8 BapReq_et;
+
+# define Rte_TypeDef_BswM_ESH_Mode
+typedef uint8 BswM_ESH_Mode;
+
+# define Rte_TypeDef_BswM_ESH_RunRequest
+typedef uint8 BswM_ESH_RunRequest;
+
+# define Rte_TypeDef_ComM_ModeType
+typedef uint8 ComM_ModeType;
+
+# define Rte_TypeDef_Crypto_OperationModeType
+typedef uint8 Crypto_OperationModeType;
+
+# define Rte_TypeDef_Crypto_ResultType
+typedef uint8 Crypto_ResultType;
+
+# define Rte_TypeDef_Crypto_VerifyResultType
+typedef uint8 Crypto_VerifyResultType;
+
+# define Rte_TypeDef_Csm_KeyElementEnumType
+typedef uint32 Csm_KeyElementEnumType;
+
+# define Rte_TypeDef_Csm_ResultType
+typedef uint8 Csm_ResultType;
+
+# define Rte_TypeDef_Csm_VerifyResultType
+typedef uint8 Csm_VerifyResultType;
+
+# define Rte_TypeDef_Dcm_CommunicationModeType
+typedef uint8 Dcm_CommunicationModeType;
+
+# define Rte_TypeDef_Dcm_ConfirmationStatusType
+typedef uint8 Dcm_ConfirmationStatusType;
+
+# define Rte_TypeDef_Dcm_ControlDtcSettingType
+typedef uint8 Dcm_ControlDtcSettingType;
+
+# define Rte_TypeDef_Dcm_DiagnosticSessionControlType
+typedef uint8 Dcm_DiagnosticSessionControlType;
+
+# define Rte_TypeDef_Dcm_EcuResetType
+typedef uint8 Dcm_EcuResetType;
+
+# define Rte_TypeDef_Dcm_NegativeResponseCodeType
+typedef uint8 Dcm_NegativeResponseCodeType;
+
+# define Rte_TypeDef_Dcm_OpStatusType
+typedef uint8 Dcm_OpStatusType;
+
+# define Rte_TypeDef_Dcm_ProtocolType
+typedef uint8 Dcm_ProtocolType;
+
+# define Rte_TypeDef_Dcm_RequestKindType
+typedef uint8 Dcm_RequestKindType;
+
+# define Rte_TypeDef_Dcm_SecLevelType
+typedef uint8 Dcm_SecLevelType;
+
+# define Rte_TypeDef_Dcm_SesCtrlType
+typedef uint8 Dcm_SesCtrlType;
+
+# define Rte_TypeDef_Dem_DTCFormatType
+typedef uint8 Dem_DTCFormatType;
+
+# define Rte_TypeDef_Dem_DTCKindType
+typedef uint8 Dem_DTCKindType;
+
+# define Rte_TypeDef_Dem_DTCOriginType
+typedef uint16 Dem_DTCOriginType;
+
+# define Rte_TypeDef_Dem_DTCSeverityType
+typedef uint8 Dem_DTCSeverityType;
+
+# define Rte_TypeDef_Dem_DTRControlType
+typedef uint8 Dem_DTRControlType;
+
+# define Rte_TypeDef_Dem_DebounceResetStatusType
+typedef uint8 Dem_DebounceResetStatusType;
+
+# define Rte_TypeDef_Dem_DebouncingStateType
+typedef uint8 Dem_DebouncingStateType;
+
+# define Rte_TypeDef_Dem_EventStatusType
+typedef uint8 Dem_EventStatusType;
+
+# define Rte_TypeDef_Dem_IndicatorStatusType
+typedef uint8 Dem_IndicatorStatusType;
+
+# define Rte_TypeDef_Dem_InitMonitorReasonType
+typedef uint8 Dem_InitMonitorReasonType;
+
+# define Rte_TypeDef_Dem_IumprDenomCondIdType
+typedef uint8 Dem_IumprDenomCondIdType;
+
+# define Rte_TypeDef_Dem_IumprDenomCondStatusType
+typedef uint8 Dem_IumprDenomCondStatusType;
+
+# define Rte_TypeDef_Dem_IumprReadinessGroupType
+typedef uint8 Dem_IumprReadinessGroupType;
+
+# define Rte_TypeDef_Dem_MonitorStatusType
+typedef uint8 Dem_MonitorStatusType;
+
+# define Rte_TypeDef_Dem_OperationCycleStateType
+typedef uint8 Dem_OperationCycleStateType;
+
+# define Rte_TypeDef_Dem_UdsStatusByteType
+typedef uint8 Dem_UdsStatusByteType;
+
+# define Rte_TypeDef_EcuM_BootTargetType
+typedef uint8 EcuM_BootTargetType;
+
+# define Rte_TypeDef_EcuM_ModeType
+typedef uint8 EcuM_ModeType;
+
+# define Rte_TypeDef_EcuM_ShutdownCauseType
+typedef uint8 EcuM_ShutdownCauseType;
+
+# define Rte_TypeDef_EcuM_StateType
+typedef uint8 EcuM_StateType;
+
+# define Rte_TypeDef_EnumActiveComponentType
+typedef uint8 EnumActiveComponentType;
+
+# define Rte_TypeDef_EnumMEM_BlockStateType
+typedef uint8 EnumMEM_BlockStateType;
+
+# define Rte_TypeDef_EnumNM_ApplStateType
+typedef uint8 EnumNM_ApplStateType;
+
+# define Rte_TypeDef_Ivd_RequestPostRun
+typedef uint8 Ivd_RequestPostRun;
+
+# define Rte_TypeDef_NvM_RequestResultType
+typedef uint8 NvM_RequestResultType;
+
+# define Rte_TypeDef_NvM_ServiceIdType
+typedef uint8 NvM_ServiceIdType;
+
+# define Rte_TypeDef_Rte_DT_SG_BJB_11_2
+typedef uint8 Rte_DT_SG_BJB_11_2;
+
+# define Rte_TypeDef_Rte_DT_SG_BJB_11_3
+typedef uint16 Rte_DT_SG_BJB_11_3;
+
+# define Rte_TypeDef_Rte_DT_SG_BJB_11_4
+typedef uint16 Rte_DT_SG_BJB_11_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BJB_11_5
+typedef uint16 Rte_DT_SG_BJB_11_5;
+
+# define Rte_TypeDef_Rte_DT_SG_BJB_11_6
+typedef uint16 Rte_DT_SG_BJB_11_6;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_0
+typedef uint8 Rte_DT_SG_BMC_HV_01_0;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_10
+typedef uint16 Rte_DT_SG_BMC_HV_01_10;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_11
+typedef uint16 Rte_DT_SG_BMC_HV_01_11;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_12
+typedef uint8 Rte_DT_SG_BMC_HV_01_12;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_13
+typedef uint16 Rte_DT_SG_BMC_HV_01_13;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_14
+typedef uint32 Rte_DT_SG_BMC_HV_01_14;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_15
+typedef uint8 Rte_DT_SG_BMC_HV_01_15;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_3
+typedef uint8 Rte_DT_SG_BMC_HV_01_3;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_4
+typedef uint8 Rte_DT_SG_BMC_HV_01_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_5
+typedef uint8 Rte_DT_SG_BMC_HV_01_5;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_6
+typedef uint8 Rte_DT_SG_BMC_HV_01_6;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_7
+typedef uint8 Rte_DT_SG_BMC_HV_01_7;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_8
+typedef uint16 Rte_DT_SG_BMC_HV_01_8;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_01_9
+typedef uint8 Rte_DT_SG_BMC_HV_01_9;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_0
+typedef uint16 Rte_DT_SG_BMC_HV_02_0;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_1
+typedef uint8 Rte_DT_SG_BMC_HV_02_1;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_12
+typedef uint16 Rte_DT_SG_BMC_HV_02_12;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_13
+typedef uint16 Rte_DT_SG_BMC_HV_02_13;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_14
+typedef uint8 Rte_DT_SG_BMC_HV_02_14;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_15
+typedef uint16 Rte_DT_SG_BMC_HV_02_15;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_16
+typedef uint16 Rte_DT_SG_BMC_HV_02_16;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_17
+typedef uint16 Rte_DT_SG_BMC_HV_02_17;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_18
+typedef uint16 Rte_DT_SG_BMC_HV_02_18;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_19
+typedef uint16 Rte_DT_SG_BMC_HV_02_19;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_20
+typedef uint16 Rte_DT_SG_BMC_HV_02_20;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_21
+typedef uint16 Rte_DT_SG_BMC_HV_02_21;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_22
+typedef uint16 Rte_DT_SG_BMC_HV_02_22;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_23
+typedef uint16 Rte_DT_SG_BMC_HV_02_23;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_24
+typedef uint8 Rte_DT_SG_BMC_HV_02_24;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_25
+typedef uint16 Rte_DT_SG_BMC_HV_02_25;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_26
+typedef uint16 Rte_DT_SG_BMC_HV_02_26;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_27
+typedef uint16 Rte_DT_SG_BMC_HV_02_27;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_28
+typedef uint16 Rte_DT_SG_BMC_HV_02_28;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_29
+typedef uint16 Rte_DT_SG_BMC_HV_02_29;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_30
+typedef uint8 Rte_DT_SG_BMC_HV_02_30;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_31
+typedef uint16 Rte_DT_SG_BMC_HV_02_31;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_32
+typedef uint8 Rte_DT_SG_BMC_HV_02_32;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_33
+typedef uint8 Rte_DT_SG_BMC_HV_02_33;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_34
+typedef uint8 Rte_DT_SG_BMC_HV_02_34;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_35
+typedef uint16 Rte_DT_SG_BMC_HV_02_35;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_36
+typedef uint16 Rte_DT_SG_BMC_HV_02_36;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_37
+typedef uint16 Rte_DT_SG_BMC_HV_02_37;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_5
+typedef uint8 Rte_DT_SG_BMC_HV_02_5;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_6
+typedef uint16 Rte_DT_SG_BMC_HV_02_6;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_7
+typedef uint16 Rte_DT_SG_BMC_HV_02_7;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_02_9
+typedef uint8 Rte_DT_SG_BMC_HV_02_9;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_04_4
+typedef uint8 Rte_DT_SG_BMC_HV_04_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_10_3
+typedef uint32 Rte_DT_SG_BMC_HV_10_3;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_10_4
+typedef uint8 Rte_DT_SG_BMC_HV_10_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_10_6
+typedef uint8 Rte_DT_SG_BMC_HV_10_6;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_11_2
+typedef uint8 Rte_DT_SG_BMC_HV_11_2;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_11_3
+typedef uint16 Rte_DT_SG_BMC_HV_11_3;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_11_4
+typedef uint16 Rte_DT_SG_BMC_HV_11_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_11_5
+typedef uint16 Rte_DT_SG_BMC_HV_11_5;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_11_6
+typedef uint16 Rte_DT_SG_BMC_HV_11_6;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_12_2
+typedef uint8 Rte_DT_SG_BMC_HV_12_2;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_12_3
+typedef uint16 Rte_DT_SG_BMC_HV_12_3;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_12_4
+typedef uint16 Rte_DT_SG_BMC_HV_12_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_12_5
+typedef uint16 Rte_DT_SG_BMC_HV_12_5;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_12_6
+typedef uint16 Rte_DT_SG_BMC_HV_12_6;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_13_2
+typedef uint16 Rte_DT_SG_BMC_HV_13_2;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_13_3
+typedef uint16 Rte_DT_SG_BMC_HV_13_3;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_13_4
+typedef uint16 Rte_DT_SG_BMC_HV_13_4;
+
+# define Rte_TypeDef_Rte_DT_SG_BMC_HV_13_5
+typedef uint16 Rte_DT_SG_BMC_HV_13_5;
+
+# define Rte_TypeDef_Rte_DT_SG_UI1_01_3
+typedef uint8 Rte_DT_SG_UI1_01_3;
+
+# define Rte_TypeDef_Rte_DT_SG_UI1_01_4
+typedef uint32 Rte_DT_SG_UI1_01_4;
+
+# define Rte_TypeDef_SecOC_VerificationResultType
+typedef uint8 SecOC_VerificationResultType;
+
+# define Rte_TypeDef_WdgM_GlobalStatusType
+typedef uint8 WdgM_GlobalStatusType;
+
+# define Rte_TypeDef_WdgM_LocalStatusType
+typedef uint8 WdgM_LocalStatusType;
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataType[4];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataType[6];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataType[3];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataType[3];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataType[5];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ResDataType[18];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ResDataType[18];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ResDataType[12];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataType
+typedef Dcm_RequestDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType Dcm_RequestDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataType[3];
+
+# define Rte_TypeDef_Dcm_RequestDataOut_Routine_TABROW_VkmsHandlDownl_Start_Routine_ResDataType
+typedef Dcm_RequestDataOut_Routine_TABROW_VkmsHandlDownl_Start_Routine_ResDataArrayType Dcm_RequestDataOut_Routine_TABROW_VkmsHandlDownl_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ReqDataType[15];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Individual_hash_value_idType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Individual_hash_value_idArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuIndivHashValue_Start_Routine_Individual_hash_value_idType[2];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ReqDataType[2];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeConfiOfProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeConfiOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeConfiOfProteOfVehicDiagn_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeDataOfProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeDataOfProteOfVehicDiagn_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeLoggiDataOfProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeLoggiDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_RequeLoggiDataOfProteOfVehicDiagn_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ReqDataType[3];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ReqDataType[3];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsCheckVerifHash_Start_Routine_ReqDataType[17];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetIdentHash_Start_Routine_ReqDataType[17];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetPssHash_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_DiagnServi_TABROW_VkmsGetState_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_TABROW_CheckCalibPreCondi_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_TABROW_CheckCalibPreCondi_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_TABROW_CheckCalibPreCondi_Start_Routine_ReqDataType[3];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ReqDataType
+typedef Dcm_StartDataIn_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ReqDataArrayType Dcm_StartDataIn_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataIn_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ReqDataType
+typedef Dcm_StartDataIn_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ReqDataArrayType Dcm_StartDataIn_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ReqDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_RoutiContrCheckProgrDepen_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_RoutiContrCheckProgrDepen_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_RoutiContrCheckProgrDepen_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_BeginOfWritiOfSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_BeginOfWritiOfSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_BeginOfWritiOfSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NeuRoutiImmedResul_Start_Routine_ResDataType[100];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetHealiInhib_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetProteOfVehicDiagn_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetProteOfVehicDiagn_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetProteOfVehicDiagn_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_TABROW_UnlocProteOfVehicDiagn_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_TABROW_UnlocProteOfVehicDiagn_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_TABROW_UnlocProteOfVehicDiagn_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_DiagnServi_Verify_partial_software_checksum_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_DiagnServi_Verify_partial_software_checksum_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_DiagnServi_Verify_partial_software_checksum_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_TABROW_EndOfWritiSecurDataOfProteOfVehicDiagn_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_TABROW_LockProteOfVehicDiagn_Start_Routine_ResDataType
+typedef Dcm_StartDataOut_Routine_TABROW_LockProteOfVehicDiagn_Start_Routine_ResDataArrayType Dcm_StartDataOut_Routine_TABROW_LockProteOfVehicDiagn_Start_Routine_ResDataType[2];
+
+# define Rte_TypeDef_Dcm_StartDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataType
+typedef Dcm_StartDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType Dcm_StartDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_Get_Charge_Power_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfBatteBankMode_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfCellBalan_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_AdaptOfVoltaMeasuChann_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_CalcuModulHashValue_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_ClearDowngProteData_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_1_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_IsolaMeasuDeactMode_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_1_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_2_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_3_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_2_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_4_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_5_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NeuRoutiBasicSetti_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_NewRoutiBasicSetti_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHVBatteAfterSepar_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetHardCrashFlag_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfAllAdapt_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfContaError_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetOfModulParam_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataType
+typedef Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataArrayType Dcm_StopDataOut_Routine_DiagnServi_TABROW_ResetToFactoSetti_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataType
+typedef Dcm_StopDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataArrayType Dcm_StopDataOut_Routine_Get_Energy_from_SOC_Start_Routine_ResDataType[1];
+
+# define Rte_TypeDef_Dcm_StopDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataType
+typedef Dcm_StopDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataArrayType Dcm_StopDataOut_Routine_TABROW_SOKFunctDeact_Start_Routine_COP_ResDataType[1];
+
+# define Rte_TypeDef_AT_SG_BJB_10
+typedef struct
+{
+  SG_BJB_10_BJB_10_BZ_type BJB_10_BZ;
+  SG_BJB_10_BJB_10_CRC_type BJB_10_CRC;
+  SG_BJB_10_BJB_Lebensdauer_Trennelemente_type BJB_Lebensdauer_Trennelemente;
+  SG_BJB_10_BJB_Sperrung_Unterspannung_type BJB_Sperrung_Unterspannung;
+  SG_BJB_10_BJB_Status_HV_Spannungssensorik_type BJB_Status_HV_Spannungssensorik;
+  SG_BJB_10_BJB_Status_Trennelemente_type BJB_Status_Trennelemente;
+} AT_SG_BJB_10;
+
+# define Rte_TypeDef_AT_SG_BJB_11
+typedef struct
+{
+  SG_BJB_11_BJB_11_BZ_type BJB_11_BZ;
+  SG_BJB_11_BJB_11_CRC_type BJB_11_CRC;
+  SG_BJB_11_BJB_Sperrung_Ueberspannung_type BJB_Sperrung_Ueberspannung;
+  SG_BJB_11_BJB_Ueberspannungszaehler_CMC01_type BJB_Ueberspannungszaehler_CMC01;
+  SG_BJB_11_BJB_Ueberspannungszaehler_CMC02_type BJB_Ueberspannungszaehler_CMC02;
+  SG_BJB_11_BJB_Uebertemperaturzaehler_CMC01_type BJB_Uebertemperaturzaehler_CMC01;
+  SG_BJB_11_BJB_Uebertemperaturzaehler_CMC02_type BJB_Uebertemperaturzaehler_CMC02;
+} AT_SG_BJB_11;
+
+# define Rte_TypeDef_AT_SG_BJB_12
+typedef struct
+{
+  SG_BJB_12_BJB_12_BZ_type BJB_12_BZ;
+  SG_BJB_12_BJB_12_CRC_type BJB_12_CRC;
+  SG_BJB_12_BJB_Sperrung_Uebertemperatur_type BJB_Sperrung_Uebertemperatur;
+  SG_BJB_12_BJB_Ueberspannungszaehler_CMC03_type BJB_Ueberspannungszaehler_CMC03;
+  SG_BJB_12_BJB_Ueberspannungszaehler_CMC04_type BJB_Ueberspannungszaehler_CMC04;
+  SG_BJB_12_BJB_Uebertemperaturzaehler_CMC03_type BJB_Uebertemperaturzaehler_CMC03;
+  SG_BJB_12_BJB_Uebertemperaturzaehler_CMC04_type BJB_Uebertemperaturzaehler_CMC04;
+} AT_SG_BJB_12;
+
+# define Rte_TypeDef_AT_SG_BJB_13
+typedef struct
+{
+  SG_BJB_13_BJB_13_BZ_type BJB_13_BZ;
+  SG_BJB_13_BJB_13_CRC_type BJB_13_CRC;
+  SG_BJB_13_BJB_Unterspannungszaehler_CMC01_type BJB_Unterspannungszaehler_CMC01;
+  SG_BJB_13_BJB_Unterspannungszaehler_CMC02_type BJB_Unterspannungszaehler_CMC02;
+  SG_BJB_13_BJB_Unterspannungszaehler_CMC03_type BJB_Unterspannungszaehler_CMC03;
+  SG_BJB_13_BJB_Unterspannungszaehler_CMC04_type BJB_Unterspannungszaehler_CMC04;
+} AT_SG_BJB_13;
+
+# define Rte_TypeDef_AT_SG_HVK_03
+typedef struct
+{
+  SG_HVK_03_HVK_03_BZ_type HVK_03_BZ;
+  SG_HVK_03_HVK_03_CRC_type HVK_03_CRC;
+  SG_HVK_03_HVK_BMC_Sollmodus_type HVK_BMC_Sollmodus;
+  SG_HVK_03_HVK_BMC_Spannung_Anf_type HVK_BMC_Spannung_Anf;
+  SG_HVK_03_HVK_Iso_Messung_Start_type HVK_Iso_Messung_Start;
+  SG_HVK_03_HVK_Istmodus_Anf_type HVK_Istmodus_Anf;
+} AT_SG_HVK_03;
+
+# define Rte_TypeDef_AT_SG_HVLM_14
+typedef struct
+{
+  SG_HVLM_14_HVLM_14_BZ_type HVLM_14_BZ;
+  SG_HVLM_14_HVLM_14_CRC_type HVLM_14_CRC;
+  SG_HVLM_14_HVLM_DC_Aufstartmodus_type HVLM_DC_Aufstartmodus;
+  SG_HVLM_14_HVLM_Start_Pulserkennung_type HVLM_Start_Pulserkennung;
+  SG_HVLM_14_HVLM_Steckerstatus_type HVLM_Steckerstatus;
+  SG_HVLM_14_HVLM_ZustandLadeablauf_type HVLM_ZustandLadeablauf;
+} AT_SG_HVLM_14;
+
+# define Rte_TypeDef_AT_SG_ORU_Control_A_01
+typedef struct
+{
+  SG_ORU_Control_A_01_ORU_Control_A_01_BZ_type ORU_Control_A_01_BZ;
+  SG_ORU_Control_A_01_ORU_Control_A_01_CRC_type ORU_Control_A_01_CRC;
+  SG_ORU_Control_A_01_OnlineRemoteUpdateControlA_type OnlineRemoteUpdateControlA;
+  SG_ORU_Control_A_01_OnlineRemoteUpdateControlOldA_type OnlineRemoteUpdateControlOldA;
+  SG_ORU_Control_A_01_OruControlReleaseA_type OruControlReleaseA;
+} AT_SG_ORU_Control_A_01;
+
+# define Rte_TypeDef_AT_SG_ORU_Control_D_01
+typedef struct
+{
+  SG_ORU_Control_D_01_ORU_Control_D_01_BZ_type ORU_Control_D_01_BZ;
+  SG_ORU_Control_D_01_ORU_Control_D_01_CRC_type ORU_Control_D_01_CRC;
+  SG_ORU_Control_D_01_OnlineRemoteUpdateControlD_type OnlineRemoteUpdateControlD;
+  SG_ORU_Control_D_01_OnlineRemoteUpdateControlOldD_type OnlineRemoteUpdateControlOldD;
+  SG_ORU_Control_D_01_OruControlReleaseD_type OruControlReleaseD;
+} AT_SG_ORU_Control_D_01;
+
+# define Rte_TypeDef_AT_SG_OTAMC_D_01
+typedef struct
+{
+  SG_OTAMC_D_01_OTAMC_D_01_BZ_type OTAMC_D_01_BZ;
+  SG_OTAMC_D_01_OTAMC_D_01_CRC_type OTAMC_D_01_CRC;
+  SG_OTAMC_D_01_VehicleProtectedEnvironment_D_type VehicleProtectedEnvironment_D;
+} AT_SG_OTAMC_D_01;
+
+# define Rte_TypeDef_AT_SG_UI1_01
+typedef struct
+{
+  SG_UI1_01_UI1_KL30_Spannung_type UI1_KL30_Spannung;
+  SG_UI1_01_UI1_Strom_type UI1_Strom;
+  SG_UI1_01_UISensorIso_01_BZ_type UISensorIso_01_BZ;
+  SG_UI1_01_UISensorIso_01_CRC_type UISensorIso_01_CRC;
+} AT_SG_UI1_01;
+
+# define Rte_TypeDef_AT_SG_UI1_02
+typedef struct
+{
+  SG_UI1_02_UI1_Spannung1_type UI1_Spannung1;
+  SG_UI1_02_UI1_Spannung1_Schalt_Status_type UI1_Spannung1_Schalt_Status;
+  SG_UI1_02_UI1_Spannung2_type UI1_Spannung2;
+  SG_UI1_02_UI1_Spannung2_Schalt_Status_type UI1_Spannung2_Schalt_Status;
+  SG_UI1_02_UI1_Spannung3_type UI1_Spannung3;
+  SG_UI1_02_UISensorIso_02_BZ_type UISensorIso_02_BZ;
+  SG_UI1_02_UISensorIso_02_CRC_type UISensorIso_02_CRC;
+} AT_SG_UI1_02;
+
+# define Rte_TypeDef_AT_SG_UI2_01
+typedef struct
+{
+  SG_UI2_01_UI2_KL30_Spannung_type UI2_KL30_Spannung;
+  SG_UI2_01_UI2_Strom_type UI2_Strom;
+  SG_UI2_01_UISensorPyro_01_BZ_type UISensorPyro_01_BZ;
+  SG_UI2_01_UISensorPyro_01_CRC_type UISensorPyro_01_CRC;
+} AT_SG_UI2_01;
+
+# define Rte_TypeDef_AT_SG_UI2_02
+typedef struct
+{
+  SG_UI2_02_UI2_Spannung1_type UI2_Spannung1;
+  SG_UI2_02_UI2_Spannung1_Schalt_Status_type UI2_Spannung1_Schalt_Status;
+  SG_UI2_02_UI2_Spannung2_type UI2_Spannung2;
+  SG_UI2_02_UI2_Spannung2_Schalt_Status_type UI2_Spannung2_Schalt_Status;
+  SG_UI2_02_UI2_Spannung3_type UI2_Spannung3;
+  SG_UI2_02_UISensorPyro_02_BZ_type UISensorPyro_02_BZ;
+  SG_UI2_02_UISensorPyro_02_CRC_type UISensorPyro_02_CRC;
+} AT_SG_UI2_02;
+
+# define Rte_TypeDef_AT_SG_UI2_03
+typedef struct
+{
+  SG_UI2_03_UI2_HW_Crashleitung_Status_type UI2_HW_Crashleitung_Status;
+  SG_UI2_03_UI2_Pyro_Status_type UI2_Pyro_Status;
+  SG_UI2_03_UI2_Spannung4_type UI2_Spannung4;
+  SG_UI2_03_UI2_Spannung5_type UI2_Spannung5;
+  SG_UI2_03_UI2_Spannung6_type UI2_Spannung6;
+  SG_UI2_03_UISensorPyro_03_BZ_type UISensorPyro_03_BZ;
+  SG_UI2_03_UISensorPyro_03_CRC_type UISensorPyro_03_CRC;
+} AT_SG_UI2_03;
+
+# define Rte_TypeDef_DtEthernetCommunicationDataElementType
+typedef struct
+{
+  IdtUint8Array_508 Value;
+  uint16 Length;
+} DtEthernetCommunicationDataElementType;
+
+# define Rte_TypeDef_DtLargeDataControlCommunicationDataElementType
+typedef struct
+{
+  IdtUint8Array_508 Value;
+  uint16 Length;
+} DtLargeDataControlCommunicationDataElementType;
+
+# define Rte_TypeDef_SG_BJB_11
+typedef struct
+{
+  uint8 BJB_11_BZ;
+  uint8 BJB_11_CRC;
+  Rte_DT_SG_BJB_11_2 BJB_Sperrung_Ueberspannung;
+  Rte_DT_SG_BJB_11_3 BJB_Ueberspannungszaehler_CMC01;
+  Rte_DT_SG_BJB_11_4 BJB_Ueberspannungszaehler_CMC02;
+  Rte_DT_SG_BJB_11_5 BJB_Uebertemperaturzaehler_CMC01;
+  Rte_DT_SG_BJB_11_6 BJB_Uebertemperaturzaehler_CMC02;
+} SG_BJB_11;
+
+# define Rte_TypeDef_SG_BMC_HV_01
+typedef struct
+{
+  Rte_DT_SG_BMC_HV_01_0 BMC_Bankstatus;
+  uint8 BMC_HV_01_BZ;
+  uint8 BMC_HV_01_CRC;
+  Rte_DT_SG_BMC_HV_01_3 BMC_HVK_EoHVL_Status;
+  Rte_DT_SG_BMC_HV_01_4 BMC_HVK_Fehler_HVIL;
+  Rte_DT_SG_BMC_HV_01_5 BMC_HVK_Fehler_Intern;
+  Rte_DT_SG_BMC_HV_01_6 BMC_HVK_Fehler_SD;
+  Rte_DT_SG_BMC_HV_01_7 BMC_Modus;
+  Rte_DT_SG_BMC_HV_01_8 BMC_Spannung;
+  Rte_DT_SG_BMC_HV_01_9 BMC_Spannung_Messzeit;
+  Rte_DT_SG_BMC_HV_01_10 BMC_Spannung_ZwischenKreis;
+  Rte_DT_SG_BMC_HV_01_11 BMC_Spannung_ZwischenKreis_2;
+  Rte_DT_SG_BMC_HV_01_12 BMC_Status_Spgfreiheit;
+  Rte_DT_SG_BMC_HV_01_13 BMC_Strom;
+  Rte_DT_SG_BMC_HV_01_14 BMC_Strom_02;
+  Rte_DT_SG_BMC_HV_01_15 BMC_Strom_Messzeit;
+  uint8 SignalVoid_BMC_HV_01_0;
+} SG_BMC_HV_01;
+
+# define Rte_TypeDef_SG_BMC_HV_02
+typedef struct
+{
+  Rte_DT_SG_BMC_HV_02_0 Anzeige_SOC;
+  Rte_DT_SG_BMC_HV_02_1 BMC_AC_Laden;
+  Rte_DT_SG_BMC_HV_02_2 BMC_Bank_Notlauf_erlaubt;
+  Rte_DT_SG_BMC_HV_02_3 BMC_Bank_parallel_erlaubt;
+  Rte_DT_SG_BMC_HV_02_4 BMC_Bank_seriell_erlaubt;
+  Rte_DT_SG_BMC_HV_02_5 BMC_DC_Laden;
+  Rte_DT_SG_BMC_HV_02_6 BMC_Energie_Sockel_SoC;
+  Rte_DT_SG_BMC_HV_02_7 BMC_Energieinhalt;
+  Rte_DT_SG_BMC_HV_02_8 BMC_Fehler_Leistungsred;
+  Rte_DT_SG_BMC_HV_02_9 BMC_Fehler_Warnung;
+  uint8 BMC_HV_02_BZ;
+  uint8 BMC_HV_02_CRC;
+  Rte_DT_SG_BMC_HV_02_12 BMC_IstZellspannungMax;
+  Rte_DT_SG_BMC_HV_02_13 BMC_IstZellspannungMin;
+  Rte_DT_SG_BMC_HV_02_14 BMC_IWU_Status;
+  Rte_DT_SG_BMC_HV_02_15 BMC_IWU_Wert_neg;
+  Rte_DT_SG_BMC_HV_02_16 BMC_IWU_Wert_pos;
+  Rte_DT_SG_BMC_HV_02_17 BMC_Leerlaufspannung;
+  Rte_DT_SG_BMC_HV_02_18 BMC_Max_Entladeleistung;
+  Rte_DT_SG_BMC_HV_02_19 BMC_Max_Entladestrom;
+  Rte_DT_SG_BMC_HV_02_20 BMC_Max_Ladeleistung;
+  Rte_DT_SG_BMC_HV_02_21 BMC_Max_Ladestrom;
+  Rte_DT_SG_BMC_HV_02_22 BMC_MinDyn_Entladespannung;
+  Rte_DT_SG_BMC_HV_02_23 BMC_MinDyn_Ladespannung;
+  Rte_DT_SG_BMC_HV_02_24 BMC_MMTR_Status;
+  Rte_DT_SG_BMC_HV_02_25 BMC_NutzbarerSOC;
+  Rte_DT_SG_BMC_HV_02_26 BMC_PerfInd_Entladen;
+  Rte_DT_SG_BMC_HV_02_27 BMC_PerfInd_Laden;
+  Rte_DT_SG_BMC_HV_02_28 BMC_PredLeistung_StuetzungNV;
+  Rte_DT_SG_BMC_HV_02_29 BMC_Spannung_DC_Ladesaeule;
+  Rte_DT_SG_BMC_HV_02_30 BMC_Status_DCLS;
+  Rte_DT_SG_BMC_HV_02_31 BMC_TechnischerSOC;
+  Rte_DT_SG_BMC_HV_02_32 BMC_Unterboden_Warnung;
+  Rte_DT_SG_BMC_HV_02_33 BMC_Verbauinfo_ACSchuetz;
+  Rte_DT_SG_BMC_HV_02_34 BMC_Verbauinfo_Bank;
+  Rte_DT_SG_BMC_HV_02_35 BMC_Vorlade_Zielspannung;
+  Rte_DT_SG_BMC_HV_02_36 BMC_ZellTemp_virtuell_max;
+  Rte_DT_SG_BMC_HV_02_37 BMC_ZellTemp_virtuell_min;
+  Rte_DT_SG_BMC_HV_02_38 Hybrid_01_OBD_Lampe_Anf;
+  uint8 SignalVoid_BMC_HV_02_0;
+  uint8 SignalVoid_BMC_HV_02_1;
+  uint8 SignalVoid_BMC_HV_02_2;
+  uint8 SignalVoid_BMC_HV_02_3;
+  uint8 SignalVoid_BMC_HV_02_4;
+  uint8 SignalVoid_BMC_HV_02_5;
+} SG_BMC_HV_02;
+
+# define Rte_TypeDef_SG_BMC_HV_04
+typedef struct
+{
+  Rte_DT_SG_BMC_HV_04_0 BMC_Dev_Freigabe;
+  Rte_DT_SG_BMC_HV_04_1 BMC_Flash_Freigabe;
+  uint8 BMC_HV_04_BZ;
+  uint8 BMC_HV_04_CRC;
+  Rte_DT_SG_BMC_HV_04_4 BMC_Iso_Mode_Anf;
+  Rte_DT_SG_BMC_HV_04_5 BMC_UI1_Spannung1_Schalt_Anf;
+  Rte_DT_SG_BMC_HV_04_6 BMC_UI1_Spannung2_Schalt_Anf;
+  Rte_DT_SG_BMC_HV_04_7 BMC_UI2_Spannung1_Schalt_Anf;
+  Rte_DT_SG_BMC_HV_04_8 BMC_UI2_Spannung2_Schalt_Anf;
+  uint8 SignalVoid_BMC_HV_04_0;
+  uint8 SignalVoid_BMC_HV_04_1;
+  uint8 SignalVoid_BMC_HV_04_2;
+  uint8 SignalVoid_BMC_HV_04_3;
+  uint8 SignalVoid_BMC_HV_04_4;
+  uint8 SignalVoid_BMC_HV_04_5;
+} SG_BMC_HV_04;
+
+# define Rte_TypeDef_SG_BMC_HV_10
+typedef struct
+{
+  Rte_DT_SG_BMC_HV_10_0 BMC_Datenuebernahme_Anf;
+  uint8 BMC_HV_10_BZ;
+  uint8 BMC_HV_10_CRC;
+  Rte_DT_SG_BMC_HV_10_3 BMC_Lebensdauer_Trennelemente;
+  Rte_DT_SG_BMC_HV_10_4 BMC_Sperrung_Unterspannung;
+  Rte_DT_SG_BMC_HV_10_5 BMC_Status_HV_Spannungssensorik;
+  Rte_DT_SG_BMC_HV_10_6 BMC_Status_Trennelemente;
+  uint8 SignalVoid_BMC_HV_10_0;
+  uint8 SignalVoid_BMC_HV_10_1;
+  uint8 SignalVoid_BMC_HV_10_2;
+  uint8 SignalVoid_BMC_HV_10_3;
+} SG_BMC_HV_10;
+
+# define Rte_TypeDef_SG_BMC_HV_11
+typedef struct
+{
+  uint8 BMC_HV_11_BZ;
+  uint8 BMC_HV_11_CRC;
+  Rte_DT_SG_BMC_HV_11_2 BMC_Sperrung_Ueberspannung;
+  Rte_DT_SG_BMC_HV_11_3 BMC_Ueberspannungszaehler_CMC01;
+  Rte_DT_SG_BMC_HV_11_4 BMC_Ueberspannungszaehler_CMC02;
+  Rte_DT_SG_BMC_HV_11_5 BMC_Uebertemperaturzaehler_CMC01;
+  Rte_DT_SG_BMC_HV_11_6 BMC_Uebertemperaturzaehler_CMC02;
+} SG_BMC_HV_11;
+
+# define Rte_TypeDef_SG_BMC_HV_12
+typedef struct
+{
+  uint8 BMC_HV_12_BZ;
+  uint8 BMC_HV_12_CRC;
+  Rte_DT_SG_BMC_HV_12_2 BMC_Sperrung_Uebertemperatur;
+  Rte_DT_SG_BMC_HV_12_3 BMC_Ueberspannungszaehler_CMC03;
+  Rte_DT_SG_BMC_HV_12_4 BMC_Ueberspannungszaehler_CMC04;
+  Rte_DT_SG_BMC_HV_12_5 BMC_Uebertemperaturzaehler_CMC03;
+  Rte_DT_SG_BMC_HV_12_6 BMC_Uebertemperaturzaehler_CMC04;
+} SG_BMC_HV_12;
+
+# define Rte_TypeDef_SG_BMC_HV_13
+typedef struct
+{
+  uint8 BMC_HV_13_BZ;
+  uint8 BMC_HV_13_CRC;
+  Rte_DT_SG_BMC_HV_13_2 BMC_Unterspannungszaehler_CMC01;
+  Rte_DT_SG_BMC_HV_13_3 BMC_Unterspannungszaehler_CMC02;
+  Rte_DT_SG_BMC_HV_13_4 BMC_Unterspannungszaehler_CMC03;
+  Rte_DT_SG_BMC_HV_13_5 BMC_Unterspannungszaehler_CMC04;
+  uint8 SignalVoid_BMC_HV_13_0;
+  uint8 SignalVoid_BMC_HV_13_1;
+} SG_BMC_HV_13;
+
+# define Rte_TypeDef_SG_KS_Hybrid_01_Challenge_K
+typedef struct
+{
+  KS_Hybrid_01_ChK KS_Hybrid_01_ChK;
+  uint8 KS_Hybrid_01_ChK_IKACtr;
+  uint16 KS_Hybrid_01_ChK_SID;
+} SG_KS_Hybrid_01_Challenge_K;
+
+# define Rte_TypeDef_SG_KS_Hybrid_01_ReqFrame
+typedef struct
+{
+  uint8 KS_Hybrid_01_Req_ErrCtr;
+  Rte_DT_SG_KS_Hybrid_01_ReqFrame_1 KS_Hybrid_01_Req_IKA_Retry;
+  Rte_DT_SG_KS_Hybrid_01_ReqFrame_2 KS_Hybrid_01_Req_Prio;
+  uint16 KS_Hybrid_01_Req_SID;
+  uint8 KS_Hybrid_01_Req_SWMaj;
+  uint8 KS_Hybrid_01_Req_SWMin;
+  uint8 KS_Hybrid_01_Req_SWPat;
+  Rte_DT_SG_KS_Hybrid_01_ReqFrame_7 KS_Hybrid_01_Req_VKMS_Err;
+} SG_KS_Hybrid_01_ReqFrame;
+
+# define Rte_TypeDef_SG_KS_Hybrid_01_Response_K
+typedef struct
+{
+  KS_Hybrid_01_ReK KS_Hybrid_01_ReK;
+  uint8 KS_Hybrid_01_ReK_IKACtr;
+  uint16 KS_Hybrid_01_ReK_SID;
+} SG_KS_Hybrid_01_Response_K;
+
+# define Rte_TypeDef_SG_UI1_01
+typedef struct
+{
+  uint8 SignalVoid_UI1_01_0;
+  uint8 SignalVoid_UI1_01_1;
+  uint8 SignalVoid_UI1_01_2;
+  Rte_DT_SG_UI1_01_3 UI1_KL30_Spannung;
+  Rte_DT_SG_UI1_01_4 UI1_Strom;
+  uint8 UISensorIso_01_BZ;
+  uint8 UISensorIso_01_CRC;
+} SG_UI1_01;
+
+# define Rte_TypeDef_SecOC_VerificationStatusType
+typedef struct
+{
+  uint16 freshnessValueID;
+  SecOC_VerificationResultType verificationStatus;
+  uint16 secOCDataId;
+} SecOC_VerificationStatusType;
+
+
+# ifndef RTE_SUPPRESS_UNUSED_DATATYPES
+/**********************************************************************************************************************
+ * Unused Data type definitions
+ *********************************************************************************************************************/
+
+#  define Rte_TypeDef_Csm_DataPtr
+typedef uint8 * Csm_DataPtr;
+
+#  define Rte_TypeDef_Csm_LengthPtr
+typedef uint32 * Csm_LengthPtr;
+
+#  define Rte_TypeDef_Csm_const_DataPtr
+typedef const uint8 * Csm_const_DataPtr;
+
+#  define Rte_TypeDef_Rte_DT_REC_Basics_1_0_Echo_0
+typedef float Rte_DT_REC_Basics_1_0_Echo_0;
+
+#  define Rte_TypeDef_Rte_DT_REC_BatteryWarning_0
+typedef unsigned char Rte_DT_REC_BatteryWarning_0;
+
+#  define Rte_TypeDef_Rte_DT_REC_Maths_1_0_Triangle_0
+typedef float Rte_DT_REC_Maths_1_0_Triangle_0;
+
+#  define Rte_TypeDef_Rte_DT_REC_TurnIndicationSig_0
+typedef unsigned char Rte_DT_REC_TurnIndicationSig_0;
+
+#  define Rte_TypeDef_Rte_DT_REC_Volume_1_0_CurrentFrequency_0
+typedef unsigned short Rte_DT_REC_Volume_1_0_CurrentFrequency_0;
+
+#  define Rte_TypeDef_Rte_DT_REC_Volume_1_0_CurrentVolume_0
+typedef unsigned char Rte_DT_REC_Volume_1_0_CurrentVolume_0;
+
+#  define Rte_TypeDef_DEV_Hybrid_01_Req_00_FD_Data
+typedef uint8 DEV_Hybrid_01_Req_00_FD_Data[64];
+
+#  define Rte_TypeDef_DEV_Hybrid_01_Resp_FF_FD_Data
+typedef uint8 DEV_Hybrid_01_Resp_FF_FD_Data[64];
+
+#  define Rte_TypeDef_SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_type
+typedef uint8 SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_type[8];
+
+#  define Rte_TypeDef_SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_type
+typedef uint8 SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_type[8];
+
+#  define Rte_TypeDef_Sfd2_32ByteHash_Type
+typedef uint8 Sfd2_32ByteHash_Type[32];
+
+#  define Rte_TypeDef_Sfd2_DidArray_Type
+typedef uint16 Sfd2_DidArray_Type[64];
+
+#  define Rte_TypeDef_REC_Basics_1_0_Echo
+typedef struct
+{
+  Rte_DT_REC_Basics_1_0_Echo_0 float32_Basics;
+} REC_Basics_1_0_Echo;
+
+#  define Rte_TypeDef_REC_BatteryWarning
+typedef struct
+{
+  Rte_DT_REC_BatteryWarning_0 boolean_BatteryWarning;
+} REC_BatteryWarning;
+
+#  define Rte_TypeDef_REC_Maths_1_0_Triangle
+typedef struct
+{
+  Rte_DT_REC_Maths_1_0_Triangle_0 float32_Triangle;
+} REC_Maths_1_0_Triangle;
+
+#  define Rte_TypeDef_REC_TurnIndicationSig
+typedef struct
+{
+  Rte_DT_REC_TurnIndicationSig_0 boolean_Turnindication;
+} REC_TurnIndicationSig;
+
+#  define Rte_TypeDef_REC_Volume_1_0_CurrentFrequency
+typedef struct
+{
+  Rte_DT_REC_Volume_1_0_CurrentFrequency_0 uint16_Frequency;
+} REC_Volume_1_0_CurrentFrequency;
+
+#  define Rte_TypeDef_REC_Volume_1_0_CurrentVolume
+typedef struct
+{
+  Rte_DT_REC_Volume_1_0_CurrentVolume_0 uint8_Volume;
+} REC_Volume_1_0_CurrentVolume;
+
+#  define Rte_TypeDef_AB_Deaktivierung_HV
+typedef uint8 AB_Deaktivierung_HV;
+
+#  define Rte_TypeDef_Dem_OperationCycleIdType
+typedef uint8 Dem_OperationCycleIdType;
+
+#  define Rte_TypeDef_EnumLastReceivedRxValueType
+typedef uint8 EnumLastReceivedRxValueType;
+
+#  define Rte_TypeDef_SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_IKACtr_type
+typedef uint8 SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_IKACtr_type;
+
+#  define Rte_TypeDef_SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_SID_type
+typedef uint16 SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_SID_type;
+
+#  define Rte_TypeDef_SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_IKACtr_type
+typedef uint8 SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_IKACtr_type;
+
+#  define Rte_TypeDef_SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_SID_type
+typedef uint16 SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_SID_type;
+
+#  define Rte_TypeDef_Signal_MyECU_SecOC_Rx2
+typedef uint8 Signal_MyECU_SecOC_Rx2;
+
+#  define Rte_TypeDef_Signal_MyECU_SecOC_Tx1
+typedef uint8 Signal_MyECU_SecOC_Tx1;
+
+#  define Rte_TypeDef_Signal_MyECU_SecOC_Tx2
+typedef uint8 Signal_MyECU_SecOC_Tx2;
+
+#  define Rte_TypeDef_dtRef_
+typedef uint8 dtRef_;
+
+#  define Rte_TypeDef_AT_SG_KS_Hybrid_01_Challenge_M
+typedef struct
+{
+  SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_type KS_Hybrid_01_ChM;
+  SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_IKACtr_type KS_Hybrid_01_ChM_IKACtr;
+  SG_KS_Hybrid_01_Challenge_M_KS_Hybrid_01_ChM_SID_type KS_Hybrid_01_ChM_SID;
+} AT_SG_KS_Hybrid_01_Challenge_M;
+
+#  define Rte_TypeDef_AT_SG_KS_Hybrid_01_Response_M
+typedef struct
+{
+  SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_type KS_Hybrid_01_ReM;
+  SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_IKACtr_type KS_Hybrid_01_ReM_IKACtr;
+  SG_KS_Hybrid_01_Response_M_KS_Hybrid_01_ReM_SID_type KS_Hybrid_01_ReM_SID;
+} AT_SG_KS_Hybrid_01_Response_M;
+
+#  define Rte_TypeDef_IdtEthernetCommunicationInfo
+typedef struct
+{
+  IdtUint8Array_508 Data;
+  uint16 Length;
+  boolean NewDataFlag;
+} IdtEthernetCommunicationInfo;
+
+#  define Rte_TypeDef_IdtLargeDataControlCommunicationInfo
+typedef struct
+{
+  IdtUint8Array_508 Data;
+  uint16 Length;
+  boolean NewDataFlag;
+} IdtLargeDataControlCommunicationInfo;
+
+#  define Rte_TypeDef_Csm_VerifyResultPtr
+typedef Csm_VerifyResultType * Csm_VerifyResultPtr;
+
+# endif
+
+
+/**********************************************************************************************************************
+ * Constant value definitions
+ *********************************************************************************************************************/
+
+# define RTE_START_SEC_CONST_UNSPECIFIED
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern CONST(AT_SG_BJB_10, RTE_CONST) Rte_C_AT_SG_BJB_10_0;
+
+extern CONST(AT_SG_BJB_11, RTE_CONST) Rte_C_AT_SG_BJB_11_0;
+
+extern CONST(AT_SG_BJB_12, RTE_CONST) Rte_C_AT_SG_BJB_12_0;
+
+extern CONST(AT_SG_BJB_13, RTE_CONST) Rte_C_AT_SG_BJB_13_0;
+
+extern CONST(AT_SG_HVK_03, RTE_CONST) Rte_C_AT_SG_HVK_03_0;
+
+extern CONST(AT_SG_HVLM_14, RTE_CONST) Rte_C_AT_SG_HVLM_14_0;
+
+extern CONST(AT_SG_ORU_Control_A_01, RTE_CONST) Rte_C_AT_SG_ORU_Control_A_01_0;
+
+extern CONST(AT_SG_ORU_Control_D_01, RTE_CONST) Rte_C_AT_SG_ORU_Control_D_01_0;
+
+extern CONST(AT_SG_OTAMC_D_01, RTE_CONST) Rte_C_AT_SG_OTAMC_D_01_0;
+
+extern CONST(AT_SG_UI1_01, RTE_CONST) Rte_C_AT_SG_UI1_01_0;
+
+extern CONST(AT_SG_UI1_02, RTE_CONST) Rte_C_AT_SG_UI1_02_0;
+
+extern CONST(AT_SG_UI2_01, RTE_CONST) Rte_C_AT_SG_UI2_01_0;
+
+extern CONST(AT_SG_UI2_02, RTE_CONST) Rte_C_AT_SG_UI2_02_0;
+
+extern CONST(AT_SG_UI2_03, RTE_CONST) Rte_C_AT_SG_UI2_03_0;
+
+extern CONST(DtInterCoreSlaveDataElementType, RTE_CONST) Rte_C_DtInterCoreSlaveDataElementType_0;
+
+extern CONST(SecOC_VerificationStatusType, RTE_CONST) Rte_C_SecOC_VerificationStatusType_0;
+
+# define RTE_STOP_SEC_CONST_UNSPECIFIED
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+# include "Rte_DataHandleType.h"
+
+# ifdef RTE_MICROSAR_PIM_EXPORT
+
+
+/**********************************************************************************************************************
+ * Rte_Pim (Per-Instance Memory)
+ *********************************************************************************************************************/
+
+#  define RTE_START_SEC_VAR_DEFAULT_RTE_PIM_GROUP_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint32, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_NM_ActiveComMUsers;
+extern VAR(uint16, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_XcpPimDownload;
+extern VAR(uint16, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_XcpPimUpload;
+extern VAR(EnumActiveComponentType, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_ActiveComponent;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_COM_RxDataControlCommunicationBuffer;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_COM_RxSigValue0;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_COM_RxSigValue1;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_COM_RxSigValue2;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_COM_TxSigValue0;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_COM_TxSigValue1;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_COM_TxSigValue2;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_DIAG_LastRxData;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_MEM_ActiveBlock;
+extern VAR(EnumMEM_BlockStateType, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_MEM_BlockState1;
+extern VAR(EnumMEM_BlockStateType, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_MEM_BlockState2;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_MEM_DataBuffer1;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_MEM_DataBuffer2;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_NM_ActiveChannelHasFullComRequest;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_NM_ActiveComMChannel;
+extern VAR(EnumNM_ApplStateType, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_NM_ApplState;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_NM_BusSleepModeTimer;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_SecOCTxFreshnessValue0;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_TxCtrlSigValue;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_TxDataSigValue;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_Uptime;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_WDG_AliveCycle;
+extern VAR(uint8, RTE_VAR_DEFAULT_RTE_PIM_GROUP) Rte_StartApplication_WDG_AliveTimer;
+
+#  define RTE_STOP_SEC_VAR_DEFAULT_RTE_PIM_GROUP_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# endif
+
+
+/**********************************************************************************************************************
+ * Component Data Structures and Port Data Structures
+ *********************************************************************************************************************/
+
+struct Rte_CDS_StartApplicationSlaveCore
+{
+  /* dummy entry */
+  uint8 _dummy;
+};
+typedef struct Rte_CDS_StartApplicationSlaveCore Rte_CDS_StartApplicationSlaveCore;
+
+/**********************************************************************************************************************
+ *  LOCAL DATA TYPES AND STRUCTURES
+ *********************************************************************************************************************/
+
+typedef unsigned int Rte_BitType;
+/**********************************************************************************************************************
+ * type and extern declarations of RTE internal variables
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ * Rte Init State Variable
+ *********************************************************************************************************************/
+
+# define RTE_STATE_UNINIT     (0U)
+# define RTE_STATE_SCHM_START (1U)
+# define RTE_STATE_SCHM_INIT  (2U)
+# define RTE_STATE_INIT       (3U)
+
+# define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_NOCACHE_ZERO_INIT_8BIT
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern volatile VAR(uint8, RTE_VAR_ZERO_INIT_NOCACHE) Rte_InitState; /* PRQA S 3408 */ /* MD_Rte_3408 */
+extern volatile VAR(uint8, RTE_VAR_ZERO_INIT_NOCACHE) Rte_StartTiming_InitState; /* PRQA S 0850, 3408 */ /* MD_MSR_MacroArgumentEmpty, MD_Rte_3408 */
+
+# define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_NOCACHE_ZERO_INIT_8BIT
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+# define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core1_NOCACHE_ZERO_INIT_8BIT
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern volatile VAR(uint8, RTE_VAR_ZERO_INIT_NOCACHE) Rte_InitState_1; /* PRQA S 3408 */ /* MD_Rte_3408 */
+
+# define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core1_NOCACHE_ZERO_INIT_8BIT
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+# ifdef RTE_CORE
+
+/**********************************************************************************************************************
+ * Buffers for unqueued S/R
+ *********************************************************************************************************************/
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(BswM_ESH_RunRequest, RTE_VAR_INIT) Rte_RT_VehComm_PP_BswM_MDGP_ESH_RunRequest_requestedMode; /* PRQA S 3408, 1504 */ /* MD_Rte_3408, MD_MSR_Rule8.7 */
+extern VAR(Boolean, RTE_VAR_INIT) Rte_ctASG_LSG1_Bap_Enable_TestASG_BapEnable; /* PRQA S 3408, 1504 */ /* MD_Rte_3408, MD_MSR_Rule8.7 */
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_NOCACHE_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT_NOCACHE) Rte_StartApplication_PpMasterCoreData1_DeInterCoreMaster; /* PRQA S 3408, 1504 */ /* MD_Rte_3408, MD_MSR_Rule8.7 */
+
+#  define RTE_STOP_SEC_VAR_NOCACHE_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core1_NOCACHE_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(DtInterCoreSlaveDataElementType, RTE_VAR_INIT_NOCACHE) Rte_StartApplicationSlaveCore1_PpSlaveCoreData_DeInterCoreSlave; /* PRQA S 3408, 1504 */ /* MD_Rte_3408, MD_MSR_Rule8.7 */
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core1_NOCACHE_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+typedef struct
+{
+  Rte_BitType Rte_ModeSwitchAck_Dcm_DcmEcuReset_DcmEcuReset_Ack : 1;
+  Rte_BitType Rte_ModeSwitchAck_EcuM_currentMode_currentMode_Ack : 1;
+} Rte_OsApplication_SystemApplication_Core0_AckFlagsType;
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(Rte_OsApplication_SystemApplication_Core0_AckFlagsType, RTE_VAR_INIT) Rte_OsApplication_SystemApplication_Core0_AckFlags;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ * Buffer for inter-runnable variables
+ *********************************************************************************************************************/
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint16, RTE_VAR_INIT) Rte_Irv_StartApplication_IrvOccuranceCounterDid; /* PRQA S 3408, 1504 */ /* MD_Rte_3408, MD_MSR_Rule8.7 */
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+/**********************************************************************************************************************
+ * RTE internal IOC replacement
+ *********************************************************************************************************************/
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_NOINIT) Rte_ioc_Rte_CS_ServerQueue_DiagA_Data_0x0250_Integrity_validation_data_configuration_list_ReadData_Queue[1];
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ioc_Rte_CS_ServerQueue_DiagA_Data_0x0250_Integrity_validation_data_configuration_list_ReadData_tail;
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_ZERO_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_ZERO_INIT) Rte_ioc_Rte_CS_ServerQueue_DiagA_Data_0x0250_Integrity_validation_data_configuration_list_ReadData_head;
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_ZERO_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_NOINIT) Rte_ioc_Rte_CS_ServerQueue_DiagA_Data_0x0250_Integrity_validation_data_configuration_list_WriteData_Queue[1];
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ioc_Rte_CS_ServerQueue_DiagA_Data_0x0250_Integrity_validation_data_configuration_list_WriteData_tail;
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_ZERO_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_ZERO_INIT) Rte_ioc_Rte_CS_ServerQueue_DiagA_Data_0x0250_Integrity_validation_data_configuration_list_WriteData_head;
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_ZERO_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_NOINIT) Rte_ioc_Rte_M_EcuM_currentMode_currentMode_Queue[1];
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ioc_Rte_M_EcuM_currentMode_currentMode_tail;
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define RTE_START_SEC_VAR_OsApplication_SystemApplication_Core0_ZERO_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_ZERO_INIT) Rte_ioc_Rte_M_EcuM_currentMode_currentMode_head;
+
+#  define RTE_STOP_SEC_VAR_OsApplication_SystemApplication_Core0_ZERO_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+
+/**********************************************************************************************************************
+ * Data structures for mode management
+ *********************************************************************************************************************/
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(BswM_ESH_Mode, RTE_VAR_INIT) Rte_ModeMachine_BswM_OsApplication_SystemApplication_Core0_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(Dcm_EcuResetType, RTE_VAR_INIT) Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(EcuM_StateType, RTE_VAR_INIT) Rte_ModeMachine_EcuM_currentMode_currentMode;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_VehComm_SP_BasicSFD_BasicSFDRole;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_VehComm_SP_E2eSFD_E2eSFDRole;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_VehComm_SP_EptiSFD_EptiSFDRole;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_VehComm_SP_ExtendedSFD_ExtendedSFDRole;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_VehComm_SP_OtaSFD_OtaSFDRole;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_VehComm_SP_ProductionSFD_ProductionSFDRole;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_VehComm_SP_SuperUserSFD_SuperUserSFDRole;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#  define RTE_START_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(uint8, RTE_VAR_INIT) Rte_ModeMachine_RT_Vishnu_ECU_PerformReset_IF_ECU_Perform_Reset_Indication;
+
+#  define RTE_STOP_SEC_VAR_INIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# endif /* defined(RTE_CORE) */
+
+#endif /* RTE_TYPE_H */
+
+/**********************************************************************************************************************
+ MISRA 2012 violations and justifications
+ *********************************************************************************************************************/
+
+/* module specific MISRA deviations:
+   MD_Rte_1039:  MISRA rule: Rule1.2
+     Reason:     Same macro and function names are required to meet AUTOSAR spec.
+     Risk:       No functional risk. Macro will be undefined before function definition.
+     Prevention: Not required.
+
+   MD_Rte_3408:  MISRA rule: Rule8.4
+     Reason:     For the purpose of monitoring during calibration or debugging it is necessary to use non-static declarations.
+                 This is covered in the MISRA C compliance section of the Rte specification.
+     Risk:       No functional risk.
+     Prevention: Not required.
+
+*/
