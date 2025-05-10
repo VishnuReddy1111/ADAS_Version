@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2017 rel. 3 sp1 (x64) (http://www.altova.com) by Vector employee (Vector Informatik GmbH) -->
+<EXTRACT-EXTENSION xmlns="http://www.vector-informatik.de/ExtractExtension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vector-informatik.de/ExtractExtension ExtractExtension.xsd">
+	<TP-CONNECTIONS>
+		<CAN-TP-CONNECTION>
+			<SHORT-NAME>DiagPhysReq_Func</SHORT-NAME>
+			<CAN-CLUSTER-REF>CAN</CAN-CLUSTER-REF>
+			<DATA-PDU-REF>msg_diag_RequestGlobal</DATA-PDU-REF>
+		</CAN-TP-CONNECTION>
+		<CAN-TP-CONNECTION>
+			<SHORT-NAME>DiagPhysReq_MyECU</SHORT-NAME>
+			<CAN-CLUSTER-REF>CAN</CAN-CLUSTER-REF>
+			<DATA-PDU-REF>msg_diag_Request_MyECU</DATA-PDU-REF>
+			<FLOW-CONTROL-PDU-REF>msg_diag_Response_MyECU</FLOW-CONTROL-PDU-REF>
+		</CAN-TP-CONNECTION>
+		<CAN-TP-CONNECTION>
+			<SHORT-NAME>DiagPhysRes_MyECU</SHORT-NAME>
+			<CAN-CLUSTER-REF>CAN</CAN-CLUSTER-REF>
+			<DATA-PDU-REF>msg_diag_Response_MyECU</DATA-PDU-REF>
+			<FLOW-CONTROL-PDU-REF>msg_diag_Request_MyECU</FLOW-CONTROL-PDU-REF>
+		</CAN-TP-CONNECTION>
+		<CAN-TP-CONNECTION>
+			<SHORT-NAME>DiagPhysReq_GwTp_LinSlave1</SHORT-NAME>
+			<CAN-CLUSTER-REF>CAN</CAN-CLUSTER-REF>
+			<DATA-PDU-REF>msg_diag_Request_MyECU_Slave1</DATA-PDU-REF>
+			<FLOW-CONTROL-PDU-REF>msg_diag_Response_MyECU_Slave1</FLOW-CONTROL-PDU-REF>
+		</CAN-TP-CONNECTION>
+		<CAN-TP-CONNECTION>
+			<SHORT-NAME>DiagPhysRes_GwTp_LinSlave1</SHORT-NAME>
+			<CAN-CLUSTER-REF>CAN</CAN-CLUSTER-REF>
+			<DATA-PDU-REF>msg_diag_Response_MyECU_Slave1</DATA-PDU-REF>
+			<FLOW-CONTROL-PDU-REF>msg_diag_Request_MyECU_Slave1</FLOW-CONTROL-PDU-REF>
+		</CAN-TP-CONNECTION>
+		<CAN-TP-CONNECTION>
+			<SHORT-NAME>DiagPhysReq_GwTp_LinSlave3</SHORT-NAME>
+			<CAN-CLUSTER-REF>CAN</CAN-CLUSTER-REF>
+			<DATA-PDU-REF>msg_diag_Request_MyECU_Slave3</DATA-PDU-REF>
+			<FLOW-CONTROL-PDU-REF>msg_diag_Response_MyECU_Slave3</FLOW-CONTROL-PDU-REF>
+		</CAN-TP-CONNECTION>
+		<CAN-TP-CONNECTION>
+			<SHORT-NAME>DiagPhysRes_GwTp_LinSlave3</SHORT-NAME>
+			<CAN-CLUSTER-REF>CAN</CAN-CLUSTER-REF>
+			<DATA-PDU-REF>msg_diag_Response_MyECU_Slave3</DATA-PDU-REF>
+			<FLOW-CONTROL-PDU-REF>msg_diag_Request_MyECU_Slave3</FLOW-CONTROL-PDU-REF>
+		</CAN-TP-CONNECTION>
+	</TP-CONNECTIONS>
+</EXTRACT-EXTENSION>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="e26d77bf-1a22-4f60-adfd-8aee7bb70229">
+          <SHORT-NAME>CanTSyn_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="fc935c01-b5ce-4f17-9bbb-465bc46bbac0">
+                <SHORT-NAME>CanTSyn_PartitionIdentifiers</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">the partition context in Config</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="fe3436d8-92f2-4c09-b31e-f2bb7bf3e278">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="aac4aa4c-5681-446b-b86f-f1c615ae6669">
+                        <SHORT-NAME>PartitionSNVOfPartitionIdentifiers</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_PartitionSNVOfPartitionIdentifiersType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PartitionSNVOfPartitionIdentifiers</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="b2ad1705-1860-4b3f-a309-68782a6e54cb">
+                        <SHORT-NAME>PCPartitionConfigIdxOfPartitionIdentifiers</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_PCPartitionConfigIdxOfPartitionIdentifiersType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PCPartitionConfigIdxOfPartitionIdentifiers</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>CanTSyn_PartitionIdentifiers</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="ab8879c5-8166-4b3f-9f2e-cffa2be2dd02">
+                <SHORT-NAME>CanTSyn_SlaveConfig</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Contains configuration parameters of slave.</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="68b28e25-a91e-4b83-aa3a-62bec95dfcce">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="11c47e7b-79b1-4f71-95a4-b32a21ca1127">
+                        <SHORT-NAME>DomainConfigIdxOfSlaveConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_DomainConfigIdxOfSlaveConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>DomainConfigIdxOfSlaveConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="cea78a09-430c-491a-90bb-e4a318e3f99d">
+                        <SHORT-NAME>FollowUpTimeoutOfSlaveConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_FollowUpTimeoutOfSlaveConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>FollowUpTimeoutOfSlaveConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="fc347abc-a653-43ab-9d3a-c68a31d63677">
+                        <SHORT-NAME>PartitionConfigIdxOfSlaveConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_PartitionConfigIdxOfSlaveConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>PartitionConfigIdxOfSlaveConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="bf1fa951-ce52-4f70-b2e2-95536770b865">
+                        <SHORT-NAME>RxCrcValidatedOfSlaveConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/CompuMethods/CanTSyn_RxCrcValidatedOfSlaveConfigType</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_RxCrcValidatedOfSlaveConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>RxCrcValidatedOfSlaveConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="6a1a7451-97cb-4e02-8d03-956dd8ee2a59">
+                        <SHORT-NAME>SequenceCounterJumpWidthOfSlaveConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_SequenceCounterJumpWidthOfSlaveConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>SequenceCounterJumpWidthOfSlaveConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="3ace12e0-3998-4951-9e77-93110eeb9222">
+                        <SHORT-NAME>SlaveHandleIdOfSlaveConfig</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_SlaveHandleIdOfSlaveConfigType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>SlaveHandleIdOfSlaveConfig</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>CanTSyn_SlaveConfig</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="c64c6fab-d025-4c21-b9d7-283d66d616ef">
+                <SHORT-NAME>CanTSyn_Initialized</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">Initialization state of the CanTSyn. TRUE, if CanTSyn_Init() has been called, else FALSE.</L-4>
+                </LONG-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <RESULTING-PROPERTIES>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                      <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/CompuMethods/CanTSyn_InitializedType</COMPU-METHOD-REF>
+                      <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanTSyn_ib_bswmd/DataTypes/DataConstrs/CanTSyn_InitializedType</DATA-CONSTR-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </RESULTING-PROPERTIES>
+                <SYMBOL>CanTSyn_Initialized</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <SW-VERSION>6.01.00</SW-VERSION>
+          <USED-CODE-GENERATOR>DaVinci Configurator</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.04.00</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="696a7941-5c3d-40cf-bc70-e1aa878a39b6">
+          <SHORT-NAME>CanTSyn_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="3fbc7d6e-2d96-43be-9c79-76d0472177b9">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="776c4711-be8c-4402-bf3f-c868341ee17d">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="fc2b7d44-caa7-44ec-ac93-705f558c3397">
+                      <SHORT-NAME>boolean</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="ad5bd729-c4f8-4cfd-b7fb-df4e97514422">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="ce96f2c0-0683-4c95-9f27-614646f1d7bc">
+                      <SHORT-NAME>uint32</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="a9ca65e9-be86-435f-b40e-66538a652f55">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="3ccb25dc-d00c-4fab-bffb-2f2ce4ec4d81">
+                      <SHORT-NAME>CanTSyn_InitializedType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="fced19ea-3c8a-4145-94fc-39ccb95d3842">
+                      <SHORT-NAME>CanTSyn_RxCrcValidatedOfSlaveConfigType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANTSYN_IGNORED_RXCRCVALIDATEDOFSLAVECONFIG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="b980f87f-8372-4d4e-aae3-f441ecf9d31f">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="d3188527-aa22-4c1f-b035-6701cdb5e7a9">
+                      <SHORT-NAME>CanTSyn_DomainConfigIdxOfSlaveConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="932a202f-4731-4c62-919f-f7f70fc5cc29">
+                      <SHORT-NAME>CanTSyn_FollowUpTimeoutOfSlaveConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="eb60ebef-46c8-46ae-b480-18cac805a38b">
+                      <SHORT-NAME>CanTSyn_InitializedType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="f50448d5-d496-464c-a7ab-31085110efbf">
+                      <SHORT-NAME>CanTSyn_RxCrcValidatedOfSlaveConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="b9eb3ee4-339d-4231-bc09-da8b453befe0">
+                      <SHORT-NAME>CanTSyn_SequenceCounterJumpWidthOfSlaveConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="4a2100f0-db9c-48ca-8abf-509a2a9d4291">
+                      <SHORT-NAME>CanTSyn_SlaveHandleIdOfSlaveConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="5bae2293-4216-484d-9386-dbbdbbc554f8">
+                      <SHORT-NAME>CanTSyn_PCPartitionConfigIdxOfPartitionIdentifiersType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="59115977-eb66-4faf-b357-ae822051a1f3">
+                      <SHORT-NAME>CanTSyn_PartitionConfigIdxOfSlaveConfigType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="46d4ff1d-fd4e-4b30-9285-1f5ced7d21a4">
+                      <SHORT-NAME>CanTSyn_PartitionSNVOfPartitionIdentifiersType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="eda2611e-819f-4046-b6aa-49e712040ba2">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

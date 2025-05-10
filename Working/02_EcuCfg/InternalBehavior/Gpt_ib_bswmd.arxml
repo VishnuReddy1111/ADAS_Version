@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="33022ff3-f082-4548-ab3c-90793765f2d3">
+      <SHORT-NAME>AURIX2G</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7e118c10-0a18-49f2-9978-33759fe5e7c2">
+          <SHORT-NAME>EcucDefs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="57606a07-567e-41a5-bbb8-376cc780d5c3">
+              <SHORT-NAME>Gpt_ib_bswmd</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="f5fae63f-d289-4b34-92b4-60d8b19d4b9a">
+                  <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-MODULE-DESCRIPTION UUID="20b91039-3e00-4045-b296-1a64f854777a">
+                      <SHORT-NAME>Gpt</SHORT-NAME>
+                      <PROVIDED-ENTRYS>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Gpt_ib_bswmd/BswModuleDescriptions/Gpt_Virtual</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      </PROVIDED-ENTRYS>
+                      <INTERNAL-BEHAVIORS>
+                        <BSW-INTERNAL-BEHAVIOR UUID="1d8304d8-0af8-417a-a585-5aa80162dd9d">
+                          <SHORT-NAME>GptBehavior</SHORT-NAME>
+                          <EXCLUSIVE-AREAS>
+                            <EXCLUSIVE-AREA UUID="19915aec-3beb-4a61-8f7f-1aea5b93b40b">
+                              <SHORT-NAME>Get1UsPredefTimerValue</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="d055ca10-57b8-4983-b5bc-7cd0d4b08e90">
+                              <SHORT-NAME>Get100UsPredefTimerValue</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="95a45802-50cf-40e6-b569-7528e5978164">
+                              <SHORT-NAME>GtmStartTimer</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="69c09f1f-d197-4533-bdfc-45e8d0fe600b">
+                              <SHORT-NAME>Gpt12StartTimer</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                          </EXCLUSIVE-AREAS>
+                          <ENTITYS>
+                            <BSW-CALLED-ENTITY UUID="4b2839b1-3d3e-4a27-8d2d-92f18cfe5344">
+                              <SHORT-NAME>Gpt_Virtual</SHORT-NAME>
+                              <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Gpt_ib_bswmd/BswModuleDescriptions/Gpt/GptBehavior/Get1UsPredefTimerValue</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Gpt_ib_bswmd/BswModuleDescriptions/Gpt/GptBehavior/Get100UsPredefTimerValue</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Gpt_ib_bswmd/BswModuleDescriptions/Gpt/GptBehavior/GtmStartTimer</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Gpt_ib_bswmd/BswModuleDescriptions/Gpt/GptBehavior/Gpt12StartTimer</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                              </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                              <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Gpt_ib_bswmd/BswModuleDescriptions/Gpt_Virtual</IMPLEMENTED-ENTRY-REF>
+                            </BSW-CALLED-ENTITY>
+                          </ENTITYS>
+                        </BSW-INTERNAL-BEHAVIOR>
+                      </INTERNAL-BEHAVIORS>
+                    </BSW-MODULE-DESCRIPTION>
+                    <BSW-MODULE-ENTRY UUID="991a5bc9-fee6-4ad2-981f-f2260222516e">
+                      <SHORT-NAME>Gpt_Virtual</SHORT-NAME>
+                      <CALL-TYPE>REGULAR</CALL-TYPE>
+                      <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                    </BSW-MODULE-ENTRY>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-000000f6e6e9">
+          <SHORT-NAME>BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_SoC</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_1577987</SDX-REF>
+              </SDG>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-1064-5c8d-000000d505ce">
+              <SHORT-NAME>SP_IF_BMC_HVK_EoHVL_Status_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HVK_EoHVL_Status/DE_BMC_HVK_EoHVL_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HVK_EoHVL_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-72c1-5c8d-000000d505ba">
+              <SHORT-NAME>SP_IF_BMC_HVK_Fehler_HVIL_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HVK_Fehler_HVIL/DE_BMC_HVK_Fehler_HVIL</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HVK_Fehler_HVIL</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-8b4f-5c8d-000000d505ca">
+              <SHORT-NAME>SP_IF_BMC_HVK_Fehler_Intern_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HVK_Fehler_Intern/DE_BMC_HVK_Fehler_Intern</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HVK_Fehler_Intern</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-7cdb-5c8d-000000d505b6">
+              <SHORT-NAME>SP_IF_BMC_HVK_Fehler_SD_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HVK_Fehler_SD/DE_BMC_HVK_Fehler_SD</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HVK_Fehler_SD</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-7425-5c8d-000000d505aa">
+              <SHORT-NAME>SP_IF_BMC_IWU_Status_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_IWU_Status/DE_BMC_IWU_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_IWU_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-6ecf-5c8d-000000da5943">
+              <SHORT-NAME>SP_IF_BMC_IWU_Wert_neg_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_IWU_Wert_neg/DE_BMC_IWU_Wert_neg</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_IWU_Wert_neg</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ead1-5c8d-000000da593f">
+              <SHORT-NAME>SP_IF_BMC_IWU_Wert_pos_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_IWU_Wert_pos/DE_BMC_IWU_Wert_pos</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_IWU_Wert_pos</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-fff2-5c8d-000000d505d3">
+              <SHORT-NAME>SP_IF_BMC_Status_Spgfreiheit_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Status_Spgfreiheit/DE_BMC_Status_Spgfreiheit</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Status_Spgfreiheit</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="5D75E818-6A94-4953-96A4-E88AB392A4CF">
+              <SHORT-NAME>RP_IF_SG_HVK_03_XIX_BMC_HVS_Slave_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_HVK_03/DE_SG_HVK_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_HVK_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

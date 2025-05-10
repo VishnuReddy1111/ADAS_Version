@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="b0f546c7-6c38-4e9f-a1bd-0df9c9622c3a">
+          <SHORT-NAME>CanSM_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="9fa7db3c-54a0-4cc9-979e-d2261e724074">
+                <SHORT-NAME>CanSM_ChannelVarRecord</SHORT-NAME>
+                <LONG-NAME>
+                  <L-4 L="FOR-ALL">CanSM_variables</L-4>
+                </LONG-NAME>
+                <CATEGORY>ARRAY</CATEGORY>
+                <ARRAY-SIZE>1</ARRAY-SIZE>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="c456a81e-7fa8-41ba-97f3-d0c4e76cbac4">
+                    <SHORT-NAME>Element_0</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                      <MC-DATA-INSTANCE UUID="035b73dc-fa08-4fd4-8a86-9b38314029b9">
+                        <SHORT-NAME>CanSM_UniversalTimer</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_UniversalTimer</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="e1623547-a4ea-4ccd-88cd-a855ae9fedd2">
+                        <SHORT-NAME>CanSM_LastValidBaudRate</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_LastValidBaudRate</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="29ffb369-47e4-46aa-b3b5-4ec421e277cb">
+                        <SHORT-NAME>CanSM_CurrentState</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/CanSM_ib_bswmd/DataTypes/CompuMethods/CompuMethodEnum_CanSMSubStateTypes</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/CanSM_SubState_Type</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_CurrentState</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="981513ba-1864-49e6-b25f-0d429eaf1fdf">
+                        <SHORT-NAME>CanSM_RequestedComMode</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/CanSM_ib_bswmd/DataTypes/CompuMethods/CompuMethodEnum_ComModeTypes</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/ComM_ModeType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_RequestedComMode</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="8838e0c5-7fc2-4694-a127-3226e986823c">
+                        <SHORT-NAME>CanSM_IndicatedComMode</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/CanSM_ib_bswmd/DataTypes/CompuMethods/CompuMethodEnum_ComModeTypes</COMPU-METHOD-REF>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/ComM_ModeType</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_IndicatedComMode</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="c73fe5f5-5cdd-45f2-957c-6c8cd7e18341">
+                        <SHORT-NAME>CanSM_ModeRequestRepetitionCounter</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/uint8</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_ModeRequestRepetitionCounter</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="65cd41c3-3264-4f7d-875a-74d850a1da5b">
+                        <SHORT-NAME>CanSM_BusOffCounter</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/uint8</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_BusOffCounter</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                      <MC-DATA-INSTANCE UUID="42b6ce06-b0e2-4589-a61d-bd4d8e3d972b">
+                        <SHORT-NAME>CanSM_BusOffFlag</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <RESULTING-PROPERTIES>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/CanSM_ib_bswmd/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                              <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/CanSM_ib_bswmd/DataTypes/DataConstrs/uint8</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </RESULTING-PROPERTIES>
+                        <SYMBOL>CanSM_BusOffFlag</SYMBOL>
+                      </MC-DATA-INSTANCE>
+                    </SUB-ELEMENTS>
+                    <SYMBOL>[0]</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>CanSM_ChannelVarRecord</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <SW-VERSION>4.00.00</SW-VERSION>
+          <USED-CODE-GENERATOR>DaVinci Configurator</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.00.03</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="16f13978-ff56-4c2c-b366-50be66dfa8d8">
+          <SHORT-NAME>CanSM_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="ab10782b-39fb-476a-800b-74fe357282d0">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="3e270796-030f-416c-8ce6-12e6ce9124bb">
+                  <SHORT-NAME>CanSM</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM_MainFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="1d475c19-464b-48ca-9ff4-b8d713770392">
+                      <SHORT-NAME>CanSMBehavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="24a65cbd-352c-4d29-967f-4106cc584086">
+                          <SHORT-NAME>CANSM_EXCLUSIVE_AREA_1</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="d4d69dba-702d-4c57-83c5-d5d58e7800cb">
+                          <SHORT-NAME>CANSM_EXCLUSIVE_AREA_2</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="acb898b0-f469-48f8-87f9-5830c4dc9986">
+                          <SHORT-NAME>CANSM_EXCLUSIVE_AREA_3</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="5ad2b30f-2a80-4e4e-8dc9-27525a0d571c">
+                          <SHORT-NAME>CANSM_EXCLUSIVE_AREA_4</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="5b510f18-0530-4b45-aa9b-952f8bdc6755">
+                          <SHORT-NAME>CANSM_EXCLUSIVE_AREA_5</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="d387d9b0-d55f-474f-9f0b-5e8c594abf54">
+                          <SHORT-NAME>CANSM_EXCLUSIVE_AREA_6</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="71b0f652-c112-4b71-8877-6710cb6ca948">
+                          <SHORT-NAME>CanSM_MainFunction</SHORT-NAME>
+                          <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_1</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_2</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_3</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_4</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_5</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_6</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                          </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="75bb13b6-20f1-4b84-9788-c8e2be3853a2">
+                          <SHORT-NAME>CanSM_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CanSM_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="0a2d6aba-5dee-433f-bce9-43d34aa78a14">
+                  <SHORT-NAME>CanSM_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="73f726f9-2cce-4f32-af71-9c4976d40f24">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="90af33e3-bc48-4341-a1f7-f67da33b566f">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="0c25b5f3-a250-478e-ae7f-7a2193e2ffd5">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="67266df8-2d94-4a87-852f-83f90d7b46e0">
+                      <SHORT-NAME>uint16</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="3cebc05a-9966-4c15-9661-0792c36bac41">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="8689f29b-7923-42e0-8caf-8a04e00ebf5c">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="bde3d892-0f86-4ce4-8316-39bdc56e9ca6">
+                      <SHORT-NAME>CompuMethodEnum_CanSMSubStateTypes</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_StartUp_TRCV_NORMAL</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_StartUp_CC_STOPPED</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_StartUp_CC_STARTED</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">17</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">17</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_BusOff_CHECK</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">16</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_S_FULLCOM_ENSURED_NO_BUS_OFF</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">20</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">20</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_BusOff_TX_OFFLINE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">32</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_S_SILENTCOM</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">33</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">33</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_PN_CLEAR_WUF</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">34</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">34</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_CC_STOPPED</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">35</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">35</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_CC_SLEEP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">36</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">36</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_TRCV_NORMAL</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">37</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">37</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_TRCV_STANDBY</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">38</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">38</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_CC_SLEEP_PN</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">39</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">39</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_CHK_WUF_CC_SLEEP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">40</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">40</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_ShutDown_CHK_WUF_NOT_CC_SLEEP</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">64</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">64</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>CANSM_S_NOCOM</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD UUID="176c2790-4598-42f0-a115-be485cfc0da2">
+                      <SHORT-NAME>CompuMethodEnum_ComModeTypes</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>COMM_NO_COMMUNICATION</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>COMM_SILENT_COMMUNICATION</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>COMM_FULL_COMMUNICATION</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="c34d3ce4-f529-4e16-bbdf-bb02582dec70">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="88f43b43-7881-41ae-806f-f64037df76fd">
+                      <SHORT-NAME>CanSM_SubState_Type</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="6dc4d206-5a8f-4b57-92de-42f92d9121c0">
+                      <SHORT-NAME>ComM_ModeType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="11860555-b40c-420b-8c97-dc78bc6773f2">
+                      <SHORT-NAME>uint16</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="53eda635-8c63-4b79-a106-bb3af498fed9">
+                      <SHORT-NAME>uint8</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

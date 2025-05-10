@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="39361e6423b83087acdf88a806d830a3">
+      <SHORT-NAME>Constants</SHORT-NAME>
+      <ELEMENTS>
+        <CONSTANT-SPECIFICATION UUID="Na31495315f054e1675ac2caXNa31495315f054e1675ac2c900">
+          <SHORT-NAME>InitValue_0</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <VALUE-SPEC>
+            <NUMERICAL-VALUE-SPECIFICATION>
+              <SHORT-LABEL>InitValue_0</SHORT-LABEL>
+              <VALUE>0 0 0 0 0 0</VALUE>
+            </NUMERICAL-VALUE-SPECIFICATION>
+          </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+        <CONSTANT-SPECIFICATION UUID="Ma31495315f23f0f2883fa4XMa31495315f23f0f2883f8500">
+          <SHORT-NAME>initValue_Array_int</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <VALUE-SPEC>
+            <ARRAY-VALUE-SPECIFICATION>
+              <SHORT-LABEL>initValue_Array</SHORT-LABEL>
+              <ELEMENTS>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <SHORT-LABEL>Lit1</SHORT-LABEL>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <SHORT-LABEL>Lit2</SHORT-LABEL>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <SHORT-LABEL>Lit3</SHORT-LABEL>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <SHORT-LABEL>Lit4</SHORT-LABEL>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <SHORT-LABEL>Lit5</SHORT-LABEL>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <SHORT-LABEL>Lit6</SHORT-LABEL>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </ELEMENTS>
+            </ARRAY-VALUE-SPECIFICATION>
+          </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="5C9130D4-C509-417B-9001-2CFDB1BEA2BA">
+      <SHORT-NAME>VAG</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7EBEDF2C-7CA4-471C-8D7B-408BDFDDAB1D">
+          <SHORT-NAME>Services</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="E66366D3-7879-40F4-B811-FD7AB9044FDF">
+              <SHORT-NAME>BAP</SHORT-NAME>
+              <ELEMENTS>
+                <CONSTANT-SPECIFICATION UUID="5E2F3395-0F4F-4E73-903C-B3E7C0CDB09D">
+                  <SHORT-NAME>C_Bool_FALSE</SHORT-NAME>
+                  <VALUE-SPEC>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </VALUE-SPEC>
+                </CONSTANT-SPECIFICATION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

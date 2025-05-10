@@ -1,0 +1,1482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectAssistant Version="5.17.51 SP2">
+    <General>
+        <Name>ADAS</Name>
+        <Version>1.0</Version>
+        <Author>Realthingks</Author>
+        <Description>BSW Configuration for Infineon ADAS Platform Project</Description>
+    </General>
+    <Environment>
+        <Platform>Canoeemu</Platform>
+        <Derivative UUID="37B05D7F-9A16-47F8-9D0D-B0401627FE21">TC397X_StepB</Derivative>
+        <Compiler UUID="8DB6C5C5-6807-4601-B7B7-68A4A5B277F6">Tasking</Compiler>
+        <SipIds>
+            <SipId>CBD2201090_D00</SipId>
+        </SipIds>
+        <TargetType>Real Target &amp; Virtual Target (vVIRTUALtarget)</TargetType>
+        <UseCases>
+            <UseCase Vector="vSwUpdM data processing" Value="Default"/>
+            <UseCase Vector="MemMap_ARM_Derivative" Value="None"/>
+            <UseCase Vector="vSwUpdM_MultiNode" Value="None"/>
+        </UseCases>
+        <PostBuildLoadableSupport>true</PostBuildLoadableSupport>
+        <PostBuildSelectableSupport>true</PostBuildSelectableSupport>
+        <ModuleSpecificDerivatives/>
+        <ProjectType>
+            <Type>Standard</Type>
+        </ProjectType>
+    </Environment>
+    <Folders>
+        <ECUC>.\Config\ECUC</ECUC>
+        <GenData>..\01_Appl\GenData</GenData>
+        <GenDataVtt>..\01_Appl\GenDataVtt</GenDataVtt>
+        <Source>..\01_Appl\Source</Source>
+        <ServiceComponents>..\02_EcuCfg\ServiceComponents</ServiceComponents>
+        <Logs>.\Log</Logs>
+        <SIP>..\05_MSR</SIP>
+        <StartMenu></StartMenu>
+        <ApplicationComponentFolders>
+            <ApplicationComponentFolder>..\02_EcuCfg\ApplicationComponents</ApplicationComponentFolder>
+        </ApplicationComponentFolders>
+        <BswInternalBehaviour>.\InternalBehavior</BswInternalBehaviour>
+        <McData>.\McData</McData>
+        <AddBswmds>
+            <AddBswmd>$(SipRootPath)\Components\AKKA</AddBswmd>
+        </AddBswmds>
+        <DefinitionRestriction>.\DefRestrict</DefinitionRestriction>
+        <AUTOSAR>.\AUTOSAR</AUTOSAR>
+    </Folders>
+    <Tools>
+        <DEV>C:\Program Files\Vector DaVinci Developer Classic 4.12.24\Bin\DaVinciDEV.exe</DEV>
+        <VTT UseLatest="true"></VTT>
+        <LegacyConverter Version="1.8.69.0"/>
+        <DDM Version="22.0.1.2"/>
+    </Tools>
+    <Input>
+        <ECUEX>Config\System\SystemExtract.arxml</ECUEX>
+        <Options>
+            <IgnoreUuidsSystemDescriptionFiles>false</IgnoreUuidsSystemDescriptionFiles>
+            <IgnoreUuidsStandardConfigurationFiles>false</IgnoreUuidsStandardConfigurationFiles>
+            <GenerateUpdateReport>true</GenerateUpdateReport>
+            <GenerateXmlUpdateReport>false</GenerateXmlUpdateReport>
+        </Options>
+    </Input>
+    <References>
+        <DVWorkspace>.\Developer\ADAS.dcf</DVWorkspace>
+        <FlatMap>Config\System\FlatMap.arxml</FlatMap>
+        <FlatECUEX>Config\System\FlatExtract.arxml</FlatECUEX>
+        <VttProject>.\VTT\ADAS.vttproj</VttProject>
+        <OEMCommunicationExtract>Config\System\Communication.arxml</OEMCommunicationExtract>
+        <EcucFileReferences/>
+        <DiagECUC>Config\System\DiagnosticsDescriptionData.arxml</DiagECUC>
+    </References>
+    <EcucSplitter>
+        <Configuration>Config\ECUC\ADAS.ecuc.arxml</Configuration>
+        <Splitter File=".\Config\ECUC\ADAS_E2EXf_ecuc.arxml">
+            <Module Name="E2EXf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Rte_ecuc.arxml">
+            <Module Name="Rte"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Os_ecuc.arxml">
+            <Module Name="Os"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_SecOC_ecuc.arxml">
+            <Module Name="SecOC"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Xcp_ecuc.arxml">
+            <Module Name="Xcp"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_EcuC_ecuc.arxml">
+            <Module Name="EcuC"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_CanTp_ecuc.arxml">
+            <Module Name="CanTp"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_CanNm_ecuc.arxml">
+            <Module Name="CanNm"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_EcuM_ecuc.arxml">
+            <Module Name="EcuM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_CanSM_ecuc.arxml">
+            <Module Name="CanSM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_VTTCan_ecuc.arxml">
+            <Module Name="VTTCan"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Nm_ecuc.arxml">
+            <Module Name="Nm"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Com_ecuc.arxml">
+            <Module Name="Com"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_ComM_ecuc.arxml">
+            <Module Name="ComM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Dem_ecuc.arxml">
+            <Module Name="Dem"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_SomeIpXf_ecuc.arxml">
+            <Module Name="SomeIpXf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Dcm_ecuc.arxml">
+            <Module Name="Dcm"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_CanIf_ecuc.arxml">
+            <Module Name="CanIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Crypto_ecuc.arxml">
+            <Module Name="Crypto"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Det_ecuc.arxml">
+            <Module Name="Det"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_PduR_ecuc.arxml">
+            <Module Name="PduR"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_BswM_ecuc.arxml">
+            <Module Name="BswM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Crc_ecuc.arxml">
+            <Module Name="Crc"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Fee_ecuc.arxml">
+            <Module Name="Fee"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vItaSip_ecuc.arxml">
+            <Module Name="vItaSip"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_MemIf_ecuc.arxml">
+            <Module Name="MemIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_NvM_ecuc.arxml">
+            <Module Name="NvM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Wdg_ecuc.arxml">
+            <Module Name="Wdg"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_WdgM_ecuc.arxml">
+            <Module Name="WdgM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_WdgIf_ecuc.arxml">
+            <Module Name="WdgIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_CryIf_ecuc.arxml">
+            <Module Name="CryIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Csm_ecuc.arxml">
+            <Module Name="Csm"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_EthTrcv_ecuc.arxml">
+            <Module Name="EthTrcv"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Gpt_ecuc.arxml">
+            <Module Name="Gpt"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Rtm_ecuc.arxml">
+            <Module Name="Rtm"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Dbg_ecuc.arxml">
+            <Module Name="Dbg"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vSet_ecuc.arxml">
+            <Module Name="vSet"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vSecPrim_ecuc.arxml">
+            <Module Name="vSecPrim"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vFotaH_ecuc.arxml">
+            <Module Name="vFotaH"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vMemAccM_ecuc.arxml">
+            <Module Name="vMemAccM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vSwUpdM_ecuc.arxml">
+            <Module Name="vSwUpdM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_E2E_ecuc.arxml">
+            <Module Name="E2E"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vStreamProc_ecuc.arxml">
+            <Module Name="vStreamProc"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vCan_ecuc.arxml">
+            <Module Name="vCan"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vBRS_ecuc.arxml">
+            <Module Name="vBRS"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vBaseEnv_ecuc.arxml">
+            <Module Name="vBaseEnv"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Fls_ecuc.arxml">
+            <Module Name="Fls"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_ResourceM_ecuc.arxml">
+            <Module Name="ResourceM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Irq_ecuc.arxml">
+            <Module Name="Irq"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_McalLib_ecuc.arxml">
+            <Module Name="McalLib"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Port_ecuc.arxml">
+            <Module Name="Port"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Mcu_ecuc.arxml">
+            <Module Name="Mcu"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vLinkGen_ecuc.arxml">
+            <Module Name="vLinkGen"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vFeeAcc_ecuc.arxml">
+            <Module Name="vFeeAcc"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_vMem_ecuc.arxml">
+            <Module Name="vMem"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Cdd_ecuc.arxml">
+            <Module Name="StartApplicationEth"/>
+            <Module Name="Cdd"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Can_ecuc.arxml">
+            <Module Name="Can"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_MemMap_ecuc.arxml">
+            <Module Name="MemMap"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_Dio_ecuc.arxml">
+            <Module Name="Dio"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_VTTMemMap_ecuc.arxml">
+            <Module Name="VTTMemMap"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_CddNpmGen2_ecuc.arxml">
+            <Module Name="CddNpmGen2"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\ADAS_ComXf_ecuc.arxml">
+            <Module Name="ComXf"/>
+        </Splitter>
+        <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
+        <OwnFileForEachInstance>false</OwnFileForEachInstance>
+    </EcucSplitter>
+    <Display LastVersion="5.26.35 SP2">
+        <FileSet Id="" CS="8aaa7ea7">
+            <File Order="0" EcuInstance="BMC_HV" Hash="60bdeef00254bc16656411b93b1e0b57" FileCategory="communication_system_extract">$(DpaProjectFolder)\Database\E3_1_2_Premium_BMC_HV.arxml</File>
+            <Diagnostic>
+                <Description Order="1" Hash="3539a6c2ea882054190c551e3ccb9e93">$(DpaProjectFolder)\Database\BMC_05012024_2.cdd</Description>
+                <Ecu>BV_BatteEnergContrModulUDS</Ecu>
+                <Variant>EV_BECM21620A1SSP6_004</Variant>
+                <UseLegacySignalImport>true</UseLegacySignalImport>
+                <UseGenericImport>false</UseGenericImport>
+            </Diagnostic>
+            <ComControllerMappings/>
+        </FileSet>
+        <Merge>
+            <Path Id="COMPOSITION-SW-COMPONENT-TYPE" ARPath="/ComponentTypes/Geltungsbereich_E3_1_2_Premium"/>
+            <Path Id="ECU-INSTANCE" ARPath="/ECU/BMC_HV"/>
+            <Path Id="ROOT-SW-COMPOSITION-PROTOTYPE" ARPath="/E3_1_2_Premium/System/Geltungsbereich_E3_1_2_Premium"/>
+            <Path Id="SYSTEM" ARPath="/E3_1_2_Premium/System"/>
+        </Merge>
+        <SelectiveUpdate Active="false" CS="ecd6502d"/>
+        <ModuleDefinitionMappings>
+            <ModuleDefinitionMapping ModuleConfigName="Adc" ModuleDefinitionRef="/AURIX2G/EcucDefs/Adc"/>
+            <ModuleDefinitionMapping ModuleConfigName="Arti" ModuleDefinitionRef="/MICROSAR/Arti"/>
+            <ModuleDefinitionMapping ModuleConfigName="BswM" ModuleDefinitionRef="/MICROSAR/BswM"/>
+            <ModuleDefinitionMapping ModuleConfigName="Cal" ModuleDefinitionRef="/AUTOSAR/EcucDefs/Cal"/>
+            <ModuleDefinitionMapping ModuleConfigName="CanIf" ModuleDefinitionRef="/MICROSAR/CanIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="CanNm" ModuleDefinitionRef="/MICROSAR/CanNm"/>
+            <ModuleDefinitionMapping ModuleConfigName="CanSM" ModuleDefinitionRef="/MICROSAR/CanSM"/>
+            <ModuleDefinitionMapping ModuleConfigName="CanTSyn" ModuleDefinitionRef="/MICROSAR/CanTSyn"/>
+            <ModuleDefinitionMapping ModuleConfigName="CanTp" ModuleDefinitionRef="/MICROSAR/CanTp"/>
+            <ModuleDefinitionMapping ModuleConfigName="CddNpmGen2" ModuleDefinitionRef="/MICROSAR/CddNpmGen2"/>
+            <ModuleDefinitionMapping ModuleConfigName="Com" ModuleDefinitionRef="/MICROSAR/Com"/>
+            <ModuleDefinitionMapping ModuleConfigName="ComM" ModuleDefinitionRef="/MICROSAR/ComM"/>
+            <ModuleDefinitionMapping ModuleConfigName="CorTst" ModuleDefinitionRef="/AUTOSAR/EcucDefs/CorTst"/>
+            <ModuleDefinitionMapping ModuleConfigName="Crc" ModuleDefinitionRef="/MICROSAR/Crc"/>
+            <ModuleDefinitionMapping ModuleConfigName="CryIf" ModuleDefinitionRef="/MICROSAR/CryIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="Csm" ModuleDefinitionRef="/MICROSAR/Csm"/>
+            <ModuleDefinitionMapping ModuleConfigName="Dbg" ModuleDefinitionRef="/MICROSAR/Dbg"/>
+            <ModuleDefinitionMapping ModuleConfigName="Dcm" ModuleDefinitionRef="/MICROSAR/Dcm"/>
+            <ModuleDefinitionMapping ModuleConfigName="Dem" ModuleDefinitionRef="/MICROSAR/Dem"/>
+            <ModuleDefinitionMapping ModuleConfigName="Det" ModuleDefinitionRef="/MICROSAR/Det"/>
+            <ModuleDefinitionMapping ModuleConfigName="Dio" ModuleDefinitionRef="/AURIX2G/EcucDefs/Dio"/>
+            <ModuleDefinitionMapping ModuleConfigName="Dlt" ModuleDefinitionRef="/MICROSAR/Dlt"/>
+            <ModuleDefinitionMapping ModuleConfigName="DoIP" ModuleDefinitionRef="/MICROSAR/DoIP"/>
+            <ModuleDefinitionMapping ModuleConfigName="DoIPInt" ModuleDefinitionRef="/MICROSAR/DoIPInt"/>
+            <ModuleDefinitionMapping ModuleConfigName="E2E" ModuleDefinitionRef="/MICROSAR/E2E"/>
+            <ModuleDefinitionMapping ModuleConfigName="E2EPW" ModuleDefinitionRef="/MICROSAR/E2EPW"/>
+            <ModuleDefinitionMapping ModuleConfigName="Ea" ModuleDefinitionRef="/AUTOSAR/EcucDefs/Ea"/>
+            <ModuleDefinitionMapping ModuleConfigName="EcuC" ModuleDefinitionRef="/MICROSAR/EcuC"/>
+            <ModuleDefinitionMapping ModuleConfigName="EcuM" ModuleDefinitionRef="/MICROSAR/EcuM"/>
+            <ModuleDefinitionMapping ModuleConfigName="EthIf" ModuleDefinitionRef="/MICROSAR/EthIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="EthSM" ModuleDefinitionRef="/MICROSAR/EthSM"/>
+            <ModuleDefinitionMapping ModuleConfigName="EthTSyn" ModuleDefinitionRef="/MICROSAR/EthTSyn"/>
+            <ModuleDefinitionMapping ModuleConfigName="Etm" ModuleDefinitionRef="/MICROSAR/Etm"/>
+            <ModuleDefinitionMapping ModuleConfigName="Fee" ModuleDefinitionRef="/AURIX2G/EcucDefs/Fee"/>
+            <ModuleDefinitionMapping ModuleConfigName="FiM" ModuleDefinitionRef="/MICROSAR/FiM"/>
+            <ModuleDefinitionMapping ModuleConfigName="FlsTst" ModuleDefinitionRef="/AUTOSAR/EcucDefs/FlsTst"/>
+            <ModuleDefinitionMapping ModuleConfigName="FrArTp" ModuleDefinitionRef="/MICROSAR/FrArTp"/>
+            <ModuleDefinitionMapping ModuleConfigName="FrIf" ModuleDefinitionRef="/MICROSAR/FrIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="FrNm" ModuleDefinitionRef="/MICROSAR/FrNm"/>
+            <ModuleDefinitionMapping ModuleConfigName="FrSM" ModuleDefinitionRef="/MICROSAR/FrSM"/>
+            <ModuleDefinitionMapping ModuleConfigName="FrTSyn" ModuleDefinitionRef="/MICROSAR/FrTSyn"/>
+            <ModuleDefinitionMapping ModuleConfigName="FrTp" ModuleDefinitionRef="/MICROSAR/FrTp"/>
+            <ModuleDefinitionMapping ModuleConfigName="FvM" ModuleDefinitionRef="/MICROSAR/FvM"/>
+            <ModuleDefinitionMapping ModuleConfigName="Gpt" ModuleDefinitionRef="/AURIX2G/EcucDefs/Gpt"/>
+            <ModuleDefinitionMapping ModuleConfigName="IdsM" ModuleDefinitionRef="/MICROSAR/IdsM"/>
+            <ModuleDefinitionMapping ModuleConfigName="IoHwAb" ModuleDefinitionRef="/MICROSAR/IoHwAb"/>
+            <ModuleDefinitionMapping ModuleConfigName="IpduM" ModuleDefinitionRef="/MICROSAR/IpduM"/>
+            <ModuleDefinitionMapping ModuleConfigName="Irq" ModuleDefinitionRef="/AURIX2G/EcucDefs/Irq"/>
+            <ModuleDefinitionMapping ModuleConfigName="J1939Dcm" ModuleDefinitionRef="/MICROSAR/J1939Dcm"/>
+            <ModuleDefinitionMapping ModuleConfigName="J1939Nm" ModuleDefinitionRef="/MICROSAR/J1939Nm"/>
+            <ModuleDefinitionMapping ModuleConfigName="J1939Rm" ModuleDefinitionRef="/MICROSAR/J1939Rm"/>
+            <ModuleDefinitionMapping ModuleConfigName="J1939Tp" ModuleDefinitionRef="/MICROSAR/J1939Tp"/>
+            <ModuleDefinitionMapping ModuleConfigName="KeyM" ModuleDefinitionRef="/MICROSAR/KeyM"/>
+            <ModuleDefinitionMapping ModuleConfigName="LdCom" ModuleDefinitionRef="/MICROSAR/LdCom"/>
+            <ModuleDefinitionMapping ModuleConfigName="LinIf" ModuleDefinitionRef="/MICROSAR/LinIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="LinNm" ModuleDefinitionRef="/AUTOSAR/EcucDefs/LinNm"/>
+            <ModuleDefinitionMapping ModuleConfigName="LinSM" ModuleDefinitionRef="/MICROSAR/LinSM"/>
+            <ModuleDefinitionMapping ModuleConfigName="LinTp" ModuleDefinitionRef="/MICROSAR/LinTp"/>
+            <ModuleDefinitionMapping ModuleConfigName="McalLib" ModuleDefinitionRef="/AURIX2G/EcucDefs/McalLib"/>
+            <ModuleDefinitionMapping ModuleConfigName="Mcu" ModuleDefinitionRef="/AURIX2G/EcucDefs/Mcu"/>
+            <ModuleDefinitionMapping ModuleConfigName="MemIf" ModuleDefinitionRef="/MICROSAR/MemIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="MemMap" ModuleDefinitionRef="/MICROSAR/MemMap"/>
+            <ModuleDefinitionMapping ModuleConfigName="Mirror" ModuleDefinitionRef="/MICROSAR/Mirror"/>
+            <ModuleDefinitionMapping ModuleConfigName="Nm" ModuleDefinitionRef="/MICROSAR/Nm"/>
+            <ModuleDefinitionMapping ModuleConfigName="NmOsek" ModuleDefinitionRef="/MICROSAR/NmOsek"/>
+            <ModuleDefinitionMapping ModuleConfigName="NvM" ModuleDefinitionRef="/MICROSAR/NvM"/>
+            <ModuleDefinitionMapping ModuleConfigName="Ocu" ModuleDefinitionRef="/AURIX2G/EcucDefs/Ocu"/>
+            <ModuleDefinitionMapping ModuleConfigName="Os" ModuleDefinitionRef="/MICROSAR/Os"/>
+            <ModuleDefinitionMapping ModuleConfigName="PduR" ModuleDefinitionRef="/MICROSAR/PduR"/>
+            <ModuleDefinitionMapping ModuleConfigName="Port" ModuleDefinitionRef="/AURIX2G/EcucDefs/Port"/>
+            <ModuleDefinitionMapping ModuleConfigName="RamTst" ModuleDefinitionRef="/AUTOSAR/EcucDefs/RamTst"/>
+            <ModuleDefinitionMapping ModuleConfigName="Rte" ModuleDefinitionRef="/MICROSAR/Rte"/>
+            <ModuleDefinitionMapping ModuleConfigName="Rtm" ModuleDefinitionRef="/MICROSAR/Rtm"/>
+            <ModuleDefinitionMapping ModuleConfigName="Rtp" ModuleDefinitionRef="/MICROSAR/Rtp"/>
+            <ModuleDefinitionMapping ModuleConfigName="Sd" ModuleDefinitionRef="/MICROSAR/Sd"/>
+            <ModuleDefinitionMapping ModuleConfigName="SecOC" ModuleDefinitionRef="/MICROSAR/SecOC"/>
+            <ModuleDefinitionMapping ModuleConfigName="SoAd" ModuleDefinitionRef="/MICROSAR/SoAd"/>
+            <ModuleDefinitionMapping ModuleConfigName="SomeIpTp" ModuleDefinitionRef="/MICROSAR/SomeIpTp"/>
+            <ModuleDefinitionMapping ModuleConfigName="Spi" ModuleDefinitionRef="/AURIX2G/EcucDefs/Spi"/>
+            <ModuleDefinitionMapping ModuleConfigName="Srp" ModuleDefinitionRef="/MICROSAR/Srp"/>
+            <ModuleDefinitionMapping ModuleConfigName="StbM" ModuleDefinitionRef="/MICROSAR/StbM"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluC" ModuleDefinitionRef="/MICROSAR/EcucDefs/SwCluC"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCBManif" ModuleDefinitionRef="/MICROSAR/SwCluCBManif"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCBase" ModuleDefinitionRef="/MICROSAR/SwCluCBase"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCDataResourceDb" ModuleDefinitionRef="/MICROSAR/SwCluCDataResourceDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCDcmDb" ModuleDefinitionRef="/MICROSAR/SwCluCDcmDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCDcmProxy" ModuleDefinitionRef="/MICROSAR/SwCluCDcmProxy"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCDemDb" ModuleDefinitionRef="/MICROSAR/SwCluCDemDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCDemProxy" ModuleDefinitionRef="/MICROSAR/SwCluCDemProxy"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCDispatcher" ModuleDefinitionRef="/MICROSAR/SwCluCDispatcher"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCDispatcherDb" ModuleDefinitionRef="/MICROSAR/SwCluCDispatcherDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCFiMDb" ModuleDefinitionRef="/MICROSAR/SwCluCFiMDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCFiMProxy" ModuleDefinitionRef="/MICROSAR/SwCluCFiMProxy"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCLdComDb" ModuleDefinitionRef="/MICROSAR/SwCluCLdComDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCLdComProxy" ModuleDefinitionRef="/MICROSAR/SwCluCLdComProxy"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCNvMDb" ModuleDefinitionRef="/MICROSAR/SwCluCNvMDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCNvMProxy" ModuleDefinitionRef="/MICROSAR/SwCluCNvMProxy"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCOsDb" ModuleDefinitionRef="/MICROSAR/SwCluCOsDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCOsProxy" ModuleDefinitionRef="/MICROSAR/SwCluCOsProxy"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCWdgMDb" ModuleDefinitionRef="/MICROSAR/SwCluCWdgMDb"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCWdgMProxy" ModuleDefinitionRef="/MICROSAR/SwCluCWdgMProxy"/>
+            <ModuleDefinitionMapping ModuleConfigName="SwCluCXcc" ModuleDefinitionRef="/MICROSAR/SwCluCXcc"/>
+            <ModuleDefinitionMapping ModuleConfigName="TcpIp" ModuleDefinitionRef="/MICROSAR/TcpIp"/>
+            <ModuleDefinitionMapping ModuleConfigName="UdpNm" ModuleDefinitionRef="/MICROSAR/UdpNm"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTAdc" ModuleDefinitionRef="/MICROSAR/VTT/VTTAdc"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTCntrl" ModuleDefinitionRef="/MICROSAR/VTT/VTTCntrl"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTCrypto" ModuleDefinitionRef="/MICROSAR/VTT/VTTCrypto"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTDio" ModuleDefinitionRef="/MICROSAR/VTT/VTTDio"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTEcuC" ModuleDefinitionRef="/MICROSAR/VTT/VTTEcuC"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTGpt" ModuleDefinitionRef="/MICROSAR/VTT/VTTGpt"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTLin" ModuleDefinitionRef="/MICROSAR/VTT/VTTLin"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTMcu" ModuleDefinitionRef="/MICROSAR/VTT/VTTMcu"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTMemMap" ModuleDefinitionRef="/MICROSAR/VTT/VTTMemMap"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTOs" ModuleDefinitionRef="/MICROSAR/VTT/VTTOs"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTPort" ModuleDefinitionRef="/MICROSAR/VTT/VTTPort"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTSpi" ModuleDefinitionRef="/MICROSAR/VTT/VTTSpi"/>
+            <ModuleDefinitionMapping ModuleConfigName="VTTvSet" ModuleDefinitionRef="/MICROSAR/VTT/VTTvSet"/>
+            <ModuleDefinitionMapping ModuleConfigName="WdgIf" ModuleDefinitionRef="/MICROSAR/WdgIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="WdgM" ModuleDefinitionRef="/MICROSAR/WdgM"/>
+            <ModuleDefinitionMapping ModuleConfigName="Xcp" ModuleDefinitionRef="/MICROSAR/Xcp"/>
+            <ModuleDefinitionMapping ModuleConfigName="vBRS" ModuleDefinitionRef="/MICROSAR/vBRS"/>
+            <ModuleDefinitionMapping ModuleConfigName="vBaseEnv" ModuleDefinitionRef="/MICROSAR/vBaseEnv"/>
+            <ModuleDefinitionMapping ModuleConfigName="vCan" ModuleDefinitionRef="/MICROSAR/EcucDefs/vCan"/>
+            <ModuleDefinitionMapping ModuleConfigName="vDem42" ModuleDefinitionRef="/MICROSAR/vDem42"/>
+            <ModuleDefinitionMapping ModuleConfigName="vFeeAcc" ModuleDefinitionRef="/MICROSAR/vFeeAcc"/>
+            <ModuleDefinitionMapping ModuleConfigName="vFotaH" ModuleDefinitionRef="/MICROSAR/vFotaH"/>
+            <ModuleDefinitionMapping ModuleConfigName="vFsmLib" ModuleDefinitionRef="/MICROSAR/vFsmLib"/>
+            <ModuleDefinitionMapping ModuleConfigName="vIpc" ModuleDefinitionRef="/MICROSAR/vIpc"/>
+            <ModuleDefinitionMapping ModuleConfigName="vIpcMemCp" ModuleDefinitionRef="/MICROSAR/vIpcMemCp"/>
+            <ModuleDefinitionMapping ModuleConfigName="vIpcMemIf" ModuleDefinitionRef="/MICROSAR/vIpcMemIf"/>
+            <ModuleDefinitionMapping ModuleConfigName="vItaHlp" ModuleDefinitionRef="/MICROSAR/vItaHlp"/>
+            <ModuleDefinitionMapping ModuleConfigName="vLinkGen" ModuleDefinitionRef="/MICROSAR/vLinkGen"/>
+            <ModuleDefinitionMapping ModuleConfigName="vMemAccM" ModuleDefinitionRef="/MICROSAR/vMemAccM"/>
+            <ModuleDefinitionMapping ModuleConfigName="vSecPrim" ModuleDefinitionRef="/MICROSAR/vSecPrim"/>
+            <ModuleDefinitionMapping ModuleConfigName="vSet" ModuleDefinitionRef="/MICROSAR/vSet"/>
+            <ModuleDefinitionMapping ModuleConfigName="vSwUpdM" ModuleDefinitionRef="/MICROSAR/vSwUpdM"/>
+        </ModuleDefinitionMappings>
+    </Display>
+    <ECUC>
+        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">Config\ECUC\ADAS.ecuc.arxml</Active>
+        <Derived RootPackageName="/InitialEcuC/InitialEcuC">Config\ECUC\ADAS.ecuc.Initial.arxml</Derived>
+    </ECUC>
+    <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE"/>
+    <DEVSettings>
+        <SelectiveImport>All</SelectiveImport>
+        <ObjectLocking>true</ObjectLocking>
+        <ImportModePreset>true</ImportModePreset>
+    </DEVSettings>
+    <ToolSettings>
+        <Generators>
+            <Settings Name="com.vector.cfg.gen.core.genusersettings">
+                <Settings Name="com.vector.cfg.gen.Tresos_proxy">
+                    <Settings Name="General">
+                        <Setting Value="System" Name="forcearchitecture"/>
+                        <Setting Value="1648,1055,1072" Name="ignoretresosmsgids"/>
+                        <Setting Value="false" Name="performanceoptimization"/>
+                        <Setting Value="false" Name="tresosverification"/>
+                        <Setting Value="false" Name="useDifferentWorkspace"/>
+                    </Settings>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenStepOrder">
+                <Setting Value="INTERNAL_GENERATION|vitaSip WDG timeout patch" Name="Order"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenSteps">
+                <Settings Name="vitaSip WDG timeout patch">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\..\01_Appl\Source\Capl\ChangeTimeoutForWDG.bat" Name="CommandLine"/>
+                    <Setting Value="IBM850" Name="CommandLineEncoding"/>
+                    <Setting Value="VitaSip: Wdg timeout will be 400ms longer due to slow ethernet-stack startup" Name="Comment"/>
+                    <Setting Value="Serial" Name="ExecutionType"/>
+                    <Setting Value="" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\..\01_Appl\Source\Capl" Name="WorkingDir"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratedModules">
+                <Setting Value="false" Name="BswM"/>
+                <Setting Value="false" Name="Can"/>
+                <Setting Value="false" Name="ComXf"/>
+                <Setting Value="false" Name="Crc"/>
+                <Setting Value="false" Name="CryIf"/>
+                <Setting Value="false" Name="Crypto"/>
+                <Setting Value="false" Name="Csm"/>
+                <Setting Value="false" Name="Dbg"/>
+                <Setting Value="false" Name="Det"/>
+                <Setting Value="false" Name="Dio"/>
+                <Setting Value="false" Name="E2EXf"/>
+                <Setting Value="false" Name="EthTrcv"/>
+                <Setting Value="false" Name="Fee"/>
+                <Setting Value="false" Name="Fls"/>
+                <Setting Value="false" Name="Gpt"/>
+                <Setting Value="false" Name="Irq"/>
+                <Setting Value="false" Name="McalLib"/>
+                <Setting Value="false" Name="Mcu"/>
+                <Setting Value="false" Name="MemIf"/>
+                <Setting Value="false" Name="MemMap"/>
+                <Setting Value="false" Name="NvM"/>
+                <Setting Value="false" Name="Port"/>
+                <Setting Value="false" Name="Rtm"/>
+                <Setting Value="false" Name="SecOC"/>
+                <Setting Value="false" Name="SomeIpXf"/>
+                <Setting Value="false" Name="StartApplicationEth"/>
+                <Setting Value="false" Name="VTTCan"/>
+                <Setting Value="false" Name="VTTMemMap"/>
+                <Setting Value="false" Name="Wdg"/>
+                <Setting Value="false" Name="WdgIf"/>
+                <Setting Value="false" Name="WdgM"/>
+                <Setting Value="false" Name="Xcp"/>
+                <Setting Value="false" Name="vBRS"/>
+                <Setting Value="false" Name="vCan"/>
+                <Setting Value="false" Name="vFeeAcc"/>
+                <Setting Value="false" Name="vFotaH"/>
+                <Setting Value="false" Name="vLinkGen"/>
+                <Setting Value="false" Name="vMem"/>
+                <Setting Value="false" Name="vMemAccM"/>
+                <Setting Value="false" Name="vMem_30_Blocking"/>
+                <Setting Value="false" Name="vSecPrim"/>
+                <Setting Value="false" Name="vSet"/>
+                <Setting Value="false" Name="vStreamProc"/>
+                <Setting Value="false" Name="vSwUpdM"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GenerationTarget">
+                <Setting Value="Real Target" Name="TargetType"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratorsWithoutModuleDef">
+                <Setting Value="false" Name="/MICROSAR/E2EPW"/>
+                <Setting Value="false" Name="/MICROSAR/McDataConv"/>
+            </Settings>
+        </Generators>
+        <Misc>
+            <Settings Name="com.vector.cfg.consistency">
+                <Settings Name="ACK_03eea545-8f8b-3922-85c0-59f864b05e9a">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="TCPIP1037" Name="a ResultId"/>
+                        <Setting Value="Improvement" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="The header file name for /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc[0:TcpIpSocketOwnerHeaderFileName](value=Scc_Cbk.h) of socket user /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc differs from default name 'Scc.h'." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEEv+H8ru6+DwAAAAQNdAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDFmMDdlMjFiYTIyZmNlYWE1ZTNjMzVmNzE0MTNmM2JidADvVGhlIGhlYWRlciBmaWxlIG5h&#xA;bWUgZm9yIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0T3duZXJDb25m&#xA;aWcvU2NjWzA6VGNwSXBTb2NrZXRPd25lckhlYWRlckZpbGVOYW1lXSh2YWx1ZT1TY2NfQ2JrLmgp&#xA;IG9mIHNvY2tldCB1c2VyIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0&#xA;T3duZXJDb25maWcvU2NjIGRpZmZlcnMgZnJvbSBkZWZhdWx0IG5hbWUgJ1NjYy5oJy50AAVUQ1BJ&#xA;UHQAC0ltcHJvdmVtZW50" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_3087ca41-147d-3f9d-b90e-cd155e102c31">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDZjNzU1NDZiMzU2NjMxOWFmNGQxMGU4ZjMyNmEyZTc0dAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_3232b978-3ee3-346c-8cc5-60085acfc234">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDhlZDg0NmNjNDkyNDA0ZjU1NWNlY2ZlNWQyZWE5NDY1dAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_332ff017-ecea-30f3-a40c-7f1e0fa16ddc">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="TCPIP1037" Name="a ResultId"/>
+                        <Setting Value="Improvement" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="The callback function name for /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc[0:TcpIpSocketOwnerRxIndicationName](value=Scc_Cbk_TL_RxIndication) of socket user /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc differs from default name 'Scc_RxIndication'." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEEv+H8id9lvQAAAAQNdAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGMyN2NhMmI1NWViMmNjNTNhNTI0ZWU5Njc2ZjQ4Y2JmdAEQVGhlIGNhbGxiYWNrIGZ1bmN0&#xA;aW9uIG5hbWUgZm9yIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0T3du&#xA;ZXJDb25maWcvU2NjWzA6VGNwSXBTb2NrZXRPd25lclJ4SW5kaWNhdGlvbk5hbWVdKHZhbHVlPVNj&#xA;Y19DYmtfVExfUnhJbmRpY2F0aW9uKSBvZiBzb2NrZXQgdXNlciAvQWN0aXZlRWN1Qy9UY3BJcC9U&#xA;Y3BJcENvbmZpZy9UY3BJcFNvY2tldE93bmVyQ29uZmlnL1NjYyBkaWZmZXJzIGZyb20gZGVmYXVs&#xA;dCBuYW1lICdTY2NfUnhJbmRpY2F0aW9uJy50AAVUQ1BJUHQAC0ltcHJvdmVtZW50" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_51089c92-17cb-3fef-b2bd-9279d9e61d99">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (14 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU1XkW6QEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGIzNTg0YTU0MWVhNjZiYzJmNTkxNTM1MzZlYjJlZmQ4dAKhVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDE0IGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBzaG9ydC4gU2V0IHRvIGRlZmF1bHQgdmFsdWUgKD0yKS4NClVu&#xA;a25vd24gYWxpZ25tZW50IG9mIHN0cnVjdC4gU2V0IHRvIGRlZmF1bHQgdmFsdWUgKD11c2UgbGFy&#xA;Z2VzdCBhbGlnbm1lbnQgb2YgaXRzIGVsZW1lbnRzIGZvciB0aGUgc3RydWN0KS4NClVua25vd24g&#xA;bWFwcGluZyBvZiB1aW50MTYgb250byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVl&#xA;ICg9c2hvcnQpLg0KVW5rbm93biBtYXBwaW5nIG9mIHVpbnQ4IG9udG8gYmFzaWMgQyB0eXBlLiBT&#xA;ZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPWNoYXIpLnQAA0RFTXQABEluZm8=" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_53367ae8-c0f6-3301-8f0f-5e3e7c5941e6">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="TCPIP1037" Name="a ResultId"/>
+                        <Setting Value="Improvement" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="The callback function name for /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc[0:TcpIpSocketOwnerTcpIpEventName](value=Scc_Cbk_TL_TCPEvent) of socket user /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc differs from default name 'Scc_TcpIpEvent'." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEEv+H8LlGqxgAAAAQNdAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGRmMzUwNDg4NjdhZDg0ZjM5NzQwZDA4NmQxM2VlNDI0dAEIVGhlIGNhbGxiYWNrIGZ1bmN0&#xA;aW9uIG5hbWUgZm9yIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0T3du&#xA;ZXJDb25maWcvU2NjWzA6VGNwSXBTb2NrZXRPd25lclRjcElwRXZlbnROYW1lXSh2YWx1ZT1TY2Nf&#xA;Q2JrX1RMX1RDUEV2ZW50KSBvZiBzb2NrZXQgdXNlciAvQWN0aXZlRWN1Qy9UY3BJcC9UY3BJcENv&#xA;bmZpZy9UY3BJcFNvY2tldE93bmVyQ29uZmlnL1NjYyBkaWZmZXJzIGZyb20gZGVmYXVsdCBuYW1l&#xA;ICdTY2NfVGNwSXBFdmVudCcudAAFVENQSVB0AAtJbXByb3ZlbWVudA==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_5c56841f-74af-3b74-bf87-c530bc87b060">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="TCPIP1037" Name="a ResultId"/>
+                        <Setting Value="Improvement" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="The callback function name for /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc[0:TcpIpSocketOwnerTcpConnectedName](value=Scc_Cbk_TL_TCPConnected) of socket user /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc differs from default name 'Scc_TcpConnected'." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEEv+H8/I4Z4wAAAAQNdAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDZkMTRmNWRjOGFkMmZmZjBlNjZiM2VjYWFjZjkxM2JjdAEQVGhlIGNhbGxiYWNrIGZ1bmN0&#xA;aW9uIG5hbWUgZm9yIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0T3du&#xA;ZXJDb25maWcvU2NjWzA6VGNwSXBTb2NrZXRPd25lclRjcENvbm5lY3RlZE5hbWVdKHZhbHVlPVNj&#xA;Y19DYmtfVExfVENQQ29ubmVjdGVkKSBvZiBzb2NrZXQgdXNlciAvQWN0aXZlRWN1Qy9UY3BJcC9U&#xA;Y3BJcENvbmZpZy9UY3BJcFNvY2tldE93bmVyQ29uZmlnL1NjYyBkaWZmZXJzIGZyb20gZGVmYXVs&#xA;dCBuYW1lICdTY2NfVGNwQ29ubmVjdGVkJy50AAVUQ1BJUHQAC0ltcHJvdmVtZW50" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_5d205790-d098-3497-8fbf-0a3e9c3d12f5">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="FLS10010" Name="a ResultId"/>
+                        <Setting Value="Warning" Name="b Severity"/>
+                        <Setting Value="Referenced by vSwUpdM =&gt; to be ignored by Fee" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="Create new SubAddressArea container for remaining unreferenced vMemSector." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEABdA0Mc06VQAAACcadAAtUmVmZXJlbmNlZCBieSB2U3dVcGRN&#xA;ID0+IHRvIGJlIGlnbm9yZWQgYnkgRmVldAAgNDljNjdhYzc0NzJlMWRjMTk2ZDY4ODU0OTc1M2Vi&#xA;NWR0AEpDcmVhdGUgbmV3IFN1YkFkZHJlc3NBcmVhIGNvbnRhaW5lciBmb3IgcmVtYWluaW5nIHVu&#xA;cmVmZXJlbmNlZCB2TWVtU2VjdG9yLnQAA0ZMU3QAB1dhcm5pbmc=" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_5e16cb0e-2945-320e-9d8b-6472aa302426">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGYxOGEyYWIyMzM0ZDE4ODkwZWUwYTBkYTljZjI2ZWVldAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_624608c8-4c51-3fee-aed9-a638e2fecfa5">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="IPDUM1202" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="[MANUAL ACTION] The module DefinitionRef: /MICROSAR/IpduM must be removed from your compile and linker scriptss." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEEKrCkthkOwAAAAASydAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDgxZGEwZTk2ZjQxZTVkYzBmMDdhZGY0NTU1OWE0ODFldABwW01BTlVBTCBBQ1RJT05dIFRo&#xA;ZSBtb2R1bGUgRGVmaW5pdGlvblJlZjogL01JQ1JPU0FSL0lwZHVNIG11c3QgYmUgcmVtb3ZlZCBm&#xA;cm9tIHlvdXIgY29tcGlsZSBhbmQgbGlua2VyIHNjcmlwdHNzLnQABUlQRFVNdAAESW5mbw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_664c43a3-2893-3d8f-b0fc-a0f1e15725c3">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGZjY2M0YWM3NTA3MTRmNGM1NjdmOTgzYzAzMTk5MDE2dAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_81f4fda4-f0fb-3bb5-adf0-4a8c1090f7fe">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (128 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpUKMrGUwEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGIxYTFiNjllMGNkMzRhNjk1OTY0ZjFjZGU4NzU1MjQ2dAKiVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyOCBieXRlcykgaXMgY29uc2lzdGVudCB3aXRoIERFTSdzIGludGVybmFsIHNpemUgZXN0aW1h&#xA;dGlvbiwgYnV0IHRoYXQgbWF5IGJlIGluY29ycmVjdCBkdWUgYXNzdW1wdGlvbnM6DQpDb25maWd1&#xA;cmF0aW9uIGZvciBBbGlnbm1lbnRPZkFycmF5IGltcG9ydGVkIGZyb20gRGVmUmVmIC9bTUlDUk9T&#xA;QVJdL0VjdUMvRWN1Y0dlbmVyYWwvQXJyYXlBbGlnbm1lbnQuDQpUaGUgY2FsY3VsYXRpb24gdXNl&#xA;cyBoYXJkIGNvZGVkIGRlZmF1bHQgdmFsdWVzIGluc3RlYWQgb2YgY29uZmlndXJlZCB2YWx1ZXMu&#xA;DQpVbmtub3duIGFsaWdubWVudCBvZiBjaGFyLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTEpLg0K&#xA;VW5rbm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxh&#xA;cmdlc3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3du&#xA;IG1hcHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1&#xA;ZSAoPXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50OCBvbnRvIGJhc2ljIEMgdHlwZS4g&#xA;U2V0IHRvIGRlZmF1bHQgdmFsdWUgKD1jaGFyKS50AANERU10AARJbmZv" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_82cdba28-ac53-3fcf-9ac5-db92a3cddddc">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="FLS10010" Name="a ResultId"/>
+                        <Setting Value="Warning" Name="b Severity"/>
+                        <Setting Value="Referenced by vSwUpdM =&gt; to be ignored by Fee" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="Create new SubAddressArea container for remaining unreferenced vMemSector." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEABdA0Mc06VQAAACcadAAtUmVmZXJlbmNlZCBieSB2U3dVcGRN&#xA;ID0+IHRvIGJlIGlnbm9yZWQgYnkgRmVldAAgNjQwOTFmYzMwZmNiZWUyYzM5MTU2NTQ1MDIyNzVh&#xA;MGV0AEpDcmVhdGUgbmV3IFN1YkFkZHJlc3NBcmVhIGNvbnRhaW5lciBmb3IgcmVtYWluaW5nIHVu&#xA;cmVmZXJlbmNlZCB2TWVtU2VjdG9yLnQAA0ZMU3QAB1dhcm5pbmc=" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_839219ee-ea81-33b3-8994-fae60ccfe094">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDdiYWZiODZhNTY1NTczZDk4N2ExMzdlMzM1NmNhNWU0dAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_83da24b7-80fe-32c5-8994-eaaf172be16d">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="RTE1055" Name="a ResultId"/>
+                        <Setting Value="Warning" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget: On VTT own implementation of backgrond task necessary to add call to CANoeApi_ConsumeTicks()" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="The schedulable entity &lt;Tls_MainFunctionLowPrio&gt; is not mapped to a valid task." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAAcHFC8HlTQAAAAQfdAB0QWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dDogT24gVlRUIG93biBpbXBsZW1lbnRhdGlvbiBvZiBiYWNrZ3JvbmQgdGFzayBuZWNlc3Nhcnkg&#xA;dG8gYWRkIGNhbGwgdG8gQ0FOb2VBcGlfQ29uc3VtZVRpY2tzKCl0ACA4ZjI0MjRjZmEwMDgwOWUw&#xA;MmQwYjliMDczYzEwZjhmZnQAT1RoZSBzY2hlZHVsYWJsZSBlbnRpdHkgPFRsc19NYWluRnVuY3Rp&#xA;b25Mb3dQcmlvPiBpcyBub3QgbWFwcGVkIHRvIGEgdmFsaWQgdGFzay50AANSVEV0AAdXYXJuaW5n&#xA;" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_86b8a526-f6cd-3a68-9f1a-cb8c1fd9c2a2">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDBkOGFlM2E1ZTk5ZDRhMTNiOWVmOTAwYWQ0NjIwNTVmdAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_973bf5c1-a0ad-3f45-99cc-ebc317fcfa99">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="TCPIP1037" Name="a ResultId"/>
+                        <Setting Value="Improvement" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="The callback function name for /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc[0:TcpIpSocketOwnerCopyTxDataName](value=Scc_Cbk_CopyTxData) of socket user /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc differs from default name 'Scc_CopyTxData'." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEEv+H8F7VocwAAAAQNdAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGU2MGYwYmE1ZjJmODdkZjFjMjBjNWUzNjMwZDk3NzM2dAEHVGhlIGNhbGxiYWNrIGZ1bmN0&#xA;aW9uIG5hbWUgZm9yIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0T3du&#xA;ZXJDb25maWcvU2NjWzA6VGNwSXBTb2NrZXRPd25lckNvcHlUeERhdGFOYW1lXSh2YWx1ZT1TY2Nf&#xA;Q2JrX0NvcHlUeERhdGEpIG9mIHNvY2tldCB1c2VyIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29u&#xA;ZmlnL1RjcElwU29ja2V0T3duZXJDb25maWcvU2NjIGRpZmZlcnMgZnJvbSBkZWZhdWx0IG5hbWUg&#xA;J1NjY19Db3B5VHhEYXRhJy50AAVUQ1BJUHQAC0ltcHJvdmVtZW50" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_ae0e2f14-3c1d-382a-853d-3f2abb96412a">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="FLS10010" Name="a ResultId"/>
+                        <Setting Value="Warning" Name="b Severity"/>
+                        <Setting Value="Referenced by vSwUpdM =&gt; to be ignored by Fee" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="Create new SubAddressArea container for remaining unreferenced vMemSector." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEABdA0Mc06VQAAACcadAAtUmVmZXJlbmNlZCBieSB2U3dVcGRN&#xA;ID0+IHRvIGJlIGlnbm9yZWQgYnkgRmVldAAgYWVhYWFlYWIwZTJkMjRjZGI3OWU4M2I0NmQ2ZGE5&#xA;MjN0AEpDcmVhdGUgbmV3IFN1YkFkZHJlc3NBcmVhIGNvbnRhaW5lciBmb3IgcmVtYWluaW5nIHVu&#xA;cmVmZXJlbmNlZCB2TWVtU2VjdG9yLnQAA0ZMU3QAB1dhcm5pbmc=" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_d1730a21-f40a-3a62-8c4b-92f58701978f">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDU4OGYxNDExMzc3MzdjNTczYWU2MzVkNmY3M2NlOTE3dAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_d1dc4e7f-cfa7-3fb0-a371-89c03110fbbb">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="E2EPW79203" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The Project does not contain any EndToEndProtections, so there is nothing to do." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEECZgdijXMMQEAATVjdAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIDdjMmE4MjQxNmZmMzAwNWY3NzZiNWNhY2NlMzQ3OWVhdABQVGhlIFByb2plY3QgZG9lcyBu&#xA;b3QgY29udGFpbiBhbnkgRW5kVG9FbmRQcm90ZWN0aW9ucywgc28gdGhlcmUgaXMgbm90aGluZyB0&#xA;byBkby50AAVFMkVQV3QABEluZm8=" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_dec42f65-8030-3b20-9440-60314fb2d233">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="SOAD1551" Name="a ResultId"/>
+                        <Setting Value="Improvement" Name="b Severity"/>
+                        <Setting Value="Connection needed by TLS" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="TlsConnectionConfig not used by SoAd and can be removed if not needed by other module." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAJ6sR+eyLfgAAAAYPdAAYQ29ubmVjdGlvbiBuZWVkZWQgYnkg&#xA;VExTdAAgZjUwMWUzNjliNDFhZTU0YzE1N2VkMTc2ZjUyM2JjNjF0AFZUbHNDb25uZWN0aW9uQ29u&#xA;ZmlnIG5vdCB1c2VkIGJ5IFNvQWQgYW5kIGNhbiBiZSByZW1vdmVkIGlmIG5vdCBuZWVkZWQgYnkg&#xA;b3RoZXIgbW9kdWxlLnQABFNPQUR0AAtJbXByb3ZlbWVudA==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_ee8dcbe1-4992-3877-8c99-99812fda99f3">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="FLS10010" Name="a ResultId"/>
+                        <Setting Value="Warning" Name="b Severity"/>
+                        <Setting Value="Referenced by vSwUpdM =&gt; to be ignored by Fee" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="Create new SubAddressArea container for remaining unreferenced vMemSector." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEABdA0Mc06VQAAACcadAAtUmVmZXJlbmNlZCBieSB2U3dVcGRN&#xA;ID0+IHRvIGJlIGlnbm9yZWQgYnkgRmVldAAgNzdkOGMzMzAzYjc2Yjk1NzRmZDZjZjkzYmRkYzBk&#xA;NTl0AEpDcmVhdGUgbmV3IFN1YkFkZHJlc3NBcmVhIGNvbnRhaW5lciBmb3IgcmVtYWluaW5nIHVu&#xA;cmVmZXJlbmNlZCB2TWVtU2VjdG9yLnQAA0ZMU3QAB1dhcm5pbmc=" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_f47c4a8e-d9e9-3056-817e-6748574e52f0">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="TCPIP1037" Name="a ResultId"/>
+                        <Setting Value="Improvement" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="false" Name="d IsOnDemand"/>
+                        <Setting Value="The callback function name for /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc[0:TcpIpSocketOwnerLocalIpAddrAssignmentChgName](value=Scc_Cbk_IP_AddressAssignmentChange) of socket user /ActiveEcuC/TcpIp/TcpIpConfig/TcpIpSocketOwnerConfig/Scc differs from default name 'Scc_LocalIpAddrAssignmentChg'." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEEv+H8I0MInQAAAAQNdAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGVmYjVlMDg0OTQ5NjQ3OWIwMGIxMTI4YjFjZjZmMTQwdAEzVGhlIGNhbGxiYWNrIGZ1bmN0&#xA;aW9uIG5hbWUgZm9yIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0T3du&#xA;ZXJDb25maWcvU2NjWzA6VGNwSXBTb2NrZXRPd25lckxvY2FsSXBBZGRyQXNzaWdubWVudENoZ05h&#xA;bWVdKHZhbHVlPVNjY19DYmtfSVBfQWRkcmVzc0Fzc2lnbm1lbnRDaGFuZ2UpIG9mIHNvY2tldCB1&#xA;c2VyIC9BY3RpdmVFY3VDL1RjcElwL1RjcElwQ29uZmlnL1RjcElwU29ja2V0T3duZXJDb25maWcv&#xA;U2NjIGRpZmZlcnMgZnJvbSBkZWZhdWx0IG5hbWUgJ1NjY19Mb2NhbElwQWRkckFzc2lnbm1lbnRD&#xA;aGcnLnQABVRDUElQdAALSW1wcm92ZW1lbnQ=" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+                <Settings Name="ACK_f78b34b0-212f-3bbf-9b8f-2a1a5edbeeda">
+                    <Settings Name="DESCRIPTION">
+                        <Setting Value="DEM53369" Name="a ResultId"/>
+                        <Setting Value="Info" Name="b Severity"/>
+                        <Setting Value="Acknowledged by visget" Name="c AcknowledgementComment"/>
+                        <Setting Value="true" Name="d IsOnDemand"/>
+                        <Setting Value="The NV Block size (12 bytes) is consistent with DEM's internal size estimation, but that may be incorrect due assumptions:&#xD;&#xA;Configuration for AlignmentOfArray imported from DefRef /[MICROSAR]/EcuC/EcucGeneral/ArrayAlignment.&#xD;&#xA;The calculation uses hard coded default values instead of configured values.&#xD;&#xA;Unknown alignment of char. Set to default value (=1).&#xD;&#xA;Unknown alignment of long. Set to default value (=4).&#xD;&#xA;Unknown alignment of short. Set to default value (=2).&#xD;&#xA;Unknown alignment of struct. Set to default value (=use largest alignment of its elements for the struct).&#xD;&#xA;Unknown mapping of uint16 onto basic C type. Set to default value (=short).&#xD;&#xA;Unknown mapping of uint32 onto basic C type. Set to default value (=long).&#xD;&#xA;Unknown mapping of uint8 onto basic C type. Set to default value (=char)." Name="e ResultDescription"/>
+                    </Settings>
+                    <Settings Name="Encoded">
+                        <Setting Value="rO0ABXNyAF1jb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5pbnRlcm5hbC5yZXN1bHRwcm92aXNp&#xA;b25pbmcuYWNrbm93bGVkZ2UuUmVzdWx0MkFja1N0b3JlJFNlcmlhbEl0ZW3ogsXzdjXw9wIACkkA&#xA;E2hhc2hlZEVyckRlc2NyQ291bnRJAAhoYXNoZWRJZEkACmhhc2hlZFRleHRaABBpc09uRGVtYW5k&#xA;UmVzdWx0SQAOcmVzdWx0SWROdW1iZXJMAAdjb21tZW50dAASTGphdmEvbGFuZy9TdHJpbmc7TAAD&#xA;bWQ1cQB+AAFMABFyZXN1bHREZXNjcmlwdGlvbnEAfgABTAAOcmVzdWx0SWRPcmlnaW5xAH4AAUwA&#xA;CHNldmVyaXR5cQB+AAF4cAAAAAEAGkpU0uQ6+gEAANB5dAAWQWNrbm93bGVkZ2VkIGJ5IHZpc2dl&#xA;dHQAIGRlYTZlODFkZGFkYTE0ODU0MDVkZTUzM2Y3MWVmYzQ1dAMkVGhlIE5WIEJsb2NrIHNpemUg&#xA;KDEyIGJ5dGVzKSBpcyBjb25zaXN0ZW50IHdpdGggREVNJ3MgaW50ZXJuYWwgc2l6ZSBlc3RpbWF0&#xA;aW9uLCBidXQgdGhhdCBtYXkgYmUgaW5jb3JyZWN0IGR1ZSBhc3N1bXB0aW9uczoNCkNvbmZpZ3Vy&#xA;YXRpb24gZm9yIEFsaWdubWVudE9mQXJyYXkgaW1wb3J0ZWQgZnJvbSBEZWZSZWYgL1tNSUNST1NB&#xA;Ul0vRWN1Qy9FY3VjR2VuZXJhbC9BcnJheUFsaWdubWVudC4NClRoZSBjYWxjdWxhdGlvbiB1c2Vz&#xA;IGhhcmQgY29kZWQgZGVmYXVsdCB2YWx1ZXMgaW5zdGVhZCBvZiBjb25maWd1cmVkIHZhbHVlcy4N&#xA;ClVua25vd24gYWxpZ25tZW50IG9mIGNoYXIuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MSkuDQpV&#xA;bmtub3duIGFsaWdubWVudCBvZiBsb25nLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAoPTQpLg0KVW5r&#xA;bm93biBhbGlnbm1lbnQgb2Ygc2hvcnQuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9MikuDQpVbmtu&#xA;b3duIGFsaWdubWVudCBvZiBzdHJ1Y3QuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9dXNlIGxhcmdl&#xA;c3QgYWxpZ25tZW50IG9mIGl0cyBlbGVtZW50cyBmb3IgdGhlIHN0cnVjdCkuDQpVbmtub3duIG1h&#xA;cHBpbmcgb2YgdWludDE2IG9udG8gYmFzaWMgQyB0eXBlLiBTZXQgdG8gZGVmYXVsdCB2YWx1ZSAo&#xA;PXNob3J0KS4NClVua25vd24gbWFwcGluZyBvZiB1aW50MzIgb250byBiYXNpYyBDIHR5cGUuIFNl&#xA;dCB0byBkZWZhdWx0IHZhbHVlICg9bG9uZykuDQpVbmtub3duIG1hcHBpbmcgb2YgdWludDggb250&#xA;byBiYXNpYyBDIHR5cGUuIFNldCB0byBkZWZhdWx0IHZhbHVlICg9Y2hhcikudAADREVNdAAESW5m&#xA;bw==" Name="AcknowledgementDataV3Encoding"/>
+                    </Settings>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gen.core.bswmdmigration.internal.service.BswImplVersionPersistor">
+                <Settings Name="|AKKA|BAP|Cdd">
+                    <Setting Value="1.12.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Adc">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Arti">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|AvTp">
+                    <Setting Value="10.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|BswM">
+                    <Setting Value="16.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Cal">
+                    <Setting Value="2.1.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanIf">
+                    <Setting Value="8.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanNm">
+                    <Setting Value="11.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanSM">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTSyn">
+                    <Setting Value="6.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTp">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTrcv_GenericCan|CanTrcv">
+                    <Setting Value="4.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTrcv_Tja1040|CanTrcv">
+                    <Setting Value="4.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTrcv_Tja1043|CanTrcv">
+                    <Setting Value="4.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Can_30_Core|Can">
+                    <Setting Value="2.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Can_CanoeemuCanoe|Can">
+                    <Setting Value="6.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Ccp">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CddDes|Cdd">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CddDrm|Cdd">
+                    <Setting Value="5.0.5" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CddNpmGen2">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Com">
+                    <Setting Value="23.0.3" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|ComM">
+                    <Setting Value="16.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|ComXf">
+                    <Setting Value="4.31.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Crc">
+                    <Setting Value="7.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CryIf">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Crypto_30_LibCv|Crypto">
+                    <Setting Value="12.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Crypto_30_Vtt|Crypto">
+                    <Setting Value="1.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Crypto_30_vHsm|Crypto">
+                    <Setting Value="3.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Csm">
+                    <Setting Value="6.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dbg">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dcm">
+                    <Setting Value="18.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dem">
+                    <Setting Value="23.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Det">
+                    <Setting Value="14.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|DiagXf">
+                    <Setting Value="4.31.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dio">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dlt">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dns">
+                    <Setting Value="7.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|DoIP">
+                    <Setting Value="13.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|DoIPInt">
+                    <Setting Value="5.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|E2EPW">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|E2EXf">
+                    <Setting Value="4.31.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Ea">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EcuC">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EcuM">
+                    <Setting Value="13.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Eep">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Eep_30_vMemAccM|Eep">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthFw">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthIf">
+                    <Setting Value="16.4.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthSM">
+                    <Setting Value="5.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTSyn">
+                    <Setting Value="15.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTrcv_88Q2112|EthTrcv">
+                    <Setting Value="20.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTrcv_Bcm89810|EthTrcv">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTrcv_Bcm89811|EthTrcv">
+                    <Setting Value="7.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTrcv_Canoeemu|EthTrcv">
+                    <Setting Value="3.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTrcv_Ethmii|EthTrcv">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTrcv_Generic|EthTrcv">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Eth_Canoeemu|Eth">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Eth_Generic|Eth">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Eth_Tc3xx|Eth">
+                    <Setting Value="20.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Etm">
+                    <Setting Value="10.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Exi">
+                    <Setting Value="11.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fee">
+                    <Setting Value="10.0.4" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fee_30_FlexNor|Fee">
+                    <Setting Value="1.2.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fee_30_SmallSector|Fee">
+                    <Setting Value="3.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FiM">
+                    <Setting Value="9.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fls">
+                    <Setting Value="3.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fls_30_vMemAccM|Fls">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrArTp">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrIf">
+                    <Setting Value="5.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrNm">
+                    <Setting Value="9.1.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrSM">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTSyn">
+                    <Setting Value="6.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTp">
+                    <Setting Value="5.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTrcv_30_Generic|FrTrcv">
+                    <Setting Value="2.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTrcv_30_Tja1080|FrTrcv">
+                    <Setting Value="4.1.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fr_CanoeemuEray|Fr">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fr_TricoreEray|Fr">
+                    <Setting Value="6.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FvM">
+                    <Setting Value="10.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Gpt">
+                    <Setting Value="2.7.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Http">
+                    <Setting Value="10.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Icu">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|IdsM">
+                    <Setting Value="3.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|IoHwAb">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|IpduM">
+                    <Setting Value="11.2.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Dcm">
+                    <Setting Value="15.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Nm">
+                    <Setting Value="9.1.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Rm">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Tp">
+                    <Setting Value="4.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Json">
+                    <Setting Value="2.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|KeyM">
+                    <Setting Value="4.5.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|KeyM_Togg">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LdCom">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinIf">
+                    <Setting Value="10.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinNm">
+                    <Setting Value="2.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinSM">
+                    <Setting Value="7.0.3" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinTp">
+                    <Setting Value="10.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinTrcv_30_Generic|LinTrcv">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinTrcv_30_Tle7259|LinTrcv">
+                    <Setting Value="6.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Lin_Generic|Lin">
+                    <Setting Value="5.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Lin_Tricore|Lin">
+                    <Setting Value="15.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Mcu">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|MemIf">
+                    <Setting Value="4.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|MemMap">
+                    <Setting Value="1.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Mirror">
+                    <Setting Value="4.0.5" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Nm">
+                    <Setting Value="16.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|NmOsek">
+                    <Setting Value="10.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|NvM">
+                    <Setting Value="10.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Os">
+                    <Setting Value="2.62.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|PduR">
+                    <Setting Value="17.2.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Port">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Pwm">
+                    <Setting Value="2.7.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|RamTst">
+                    <Setting Value="3.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Rte">
+                    <Setting Value="4.31.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Rtm">
+                    <Setting Value="8.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Rtp">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Sbc_Tlf35584|Sbc">
+                    <Setting Value="1.3.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Sbc|Sbc">
+                    <Setting Value="2.3.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Scc">
+                    <Setting Value="23.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Sd">
+                    <Setting Value="13.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SecOC">
+                    <Setting Value="12.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Slac">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SoAd">
+                    <Setting Value="20.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SokFm">
+                    <Setting Value="3.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SomeIpTp">
+                    <Setting Value="5.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SomeIpXf">
+                    <Setting Value="4.31.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Spi">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Srp">
+                    <Setting Value="8.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|StbM">
+                    <Setting Value="9.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCBManif">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCDcmProxy">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCDemProxy">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCDispatcher">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCFiMProxy">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCLdComProxy">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCNvMProxy">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCOsProxy">
+                    <Setting Value="3.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCWdgMProxy">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SwCluCXcc">
+                    <Setting Value="2.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|TcpIp">
+                    <Setting Value="16.7.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Tls">
+                    <Setting Value="10.3.7" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|UdpNm">
+                    <Setting Value="6.1.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VKMS">
+                    <Setting Value="2.9.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTAdc">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTCan">
+                    <Setting Value="6.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTCrypto">
+                    <Setting Value="1.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTDio">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEcuC">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEep">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEth">
+                    <Setting Value="11.3.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEthTrcv">
+                    <Setting Value="5.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTFls">
+                    <Setting Value="3.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTFr">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTGpt">
+                    <Setting Value="2.7.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTIcu">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTMcu">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTMemMap">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTOs">
+                    <Setting Value="2.53.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTPort">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTPwm">
+                    <Setting Value="2.7.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTSpi">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTWdg">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTvMem">
+                    <Setting Value="3.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Vita">
+                    <Setting Value="5.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Wdg">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|WdgIf">
+                    <Setting Value="5.5.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|WdgM">
+                    <Setting Value="6.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Wdg_30_Sbc|Wdg">
+                    <Setting Value="4.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Xcp">
+                    <Setting Value="8.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|XmlSecurity">
+                    <Setting Value="10.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vBRS">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vBaseEnv">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vBsdAd">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vBsdAdTcpIp|TcpIp">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vCanCcCdm|Cdd">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vCanCcGbt">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vCan_30_Mcan|vCan">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vDem42">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vFeeAcc">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vFotaH">
+                    <Setting Value="3.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vFsmLib">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vIKE">
+                    <Setting Value="4.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vIpc">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vIpcMemCp">
+                    <Setting Value="1.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vIpcMemIf">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vIpcMemIfLinux">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vIpcMemLinux">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vItaHlp">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vItaSip">
+                    <Setting Value="10.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vKeyM_She_Diag">
+                    <Setting Value="1.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vLinAA|Cdd">
+                    <Setting Value="1.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vLinkGen">
+                    <Setting Value="2.5.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMemAccM">
+                    <Setting Value="7.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_Blocking|vMem">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_Eep|vMem">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_Fls|vMem">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_MmFlashRO|vMem">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_Tc3xxInf01|vMem">
+                    <Setting Value="3.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_Vtt|vMem">
+                    <Setting Value="3.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_XXRam|vMem">
+                    <Setting Value="2.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem_30_vRpcProxy|vMem">
+                    <Setting Value="2.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vMem|vMem">
+                    <Setting Value="2.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vRpcProxy">
+                    <Setting Value="2.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vSecPrim">
+                    <Setting Value="7.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vStreamProc">
+                    <Setting Value="2.1.4" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vSwUpdM">
+                    <Setting Value="5.1.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vSyncMem">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gen.core.gencore.internal.GeneratorConfigurationService">
+                <Setting Value="Yes" Name="SaveAfterGeneration"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAec3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQABFBvcnR0ABEvQVVSSVgyRy9FY3VjRGVm&#xA;c3NxAH4ACHQAB3ZGZWVBY2N0AAkvTUlDUk9TQVJzcQB+AAh0AAd2U3dVcGRNcQB+AA9zcQB+AAh0&#xA;AAVXZGdJZnEAfgAPc3EAfgAIdAAGQ3J5cHRvdAAZL01JQ1JPU0FSL0NyeXB0b18zMF9MaWJDdnNx&#xA;AH4ACHQAA1dkZ3EAfgAMc3EAfgAIdAAFQ3J5SWZxAH4AD3NxAH4ACHQABHZNZW10ABovTUlDUk9T&#xA;QVIvdk1lbV8zMF9CbG9ja2luZ3NxAH4ACHQAA0NyY3EAfgAPc3EAfgAIdAAEdlNldHEAfgAPc3EA&#xA;fgAIdAAGdkZvdGFIcQB+AA9zcQB+AAh0AAdFdGhUcmN2dAAYL01JQ1JPU0FSL0V0aFRyY3ZfRXRo&#xA;bWlpc3EAfgAIdAAIdlNlY1ByaW1xAH4AD3NxAH4ACHQAA0dwdHEAfgAMc3EAfgAIdAAJVlRUTWVt&#xA;TWFwdAANL01JQ1JPU0FSL1ZUVHNxAH4ACHQABlZUVENhbnEAfgAtc3EAfgAIdAAFTWVtSWZxAH4A&#xA;D3NxAH4ACHQAA0ZlZXEAfgAMc3EAfgAIdAADSXJxcQB+AAxzcQB+AAh0AANDc21xAH4AD3NxAH4A&#xA;CHQABHZCUlNxAH4AD3NxAH4ACHEAfgAcdAAcL01JQ1JPU0FSL3ZNZW1fMzBfVGMzeHhJbmYwMXNx&#xA;AH4ACHQAA0Zsc3EAfgAMc3EAfgAIdAAGTWVtTWFwcQB+AA9zcQB+AAh0AANNY3VxAH4ADHNxAH4A&#xA;CHQAB01jYWxMaWJxAH4ADHNxAH4ACHQABFdkZ01xAH4AD3NxAH4ACHQAC3ZTdHJlYW1Qcm9jcQB+&#xA;AA9zcQB+AAh0AANEaW9xAH4ADHNxAH4ACHQABUUyRVBXcQB+AA8=" Name="Data"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.pse.pages.generators">
+                <Settings Name="BuildVipProject"/>
+                <Settings Name="CustomWorkflowExecution"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.interop.tats"/>
+            <Settings Name="com.vector.cfg.persistency.internal.folder">
+                <Settings Name="TargetFolderManager"/>
+            </Settings>
+            <Settings Name="generationReportSettings"/>
+        </Misc>
+    </ToolSettings>
+    <TopDownServiceConfiguration>
+        <NvM>true</NvM>
+    </TopDownServiceConfiguration>
+    <Miscellaneous>
+        <AmdGenerateDebugData>true</AmdGenerateDebugData>
+        <AutomaticSyncSystemDescription>true</AutomaticSyncSystemDescription>
+        <A2LGenerator>
+            <A2LMasterFile>.\McData\Master.a2l</A2LMasterFile>
+        </A2LGenerator>
+    </Miscellaneous>
+    <SwctGeneration generationMode="SWCT_ONLY">
+        <Component Name="StartApplication" GenerationEnabled="false"/>
+        <Component Name="C_Basics" GenerationEnabled="false"/>
+        <Component Name="P_Maths" GenerationEnabled="false"/>
+        <Component Name="C_Maths" GenerationEnabled="true"/>
+        <Component Name="P_Basics" GenerationEnabled="true"/>
+        <Component Name="ServiceControl" GenerationEnabled="false"/>
+        <Component Name="StartApplicationCanIf" GenerationEnabled="false"/>
+        <Component Name="StartApplicationSlaveCore1" GenerationEnabled="true"/>
+        <Component Name="StartApplicationSlaveCore" GenerationEnabled="false"/>
+        <Component Name="StartApplicationEth" GenerationEnabled="false"/>
+        <Component Name="RT_VehComm" GenerationEnabled="false"/>
+        <Component Name="ShA" GenerationEnabled="false"/>
+        <Component Name="NvA" GenerationEnabled="false"/>
+        <Component Name="DiagA" GenerationEnabled="false"/>
+        <Component Name="IvdSfdA" GenerationEnabled="true"/>
+        <Component Name="AppDataA" GenerationEnabled="false"/>
+        <Component Name="BAPConfig" GenerationEnabled="false"/>
+        <Component Name="ctASG_LSG1" GenerationEnabled="false"/>
+        <Component Name="RT_COM" GenerationEnabled="true"/>
+        <Component Name="RT_Vishnu" GenerationEnabled="true"/>
+    </SwctGeneration>
+</ProjectAssistant>

@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Vector.VTT.Configuration">
+  <FileFormatVersion xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework">3</FileFormatVersion>
+  <Project z:Id="2">
+    <_p z:Ref="1" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework" />
+    <CMakeRootPath z:Id="3">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\CMake" /&gt;</CMakeRootPath>
+    <EcuInstanceSet z:Id="4">
+      <Content z:Id="5" z:Size="1">
+        <EcuInstance z:Id="6">
+          <A2lFilePath z:Id="7"></A2lFilePath>
+          <AdditionalCompileFlags xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="8" z:Size="0" />
+          <AdditionalCompileFlagsDebug xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="9" z:Size="0" />
+          <AdditionalCompileFlagsRelease xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="10" z:Size="0" />
+          <AdditionalLinkFlags xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="11" z:Size="0" />
+          <AdditionalLinkFlagsDebug xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="12" z:Size="0" />
+          <AdditionalLinkFlagsRelease xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="13" z:Size="0" />
+          <ApplicationLibaries z:Id="14" z:Size="0" />
+          <ApplicationLibariesBuildConfiguration z:Id="15" z:Size="0" />
+          <AutoSyncSourceFiles>true</AutoSyncSourceFiles>
+          <BasicTimingParameters z:Id="16">
+            <IsrPreAndPostExecTimeNs>1000</IsrPreAndPostExecTimeNs>
+            <TaskInitAndSwitchTimeNs>1000</TaskInitAndSwitchTimeNs>
+            <TickGranularityNs>1000</TickGranularityNs>
+          </BasicTimingParameters>
+          <BuildEvents z:Id="17" z:Size="6">
+            <BuildEvent z:Id="18">
+              <CommandLines z:Id="19"></CommandLines>
+              <Description z:Id="20"></Description>
+              <EventName z:Id="21">PreBuild</EventName>
+              <UsedInBuild z:Id="22">True</UsedInBuild>
+              <Variant z:Id="23">Debug</Variant>
+            </BuildEvent>
+            <BuildEvent z:Id="24">
+              <CommandLines z:Id="25"></CommandLines>
+              <Description z:Id="26"></Description>
+              <EventName z:Id="27">PreLink</EventName>
+              <UsedInBuild z:Id="28">True</UsedInBuild>
+              <Variant z:Id="29">Debug</Variant>
+            </BuildEvent>
+            <BuildEvent z:Id="30">
+              <CommandLines z:Id="31">"$(CIPLUS_CANOE_15_INSTALL_PATH)\..\ASAP2Updater\Exec\ASAP2Updater.exe" -I $(SolutionDir)..\Config\McData\McData.a2l -A $(OutDir)\$(ProjectName).pdb -O $(SolutionDir)..\Canoe\$(ProjectName).a2l -T $(SolutionDir)..\Config\McData\A2lUpdate.ini -L $(SolutionDir)..\Log\AsapUpdater.log</CommandLines>
+              <Description z:Id="32"></Description>
+              <EventName z:Id="33">PostBuild</EventName>
+              <UsedInBuild z:Id="34">True</UsedInBuild>
+              <Variant z:Id="35">Debug</Variant>
+            </BuildEvent>
+            <BuildEvent z:Id="36">
+              <CommandLines z:Id="37"></CommandLines>
+              <Description z:Id="38"></Description>
+              <EventName z:Id="39">PreBuild</EventName>
+              <UsedInBuild z:Id="40">True</UsedInBuild>
+              <Variant z:Id="41">Release</Variant>
+            </BuildEvent>
+            <BuildEvent z:Id="42">
+              <CommandLines z:Id="43"></CommandLines>
+              <Description z:Id="44"></Description>
+              <EventName z:Id="45">PreLink</EventName>
+              <UsedInBuild z:Id="46">True</UsedInBuild>
+              <Variant z:Id="47">Release</Variant>
+            </BuildEvent>
+            <BuildEvent z:Id="48">
+              <CommandLines z:Id="49">"$(CIPLUS_CANOE_15_INSTALL_PATH)\..\ASAP2Updater\Exec\ASAP2Updater.exe" -I $(SolutionDir)..\Config\McData\McData.a2l -A $(OutDir)\$(ProjectName).pdb -O $(SolutionDir)..\Canoe\$(ProjectName).a2l -T $(SolutionDir)..\Config\McData\A2lUpdate.ini -L $(SolutionDir)..\Log\AsapUpdater.log</CommandLines>
+              <Description z:Id="50"></Description>
+              <EventName z:Id="51">PostBuild</EventName>
+              <UsedInBuild z:Id="52">True</UsedInBuild>
+              <Variant z:Id="53">Release</Variant>
+            </BuildEvent>
+          </BuildEvents>
+          <CpuSpeedFactor>1</CpuSpeedFactor>
+          <DiagnosticVariant i:nil="true" />
+          <EcuFolder z:Id="54"></EcuFolder>
+          <EcuGenerationParameters z:Id="55">
+            <GenerateBsw>true</GenerateBsw>
+            <GenerateEcuc>true</GenerateEcuc>
+            <GenerateRte>true</GenerateRte>
+          </EcuGenerationParameters>
+          <EcuSpecificPcTargetSettings i:nil="true" />
+          <EmptySourceFolders z:Id="56" z:Size="0" />
+          <IsConsideredForTest>true</IsConsideredForTest>
+          <IsDummyEcu>false</IsDummyEcu>
+          <IsUserDefined>false</IsUserDefined>
+          <Name z:Id="57">MyECU</Name>
+          <PostBuildVariantSet i:nil="true" />
+          <PowerSupplyInitValue>1</PowerSupplyInitValue>
+          <ProjectGuid z:Id="58">EA8546BF-001B-405C-8140-C3352D5A690E</ProjectGuid>
+          <SourceFiles z:Id="59" z:Size="18">
+            <BasedFileName z:Id="60">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Appl\Source\StartApplicationSlaveCore.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="61">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Appl\Source\StartApplicationEth.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="62">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Appl\Source\StartApplication.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="63">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Appl\Source\ServiceControl.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="64">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Appl\Source\P_Maths.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="65">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Appl\Source\C_Basics.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="66">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\vFotaH_Appl.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="67">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\vMemAccM_Stubs.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="68">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\vSwUpdM_Appl.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="69">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\XcpAppl.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="70">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\Demo.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="71">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\Demo_Dcm_Callout_Stubs.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="72">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\BswInit.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="73">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\GenDataVtt\Fls_17_Dmu.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="74">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\ThirdParty\Mcal_Tc3xx\Supply\MC-ISAR_AS440_TC3xx_BASIC_2.20.0\McIsar\Src\Mcal\Tricore\Fee\ssc\src\Fee.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="75">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\GenData\src\Fee_PBcfg.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="76">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\BrsMain.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="77">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\Source\GptDummy.c" /&gt;</BasedFileName>
+          </SourceFiles>
+          <SourceFolders z:Id="78" z:Size="18">
+            <PersistentString z:Id="79">SWC</PersistentString>
+            <PersistentString z:Id="80">SWC</PersistentString>
+            <PersistentString z:Id="81">SWC</PersistentString>
+            <PersistentString z:Id="82">SWC</PersistentString>
+            <PersistentString z:Id="83">SWC</PersistentString>
+            <PersistentString z:Id="84">SWC</PersistentString>
+            <PersistentString z:Id="85">SWC</PersistentString>
+            <PersistentString z:Id="86">SWC</PersistentString>
+            <PersistentString z:Id="87">SWC</PersistentString>
+            <PersistentString z:Id="88">SWC</PersistentString>
+            <PersistentString z:Id="89">SWC</PersistentString>
+            <PersistentString z:Id="90">SWC</PersistentString>
+            <PersistentString z:Id="91">SWC\Brs</PersistentString>
+            <PersistentString z:Id="92">SWC</PersistentString>
+            <PersistentString z:Id="93">SWC</PersistentString>
+            <PersistentString z:Id="94">SWC</PersistentString>
+            <PersistentString z:Id="95">SWC\Brs</PersistentString>
+            <PersistentString z:Id="96">SWC</PersistentString>
+          </SourceFolders>
+          <TaskMappingData z:Id="97" />
+          <TaskSet z:Id="98">
+            <Content z:Id="99" z:Size="17">
+              <Task z:Id="100">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="101">Default_Init_Task</Name>
+              </Task>
+              <Task z:Id="102">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="103">BswBackgroundTask</Name>
+              </Task>
+              <Task z:Id="104">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="105">StartApplication_NoSwc_Appl_Task</Name>
+              </Task>
+              <Task z:Id="106">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="107">StartApplication_Appl_Task</Name>
+              </Task>
+              <Task z:Id="108">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="109">Default_RTE_Mode_switch_Task</Name>
+              </Task>
+              <Task z:Id="110">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="111">Default_Appl_Init_Task</Name>
+              </Task>
+              <Task z:Id="112">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="113">Default_BSW_Async_Task</Name>
+              </Task>
+              <Task z:Id="114">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="115">StartApplication_Appl_Init_Task</Name>
+              </Task>
+              <Task z:Id="116">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="117">Default_BSW_Sync_Task</Name>
+              </Task>
+              <Task z:Id="118">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="119">IdleTask_OsCore0</Name>
+              </Task>
+              <Task z:Id="120">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="121">StartApplication_NoSwc_Init_Task</Name>
+              </Task>
+              <Task z:Id="122">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="123">Default_Init_Task_Trusted</Name>
+              </Task>
+              <Task z:Id="124">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="125">IdleTask_OsCore1</Name>
+              </Task>
+              <Task z:Id="126">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="127">Default_Init_Task_Core1</Name>
+              </Task>
+              <Task z:Id="128">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="129">Default_BSW_Task_Core1</Name>
+              </Task>
+              <Task z:Id="130">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="131">Default_Init_Task_Core1_Trusted</Name>
+              </Task>
+              <Task z:Id="132">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="133">Default_Appl_Task</Name>
+              </Task>
+            </Content>
+          </TaskSet>
+          <UserDefinedIncludeFolders z:Id="134" z:Size="4">
+            <BasedFileName z:Id="135">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Appl\Include" /&gt;</BasedFileName>
+            <BasedFileName z:Id="136">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\ThirdParty\Mcal_Tc3xx\Supply\MC-ISAR_AS440_TC3xx_BASIC_2.20.0\McIsar\Src\Mcal\Tricore\Fee\ssc\inc" /&gt;</BasedFileName>
+            <BasedFileName z:Id="137">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\GenDataVtt\inc" /&gt;</BasedFileName>
+            <BasedFileName z:Id="138">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="$(SIPDIR)\Demo\Appl\IncludeVtt" /&gt;</BasedFileName>
+          </UserDefinedIncludeFolders>
+          <UserDefinedIncludeFoldersBuildConfiguration z:Id="139" z:Size="4">
+            <BuildConfigurations>All</BuildConfigurations>
+            <BuildConfigurations>All</BuildConfigurations>
+            <BuildConfigurations>All</BuildConfigurations>
+            <BuildConfigurations>All</BuildConfigurations>
+          </UserDefinedIncludeFoldersBuildConfiguration>
+          <UserPreprocessorDefinitions xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="140" z:Size="0" />
+          <UserPreprocessorDefinitionsDebug xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="141" z:Size="0" />
+          <UserPreprocessorDefinitionsRelease xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="142" z:Size="0" />
+        </EcuInstance>
+      </Content>
+    </EcuInstanceSet>
+    <ExtraDllSet z:Id="143">
+      <Content z:Id="144" z:Size="0" />
+    </ExtraDllSet>
+    <GeneralPcTargetSettings z:Id="145">
+      <AutoCompiler>false</AutoCompiler>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <BuildSolution>false</BuildSolution>
+      <CanoeConfigPath z:Id="146"></CanoeConfigPath>
+      <CompilerId>VS2017</CompilerId>
+      <CompilerVersion z:Id="147">VS2017</CompilerVersion>
+      <CreateDebugVersion>true</CreateDebugVersion>
+      <GenerateCastEnvs>false</GenerateCastEnvs>
+      <GenerateCsvFile>false</GenerateCsvFile>
+      <GenerateKernelConfiguration>false</GenerateKernelConfiguration>
+      <GenerateSolution>true</GenerateSolution>
+      <Platform z:Id="148">Windows-x86</Platform>
+      <ValidateSourceFiles>false</ValidateSourceFiles>
+      <VerboseLevel>1</VerboseLevel>
+    </GeneralPcTargetSettings>
+    <IdeSolutionFile z:Id="149">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Solution\Demo.sln" /&gt;</IdeSolutionFile>
+    <NetworkSet z:Id="150">
+      <Content z:Id="151" z:Size="4">
+        <Network z:Id="152">
+          <AdditionalDatabaseFiles z:Id="153" z:Size="0" />
+          <BusType>kCan</BusType>
+          <ChannelNumber>0</ChannelNumber>
+          <EcuInstanceSet z:Id="154">
+            <Content z:Id="155" z:Size="1">
+              <EcuInstance z:Ref="6" i:nil="true" />
+            </Content>
+          </EcuInstanceSet>
+          <Name z:Id="156">CAN</Name>
+          <PhysicalChannelSet i:nil="true" />
+          <SimulationChannelName z:Id="157">CAN</SimulationChannelName>
+          <VariationPoint i:nil="true" />
+        </Network>
+        <Network z:Id="158">
+          <AdditionalDatabaseFiles z:Id="159" z:Size="0" />
+          <BusType>kEthernet</BusType>
+          <ChannelNumber>0</ChannelNumber>
+          <EcuInstanceSet z:Id="160">
+            <Content z:Id="161" z:Size="1">
+              <EcuInstance z:Ref="6" i:nil="true" />
+            </Content>
+          </EcuInstanceSet>
+          <Name z:Id="162">ETHCluster</Name>
+          <PhysicalChannelSet i:nil="true" />
+          <SimulationChannelName z:Id="163">Ethernet</SimulationChannelName>
+          <VariationPoint i:nil="true" />
+        </Network>
+        <Network z:Id="164">
+          <AdditionalDatabaseFiles z:Id="165" z:Size="0" />
+          <BusType>kFlexRay</BusType>
+          <ChannelNumber>0</ChannelNumber>
+          <EcuInstanceSet z:Id="166">
+            <Content z:Id="167" z:Size="1">
+              <EcuInstance z:Ref="6" i:nil="true" />
+            </Content>
+          </EcuInstanceSet>
+          <Name z:Id="168">FlexRay</Name>
+          <PhysicalChannelSet i:nil="true" />
+          <SimulationChannelName z:Id="169">FlexRay</SimulationChannelName>
+          <VariationPoint i:nil="true" />
+        </Network>
+        <Network z:Id="170">
+          <AdditionalDatabaseFiles z:Id="171" z:Size="0" />
+          <BusType>kLin</BusType>
+          <ChannelNumber>0</ChannelNumber>
+          <EcuInstanceSet z:Id="172">
+            <Content z:Id="173" z:Size="1">
+              <EcuInstance z:Ref="6" i:nil="true" />
+            </Content>
+          </EcuInstanceSet>
+          <Name z:Id="174">LIN00</Name>
+          <PhysicalChannelSet i:nil="true" />
+          <SimulationChannelName z:Id="175">LIN</SimulationChannelName>
+          <VariationPoint i:nil="true" />
+        </Network>
+      </Content>
+    </NetworkSet>
+    <OutputFolder z:Id="176">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\" /&gt;</OutputFolder>
+    <RemoteSystemSet z:Id="177">
+      <Content z:Id="178" z:Size="0" />
+    </RemoteSystemSet>
+    <SimulationSetups z:Id="179">
+      <Content z:Id="180" z:Size="1">
+        <SimulationSetup z:Id="181">
+          <CanoeConfigPath z:Ref="146" i:nil="true" />
+          <DataObjectsNamespace z:Id="182">DataObjects</DataObjectsNamespace>
+          <DataTypesNamespace z:Id="183">DataTypes</DataTypesNamespace>
+          <ExtraDllSet z:Ref="143" i:nil="true" />
+          <Name z:Id="184">MyECU</Name>
+          <NetworkSet z:Ref="150" i:nil="true" />
+          <ParticipantsNamespace i:nil="true" />
+          <SimulationInstanceSet z:Id="185">
+            <Content z:Id="186" z:Size="1">
+              <SimulationInstance z:Id="187">
+                <EcuProjectName z:Id="188">MyECU</EcuProjectName>
+                <FileName z:Id="189">MyECU</FileName>
+                <Name z:Id="190">MyECU</Name>
+                <SimulationChannelMappingSet z:Id="191">
+                  <Content z:Id="192" z:Size="4">
+                    <SimulationChannelMapping z:Id="193">
+                      <ControllerIndex>0</ControllerIndex>
+                      <ControllerType>kCan</ControllerType>
+                      <SimulationChannelName z:Id="194">CAN</SimulationChannelName>
+                    </SimulationChannelMapping>
+                    <SimulationChannelMapping z:Id="195">
+                      <ControllerIndex>0</ControllerIndex>
+                      <ControllerType>kEthernet</ControllerType>
+                      <SimulationChannelName z:Id="196">Ethernet</SimulationChannelName>
+                    </SimulationChannelMapping>
+                    <SimulationChannelMapping z:Id="197">
+                      <ControllerIndex>0</ControllerIndex>
+                      <ControllerType>kFlexRay</ControllerType>
+                      <SimulationChannelName z:Id="198">FlexRay</SimulationChannelName>
+                    </SimulationChannelMapping>
+                    <SimulationChannelMapping z:Id="199">
+                      <ControllerIndex>0</ControllerIndex>
+                      <ControllerType>kLin</ControllerType>
+                      <SimulationChannelName z:Id="200">LIN</SimulationChannelName>
+                    </SimulationChannelMapping>
+                  </Content>
+                </SimulationChannelMappingSet>
+                <SimulationName z:Id="201">MyECU</SimulationName>
+                <VariantName z:Id="202"></VariantName>
+              </SimulationInstance>
+            </Content>
+          </SimulationInstanceSet>
+          <SutFolder z:Id="203">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\SUT" /&gt;</SutFolder>
+        </SimulationSetup>
+      </Content>
+      <AutoDeriveSimulationSetup>False</AutoDeriveSimulationSetup>
+    </SimulationSetups>
+    <SipData z:Id="204">
+      <CBD z:Id="205">CBD2201090</CBD>
+      <DeliveryNumber>0</DeliveryNumber>
+      <Path z:Id="206">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\..\..\external" /&gt;</Path>
+      <SipVersion z:Id="207">29.6.20</SipVersion>
+      <VttGeneratorVersion z:Id="208"></VttGeneratorVersion>
+    </SipData>
+    <SolutionGuid z:Id="209">32D98D1B-26F8-4BEE-AF2C-58202A0FD6E2</SolutionGuid>
+    <SutFolder z:Id="210">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\SUT" /&gt;</SutFolder>
+    <SwcInstanceSet z:Id="211">
+      <Content z:Id="212" z:Size="6">
+        <SwcInstance z:Id="213">
+          <AsrPathToRootComponentType z:Id="214">/SoftwareTypes/ComponentTypes/VectorEthernetDemo</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="215" z:Size="1">
+            <FileGroup z:Id="216">
+              <Name z:Id="217">MyECU</Name>
+              <NameIsEducatedGuess>false</NameIsEducatedGuess>
+              <SystemDescriptionFiles z:Id="218" z:Size="1">
+                <BasedFileName z:Id="219">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Demo.dpa" /&gt;</BasedFileName>
+              </SystemDescriptionFiles>
+            </FileGroup>
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="220">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Demo.dpa" /&gt;</DefiningExtract>
+          <DefiningExtracts z:Id="221" z:Size="1">
+            <BasedFileName z:Id="222">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\System\SystemExtract.arxml" /&gt;</BasedFileName>
+          </DefiningExtracts>
+          <Name z:Id="223">ServiceImpl::P_Maths_MyECU</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+        <SwcInstance z:Id="224">
+          <AsrPathToRootComponentType z:Id="225">/SoftwareTypes/ComponentTypes/VectorEthernetDemo</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="226" z:Size="1">
+            <FileGroup z:Ref="216" i:nil="true" />
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="227">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Demo.dpa" /&gt;</DefiningExtract>
+          <DefiningExtracts z:Id="228" z:Size="1">
+            <BasedFileName z:Id="229">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\System\SystemExtract.arxml" /&gt;</BasedFileName>
+          </DefiningExtracts>
+          <Name z:Id="230">ServiceImpl::C_Basics_MyECU</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+        <SwcInstance z:Id="231">
+          <AsrPathToRootComponentType z:Id="232">/SoftwareTypes/ComponentTypes/VectorEthernetDemo</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="233" z:Size="1">
+            <FileGroup z:Ref="216" i:nil="true" />
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="234"></DefiningExtract>
+          <DefiningExtracts z:Id="235" z:Size="0" />
+          <Name z:Id="236">StartApplicationEth</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+        <SwcInstance z:Id="237">
+          <AsrPathToRootComponentType z:Id="238">/SoftwareTypes/ComponentTypes/VectorEthernetDemo</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="239" z:Size="1">
+            <FileGroup z:Ref="216" i:nil="true" />
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="240"></DefiningExtract>
+          <DefiningExtracts z:Id="241" z:Size="0" />
+          <Name z:Id="242">StartApplicationSlaveCore1</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+        <SwcInstance z:Id="243">
+          <AsrPathToRootComponentType z:Id="244">/SoftwareTypes/ComponentTypes/VectorEthernetDemo</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="245" z:Size="1">
+            <FileGroup z:Ref="216" i:nil="true" />
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="246"></DefiningExtract>
+          <DefiningExtracts z:Id="247" z:Size="0" />
+          <Name z:Id="248">ServiceControl</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+        <SwcInstance z:Id="249">
+          <AsrPathToRootComponentType z:Id="250">/SoftwareTypes/ComponentTypes/VectorEthernetDemo</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="251" z:Size="1">
+            <FileGroup z:Ref="216" i:nil="true" />
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="252"></DefiningExtract>
+          <DefiningExtracts z:Id="253" z:Size="0" />
+          <Name z:Id="254">StartApplication</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+      </Content>
+    </SwcInstanceSet>
+    <SystemDescriptionFileGroups z:Id="255" z:Size="1">
+      <FileGroup z:Ref="216" i:nil="true" />
+    </SystemDescriptionFileGroups>
+    <SystemDescriptionFiles z:Id="256" z:Size="1">
+      <BasedFileName z:Id="257">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\Demo.dpa" /&gt;</BasedFileName>
+    </SystemDescriptionFiles>
+    <VttVersionSavedWith z:Id="258">5.3.35</VttVersionSavedWith>
+  </Project>
+</ProjectModel>

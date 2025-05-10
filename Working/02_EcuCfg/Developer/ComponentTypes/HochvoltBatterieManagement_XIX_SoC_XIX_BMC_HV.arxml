@@ -1,0 +1,2090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-000000a034f3">
+          <SHORT-NAME>HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_SoC</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_1577987</SDX-REF>
+              </SDG>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-77d5-13bd-0000011c0da0">
+              <SHORT-NAME>SP_IF_BMC_Abschaltankuendigung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Abschaltankuendigung/DE_BMC_Abschaltankuendigung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Abschaltankuendigung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-29a7-13bd-000000fc7aa9">
+              <SHORT-NAME>SP_IF_BMC_AC_Laden_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_AC_Laden/DE_BMC_AC_Laden</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_AC_Laden</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2874-13bd-000000d503f8">
+              <SHORT-NAME>SP_IF_BMC_Bank_Notlauf_erlaubt_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bank_Notlauf_erlaubt/DE_BMC_Bank_Notlauf_erlaubt</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bank_Notlauf_erlaubt</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-c995-13bd-000000d503cf">
+              <SHORT-NAME>SP_IF_BMC_Bank_parallel_erlaubt_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bank_parallel_erlaubt/DE_BMC_Bank_parallel_erlaubt</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bank_parallel_erlaubt</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-7420-13bd-000000d503cb">
+              <SHORT-NAME>SP_IF_BMC_Bank_seriell_erlaubt_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bank_seriell_erlaubt/DE_BMC_Bank_seriell_erlaubt</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bank_seriell_erlaubt</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2d08-13bd-000000d503fc">
+              <SHORT-NAME>SP_IF_BMC_Bankstatus_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bankstatus/DE_BMC_Bankstatus</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bankstatus</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2c37-13bd-0000013fd692">
+              <SHORT-NAME>SP_IF_BMC_Bidi_Energie_Absolut_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bidi_Energie_Absolut/DE_BMC_Bidi_Energie_Absolut</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bidi_Energie_Absolut</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2fc4-13bd-0000013fd696">
+              <SHORT-NAME>SP_IF_BMC_Bidi_Freigabe_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bidi_Freigabe/DE_BMC_Bidi_Freigabe</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bidi_Freigabe</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-3fd6-13bd-0000013fd68e">
+              <SHORT-NAME>SP_IF_BMC_Bidi_GenutzteEnergie_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bidi_GenutzteEnergie/DE_BMC_Bidi_GenutzteEnergie</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bidi_GenutzteEnergie</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-5eb0-13bd-0000013fd6a8">
+              <SHORT-NAME>SP_IF_BMC_Bidi_Max_SoC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bidi_Max_SoC/DE_BMC_Bidi_Max_SoC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bidi_Max_SoC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-040c-13bd-0000013fd6a4">
+              <SHORT-NAME>SP_IF_BMC_Bidi_Min_SoC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bidi_Min_SoC/DE_BMC_Bidi_Min_SoC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bidi_Min_SoC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-3e74-13bd-0000013fd68a">
+              <SHORT-NAME>SP_IF_BMC_Bidi_Veto_Energie_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bidi_Veto_Energie/DE_BMC_Bidi_Veto_Energie</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bidi_Veto_Energie</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-f730-13bd-0000013fd686">
+              <SHORT-NAME>SP_IF_BMC_Bidi_Veto_Temp_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Bidi_Veto_Temp/DE_BMC_Bidi_Veto_Temp</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Bidi_Veto_Temp</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-1bbe-13bd-00000167ada2">
+              <SHORT-NAME>SP_IF_BMC_Dauer_Entladeleistung_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Dauer_Entladeleistung_02/DE_BMC_Dauer_Entladeleistung_02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Dauer_Entladeleistung_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-f341-13bd-000000d503ab">
+              <SHORT-NAME>SP_IF_BMC_Dauer_Entladeleistung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Dauer_Entladeleistung/DE_BMC_Dauer_Entladeleistung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Dauer_Entladeleistung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-edb2-13bd-00000167ad9e">
+              <SHORT-NAME>SP_IF_BMC_Dauer_Ladeleistung_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Dauer_Ladeleistung_02/DE_BMC_Dauer_Ladeleistung_02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Dauer_Ladeleistung_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-16d1-13bd-000000d503a7">
+              <SHORT-NAME>SP_IF_BMC_Dauer_Ladeleistung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Dauer_Ladeleistung/DE_BMC_Dauer_Ladeleistung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Dauer_Ladeleistung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-c1cf-13bd-000000fc7aae">
+              <SHORT-NAME>SP_IF_BMC_DC_Laden_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_DC_Laden/DE_BMC_DC_Laden</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_DC_Laden</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d591-13bd-0000005e5119">
+              <SHORT-NAME>SP_IF_BMC_Dev_Freigabe_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Dev_Freigabe/DE_BMC_Dev_Freigabe</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Dev_Freigabe</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-233f-13bd-00000122164c">
+              <SHORT-NAME>SP_IF_BMC_Energie_Entladen_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Energie_Entladen/DE_BMC_Energie_Entladen</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Energie_Entladen</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2990-13bd-000001221650">
+              <SHORT-NAME>SP_IF_BMC_Energie_Laden_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Energie_Laden/DE_BMC_Energie_Laden</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Energie_Laden</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-1918-13bd-00000154076d">
+              <SHORT-NAME>SP_IF_BMC_Energie_Sockel_SoC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Energie_Sockel_SoC/DE_BMC_Energie_Sockel_SoC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Energie_Sockel_SoC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-f6ac-13bd-000000d69518">
+              <SHORT-NAME>SP_IF_BMC_Energieinhalt_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Energieinhalt/DE_BMC_Energieinhalt</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Energieinhalt</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-c03e-13bd-0000017448a1">
+              <SHORT-NAME>SP_IF_BMC_EnergieVorhalt_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_EnergieVorhalt/DE_BMC_EnergieVorhalt</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_EnergieVorhalt</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-e7d7-13bd-0000017485ac">
+              <SHORT-NAME>SP_IF_BMC_ExtLadeleistung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_ExtLadeleistung/DE_BMC_ExtLadeleistung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_ExtLadeleistung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-e17f-13bd-0000010a2a34">
+              <SHORT-NAME>SP_IF_BMC_Fehler_Leistungsred_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Fehler_Leistungsred/DE_BMC_Fehler_Leistungsred</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Fehler_Leistungsred</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-31eb-13bd-0000013fd69f">
+              <SHORT-NAME>SP_IF_BMC_Fehler_Warnung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Fehler_Warnung/DE_BMC_Fehler_Warnung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Fehler_Warnung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-a85a-13bd-00000055efd1">
+              <SHORT-NAME>SP_IF_BMC_Flash_Freigabe_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Flash_Freigabe/DE_BMC_Flash_Freigabe</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Flash_Freigabe</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-953d-13bd-000000effea8">
+              <SHORT-NAME>SP_IF_BMC_HV_01_BZ_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_01_BZ/DE_BMC_HV_01_BZ</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_01_BZ</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-3166-13bd-000000effeaa">
+              <SHORT-NAME>SP_IF_BMC_HV_01_CRC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_01_CRC/DE_BMC_HV_01_CRC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_01_CRC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-21a1-13bd-0000011c31e5">
+              <SHORT-NAME>SP_IF_BMC_HV_02_BZ_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_02_BZ/DE_BMC_HV_02_BZ</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_02_BZ</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d589-13bd-00000125ef14">
+              <SHORT-NAME>SP_IF_BMC_HV_02_CRC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_02_CRC/DE_BMC_HV_02_CRC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_02_CRC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d04e-13bd-000000ec7253">
+              <SHORT-NAME>SP_IF_BMC_HV_04_BZ_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_04_BZ/DE_BMC_HV_04_BZ</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_04_BZ</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-6ad6-13bd-000000ec7250">
+              <SHORT-NAME>SP_IF_BMC_HV_04_CRC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_HV_04_CRC/DE_BMC_HV_04_CRC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_HV_04_CRC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-1caa-13bd-000000da587c">
+              <SHORT-NAME>SP_IF_BMC_Iso_Mode_Anf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Iso_Mode_Anf/DE_BMC_Iso_Mode_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Iso_Mode_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-38f5-13bd-000001221648">
+              <SHORT-NAME>SP_IF_BMC_Konditionierung_Anf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Konditionierung_Anf/DE_BMC_Konditionierung_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Konditionierung_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-0c26-13bd-0000010a2a3d">
+              <SHORT-NAME>SP_IF_BMC_KundenWarnung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_KundenWarnung/DE_BMC_KundenWarnung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_KundenWarnung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-89c3-13bd-0000011d15b3">
+              <SHORT-NAME>SP_IF_BMC_Leerlaufspannung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Leerlaufspannung/DE_BMC_Leerlaufspannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Leerlaufspannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-0a64-13bd-00000167adaa">
+              <SHORT-NAME>SP_IF_BMC_Max_Entladeleistung_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Entladeleistung_02/DE_BMC_Max_Entladeleistung_02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Entladeleistung_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-bbef-13bd-000000d69514">
+              <SHORT-NAME>SP_IF_BMC_Max_Entladeleistung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Entladeleistung/DE_BMC_Max_Entladeleistung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Entladeleistung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-404c-13bd-00000167ad96">
+              <SHORT-NAME>SP_IF_BMC_Max_Entladestrom_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Entladestrom_02/DE_BMC_Max_Entladestrom_02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Entladestrom_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2997-13bd-000000da592f">
+              <SHORT-NAME>SP_IF_BMC_Max_Entladestrom_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Entladestrom/DE_BMC_Max_Entladestrom</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Entladestrom</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d0d5-13bd-00000167adae">
+              <SHORT-NAME>SP_IF_BMC_Max_Ladeleistung_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Ladeleistung_02/DE_BMC_Max_Ladeleistung_02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Ladeleistung_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-e4e7-13bd-000000d69ae0">
+              <SHORT-NAME>SP_IF_BMC_Max_Ladeleistung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Ladeleistung/DE_BMC_Max_Ladeleistung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Ladeleistung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-adb9-13bd-00000167ada6">
+              <SHORT-NAME>SP_IF_BMC_Max_Ladestrom_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Ladestrom_02/DE_BMC_Max_Ladestrom_02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Ladestrom_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-dcc9-13bd-000000da5829">
+              <SHORT-NAME>SP_IF_BMC_Max_Ladestrom_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Ladestrom/DE_BMC_Max_Ladestrom</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Ladestrom</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-2c30-13bd-000000da5821">
+              <SHORT-NAME>SP_IF_BMC_Max_Spannung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Max_Spannung/DE_BMC_Max_Spannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Max_Spannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-47c8-13bd-000000d69aec">
+              <SHORT-NAME>SP_IF_BMC_MaxEnergieinhalt_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_MaxEnergieinhalt/DE_BMC_MaxEnergieinhalt</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_MaxEnergieinhalt</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-fcbd-13bd-000000da5825">
+              <SHORT-NAME>SP_IF_BMC_Min_Spannung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Min_Spannung/DE_BMC_Min_Spannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Min_Spannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-835a-13bd-0000011c0dad">
+              <SHORT-NAME>SP_IF_BMC_MinDyn_Entladespannung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_MinDyn_Entladespannung/DE_BMC_MinDyn_Entladespannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_MinDyn_Entladespannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-8b84-13bd-0000011d15af">
+              <SHORT-NAME>SP_IF_BMC_MinDyn_Ladespannung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_MinDyn_Ladespannung/DE_BMC_MinDyn_Ladespannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_MinDyn_Ladespannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-51d5-13bd-00000159f200">
+              <SHORT-NAME>SP_IF_BMC_MMTR_Status_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_MMTR_Status/DE_BMC_MMTR_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_MMTR_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-cebd-13bd-000000d505a1">
+              <SHORT-NAME>SP_IF_BMC_NutzbareKapazitaet_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_NutzbareKapazitaet/DE_BMC_NutzbareKapazitaet</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_NutzbareKapazitaet</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-5b76-13bd-000000d69ae4">
+              <SHORT-NAME>SP_IF_BMC_NutzbarerSOC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_NutzbarerSOC/DE_BMC_NutzbarerSOC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_NutzbarerSOC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-b85d-13bd-0000017446b7">
+              <SHORT-NAME>SP_IF_BMC_PCM_VTD_Freeze_Req_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_PCM_VTD_Freeze_Req/DE_BMC_PCM_VTD_Freeze_Req</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_PCM_VTD_Freeze_Req</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-609d-13bd-0000017446bc">
+              <SHORT-NAME>SP_IF_BMC_PCM_VTD_LifeTimeReset_Req_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_PCM_VTD_LifeTimeReset_Req/DE_BMC_PCM_VTD_LifeTimeReset_Req</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_PCM_VTD_LifeTimeReset_Req</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-eae3-13bd-0000017446c1">
+              <SHORT-NAME>SP_IF_BMC_PCM_VTD_LifeTimeReset_Resp_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_PCM_VTD_LifeTimeReset_Resp/DE_BMC_PCM_VTD_LifeTimeReset_Resp</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_PCM_VTD_LifeTimeReset_Resp</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-c9e3-13bd-0000017446c6">
+              <SHORT-NAME>SP_IF_BMC_PCM_VTD_RecentReset_Req_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_PCM_VTD_RecentReset_Req/DE_BMC_PCM_VTD_RecentReset_Req</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_PCM_VTD_RecentReset_Req</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-f21a-13bd-000000d69af0">
+              <SHORT-NAME>SP_IF_BMC_PerfInd_Entladen_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_PerfInd_Entladen/DE_BMC_PerfInd_Entladen</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_PerfInd_Entladen</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d039-13bd-000000d6961e">
+              <SHORT-NAME>SP_IF_BMC_PerfInd_Laden_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_PerfInd_Laden/DE_BMC_PerfInd_Laden</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_PerfInd_Laden</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-b7fa-13bd-00000121b7ee">
+              <SHORT-NAME>SP_IF_BMC_PredLeistung_StuetzungNV_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_PredLeistung_StuetzungNV/DE_BMC_PredLeistung_StuetzungNV</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_PredLeistung_StuetzungNV</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-da9d-13bd-000001744895">
+              <SHORT-NAME>SP_IF_BMC_Range_Indikator_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Range_Indikator/DE_BMC_Range_Indikator</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Range_Indikator</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-5238-13bd-000000deb194">
+              <SHORT-NAME>SP_IF_BMC_Rekuperation_Ueberlauf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Rekuperation_Ueberlauf/DE_BMC_Rekuperation_Ueberlauf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Rekuperation_Ueberlauf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-5160-13bd-000000deb190">
+              <SHORT-NAME>SP_IF_BMC_Rekuperation_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Rekuperation/DE_BMC_Rekuperation</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Rekuperation</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-654e-13bd-000000d50593">
+              <SHORT-NAME>SP_IF_BMC_RuecklaufTemperatur_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_RuecklaufTemperatur/DE_BMC_RuecklaufTemperatur</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_RuecklaufTemperatur</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-a45c-13bd-000000da5833">
+              <SHORT-NAME>SP_IF_BMC_Spannung_DC_Ladesaeule_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Spannung_DC_Ladesaeule/DE_BMC_Spannung_DC_Ladesaeule</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Spannung_DC_Ladesaeule</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-d792-13bd-000000d50578">
+              <SHORT-NAME>SP_IF_BMC_Spannung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Spannung/DE_BMC_Spannung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Spannung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-7fe9-13bd-000000d69af4">
+              <SHORT-NAME>SP_IF_BMC_Spannung_ZwischenKreis_2_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Spannung_ZwischenKreis_2/DE_BMC_Spannung_ZwischenKreis_2</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Spannung_ZwischenKreis_2</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-be3e-13bd-000000d69622">
+              <SHORT-NAME>SP_IF_BMC_Spannung_ZwischenKreis_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Spannung_ZwischenKreis/DE_BMC_Spannung_ZwischenKreis</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Spannung_ZwischenKreis</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ffb3-13bd-000000da582d">
+              <SHORT-NAME>SP_IF_BMC_Status_DCLS_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Status_DCLS/DE_BMC_Status_DCLS</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Status_DCLS</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-28cd-13bd-00000167adb2">
+              <SHORT-NAME>SP_IF_BMC_Strom_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Strom_02/DE_BMC_Strom_02</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Strom_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-b52f-13bd-000000d69ae8">
+              <SHORT-NAME>SP_IF_BMC_Strom_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Strom/DE_BMC_Strom</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Strom</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-cfd4-13bd-0000013fd69b">
+              <SHORT-NAME>SP_IF_BMC_TechnischerSOC_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_TechnischerSOC/DE_BMC_TechnischerSOC</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_TechnischerSOC</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-db65-13bd-000000d5057d">
+              <SHORT-NAME>SP_IF_BMC_Temperatur_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Temperatur/DE_BMC_Temperatur</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Temperatur</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-0c26-13bd-000000d50581">
+              <SHORT-NAME>SP_IF_BMC_ThermAuslastung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_ThermAuslastung/DE_BMC_ThermAuslastung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_ThermAuslastung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ac82-13bd-000000d5059d">
+              <SHORT-NAME>SP_IF_BMC_ThermSpreizung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_ThermSpreizung/DE_BMC_ThermSpreizung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_ThermSpreizung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-a63d-13bd-00000174489d">
+              <SHORT-NAME>SP_IF_BMC_UBE_Indik_last_update_km_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_UBE_Indik_last_update_km/DE_BMC_UBE_Indik_last_update_km</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_UBE_Indik_last_update_km</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-f8c2-13bd-00000174488e">
+              <SHORT-NAME>SP_IF_BMC_UBE_Indikator_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_UBE_Indikator/DE_BMC_UBE_Indikator</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_UBE_Indikator</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-b8d7-13bd-000000da5878">
+              <SHORT-NAME>SP_IF_BMC_UI1_Spannung1_Schalt_Anf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_UI1_Spannung1_Schalt_Anf/DE_BMC_UI1_Spannung1_Schalt_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_UI1_Spannung1_Schalt_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-8d8f-13bd-000000da5886">
+              <SHORT-NAME>SP_IF_BMC_UI1_Spannung2_Schalt_Anf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_UI1_Spannung2_Schalt_Anf/DE_BMC_UI1_Spannung2_Schalt_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_UI1_Spannung2_Schalt_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-6788-13bd-000000da588e">
+              <SHORT-NAME>SP_IF_BMC_UI2_Spannung1_Schalt_Anf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_UI2_Spannung1_Schalt_Anf/DE_BMC_UI2_Spannung1_Schalt_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_UI2_Spannung1_Schalt_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-6094-13bd-000000da588a">
+              <SHORT-NAME>SP_IF_BMC_UI2_Spannung2_Schalt_Anf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_UI2_Spannung2_Schalt_Anf/DE_BMC_UI2_Spannung2_Schalt_Anf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_UI2_Spannung2_Schalt_Anf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-aa65-13bd-0000011c0da4">
+              <SHORT-NAME>SP_IF_BMC_Unterboden_Warnung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Unterboden_Warnung/DE_BMC_Unterboden_Warnung</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Unterboden_Warnung</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-4dbe-13bd-000000fc7ab7">
+              <SHORT-NAME>SP_IF_BMC_Verbauinfo_ACSchuetz_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Verbauinfo_ACSchuetz/DE_BMC_Verbauinfo_ACSchuetz</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Verbauinfo_ACSchuetz</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ff20-13bd-0000010a2a38">
+              <SHORT-NAME>SP_IF_BMC_Verbauinfo_Bank_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Verbauinfo_Bank/DE_BMC_Verbauinfo_Bank</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Verbauinfo_Bank</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-99ea-13bd-000000deb18b">
+              <SHORT-NAME>SP_IF_BMC_Verbrauch_Ueberlauf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Verbrauch_Ueberlauf/DE_BMC_Verbrauch_Ueberlauf</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Verbrauch_Ueberlauf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-5e33-13bd-000000da7e5d">
+              <SHORT-NAME>SP_IF_BMC_Verbrauch_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_Verbrauch/DE_BMC_Verbrauch</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_Verbrauch</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-445f-13bd-000000d69adc">
+              <SHORT-NAME>SP_IF_BMC_VerlustEnergie_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_VerlustEnergie/DE_BMC_VerlustEnergie</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_VerlustEnergie</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-ecbe-13bd-000000d50598">
+              <SHORT-NAME>SP_IF_BMC_VorlaufTemperatur_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_VorlaufTemperatur/DE_BMC_VorlaufTemperatur</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_VorlaufTemperatur</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-e9ec-13bd-00000159f644">
+              <SHORT-NAME>SP_IF_BMC_ZellTemp_virtuell_max_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_ZellTemp_virtuell_max/DE_BMC_ZellTemp_virtuell_max</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_ZellTemp_virtuell_max</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="626a0249-0000-0df3-13bd-00000159f635">
+              <SHORT-NAME>SP_IF_BMC_ZellTemp_virtuell_min_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BMC_ZellTemp_virtuell_min/DE_BMC_ZellTemp_virtuell_min</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BMC_ZellTemp_virtuell_min</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f1c7-13bd-0000000a17a6">
+              <SHORT-NAME>RP_IF_AB_Deaktivierung_HV_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_AB_Deaktivierung_HV/DE_AB_Deaktivierung_HV</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_AB_Deaktivierung_HV</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3a30-13bd-000000d543b4">
+              <SHORT-NAME>RP_IF_CHA_ReqPrgBms_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_CHA_ReqPrgBms/DE_CHA_ReqPrgBms</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_CHA_ReqPrgBms</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-de56-13bd-00000085c5f4">
+              <SHORT-NAME>RP_IF_DC_IstLeistung_HV_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DC_IstLeistung_HV/DE_DC_IstLeistung_HV</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DC_IstLeistung_HV</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1fee-13bd-000000d505a5">
+              <SHORT-NAME>RP_IF_EKK_HVK_EoHVL_Status_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_EKK_HVK_EoHVL_Status/DE_EKK_HVK_EoHVL_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_EKK_HVK_EoHVL_Status</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b1d8-13bd-00000167ad9a">
+              <SHORT-NAME>RP_IF_HVEM_BMC_CHA_Wunschleistung_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVEM_BMC_CHA_Wunschleistung_02/DE_HVEM_BMC_CHA_Wunschleistung_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVEM_BMC_CHA_Wunschleistung_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-91e9-13bd-0000011b981e">
+              <SHORT-NAME>RP_IF_HVEM_BMC_CHA_Wunschleistung_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVEM_BMC_CHA_Wunschleistung/DE_HVEM_BMC_CHA_Wunschleistung</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVEM_BMC_CHA_Wunschleistung</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-735e-13bd-0000015a31ca">
+              <SHORT-NAME>RP_IF_HVEM_MMTR_State_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVEM_MMTR_State/DE_HVEM_MMTR_State</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVEM_MMTR_State</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-61e0-13bd-0000011e319b">
+              <SHORT-NAME>RP_IF_HVEM_SystemMinLeistungsgrenze_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVEM_SystemMinLeistungsgrenze/DE_HVEM_SystemMinLeistungsgrenze</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVEM_SystemMinLeistungsgrenze</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9a43-13bd-000000da2d03">
+              <SHORT-NAME>RP_IF_HVLE_IstSpannung_HV_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVLE_IstSpannung_HV/DE_HVLE_IstSpannung_HV</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVLE_IstSpannung_HV</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4934-13bd-000000da2cd2">
+              <SHORT-NAME>RP_IF_HVLE_OBG_IstModus_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVLE_OBG_IstModus/DE_HVLE_OBG_IstModus</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVLE_OBG_IstModus</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d761-13bd-0000013923f4">
+              <SHORT-NAME>RP_IF_HVLM_BCAM_Aktiv_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVLM_BCAM_Aktiv/DE_HVLM_BCAM_Aktiv</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVLM_BCAM_Aktiv</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-57f0-13bd-0000012882bf">
+              <SHORT-NAME>RP_IF_HVLM_BidiLadeModus_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_HVLM_BidiLadeModus/DE_HVLM_BidiLadeModus</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_HVLM_BidiLadeModus</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e1e4-13bd-000000a40b90">
+              <SHORT-NAME>RP_IF_KST_KL_15_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_KST_KL_15/DE_KST_KL_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_KST_KL_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7d1b-13bd-00000134daba">
+              <SHORT-NAME>RP_IF_OTP_Aussen_Temp_OBD_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OTP_Aussen_Temp_OBD/DE_OTP_Aussen_Temp_OBD</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OTP_Aussen_Temp_OBD</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1699-13bd-000000ee809c">
+              <SHORT-NAME>RP_IF_OTP_Aussen_Temp_ungef_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_OTP_Aussen_Temp_ungef/DE_OTP_Aussen_Temp_ungef</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OTP_Aussen_Temp_ungef</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-eddf-13bd-000001744650">
+              <SHORT-NAME>RP_IF_PCM_BMC_VTD_Freeze_Req_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_PCM_BMC_VTD_Freeze_Req/DE_PCM_BMC_VTD_Freeze_Req</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_PCM_BMC_VTD_Freeze_Req</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a7cf-13bd-00000174465a">
+              <SHORT-NAME>RP_IF_PCM_BMC_VTD_LifeTimeReset_Req_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_PCM_BMC_VTD_LifeTimeReset_Req/DE_PCM_BMC_VTD_LifeTimeReset_Req</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_PCM_BMC_VTD_LifeTimeReset_Req</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ccd0-13bd-00000174465f">
+              <SHORT-NAME>RP_IF_PCM_BMC_VTD_LifeTimeReset_Resp_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_PCM_BMC_VTD_LifeTimeReset_Resp/DE_PCM_BMC_VTD_LifeTimeReset_Resp</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_PCM_BMC_VTD_LifeTimeReset_Resp</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0ea4-13bd-000001744655">
+              <SHORT-NAME>RP_IF_PCM_BMC_VTD_RecentReset_Req_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_PCM_BMC_VTD_RecentReset_Req/DE_PCM_BMC_VTD_RecentReset_Req</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_PCM_BMC_VTD_RecentReset_Req</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="C7455EA1-CEB6-433E-8833-2890CD55AE88">
+              <SHORT-NAME>RP_IF_SG_HVK_03_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_HVK_03/DE_SG_HVK_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_HVK_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="660EB48D-B02A-4324-A186-C46956C73C14">
+              <SHORT-NAME>RP_IF_SG_HVLM_14_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_HVLM_14/DE_SG_HVLM_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_HVLM_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="D0F605D9-B478-4D73-8E11-688B068BCC30">
+              <SHORT-NAME>RP_IF_SG_UI1_01_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_UI1_01/DE_SG_UI1_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_UI1_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="6A50485E-77BB-4B0B-A0B4-794552121CF3">
+              <SHORT-NAME>RP_IF_SG_UI1_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_UI1_02/DE_SG_UI1_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_UI1_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="9D17A962-3D9E-4F46-9E80-543C8B6246D6">
+              <SHORT-NAME>RP_IF_SG_UI2_01_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_UI2_01/DE_SG_UI2_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_UI2_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="8E8F4A5E-0077-497B-B483-A68A4B4FCE9C">
+              <SHORT-NAME>RP_IF_SG_UI2_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_UI2_02/DE_SG_UI2_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_UI2_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="EC21D684-6C22-4FE9-B3E5-9F72FBFBC0F2">
+              <SHORT-NAME>RP_IF_SG_UI2_03_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_UI2_03/DE_SG_UI2_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_UI2_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0d66-13bd-00000004a84a">
+              <SHORT-NAME>RP_IF_SI_T_Mode_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SI_T_Mode/DE_SI_T_Mode</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SI_T_Mode</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c420-13bd-000001223ebc">
+              <SHORT-NAME>RP_IF_TME_Batt_Kond_Verf_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_TME_Batt_Kond_Verf/DE_TME_Batt_Kond_Verf</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_TME_Batt_Kond_Verf</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3b59-13bd-000000eca5d7">
+              <SHORT-NAME>RP_IF_TME_Therm_IstLeistung_HVBatterie_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_TME_Therm_IstLeistung_HVBatterie/DE_TME_Therm_IstLeistung_HVBatterie</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_TME_Therm_IstLeistung_HVBatterie</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-576a-13bd-0000000206c4">
+              <SHORT-NAME>RP_IF_UH_Jahr_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Jahr/DE_UH_Jahr</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Jahr</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7aca-13bd-0000000206c5">
+              <SHORT-NAME>RP_IF_UH_Minute_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Minute/DE_UH_Minute</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Minute</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-53a3-13bd-0000000206c6">
+              <SHORT-NAME>RP_IF_UH_Monat_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Monat/DE_UH_Monat</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Monat</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1a52-13bd-0000000206c7">
+              <SHORT-NAME>RP_IF_UH_Sekunde_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Sekunde/DE_UH_Sekunde</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Sekunde</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ff05-13bd-0000000206c8">
+              <SHORT-NAME>RP_IF_UH_Stunde_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Stunde/DE_UH_Stunde</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Stunde</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8a8b-13bd-0000000206c9">
+              <SHORT-NAME>RP_IF_UH_Tag_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Tag/DE_UH_Tag</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Tag</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ea71-13bd-000000d9ac44">
+              <SHORT-NAME>RP_IF_UI1_Iso_Neg_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Iso_Neg/DE_UI1_Iso_Neg</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Iso_Neg</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6cda-13bd-000000d9ac65">
+              <SHORT-NAME>RP_IF_UI1_Iso_Pos_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Iso_Pos/DE_UI1_Iso_Pos</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Iso_Pos</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9750-13bd-000000d9ac34">
+              <SHORT-NAME>RP_IF_UI1_Iso_Status_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Iso_Status/DE_UI1_Iso_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Iso_Status</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a9bf-13bd-000000ebc627">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_01_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_01/DE_UI1_KompFehlerModus2_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7232-13bd-000000ebc633">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_02/DE_UI1_KompFehlerModus2_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c90f-13bd-000000ec288a">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_03_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_03/DE_UI1_KompFehlerModus2_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6970-13bd-000000ebc6b5">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_04_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_04/DE_UI1_KompFehlerModus2_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-15e1-13bd-000000ebc62d">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_05_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_05/DE_UI1_KompFehlerModus2_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0483-13bd-000000ebc63f">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_06_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_06/DE_UI1_KompFehlerModus2_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-edd6-13bd-000000ebc65f">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_07_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_07/DE_UI1_KompFehlerModus2_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d2e5-13bd-000000ebc665">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_08_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_08/DE_UI1_KompFehlerModus2_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1e42-13bd-000000ec287e">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_09_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_09/DE_UI1_KompFehlerModus2_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e421-13bd-000000ebc69b">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_10_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_10/DE_UI1_KompFehlerModus2_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7cae-13bd-000000ebc68b">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_11_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_11/DE_UI1_KompFehlerModus2_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-17fd-13bd-000000ebc639">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_12_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_12/DE_UI1_KompFehlerModus2_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-40dd-13bd-000000ebc5d9">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_13_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_13/DE_UI1_KompFehlerModus2_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3605-13bd-000000ebc5c9">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_14_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_14/DE_UI1_KompFehlerModus2_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-34eb-13bd-000000ebc60d">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_15_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_15/DE_UI1_KompFehlerModus2_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e863-13bd-000000ec2884">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_16_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_16/DE_UI1_KompFehlerModus2_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0c93-13bd-000000ebc5c3">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_17_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_17/DE_UI1_KompFehlerModus2_17</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_17</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a8a9-13bd-000000ebc659">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_18_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_18/DE_UI1_KompFehlerModus2_18</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_18</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-afd5-13bd-000000ebc607">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_19_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_19/DE_UI1_KompFehlerModus2_19</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_19</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d5b5-13bd-000000ebc5bd">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_20_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_20/DE_UI1_KompFehlerModus2_20</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_20</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7bff-13bd-000000ebc5ad">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_21_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_21/DE_UI1_KompFehlerModus2_21</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_21</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a7d3-13bd-000000ec2864">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_22_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_22/DE_UI1_KompFehlerModus2_22</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_22</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0dd8-13bd-000000ebc685">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_23_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_23/DE_UI1_KompFehlerModus2_23</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_23</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-747e-13bd-000000ebc66b">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_24_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_24/DE_UI1_KompFehlerModus2_24</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_24</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ffc3-13bd-000000fe6152">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_25_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_25/DE_UI1_KompFehlerModus2_25</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_25</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d70e-13bd-000000fe6180">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus2_26_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus2_26/DE_UI1_KompFehlerModus2_26</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus2_26</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-568b-13bd-000000ebc5e9">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_01_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_01/DE_UI1_KompFehlerModus4_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-14ae-13bd-000000ebc5fd">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_02/DE_UI1_KompFehlerModus4_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-16b7-13bd-000000ebc671">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_03_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_03/DE_UI1_KompFehlerModus4_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f41d-13bd-000000ebc691">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_04_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_04/DE_UI1_KompFehlerModus4_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bdec-13bd-000000ebc5df">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_05_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_05/DE_UI1_KompFehlerModus4_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3ed8-13bd-000000ebc5cf">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_06_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_06/DE_UI1_KompFehlerModus4_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d747-13bd-000000ec2874">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_07_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_07/DE_UI1_KompFehlerModus4_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-93b7-13bd-000000ebc61d">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_08_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_08/DE_UI1_KompFehlerModus4_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-35a1-13bd-000000ebc5b3">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_09_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_09/DE_UI1_KompFehlerModus4_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c5c8-13bd-000000ebc67b">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_10_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_10/DE_UI1_KompFehlerModus4_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-be24-13bd-000000ebc613">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_11_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_11/DE_UI1_KompFehlerModus4_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-53b7-13bd-000000ebc64f">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_12_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_12/DE_UI1_KompFehlerModus4_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7000-13bd-000000ebc645">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_13_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_13/DE_UI1_KompFehlerModus4_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d263-13bd-000000ebc5f3">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_14_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_14/DE_UI1_KompFehlerModus4_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c45e-13bd-000000ebc6a1">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_15_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_15/DE_UI1_KompFehlerModus4_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9ca1-13bd-000000ebc6ab">
+              <SHORT-NAME>RP_IF_UI1_KompFehlerModus4_16_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_KompFehlerModus4_16/DE_UI1_KompFehlerModus4_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_KompFehlerModus4_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8592-13bd-000000d9ac3b">
+              <SHORT-NAME>RP_IF_UI1_Spannung4_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Spannung4/DE_UI1_Spannung4</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Spannung4</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8150-13bd-000000d9ac1c">
+              <SHORT-NAME>RP_IF_UI1_Spannung5_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Spannung5/DE_UI1_Spannung5</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Spannung5</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-07a9-13bd-000000d9ac2f">
+              <SHORT-NAME>RP_IF_UI1_Spannung6_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Spannung6/DE_UI1_Spannung6</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Spannung6</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1918-13bd-000000ebc6c3">
+              <SHORT-NAME>RP_IF_UI1_Status_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Status/DE_UI1_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Status</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-452e-13bd-000000d9ac40">
+              <SHORT-NAME>RP_IF_UI1_Stromintegral_Entladen_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Stromintegral_Entladen/DE_UI1_Stromintegral_Entladen</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Stromintegral_Entladen</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4e9c-13bd-000000d9ac18">
+              <SHORT-NAME>RP_IF_UI1_Stromintegral_Laden_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Stromintegral_Laden/DE_UI1_Stromintegral_Laden</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Stromintegral_Laden</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8ff2-13bd-000000d9ac21">
+              <SHORT-NAME>RP_IF_UI1_Temperatur_1_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Temperatur_1/DE_UI1_Temperatur_1</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Temperatur_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ba50-13bd-000000d9ac54">
+              <SHORT-NAME>RP_IF_UI1_Temperatur_2_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI1_Temperatur_2/DE_UI1_Temperatur_2</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI1_Temperatur_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-362a-13bd-000000ebc499">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_01_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_01/DE_UI2_KompFehlerModus2_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-332b-13bd-000000ebc4c9">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_02/DE_UI2_KompFehlerModus2_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5d22-13bd-000000ebc583">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_03_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_03/DE_UI2_KompFehlerModus2_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9ba7-13bd-000000ebc50f">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_04_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_04/DE_UI2_KompFehlerModus2_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-272b-13bd-000000ebc57d">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_05_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_05/DE_UI2_KompFehlerModus2_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d6ca-13bd-000000ebc509">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_06_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_06/DE_UI2_KompFehlerModus2_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bfe8-13bd-000000ebc493">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_07_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_07/DE_UI2_KompFehlerModus2_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-63e9-13bd-000000ebc4e3">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_08_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_08/DE_UI2_KompFehlerModus2_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-33ee-13bd-000000ebc525">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_09_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_09/DE_UI2_KompFehlerModus2_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d047-13bd-000000ebc487">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_10_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_10/DE_UI2_KompFehlerModus2_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ccad-13bd-000000ebc503">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_11_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_11/DE_UI2_KompFehlerModus2_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ef88-13bd-000000ebc5a7">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_12_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_12/DE_UI2_KompFehlerModus2_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-04ac-13bd-000000ebc4b9">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_13_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_13/DE_UI2_KompFehlerModus2_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e983-13bd-000000ebc54b">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_14_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_14/DE_UI2_KompFehlerModus2_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-fb54-13bd-000000ebc56b">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_15_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_15/DE_UI2_KompFehlerModus2_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2fbd-13bd-000000ebc515">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_16_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_16/DE_UI2_KompFehlerModus2_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-93db-13bd-000000ebc571">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_17_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_17/DE_UI2_KompFehlerModus2_17</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_17</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-08de-13bd-000000ebc52b">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_18_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_18/DE_UI2_KompFehlerModus2_18</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_18</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b735-13bd-000000ebc48d">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_19_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_19/DE_UI2_KompFehlerModus2_19</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_19</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-60d4-13bd-000000ebc4f3">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_20_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_20/DE_UI2_KompFehlerModus2_20</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_20</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a6cd-13bd-000000ebc577">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_21_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_21/DE_UI2_KompFehlerModus2_21</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_21</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-49ee-13bd-000000ebc55b">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_22_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_22/DE_UI2_KompFehlerModus2_22</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_22</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2567-13bd-000000ebc53b">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_23_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_23/DE_UI2_KompFehlerModus2_23</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_23</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4555-13bd-000000ebc4a9">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_24_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_24/DE_UI2_KompFehlerModus2_24</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_24</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a1f1-13bd-000000fe6186">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_25_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_25/DE_UI2_KompFehlerModus2_25</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_25</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6bf1-13bd-000000fe618c">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus2_26_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus2_26/DE_UI2_KompFehlerModus2_26</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus2_26</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1a4c-13bd-000000ebc4cf">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_01_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_01/DE_UI2_KompFehlerModus4_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2d39-13bd-000000ebc59d">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_02_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_02/DE_UI2_KompFehlerModus4_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6c37-13bd-000000ebc561">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_03_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_03/DE_UI2_KompFehlerModus4_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ee48-13bd-000000ebc589">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_04_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_04/DE_UI2_KompFehlerModus4_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3674-13bd-000000ebc49f">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_05_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_05/DE_UI2_KompFehlerModus4_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4eab-13bd-000000ebc4d9">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_06_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_06/DE_UI2_KompFehlerModus4_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-720f-13bd-000000ebc4af">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_07_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_07/DE_UI2_KompFehlerModus4_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4655-13bd-000000ebc4bf">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_08_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_08/DE_UI2_KompFehlerModus4_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e58e-13bd-000000e3cdce">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_09_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_09/DE_UI2_KompFehlerModus4_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-26d7-13bd-000000ebc593">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_10_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_10/DE_UI2_KompFehlerModus4_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c7d7-13bd-000000ebc531">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_11_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_11/DE_UI2_KompFehlerModus4_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ba29-13bd-000000ebc551">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_12_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_12/DE_UI2_KompFehlerModus4_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-37ad-13bd-000000ebc4e9">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_13_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_13/DE_UI2_KompFehlerModus4_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-22eb-13bd-000000ebc51b">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_14_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_14/DE_UI2_KompFehlerModus4_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6eec-13bd-000000ebc541">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_15_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_15/DE_UI2_KompFehlerModus4_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-abea-13bd-000000ebc4f9">
+              <SHORT-NAME>RP_IF_UI2_KompFehlerModus4_16_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_KompFehlerModus4_16/DE_UI2_KompFehlerModus4_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_KompFehlerModus4_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c732-13bd-000000e3cd83">
+              <SHORT-NAME>RP_IF_UI2_Status_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_Status/DE_UI2_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_Status</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-4f1e-13bd-000000d9ac92">
+              <SHORT-NAME>RP_IF_UI2_Stromintegral_Entladen_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_Stromintegral_Entladen/DE_UI2_Stromintegral_Entladen</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_Stromintegral_Entladen</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c601-13bd-000000d9acac">
+              <SHORT-NAME>RP_IF_UI2_Stromintegral_Laden_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_Stromintegral_Laden/DE_UI2_Stromintegral_Laden</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_Stromintegral_Laden</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9c66-13bd-000000d9ac84">
+              <SHORT-NAME>RP_IF_UI2_Temperatur_1_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_Temperatur_1/DE_UI2_Temperatur_1</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_Temperatur_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1025-13bd-000000d9aca0">
+              <SHORT-NAME>RP_IF_UI2_Temperatur_2_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UI2_Temperatur_2/DE_UI2_Temperatur_2</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UI2_Temperatur_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5f25-13bd-000000ec8e24">
+              <SHORT-NAME>RP_IF_ZM_HV_Auszeit_HiRes_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ZM_HV_Auszeit_HiRes/DE_ZM_HV_Auszeit_HiRes</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_ZM_HV_Auszeit_HiRes</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7a99-13bd-0000009ad52a">
+              <SHORT-NAME>RP_IF_ZM_HV_Auszeit_Status_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ZM_HV_Auszeit_Status/DE_ZM_HV_Auszeit_Status</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_ZM_HV_Auszeit_Status</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5dd9-13bd-0000009ad525">
+              <SHORT-NAME>RP_IF_ZM_HV_Auszeit_XIX_HochvoltBatterieManagement_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ZM_HV_Auszeit/DE_ZM_HV_Auszeit</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_ZM_HV_Auszeit</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

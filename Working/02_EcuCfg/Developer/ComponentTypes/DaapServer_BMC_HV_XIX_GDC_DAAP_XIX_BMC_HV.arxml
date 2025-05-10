@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-0000013d644b">
+          <SHORT-NAME>DaapServer_BMC_HV_XIX_GDC_DAAP_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_GDC_DAAP</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_4273923</SDX-REF>
+              </SDG>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-80c8-d7f3-0000000206c4">
+              <SHORT-NAME>RP_IF_UH_Jahr_XIX_DaapServer_BMC_HV_XIX_GDC_DAAP_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Jahr/DE_UH_Jahr</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Jahr</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5bc6-d7f3-0000000206c5">
+              <SHORT-NAME>RP_IF_UH_Minute_XIX_DaapServer_BMC_HV_XIX_GDC_DAAP_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Minute/DE_UH_Minute</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Minute</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-60a5-d7f3-0000000206c6">
+              <SHORT-NAME>RP_IF_UH_Monat_XIX_DaapServer_BMC_HV_XIX_GDC_DAAP_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Monat/DE_UH_Monat</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Monat</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9fd1-d7f3-0000000206c7">
+              <SHORT-NAME>RP_IF_UH_Sekunde_XIX_DaapServer_BMC_HV_XIX_GDC_DAAP_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Sekunde/DE_UH_Sekunde</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Sekunde</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f993-d7f3-0000000206c8">
+              <SHORT-NAME>RP_IF_UH_Stunde_XIX_DaapServer_BMC_HV_XIX_GDC_DAAP_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Stunde/DE_UH_Stunde</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Stunde</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3739-d7f3-0000000206c9">
+              <SHORT-NAME>RP_IF_UH_Tag_XIX_DaapServer_BMC_HV_XIX_GDC_DAAP_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_UH_Tag/DE_UH_Tag</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_UH_Tag</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

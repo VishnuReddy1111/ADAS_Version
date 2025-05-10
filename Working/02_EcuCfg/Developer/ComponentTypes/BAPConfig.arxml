@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="5C9130D4-C509-417B-9001-2CFDB1BEA2BA">
+      <SHORT-NAME>VAG</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7EBEDF2C-7CA4-471C-8D7B-408BDFDDAB1D">
+          <SHORT-NAME>Services</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="E66366D3-7879-40F4-B811-FD7AB9044FDF">
+              <SHORT-NAME>BAP</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="9B4B28C0-FB4F-4722-9796-3624400E7CC9">
+                  <SHORT-NAME>BAPConfig</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="3C11A73F-FD24-4DF9-91F5-D1B187CF6A94">
+                      <SHORT-NAME>BAP_SendDebugInfo_Enable</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <CLIENT-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BAPGeneralInterface/BAP_SendDebugInfo_Enable</OPERATION-REF>
+                        </CLIENT-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/VAG/Services/BAP/BAPGeneralInterface</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="7EBD8238-9665-4347-B841-584208FE3301">
+                      <SHORT-NAME>IB_BAPConfig</SHORT-NAME>
+                      <EVENTS>
+                        <INIT-EVENT UUID="C7983797-EFBB-4E34-8E95-69B6AFF0C0AB">
+                          <SHORT-NAME>RE_BAPConfig_InitEvent</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/VAG/Services/BAP/BAPConfig/IB_BAPConfig/RE_BAPConfig_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="0EE703AC-3193-4681-887B-D3C5E687E0C8">
+                          <SHORT-NAME>RE_BAPConfig_Init</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="edve:RunnableKind">
+                                <SD>InitRunnable</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SERVER-CALL-POINTS>
+                            <SYNCHRONOUS-SERVER-CALL-POINT UUID="2CF82771-3592-46CD-A1AA-1C1E242C61DF">
+                              <SHORT-NAME>SCP_BAP_SendDebugInfo_Enable_BAP_SendDebugInfo_Enable</SHORT-NAME>
+                              <OPERATION-IREF>
+                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/VAG/Services/BAP/BAPConfig/BAP_SendDebugInfo_Enable</CONTEXT-R-PORT-REF>
+                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/VAG/Services/BAP/BAPGeneralInterface/BAP_SendDebugInfo_Enable</TARGET-REQUIRED-OPERATION-REF>
+                              </OPERATION-IREF>
+                            </SYNCHRONOUS-SERVER-CALL-POINT>
+                          </SERVER-CALL-POINTS>
+                          <SYMBOL>BAP_ASR_BAPConfig_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+                <SWC-IMPLEMENTATION UUID="AFD4D8DC-8635-44E3-9AF3-4435CE147D91">
+                  <SHORT-NAME>Impl_BAPConfig</SHORT-NAME>
+                  <CODE-DESCRIPTORS>
+                    <CODE UUID="6B40264E-422E-4069-8720-3FEAF0B8B5FA">
+                      <SHORT-NAME>Code</SHORT-NAME>
+                      <ARTIFACT-DESCRIPTORS>
+                        <AUTOSAR-ENGINEERING-OBJECT />
+                      </ARTIFACT-DESCRIPTORS>
+                    </CODE>
+                  </CODE-DESCRIPTORS>
+                  <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/VAG/Services/BAP/BAPConfig/IB_BAPConfig</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

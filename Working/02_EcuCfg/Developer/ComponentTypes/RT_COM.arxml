@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="CC5468CE-7D4C-4122-AEEC-C9A89E9B42F6">
+          <SHORT-NAME>RT_COM</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="A3F7D871-815E-4D12-9188-E733A747D3A8">
+              <SHORT-NAME>Vishnu_Int</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Vishnu_Int/Vishnu_Data</DATA-ELEMENT-REF>
+                  <INIT-VALUE>
+                    <RECORD-VALUE-SPECIFICATION>
+                      <FIELDS>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>Vishnu_ID</SHORT-LABEL>
+                          <CATEGORY>STRING</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <SW-VALUES-PHYS>
+                              <VT>0</VT>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>Vishnu_Sal</SHORT-LABEL>
+                          <CATEGORY>STRING</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <SW-VALUES-PHYS>
+                              <VT>0</VT>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </FIELDS>
+                    </RECORD-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Vishnu_Int</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="E5C24800-BA01-489D-B1B0-1FDFFCCDD204">
+              <SHORT-NAME>RT_COM_InternalBehavior</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/RT_COM</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <INIT-EVENT UUID="729B0EA4-A0A1-4C5A-A44D-592031DF809D">
+                  <SHORT-NAME>RT_COM_InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/RT_COM/RT_COM_InternalBehavior/RT_COM_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+                <TIMING-EVENT UUID="DECEF5D6-8228-4DE1-B4EA-076BF4BE828B">
+                  <SHORT-NAME>TMT_RT_COM_Main</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/RT_COM/RT_COM_InternalBehavior/RT_COM_Main</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="E1F88A52-64F2-4DA3-995F-CD366F625AFA">
+                  <SHORT-NAME>RT_COM_Init</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="AC3C795F-A676-4276-BD7E-56A54BDA5C33">
+                  <SHORT-NAME>RT_COM_Main</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="FECB5E6A-8DCA-4411-A988-8D80434B0A10">
+          <SHORT-NAME>RT_COM_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/RT_COM/RT_COM_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

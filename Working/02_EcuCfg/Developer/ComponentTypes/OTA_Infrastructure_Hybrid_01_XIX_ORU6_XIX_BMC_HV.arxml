@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-000001220f44">
+          <SHORT-NAME>OTA_Infrastructure_Hybrid_01_XIX_ORU6_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_ORU6</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_3956022</SDX-REF>
+              </SDG>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="8665FB96-071D-448D-935C-960EF70FA859">
+              <SHORT-NAME>RP_IF_SG_ORU_Control_A_01_XIX_OTA_Infrastructure_Hybrid_01_XIX_ORU6_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_ORU_Control_A_01/DE_SG_ORU_Control_A_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_ORU_Control_A_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="6079CDBC-3032-4CAE-96EA-E00D690E9371">
+              <SHORT-NAME>RP_IF_SG_ORU_Control_D_01_XIX_OTA_Infrastructure_Hybrid_01_XIX_ORU6_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_ORU_Control_D_01/DE_SG_ORU_Control_D_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_ORU_Control_D_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="AE040B76-B601-4937-A659-22A8E7529734">
+              <SHORT-NAME>RP_IF_SG_OTAMC_D_01_XIX_OTA_Infrastructure_Hybrid_01_XIX_ORU6_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_SG_OTAMC_D_01/DE_SG_OTAMC_D_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_SG_OTAMC_D_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

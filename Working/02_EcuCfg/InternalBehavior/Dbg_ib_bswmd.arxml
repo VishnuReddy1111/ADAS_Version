@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-IMPLEMENTATION UUID="c429fd10-a4ac-4c3f-9322-eea963e55daf">
+          <SHORT-NAME>Dbg_Impl</SHORT-NAME>
+          <MC-SUPPORT>
+            <MC-VARIABLE-INSTANCES>
+              <MC-DATA-INSTANCE UUID="5301d8d2-7f36-4805-a742-7312b15d5796">
+                <SHORT-NAME>Dbg_IdleTask_OsCore0</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0008</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="b7b3910c-2407-404f-a239-2eb6879c1f12">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="6aa08ced-b62a-4a84-8591-1890365670b6">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="6c836e86-4f5b-4b9e-8c04-ae3de22974ee">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_IdleTask_OsCore0</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="08c23e34-4e53-4100-8f3c-4b46073781d5">
+                <SHORT-NAME>Dbg_Default_Appl_Init_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0002</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="af4900b0-9066-4c47-b5ef-494bddb89e30">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="047401f2-9622-47b7-8b10-7669a51ff851">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="c08fa39f-6d56-43c6-992e-1e61b04aa742">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_Default_Appl_Init_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="4135eb18-3fc1-4edc-917f-78a27b304f4a">
+                <SHORT-NAME>Dbg_Default_BSW_Sync_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0005</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="f92049e9-293d-4dbc-90a0-72291382e1c0">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="5712bb5a-7931-43dd-938f-e6d991b147ab">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="571500f0-bf18-4f12-a4e9-ee68617061bc">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_Default_BSW_Sync_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="845a2220-bb8a-4b1e-bec4-0b12b43da15b">
+                <SHORT-NAME>Dbg_Default_Init_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0006</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="45a42986-beaf-4714-8ee9-9527eeb4725b">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="a0dc16d4-3268-4e77-976e-a4404054c608">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="6c356c8f-1ad9-478e-a30f-6f033cf4712a">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_Default_Init_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="40ab471f-c2b0-486c-a484-914afb4f867a">
+                <SHORT-NAME>Dbg_Default_Appl_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0003</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="a59713f7-fb42-4faf-b795-292c14543006">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="d07ae3d2-fa5e-477c-9ff0-248817ec08c6">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="580b0ee9-cf7c-4e0b-988c-4025f10f50d0">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_Default_Appl_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="530a8c92-4a28-40f0-863b-452904247ab5">
+                <SHORT-NAME>Dbg_Default_BSW_Async_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0004</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="44f467df-e7ea-4488-8e8f-123c5853d603">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="4989022a-4151-4ca3-be24-77a19d40abe9">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="1f966276-9a4e-4454-8298-a4858efd2e7a">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_Default_BSW_Async_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="f81986a9-7ab3-46b5-b05d-5a6b47599469">
+                <SHORT-NAME>Dbg_Default_RTE_Mode_switch_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0007</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="0f763d73-2815-4093-99eb-0c7e55b25120">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="86ce24f7-ac1c-48b5-b491-20ba8dd87bee">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="5924adf5-ef72-4f05-92cb-e73cb849fd2a">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_Default_RTE_Mode_switch_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="0804ce5e-9208-4b52-9b62-51bdf4756889">
+                <SHORT-NAME>Dbg_CounterIsr_SystemTimer</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0001</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="fab8090b-43db-4582-bb62-b96afb8a3e14">
+                    <SHORT-NAME>dbgDbgStaticDIDData</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgDbgStaticDIDData</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="4f5996df-9310-4b76-a2cf-7b348aa2ab2d">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="3740c644-d482-46c7-9c03-a0125f64e9bd">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_CounterIsr_SystemTimer</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="de9a943e-5ff4-47eb-9310-958eb9c09f39">
+                <SHORT-NAME>Dbg_StartApplication_Appl_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x000A</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="13b4b3db-e798-448c-a5bc-ae6d8c7bece1">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="896bfa94-a9af-493e-a8c3-324a27ba547a">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="4b20f1e1-4db5-439b-8857-7474080341d0">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_StartApplication_Appl_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="253e5025-32b7-4bc5-8d7a-6a8f548df384">
+                <SHORT-NAME>Dbg_StartApplication_Appl_Init_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0009</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="bd9f7262-9c7c-4152-b044-1685a32f3087">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="ccfffa39-555d-48a2-bb73-aa40d7c96004">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="199bce8d-1238-4d0a-a955-480a911d773d">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_StartApplication_Appl_Init_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="d3f93022-8b77-49a5-83be-7a66a7295022">
+                <SHORT-NAME>Dbg_StartApplication_NoSwc_Appl_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x000B</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="b054ea9b-8d57-4e3a-96cd-9ffd5d6bd037">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="524d5d2e-b2e8-4fcd-a98d-87d1cd1b1d3c">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="b3bb799d-7b9e-4d0c-a3d4-7f9c4da01716">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_StartApplication_NoSwc_Appl_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="eff89150-169a-4c8a-93e8-c960e1aad54e">
+                <SHORT-NAME>Dbg_StartApplication_NoSwc_Init_Task</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x000C</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="63fa6d4e-3512-4dd7-be89-4e8c156d9a54">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="22666e8a-e1dd-4f17-b7ef-5ebf9765d097">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="7aff464a-8aeb-47fc-afed-173cd9d49a47">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_StartApplication_NoSwc_Init_Task</SYMBOL>
+              </MC-DATA-INSTANCE>
+              <MC-DATA-INSTANCE UUID="0c32d24f-0ffb-4954-a4af-3d943c5ab1bb">
+                <SHORT-NAME>Dbg_BswBackgroundTask</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV:dataSectionDef">
+                      <SD GID="DV:beginSection">/begin IF_DATA XCP</SD>
+                      <SD GID="DV:beginSection">/begin DAQ_EVENT</SD>
+                      <SD GID="DV:contentElem">FIXED_EVENT_LIST</SD>
+                      <SD GID="DV:contentElem">EVENT 0x0000</SD>
+                      <SD GID="DV:endSection">/end DAQ_EVENT</SD>
+                      <SD GID="DV:endSection">/end IF_DATA</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <SUB-ELEMENTS>
+                  <MC-DATA-INSTANCE UUID="ac07e433-0002-4bb1-b5b5-8475ef078fc3">
+                    <SHORT-NAME>dbgosGetStackUsage</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint32</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>dbgosGetStackUsage</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="db130000-45c1-4890-81f4-476e8fc60565">
+                    <SHORT-NAME>Activation</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/Dbg_ib_bswmd/DataTypes/CompuMethods/Dbg_cmBoolean</COMPU-METHOD-REF>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/boolean</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>Activation</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                  <MC-DATA-INSTANCE UUID="533de92d-a811-4e97-92aa-c4d19e5de04e">
+                    <SHORT-NAME>CollectionFrequency</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <RESULTING-PROPERTIES>
+                      <SW-DATA-DEF-PROPS-VARIANTS>
+                        <SW-DATA-DEF-PROPS-CONDITIONAL>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/MICROSAR/Dbg_ib_bswmd/DataTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                          <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                          <DATA-CONSTR-REF DEST="DATA-CONSTR">/MICROSAR/Dbg_ib_bswmd/DataTypes/DataConstrs/uint16</DATA-CONSTR-REF>
+                        </SW-DATA-DEF-PROPS-CONDITIONAL>
+                      </SW-DATA-DEF-PROPS-VARIANTS>
+                    </RESULTING-PROPERTIES>
+                    <SYMBOL>CollectionFrequency</SYMBOL>
+                  </MC-DATA-INSTANCE>
+                </SUB-ELEMENTS>
+                <SYMBOL>Dbg_BswBackgroundTask</SYMBOL>
+              </MC-DATA-INSTANCE>
+            </MC-VARIABLE-INSTANCES>
+          </MC-SUPPORT>
+          <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+          <SW-VERSION>2.00.00</SW-VERSION>
+          <USED-CODE-GENERATOR>cMSR</USED-CODE-GENERATOR>
+          <VENDOR-ID>30</VENDOR-ID>
+          <AR-RELEASE-VERSION>4.00.03</AR-RELEASE-VERSION>
+        </BSW-IMPLEMENTATION>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="1f645538-60fe-425d-a47b-7d453cce8a30">
+          <SHORT-NAME>Dbg_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="e6f228fa-2500-43d2-b7a6-b6111a7d40cd">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="ff2d8c09-e977-4ab9-8fac-f9c199be23ed">
+                  <SHORT-NAME>Dbg</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Dbg_ib_bswmd/BswModuleDescriptions/Dbg_PeriodicSamplingFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="1ce3ce75-a4f5-479c-be09-6be376b3fc1a">
+                      <SHORT-NAME>DbgBehavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="16a1ddcc-ea95-478c-a1fe-14471bf6b29d">
+                          <SHORT-NAME>DBG_EXCLUSIVE_AREA_0</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="866ed60d-2bda-4a8d-8e35-a772d46cb664">
+                          <SHORT-NAME>Dbg_PeriodicSamplingFunction</SHORT-NAME>
+                          <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Dbg_ib_bswmd/BswModuleDescriptions/Dbg/DbgBehavior/DBG_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                          </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Dbg_ib_bswmd/BswModuleDescriptions/Dbg_PeriodicSamplingFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="1045186d-7818-4579-a9a6-00075afa0833">
+                          <SHORT-NAME>Dbg_PeriodicSamplingFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/Dbg_ib_bswmd/BswModuleDescriptions/Dbg/DbgBehavior/Dbg_PeriodicSamplingFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="11214d8f-e0f7-45cf-934a-c26682e64f3b">
+                  <SHORT-NAME>Dbg_PeriodicSamplingFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="7390d1c6-e721-4316-aec8-5b120b95eacb">
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="51e04051-542f-462e-b319-953dc10ff9cd">
+                  <SHORT-NAME>BaseTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-BASE-TYPE UUID="a834db86-eab2-41fc-89d2-88bab90d3526">
+                      <SHORT-NAME>boolean</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="3de75933-0a26-47e0-8c1f-77d390442846">
+                      <SHORT-NAME>uint16</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                    <SW-BASE-TYPE UUID="7cd49978-8f4d-4df6-a219-ab96e8f37b7e">
+                      <SHORT-NAME>uint32</SHORT-NAME>
+                      <CATEGORY>FIXED_LENGTH</CATEGORY>
+                      <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                      <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                    </SW-BASE-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="b31d5856-63fa-4d7d-b021-23f1f18ae82f">
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD UUID="f58fdaea-22ff-41a6-9a32-ebf73bee9b70">
+                      <SHORT-NAME>Dbg_cmBoolean</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>TRUE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FALSE</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="a0a5e85d-b700-42ff-a702-2346f82d2c7c">
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR UUID="2dbe365f-91f6-42c4-8bb0-1bdee9c0cf54">
+                      <SHORT-NAME>boolean</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="6551c54e-a011-45b1-96f6-bacaadea6c46">
+                      <SHORT-NAME>uint16</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR UUID="5b3b69a6-12ef-4e8e-8141-60b36f32f770">
+                      <SHORT-NAME>uint32</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <INTERNAL-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                          </INTERNAL-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="99717a34-05ba-40f5-8c73-10b3432a657c">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

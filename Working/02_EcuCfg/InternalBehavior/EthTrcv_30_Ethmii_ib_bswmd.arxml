@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="41df23e0-7d8e-49db-928e-78cd1aaf5094">
+          <SHORT-NAME>EthTrcv_30_Ethmii_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="8c1352e0-fbd9-458b-ad6f-8cf38d2595be">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="25ec30df-ee55-4639-b509-4f7a09ae523e">
+                  <SHORT-NAME>EthTrcv</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/EthTrcv_30_Ethmii_ib_bswmd/BswModuleDescriptions/EthTrcv_30_Ethmii_MainFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="2ba0782d-adcd-40b0-9ac7-c86e11e331d2">
+                      <SHORT-NAME>EthTrcv_30_EthmiiBehavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="fbae4ad3-db51-4398-8c37-df1a1b8e998c">
+                          <SHORT-NAME>ETHTRCV_30_ETHMII_EXCLUSIVE_AREA_SEQUENCE</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="7dfe54c1-bdda-4816-8ee1-47b36101af9a">
+                          <SHORT-NAME>EthTrcv_30_Ethmii_MainFunction</SHORT-NAME>
+                          <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                            <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/MICROSAR/EthTrcv_30_Ethmii_ib_bswmd/BswModuleDescriptions/EthTrcv/EthTrcv_30_EthmiiBehavior/ETHTRCV_30_ETHMII_EXCLUSIVE_AREA_SEQUENCE</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                          </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/EthTrcv_30_Ethmii_ib_bswmd/BswModuleDescriptions/EthTrcv_30_Ethmii_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="d608e612-dec2-4972-86f6-50c2ddb6a8ed">
+                          <SHORT-NAME>EthTrcv_30_Ethmii_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/EthTrcv_30_Ethmii_ib_bswmd/BswModuleDescriptions/EthTrcv/EthTrcv_30_EthmiiBehavior/EthTrcv_30_Ethmii_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>1</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="90c888a5-71a1-4a35-aec0-a72c2dd4c6ef">
+                  <SHORT-NAME>EthTrcv_30_Ethmii_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

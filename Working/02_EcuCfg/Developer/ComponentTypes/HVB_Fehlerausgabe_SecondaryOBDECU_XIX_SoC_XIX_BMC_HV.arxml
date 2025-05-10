@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="626a01f5-0000-1314-908f-1314b22d3da8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="626a024b-0000-0000-b658-0000013d6455">
+          <SHORT-NAME>HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Tags">
+                <SDX-REF DEST="SDG-CAPTION">/Tags/TAG_SoC</SDX-REF>
+              </SDG>
+              <SDG GID="FunctionList_IDs">
+                <SDX-REF DEST="SDG-CAPTION">/FunctionList_IDs/ID_1577987</SDX-REF>
+              </SDG>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-25bc-eb63-0000013fd533">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_01_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_01/DE_DCDC_NV_Komponentenfehler_01</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_01</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8054-eb63-0000013fd4e7">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_02_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_02/DE_DCDC_NV_Komponentenfehler_02</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_02</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-320e-eb63-0000013fd4db">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_03_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_03/DE_DCDC_NV_Komponentenfehler_03</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_03</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-82ad-eb63-0000013fd4f9">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_04_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_04/DE_DCDC_NV_Komponentenfehler_04</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_04</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-533d-eb63-0000013fd431">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_05_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_05/DE_DCDC_NV_Komponentenfehler_05</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_05</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8823-eb63-0000013fd539">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_06_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_06/DE_DCDC_NV_Komponentenfehler_06</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_06</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9f33-eb63-0000013fd45f">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_07_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_07/DE_DCDC_NV_Komponentenfehler_07</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_07</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-edac-eb63-0000013fd413">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_08_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_08/DE_DCDC_NV_Komponentenfehler_08</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_08</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b98e-eb63-0000013fd48b">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_09_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_09/DE_DCDC_NV_Komponentenfehler_09</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_09</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bd79-eb63-0000013fd361">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_10_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_10/DE_DCDC_NV_Komponentenfehler_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-66c8-eb63-0000013fd38b">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_11_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_11/DE_DCDC_NV_Komponentenfehler_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7708-eb63-0000013fd521">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_12_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_12/DE_DCDC_NV_Komponentenfehler_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-108b-eb63-0000013fd46b">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_13_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_13/DE_DCDC_NV_Komponentenfehler_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9146-eb63-0000013fd2e3">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_14_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_14/DE_DCDC_NV_Komponentenfehler_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0be9-eb63-0000013fd333">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_15_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_15/DE_DCDC_NV_Komponentenfehler_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-fb8a-eb63-0000013fd44d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_16_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_16/DE_DCDC_NV_Komponentenfehler_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-dc52-eb63-0000013fd401">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_17_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_17/DE_DCDC_NV_Komponentenfehler_17</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_17</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e3d8-eb63-0000013fd4a7">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_18_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_18/DE_DCDC_NV_Komponentenfehler_18</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_18</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d571-eb63-0000013fd343">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_19_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_19/DE_DCDC_NV_Komponentenfehler_19</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_19</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a1a4-eb63-0000013fd34f">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_20_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_20/DE_DCDC_NV_Komponentenfehler_20</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_20</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-bd05-eb63-0000013fd4ed">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_21_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_21/DE_DCDC_NV_Komponentenfehler_21</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_21</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-995b-eb63-0000013fd39d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_22_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_22/DE_DCDC_NV_Komponentenfehler_22</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_22</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1b62-eb63-0000013fd35b">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_23_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_23/DE_DCDC_NV_Komponentenfehler_23</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_23</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3050-eb63-0000013fd50f">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_24_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_24/DE_DCDC_NV_Komponentenfehler_24</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_24</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2b27-eb63-0000013fd407">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_25_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_25/DE_DCDC_NV_Komponentenfehler_25</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_25</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7caf-eb63-0000013fd391">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_26_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_26/DE_DCDC_NV_Komponentenfehler_26</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_26</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-60b2-eb63-0000013fd3a9">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_27_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_27/DE_DCDC_NV_Komponentenfehler_27</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_27</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-521b-eb63-0000013fd549">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_28_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_28/DE_DCDC_NV_Komponentenfehler_28</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_28</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-094c-eb63-0000013fd453">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_29_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_29/DE_DCDC_NV_Komponentenfehler_29</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_29</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-52ef-eb63-0000013fd2dd">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_30_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_30/DE_DCDC_NV_Komponentenfehler_30</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_30</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-c63b-eb63-0000013fd459">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_31_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_31/DE_DCDC_NV_Komponentenfehler_31</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_31</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0d54-eb63-0000013fd515">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_32_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_32/DE_DCDC_NV_Komponentenfehler_32</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_32</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3f5b-eb63-0000013fd36d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_33_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_33/DE_DCDC_NV_Komponentenfehler_33</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_33</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-71ea-eb63-0000013fd4e1">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_34_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_34/DE_DCDC_NV_Komponentenfehler_34</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_34</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2bd0-eb63-0000013fd3eb">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_35_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_35/DE_DCDC_NV_Komponentenfehler_35</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_35</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-3630-eb63-0000013fd37f">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_36_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_36/DE_DCDC_NV_Komponentenfehler_36</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_36</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-506d-eb63-0000013fd373">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_37_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_37/DE_DCDC_NV_Komponentenfehler_37</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_37</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5aa6-eb63-0000013fd4bd">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_38_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_38/DE_DCDC_NV_Komponentenfehler_38</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_38</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7beb-eb63-0000013fd4c9">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_39_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_39/DE_DCDC_NV_Komponentenfehler_39</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_39</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b551-eb63-0000013fd471">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_10_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_10/DE_DCDC_NV_Komponentenfehler_3_10</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_10</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-70c2-eb63-0000013fd313">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_11_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_11/DE_DCDC_NV_Komponentenfehler_3_11</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_11</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-573c-eb63-0000013fd505">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_12_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_12/DE_DCDC_NV_Komponentenfehler_3_12</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_12</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9e10-eb63-0000013fd53f">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_13_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_13/DE_DCDC_NV_Komponentenfehler_3_13</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_13</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-51ad-eb63-0000013fd443">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_14_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_14/DE_DCDC_NV_Komponentenfehler_3_14</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_14</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8f26-eb63-0000013fd339">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_15_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_15/DE_DCDC_NV_Komponentenfehler_3_15</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_15</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-88aa-eb63-0000013fd481">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_16_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_16/DE_DCDC_NV_Komponentenfehler_3_16</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_16</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-05c8-eb63-0000013fd2e9">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_1_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_1/DE_DCDC_NV_Komponentenfehler_3_1</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-eb6a-eb63-0000013fd3bb">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_2_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_2/DE_DCDC_NV_Komponentenfehler_3_2</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-fc70-eb63-0000013fd2f3">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_3_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_3/DE_DCDC_NV_Komponentenfehler_3_3</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_3</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-36ef-eb63-0000013fd3f1">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_4_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_4/DE_DCDC_NV_Komponentenfehler_3_4</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_4</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-e2fe-eb63-0000013fd309">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_5_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_5/DE_DCDC_NV_Komponentenfehler_3_5</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_5</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d83b-eb63-0000013fd3cb">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_6_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_6/DE_DCDC_NV_Komponentenfehler_3_6</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_6</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-42ad-eb63-0000013fd323">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_7_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_7/DE_DCDC_NV_Komponentenfehler_3_7</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_7</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9372-eb63-0000013fd3e1">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_8_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_8/DE_DCDC_NV_Komponentenfehler_3_8</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_8</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f9af-eb63-0000013fd49d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_3_9_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_9/DE_DCDC_NV_Komponentenfehler_3_9</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_3_9</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f85f-eb63-0000013fd4cf">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_40_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_40/DE_DCDC_NV_Komponentenfehler_40</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_40</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a310-eb63-0000013fd367">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_41_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_41/DE_DCDC_NV_Komponentenfehler_41</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_41</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a16c-eb63-0000013fd3fb">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_42_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_42/DE_DCDC_NV_Komponentenfehler_42</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_42</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d8d9-eb63-0000013fd555">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_43_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_43/DE_DCDC_NV_Komponentenfehler_43</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_43</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6ada-eb63-0000013fd303">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_44_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_44/DE_DCDC_NV_Komponentenfehler_44</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_44</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a96c-eb63-0000013fd3b5">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_45_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_45/DE_DCDC_NV_Komponentenfehler_45</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_45</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d81a-eb63-0000013fd52d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_46_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_46/DE_DCDC_NV_Komponentenfehler_46</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_46</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-995d-eb63-0000013fd3d5">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_47_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_47/DE_DCDC_NV_Komponentenfehler_47</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_47</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-cb7e-eb63-0000013fd379">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_48_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_48/DE_DCDC_NV_Komponentenfehler_48</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_48</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-265f-eb63-0000013fd3c5">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_49_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_49/DE_DCDC_NV_Komponentenfehler_49</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_49</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-0d3e-eb63-0000013fd355">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_50_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_50/DE_DCDC_NV_Komponentenfehler_50</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_50</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2af7-eb63-0000013fd419">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_51_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_51/DE_DCDC_NV_Komponentenfehler_51</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_51</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ad54-eb63-0000013fd437">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_52_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_52/DE_DCDC_NV_Komponentenfehler_52</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_52</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b92e-eb63-0000013fd32d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_53_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_53/DE_DCDC_NV_Komponentenfehler_53</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_53</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-f7c4-eb63-0000013fd4b1">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_54_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_54/DE_DCDC_NV_Komponentenfehler_54</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_54</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-8ca3-eb63-0000013fd3db">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_55_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_55/DE_DCDC_NV_Komponentenfehler_55</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_55</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-deee-eb63-0000013fd47b">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_56_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_56/DE_DCDC_NV_Komponentenfehler_56</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_56</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ca7c-eb63-0000013fd4c3">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_57_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_57/DE_DCDC_NV_Komponentenfehler_57</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_57</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-7c14-eb63-0000013fd31d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_58_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_58/DE_DCDC_NV_Komponentenfehler_58</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_58</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-97f2-eb63-0000013fd2fd">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_59_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_59/DE_DCDC_NV_Komponentenfehler_59</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_59</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-fa32-eb63-0000013fd41f">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_60_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_60/DE_DCDC_NV_Komponentenfehler_60</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_60</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2339-eb63-0000013fd527">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_61_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_61/DE_DCDC_NV_Komponentenfehler_61</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_61</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9a76-eb63-0000013fd40d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_62_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_62/DE_DCDC_NV_Komponentenfehler_62</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_62</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-9ee6-eb63-0000013fd4f3">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_63_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_63/DE_DCDC_NV_Komponentenfehler_63</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_63</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-a4a8-eb63-0000013fd385">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_64_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_64/DE_DCDC_NV_Komponentenfehler_64</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_64</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-ad10-eb63-0000013fd425">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_65_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_65/DE_DCDC_NV_Komponentenfehler_65</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_65</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-aeb2-eb63-0000013fd51b">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_66_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_66/DE_DCDC_NV_Komponentenfehler_66</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_66</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b45a-eb63-0000013fd3a3">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_67_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_67/DE_DCDC_NV_Komponentenfehler_67</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_67</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d9fa-eb63-0000013fd2d7">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_68_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_68/DE_DCDC_NV_Komponentenfehler_68</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_68</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-5482-eb63-0000013fd349">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_69_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_69/DE_DCDC_NV_Komponentenfehler_69</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_69</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1271-eb63-0000013fd465">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_70_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_70/DE_DCDC_NV_Komponentenfehler_70</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_70</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1707-eb63-0000013fd3af">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_71_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_71/DE_DCDC_NV_Komponentenfehler_71</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_71</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-6ca2-eb63-0000013fd54f">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_72_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_72/DE_DCDC_NV_Komponentenfehler_72</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_72</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-2f86-eb63-0000013fd491">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_73_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_73/DE_DCDC_NV_Komponentenfehler_73</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_73</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b36d-eb63-0000013fd4d5">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_74_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_74/DE_DCDC_NV_Komponentenfehler_74</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_74</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-066b-eb63-0000013fd497">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_75_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_75/DE_DCDC_NV_Komponentenfehler_75</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_75</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d160-eb63-0000013fd4ff">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_76_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_76/DE_DCDC_NV_Komponentenfehler_76</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_76</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-19cf-eb63-0000013fd43d">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_77_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_77/DE_DCDC_NV_Komponentenfehler_77</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_77</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-d2b0-eb63-0000013fd397">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_78_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_78/DE_DCDC_NV_Komponentenfehler_78</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_78</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-1955-eb63-0000013fd42b">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_79_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_79/DE_DCDC_NV_Komponentenfehler_79</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_79</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-006e-eb63-0000013fd4b7">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_80_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_80/DE_DCDC_NV_Komponentenfehler_80</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_80</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="626a024a-0000-b2ca-eb63-0000013fd4ad">
+              <SHORT-NAME>RP_IF_DCDC_NV_Komponentenfehler_VLD_XIX_HVB_Fehlerausgabe_SecondaryOBDECU_XIX_SoC_XIX_BMC_HV</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_DCDC_NV_Komponentenfehler_VLD/DE_DCDC_NV_Komponentenfehler_VLD</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_DCDC_NV_Komponentenfehler_VLD</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
